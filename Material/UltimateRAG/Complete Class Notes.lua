@@ -36,6 +36,7 @@ uv Installation Guide:
 https://docs.astral.sh/uv/#installation
 
 warp Installation Guide:
+A new way to code 👉 The Agentic Development Environment
 https://www.warp.dev/
 
 Set-ExecutionPolicy  -ExecutionPolicy RemoteSigned -Scope CurrentUser
