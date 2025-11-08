@@ -1,3 +1,6 @@
+![alt text](image.png) <br>
+---
+
 Ultimate RAG Course
 ---
 Designed for AI engineers, ML practitioners, and software developers, this course transforms RAG theory into production-grade implementations. Whether you're new to retrieval systems or experienced with LLMs, you'll gain expertise in Building scalable RAG pipelines (from basic
