@@ -30,11 +30,7 @@ All Classes
 ## creates the virtual env in anaconda3 folder
 ```
 conda create -n venv_ur_name python==3.12 -y
-```
-```
 conda activate venv_ur_name
-```
-```
 conda deactivate
 ```
 
@@ -48,13 +44,11 @@ OR
 ## creates the virtual env in current folder
 ```
 conda create -p venv_ur_name python==3.12 -y
-```
-```conda activate
-```
+conda activate
 conda deactivate
 ```
 
-Create a Virtual Environment in Python with Conda 
+## Create a Virtual Environment in Python with Conda 
 Refer 👉 https://gist.github.com/loic-nazaries/b18a908473935243fc23586f35d4bacc
 
 Resources
