@@ -1,1 +1,1 @@
-(Ultimate RAG Checklist)[https://krishnaikacademy.notion.site/Ultimate-RAG-Course-2a5eba9593d08085ade8ceb2a6c6c8de]
+[Ultimate RAG Checklist](https://krishnaikacademy.notion.site/Ultimate-RAG-Course-2a5eba9593d08085ade8ceb2a6c6c8de)
