@@ -13,4 +13,7 @@ https://learn.krishnaikacademy.com/web/checkout/68bbbf371263fba553cd0492
 Ultimate-RAG-Course-Checklist:
 https://krishnaikacademy.notion.site/Ultimate-RAG-Course-2a5eba9593d08085ade8ceb2a6c6c8de
 
+Anaconda Installation Guide:
+https://www.anaconda.com/download/success
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
