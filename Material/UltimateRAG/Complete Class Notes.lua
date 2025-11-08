@@ -32,4 +32,7 @@ Creating the Virtual Env using conda
 
 	conda deactivate
 
+uv Installation Guide:
+https://docs.astral.sh/uv/#installation
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
