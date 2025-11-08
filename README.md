@@ -1,4 +1,4 @@
-![alt text](image.png) <br>
+![alt text](Ultimate_RAG.png) <br>
 ---
 
 Ultimate RAG Course
