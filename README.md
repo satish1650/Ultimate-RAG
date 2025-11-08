@@ -31,17 +31,14 @@ All Classes
 ```
 conda create -n venv_ur_name python==3.12 -y
 ```
-
 ```
 conda activate venv_ur_name
 ```
-
 ```
 conda deactivate
 ```
 
 ## Delete the folder venv_ur_name
-
 ```
 conda remove -n venv_ur_name --all
 ```
@@ -54,12 +51,10 @@ conda create -p venv_ur_name python==3.12 -y
 ```
 ```conda activate
 ```
-```
 conda deactivate
 ```
 
-
-## Create a Virtual Environment in Python with Conda 
+Create a Virtual Environment in Python with Conda 
 Refer 👉 https://gist.github.com/loic-nazaries/b18a908473935243fc23586f35d4bacc
 
 Resources
