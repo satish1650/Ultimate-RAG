@@ -36,9 +36,11 @@ conda remove -n venv_ur_name --all
 OR
 
 # creates the virtual env in current folder
-conda create -p venv_ur_name python==3.12 -y
-conda activate
-conda deactivate
+```
+conda create -p venv_ur_name python==3.12 -y <br>
+conda activate <br>
+conda deactivate <br>
+```
 # Delete the folder venv_ur_name
 Refer :- https://gist.github.com/loic-nazaries/b18a908473935243fc23586f35d4bacc
 
