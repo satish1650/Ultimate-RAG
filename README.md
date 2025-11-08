@@ -27,6 +27,22 @@ All Classes
 02 Nov Day - 1 Induction Session <br>
 08 Nov Day - 2 Tools And Installation <br>
 
+# creates the virtual env in anaconda3 folder
+conda create -n venv_ur_name python==3.12 -y
+conda activate venv_ur_name
+conda deactivate
+conda remove -n venv_ur_name --all
+
+OR
+
+# creates the virtual env in current folder
+conda create -p venv_ur_name python==3.12 -y
+conda activate
+conda deactivate
+# Delete the folder venv_ur_name
+Refer :- https://gist.github.com/loic-nazaries/b18a908473935243fc23586f35d4bacc
+
 Resources
 ---
 [Ultimate RAG Checklist](https://krishnaikacademy.notion.site/Ultimate-RAG-Course-2a5eba9593d08085ade8ceb2a6c6c8de)
+[Software Checklist](https://krishnaikacademy.notion.site/Software-Checklist-2a5eba9593d08048927ed6fbd00f502d)
