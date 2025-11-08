@@ -35,4 +35,15 @@ Creating the Virtual Env using conda
 uv Installation Guide:
 https://docs.astral.sh/uv/#installation
 
+warp Installation Guide:
+https://www.warp.dev/
+
+Set-ExecutionPolicy  -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+Git Installation Guide:
+https://git-scm.com/install/windows
+
+Install Docker Desktop on Windows:-
+https://docs.docker.com/desktop/setup/install/windows-install/
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
