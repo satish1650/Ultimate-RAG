@@ -16,4 +16,20 @@ https://krishnaikacademy.notion.site/Ultimate-RAG-Course-2a5eba9593d08085ade8ceb
 Anaconda Installation Guide:
 https://www.anaconda.com/download/success
 
+Creating the Virtual Env using conda
+
+	conda create -n rag python==3.12 
+
+	conda activate rag
+
+	(rag) will be shown
+
+	pip install pandas
+
+	pip show pandas
+
+	pip uninstall pandas
+
+	conda deactivate
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
