@@ -7,7 +7,6 @@ Ultimate RAG Bootcamp: Building Traditional to Agentic Systems with Cloud Deploy
 https://learn.krishnaikacademy.com/web/checkout/68bbbf371263fba553cd0492
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 08 Nov Day - 2 Tools And Installation
 *************************************
 Ultimate-RAG-Course-Checklist:
@@ -50,3 +49,15 @@ https://docs.docker.com/desktop/setup/install/windows-install/
 app@krishnaik.in
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+09 Nov Day - 3 Introduction To RAG
+**********************************
+Paper Reserach
+https://krishnaikacademy.notion.site/Ultimate-RAG-Course-2a5eba9593d08085ade8ceb2a6c6c8de?pvs=74
+
+Retrieval.ipynb
+https://colab.research.google.com/drive/13GdLsnx3IcXptckMRBIR1dGXdbeDnPGA?usp=sharing
+
+The AI Documentation Assistant for Developers
+https://www.xenodocs.com/
+
+https://www.producthunt.com/products/xenodocs-2
