@@ -26,6 +26,7 @@ All Classes
 ---
 02 Nov Day - 1 Induction Session <br>
 08 Nov Day - 2 Tools And Installation <br>
+09 Nov Day - 3 Introduction To RAG <br>
 
 ## Create the virtual environment in anaconda3 folder
 ```
