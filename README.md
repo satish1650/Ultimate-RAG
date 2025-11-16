@@ -27,6 +27,8 @@ All Classes
 02 Nov Day - 1 Induction Session <br>
 08 Nov Day - 2 Tools And Installation <br>
 09 Nov Day - 3 Introduction To RAG <br>
+15 Nov Day - 4 RAG Architectures & Survey <br>
+16 Nov Day - 5 Exploring Langchain For RAG <br>
 
 ## Create the virtual environment in anaconda3 folder
 ```
