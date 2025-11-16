@@ -66,3 +66,17 @@ Speech and Natural Language Processing (NLP Book)
 https://web.stanford.edu/~jurafsky/slp3/
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+15 Nov Day - 4 RAG Architectures & Survey
+*****************************************
+Class Notes :- https://drive.google.com/file/d/1_uRq1ZjtjNH7abY_bsHcS2JcJm83xkpn/view?usp=sharing
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+16 Nov Day - 5 Exploring Langchain For RAG
+******************************************
+Promptly AI -> Prompt Library
+https://www.promptly.fyi/library
+
+simple-rag-langchain.zip
+Code Download Link :- https://drive.google.com/file/d/1gH9PaMtZUKb5-5nJ98s23ZkRzkJF6Zda/view?usp=sharing
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
