@@ -87,3 +87,11 @@ ChunkViz v0.1
 https://chunkviz.up.railway.app/
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+23 Nov Day - 7 Langchain 2
+******************************************
+MTEB Leaderboard
+https://huggingface.co/spaces/mteb/leaderboard
+
+semitechnologies/weaviate
+https://hub.docker.com/r/semitechnologies/weaviate
