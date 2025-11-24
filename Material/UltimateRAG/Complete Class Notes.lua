@@ -87,11 +87,25 @@ ChunkViz v0.1
 https://chunkviz.up.railway.app/
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+22 Nov Day - 6 Exploring Langchain Part-1 
+*****************************************
+GitHub Repo :- https://github.com/sourangshupal/simple-rag-langchain
 
-23 Nov Day - 7 Langchain 2
-******************************************
+Code Download Link :- https://drive.google.com/file/d/1gH9PaMtZUKb5-5nJ98s23ZkRzkJF6Zda/view?usp=sharing
+
+ChunkViz :- https://chunkviz.up.railway.app/
+
+OLLAMA DOWNLOAD :- https://ollama.com/download
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+23 Nov Day - 7 Exploring Langchain Part-2 
+*****************************************
+Code Download Link :- https://drive.google.com/file/d/1gH9PaMtZUKb5-5nJ98s23ZkRzkJF6Zda/view?usp=sharing
+
 MTEB Leaderboard
 https://huggingface.co/spaces/mteb/leaderboard
 
 semitechnologies/weaviate
 https://hub.docker.com/r/semitechnologies/weaviate
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
