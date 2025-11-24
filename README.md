@@ -32,6 +32,7 @@ All Classes
 22 Nov Day - 6 Exploring Langchain Part-1 <br>
 23 Nov Day - 7 Exploring Langchain Part-2 <br>
 
+
 ## Create the virtual environment in anaconda3 folder
 ```
 conda create -n venv_ur_name python==3.12 -y
