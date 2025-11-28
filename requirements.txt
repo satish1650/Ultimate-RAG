@@ -110,3 +110,26 @@ numpy
 #   - Some packages may require additional system dependencies
 #
 # ============================================================================
+
+# ============================================================================
+# INSTALLATION INSTRUCTIONS
+# ============================================================================
+# For Qdrant:
+#   pip install langchain-qdrant qdrant-client
+langchain-qdrant
+qdrant-client
+#
+# For Weaviate:
+#   pip install langchain-weaviate weaviate-client
+weaviate
+langchain-weaviate 
+weaviate-client
+#
+# For Ollama (for real embeddings):
+#   pip install langchain-ollama
+#
+# For local Weaviate, you need Docker:
+#   docker run -d -p 8080:8080 -p 50051:50051 \
+#     --name weaviate \
+#     cr.weaviate.io/semitechnologies/weaviate:latest
+# ============================================================================
