@@ -30,17 +30,17 @@ All Classes
 15 Nov Day - 4 RAG Architectures & Survey <br>
 16 Nov Day - 5 Exploring Langchain For RAG <br>
 22 Nov Day - 6 Exploring Langchain Part-1 <br>
-23 Nov Day - 7 Exploring Langchain Part-2 <br>
+23 Nov Day - 7 Exploring Langchain Part-2
 - Text Splitting Strategies
-1. Why Split Text? 🤔
-1. RecursiveCharacterTextSplitter ⭐
-1. CharacterTextSplitter ⭐
-1. HTMLHeaderTextSplitter 🌐
-1. RecursiveJsonSplitter 📦
-1. TokenTextSplitter 🎯
-1. Chunk Size & Overlap Optimization 📊
-1. Comparison & Best Practices 🌟
-1. Summary & Exercises 📝
+    - Why Split Text? 🤔
+    - RecursiveCharacterTextSplitter ⭐
+    - CharacterTextSplitter ⭐
+    - HTMLHeaderTextSplitter 🌐
+    - RecursiveJsonSplitter 📦
+    - TokenTextSplitter 🎯
+    - Chunk Size & Overlap Optimization 📊
+    - Comparison & Best Practices 🌟
+    - Summary & Exercises 📝
 - Embeddings and Vector Representations
     - What are Embeddings?
     - OpenAI Embeddings
