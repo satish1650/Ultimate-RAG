@@ -74,7 +74,8 @@ All Classes
 3. **WikipediaRetriever** - Access Wikipedia articles for general knowledge
 4. **TavilySearchAPIRetriever** - Perform real-time internet searches
 5. **Integration with RAG Chains** - Combine external retrievers with LLMs
-6. **Best Practices** - When and how to use each retriever effectively <br>
+6. **Best Practices** - When and how to use each retriever effectively
+
 29 Nov Day - 8 Exploring Langchain Part-3
 #### Vector Stores Tutorial: Qdrant & Weaviate
 ##### 🎯 Learning Objectives
@@ -112,6 +113,7 @@ By the end of this notebook, you will:
 - Compare multiple RAG configurations systematically
 - Visualize and interpret evaluation results
 - Apply production best practices
+
 30 Nov Day - 9 Exploring Langchain Part-4 <br>
 
 ## Create the virtual environment in anaconda3 folder
