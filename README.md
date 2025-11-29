@@ -42,7 +42,7 @@ All Classes
     - Comparison & Best Practices 🌟
     - Summary & Exercises 📝
 - Embeddings and Vector Representations
-    - What are Embeddings?
+    - What are Embeddings? 🤔
     - OpenAI Embeddings
     - Google Gemini Embeddings
     - Similarity Calculation
@@ -54,6 +54,8 @@ A Retriever is an interface that returns relevant documents for a query.
     - Similarity Search Retriever
     - MMR (Maximum Marginal Relevance)
     - Custom Retriever with chain
+- 🚀 Notebook 07: Complete RAG Pipeline
+
 
 29 Nov Day - 8 Exploring Langchain Part-3 <br>
 - Vector Stores Tutorial: Qdrant & Weaviate
