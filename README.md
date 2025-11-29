@@ -39,30 +39,81 @@ All Classes
 4. Choose optimal **chunk sizes** and **overlap**
 5. Compare splitters side-by-side
 6. Apply the right splitter for different content types
-# 🔢 Notebook 04: Embeddings and Vector Representations
+#### 🔢 Notebook 04: Embeddings and Vector Representations
 ##### 🎯 Objectives
 1. Understand what embeddings are
 2. Use OpenAI Embeddings
 3. Use Google Gemini Embeddings
 4. Compare embedding models
 5. Calculate similarity between vectors
-- Vector Stores
-    -  FAISS (Fast & Production-Ready)
-    - Chroma (Persistent & Easy)
-- Retrieval Strategies
-A Retriever is an interface that returns relevant documents for a query.
-    - Similarity Search Retriever
-    - MMR (Maximum Marginal Relevance)
-    - Custom Retriever with chain
-- 🚀 Notebook 07: Complete RAG Pipeline
-
-
+#### 🗄️ Notebook 05: Vector Stores
+## 🎯 Objectives
+1. Understand vector stores
+2. Use InMemoryVectorStore (testing)
+3. Use FAISS (production)
+4. Use Chroma (persistent)
+5. Compare vector stores
+#### 🔍 Notebook 06: Retrieval Strategies
+## 🎯 Objectives
+1. Create retrievers from vector stores
+2. Use similarity search
+3. Use MMR (diversity)
+4. Custom retrievers with @chain
+5. Compare strategies
+#### 🚀 Notebook 07: Complete RAG Pipeline
+##### 🎯 Objectives
+1. Build a complete RAG application
+2. Use LCEL to chain components
+3. Create production-ready code
+4. Handle errors properly
+5. Implement best practices
+#### 08 - External Index Retrievers 🌐
+#### 🎯 Objectives
+1. **What are External Index Retrievers** and how they differ from vector store retrievers
+2. **ArxivRetriever** - Search and retrieve scholarly articles from arxiv.org
+3. **WikipediaRetriever** - Access Wikipedia articles for general knowledge
+4. **TavilySearchAPIRetriever** - Perform real-time internet searches
+5. **Integration with RAG Chains** - Combine external retrievers with LLMs
+6. **Best Practices** - When and how to use each retriever effectively
 29 Nov Day - 8 Exploring Langchain Part-3 <br>
-- Vector Stores Tutorial: Qdrant & Weaviate
-    - 🗄️ Part 1: Qdrant Vector Store
-    - 🗄️ Part 2: Weaviate Vector Store
-- RAG Evaluation with Ragas Framework 
+#### Vector Stores Tutorial: Qdrant & Weaviate
+##### 🎯 Learning Objectives
+In this tutorial, you'll learn:
+- What vector stores are and why they're essential for RAG (Retrieval-Augmented Generation)
+- How to work with **Qdrant** (local, in-memory, and persistent storage)
+- How to work with **Weaviate** (Docker-based setup)
+- How to use **Ollama embeddings** for real semantic search
+- Metadata filtering with different vector store syntaxes
+- When to use each vector store based on your use case
 
+---
+
+#### Notebook 10: RAG Evaluation with Ragas Framework
+##### 📚 What You'll Learn
+This notebook covers the complete lifecycle of building and evaluating a production-quality RAG system:
+1. ✅ **Basic RAG Pipeline** - Document loading, chunking, embeddings, retrieval, generation
+2. ✅ **Building RAG Applications** - Prompt engineering, response formatting, handling edge cases
+3. ✅ **Evaluation and Testing** - Comprehensive evaluation with Ragas framework
+
+##### Why Evaluation Matters
+Building a RAG system is only half the battle. Without proper evaluation, you can't:
+- Know if your system is producing accurate answers
+- Compare different configuration choices
+- Identify areas for improvement
+- Ensure production-ready quality
+
+**This notebook introduces the Ragas evaluation framework** - the industry-standard tool for measuring RAG system performance.
+
+##### 🎯 Objectives
+By the end of this notebook, you will:
+- Understand the importance of RAG evaluation
+- Implement a complete RAG pipeline from scratch
+- Integrate the Ragas evaluation framework
+- Create comprehensive test datasets with ground truth
+- **Evaluate RAG systems across all 6 key non-multimodal metrics**
+- Compare multiple RAG configurations systematically
+- Visualize and interpret evaluation results
+- Apply production best practices
 30 Nov Day - 9 Exploring Langchain Part-4 <br>
 
 ## Create the virtual environment in anaconda3 folder
