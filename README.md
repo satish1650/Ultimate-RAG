@@ -31,19 +31,21 @@ All Classes
 16 Nov Day - 5 Exploring Langchain For RAG <br>
 22 Nov Day - 6 Exploring Langchain Part-1 <br>
 23 Nov Day - 7 Exploring Langchain Part-2
-### ✂️ Notebook 03: Text Splitting Strategies
-By the end of this notebook, you will:
+#### ✂️ Notebook 03: Text Splitting Strategies
+##### 🎯 Objectives
 1. Understand **why** text splitting is necessary for RAG
 2. Master **RecursiveCharacterTextSplitter** (the recommended default)
 3. Learn other splitters: Character, HTMLHeader, RecursiveJson, Token
 4. Choose optimal **chunk sizes** and **overlap**
 5. Compare splitters side-by-side
 6. Apply the right splitter for different content types
-- Embeddings and Vector Representations
-    - What are Embeddings? 🤔
-    - OpenAI Embeddings
-    - Google Gemini Embeddings
-    - Similarity Calculation
+# 🔢 Notebook 04: Embeddings and Vector Representations
+##### 🎯 Objectives
+1. Understand what embeddings are
+2. Use OpenAI Embeddings
+3. Use Google Gemini Embeddings
+4. Compare embedding models
+5. Calculate similarity between vectors
 - Vector Stores
     -  FAISS (Fast & Production-Ready)
     - Chroma (Persistent & Easy)
