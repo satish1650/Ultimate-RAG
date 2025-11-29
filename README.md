@@ -31,6 +31,12 @@ All Classes
 16 Nov Day - 5 Exploring Langchain For RAG <br>
 22 Nov Day - 6 Exploring Langchain Part-1 <br>
 23 Nov Day - 7 Exploring Langchain Part-2 <br>
+- Text Splitting Strategies
+- Embeddings and Vector Representations
+- Vector Stores
+    -  FAISS (Fast & Production-Ready)
+    - Chroma (Persistent & Easy)
+    
 29 Nov Day - 8 Exploring Langchain Part-3 <br>
 - Vector Stores Tutorial: Qdrant & Weaviate
     - 🗄️ Part 1: Qdrant Vector Store
