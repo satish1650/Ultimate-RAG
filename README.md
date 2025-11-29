@@ -74,8 +74,8 @@ All Classes
 3. **WikipediaRetriever** - Access Wikipedia articles for general knowledge
 4. **TavilySearchAPIRetriever** - Perform real-time internet searches
 5. **Integration with RAG Chains** - Combine external retrievers with LLMs
-6. **Best Practices** - When and how to use each retriever effectively
-29 Nov Day - 8 Exploring Langchain Part-3 <br>
+6. **Best Practices** - When and how to use each retriever effectively <br>
+29 Nov Day - 8 Exploring Langchain Part-3
 #### Vector Stores Tutorial: Qdrant & Weaviate
 ##### 🎯 Learning Objectives
 In this tutorial, you'll learn:
