@@ -32,11 +32,29 @@ All Classes
 22 Nov Day - 6 Exploring Langchain Part-1 <br>
 23 Nov Day - 7 Exploring Langchain Part-2 <br>
 - Text Splitting Strategies
+1. Why Split Text? 🤔
+1. RecursiveCharacterTextSplitter ⭐
+1. CharacterTextSplitter ⭐
+1. HTMLHeaderTextSplitter 🌐
+1. RecursiveJsonSplitter 📦
+1. TokenTextSplitter 🎯
+1. Chunk Size & Overlap Optimization 📊
+1. Comparison & Best Practices 🌟
+1. Summary & Exercises 📝
 - Embeddings and Vector Representations
+    - What are Embeddings?
+    - OpenAI Embeddings
+    - Google Gemini Embeddings
+    - Similarity Calculation
 - Vector Stores
     -  FAISS (Fast & Production-Ready)
     - Chroma (Persistent & Easy)
-    
+- Retrieval Strategies
+A Retriever is an interface that returns relevant documents for a query.
+    - Similarity Search Retriever
+    - MMR (Maximum Marginal Relevance)
+    - Custom Retriever with chain
+
 29 Nov Day - 8 Exploring Langchain Part-3 <br>
 - Vector Stores Tutorial: Qdrant & Weaviate
     - 🗄️ Part 1: Qdrant Vector Store
