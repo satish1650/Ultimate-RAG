@@ -29,10 +29,29 @@ All Classes
 09 Nov Day - 3 Introduction To RAG <br>
 15 Nov Day - 4 RAG Architectures & Survey <br>
 16 Nov Day - 5 Exploring Langchain For RAG <br>
-22 Nov Day - 6 Exploring Langchain Part-1 <br>
+## 22 Nov Day - 6 Exploring Langchain Part-1
+### 📁 Notebook 02: Document Loaders
+#### 🎯 Learning Objectives
+By the end of this notebook, you will be able to:
+1. Load documents from **PDF files** using PyPDFLoader
+2. Load structured data from **CSV files**
+3. Load JSON data from **API responses** or files
+4. Scrape and load content from **web pages** (HTML)
+5. Load **text files** and **markdown files**
+6. **Batch process** multiple files using DirectoryLoader
+7. Understand Document object structure
+### 🦙 Local Offline RAG with Ollama
+## 🎯 Learning Objectives
+This notebook demonstrates building a **completely offline RAG (Retrieval-Augmented Generation)** system using **Ollama** for local LLMs and embeddings.
+### 🚀 Benefits of Local RAG:
+- **100% Offline**: No internet required after setup
+- **Privacy First**: Your documents never leave your machine
+- **No API Costs**: Free to run unlimited queries
+- **Fast**: No network latency
+- **Full Control**: Customize models and parameters
 ## 23 Nov Day - 7 Exploring Langchain Part-2
 ### ✂️ Notebook 03: Text Splitting Strategies
-#### 🎯 Objectives
+#### 🎯 Learning Objectives
 1. Understand **why** text splitting is necessary for RAG
 2. Master **RecursiveCharacterTextSplitter** (the recommended default)
 3. Learn other splitters: Character, HTMLHeader, RecursiveJson, Token
@@ -40,35 +59,35 @@ All Classes
 5. Compare splitters side-by-side
 6. Apply the right splitter for different content types
 ### 🔢 Notebook 04: Embeddings and Vector Representations
-#### 🎯 Objectives
+#### 🎯 Learning Objectives
 1. Understand what embeddings are
 2. Use OpenAI Embeddings
 3. Use Google Gemini Embeddings
 4. Compare embedding models
 5. Calculate similarity between vectors
 ### 🗄️ Notebook 05: Vector Stores
-#### 🎯 Objectives
+#### 🎯 Learning Objectives
 1. Understand vector stores
 2. Use InMemoryVectorStore (testing)
 3. Use FAISS (production)
 4. Use Chroma (persistent)
 5. Compare vector stores
 ### 🔍 Notebook 06: Retrieval Strategies
-#### 🎯 Objectives
+#### 🎯 Learning Objectives
 1. Create retrievers from vector stores
 2. Use similarity search
 3. Use MMR (diversity)
 4. Custom retrievers with @chain
 5. Compare strategies
 ### 🚀 Notebook 07: Complete RAG Pipeline
-#### 🎯 Objectives
+#### 🎯 Learning Objectives
 1. Build a complete RAG application
 2. Use LCEL to chain components
 3. Create production-ready code
 4. Handle errors properly
 5. Implement best practices
 ### 08 - External Index Retrievers 🌐
-#### 🎯 Objectives
+#### 🎯 Learning Objectives
 1. **What are External Index Retrievers** and how they differ from vector store retrievers
 2. **ArxivRetriever** - Search and retrieve scholarly articles from arxiv.org
 3. **WikipediaRetriever** - Access Wikipedia articles for general knowledge
@@ -93,7 +112,7 @@ Building a RAG system is only half the battle. Without proper evaluation, you ca
 
 **This notebook introduces the Ragas evaluation framework** - the industry-standard tool for measuring RAG system performance.
 
-#### 🎯 Objectives
+#### 🎯 Learning Objectives
 By the end of this notebook, you will:
 - Understand the importance of RAG evaluation
 - Implement a complete RAG pipeline from scratch
