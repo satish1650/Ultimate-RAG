@@ -31,7 +31,7 @@ All Classes
 16 Nov Day - 5 Exploring Langchain For RAG <br>
 22 Nov Day - 6 Exploring Langchain Part-1 <br>
 23 Nov Day - 7 Exploring Langchain Part-2
-# ✂️ Notebook 03: Text Splitting Strategies
+#### ✂️ Notebook 03: Text Splitting Strategies
 By the end of this notebook, you will:
 1. Understand **why** text splitting is necessary for RAG
 2. Master **RecursiveCharacterTextSplitter** (the recommended default)
