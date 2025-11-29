@@ -41,9 +41,9 @@ By the end of this notebook, you will be able to:
 6. **Batch process** multiple files using DirectoryLoader
 7. Understand Document object structure
 ### 🦙 Local Offline RAG with Ollama
-## 🎯 Learning Objectives
+#### 🎯 Learning Objectives
 This notebook demonstrates building a **completely offline RAG (Retrieval-Augmented Generation)** system using **Ollama** for local LLMs and embeddings.
-### 🚀 Benefits of Local RAG:
+#### 🚀 Benefits of Local RAG:
 - **100% Offline**: No internet required after setup
 - **Privacy First**: Your documents never leave your machine
 - **No API Costs**: Free to run unlimited queries
