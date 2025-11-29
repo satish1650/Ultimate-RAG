@@ -30,7 +30,7 @@ All Classes
 15 Nov Day - 4 RAG Architectures & Survey <br>
 16 Nov Day - 5 Exploring Langchain For RAG <br>
 22 Nov Day - 6 Exploring Langchain Part-1 <br>
-### 23 Nov Day - 7 Exploring Langchain Part-2
+## 23 Nov Day - 7 Exploring Langchain Part-2
 #### ✂️ Notebook 03: Text Splitting Strategies
 ##### 🎯 Objectives
 1. Understand **why** text splitting is necessary for RAG
@@ -76,7 +76,7 @@ All Classes
 5. **Integration with RAG Chains** - Combine external retrievers with LLMs
 6. **Best Practices** - When and how to use each retriever effectively
 
-### 29 Nov Day - 8 Exploring Langchain Part-3
+## 29 Nov Day - 8 Exploring Langchain Part-3
 #### Vector Stores Tutorial: Qdrant & Weaviate
 ##### 🎯 Learning Objectives
 In this tutorial, you'll learn:
