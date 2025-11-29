@@ -35,7 +35,7 @@ All Classes
 - Vector Stores Tutorial: Qdrant & Weaviate
     - 🗄️ Part 1: Qdrant Vector Store
     - 🗄️ Part 2: Weaviate Vector Store
-- RAG Evaluation with Ragas Framework
+- RAG Evaluation with Ragas Framework <br>
 30 Nov Day - 9 Exploring Langchain Part-4 <br>
 
 ## Create the virtual environment in anaconda3 folder
