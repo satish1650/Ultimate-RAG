@@ -31,16 +31,14 @@ All Classes
 16 Nov Day - 5 Exploring Langchain For RAG <br>
 22 Nov Day - 6 Exploring Langchain Part-1 <br>
 23 Nov Day - 7 Exploring Langchain Part-2
-- Text Splitting Strategies
-    - Why Split Text? 🤔
-    - RecursiveCharacterTextSplitter ⭐
-    - CharacterTextSplitter ⭐
-    - HTMLHeaderTextSplitter 🌐
-    - RecursiveJsonSplitter 📦
-    - TokenTextSplitter 🎯
-    - Chunk Size & Overlap Optimization 📊
-    - Comparison & Best Practices 🌟
-    - Summary & Exercises 📝
+- ✂️ Notebook 03: Text Splitting Strategies
+By the end of this notebook, you will:
+    1. Understand **why** text splitting is necessary for RAG
+    2. Master **RecursiveCharacterTextSplitter** (the recommended default)
+    3. Learn other splitters: Character, HTMLHeader, RecursiveJson, Token
+    4. Choose optimal **chunk sizes** and **overlap**
+    5. Compare splitters side-by-side
+    6. Apply the right splitter for different content types
 - Embeddings and Vector Representations
     - What are Embeddings? 🤔
     - OpenAI Embeddings
