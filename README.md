@@ -47,14 +47,14 @@ All Classes
 4. Compare embedding models
 5. Calculate similarity between vectors
 #### 🗄️ Notebook 05: Vector Stores
-## 🎯 Objectives
+##### 🎯 Objectives
 1. Understand vector stores
 2. Use InMemoryVectorStore (testing)
 3. Use FAISS (production)
 4. Use Chroma (persistent)
 5. Compare vector stores
 #### 🔍 Notebook 06: Retrieval Strategies
-## 🎯 Objectives
+##### 🎯 Objectives
 1. Create retrievers from vector stores
 2. Use similarity search
 3. Use MMR (diversity)
@@ -85,8 +85,6 @@ In this tutorial, you'll learn:
 - How to use **Ollama embeddings** for real semantic search
 - Metadata filtering with different vector store syntaxes
 - When to use each vector store based on your use case
-
----
 
 #### Notebook 10: RAG Evaluation with Ragas Framework
 ##### 📚 What You'll Learn
