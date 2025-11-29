@@ -22,13 +22,12 @@ Learning Objectives <br>
 ✅ Smart code review with MCP servers <br>
 ✅ Agentic workflows with ReAct <br>
 
-All Classes
----
-02 Nov Day - 1 Induction Session <br>
-08 Nov Day - 2 Tools And Installation <br>
-09 Nov Day - 3 Introduction To RAG <br>
-15 Nov Day - 4 RAG Architectures & Survey <br>
-16 Nov Day - 5 Exploring Langchain For RAG <br>
+# All Classes
+## 02 Nov Day - 1 Induction Session <br>
+## 08 Nov Day - 2 Tools And Installation <br>
+## 09 Nov Day - 3 Introduction To RAG <br>
+## 15 Nov Day - 4 RAG Architectures & Survey <br>
+## 16 Nov Day - 5 Exploring Langchain For RAG <br>
 ## 22 Nov Day - 6 Exploring Langchain Part-1
 ### 📁 Notebook 02: Document Loaders
 #### 🎯 Learning Objectives
