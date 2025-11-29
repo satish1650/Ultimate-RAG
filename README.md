@@ -32,10 +32,10 @@ All Classes
 22 Nov Day - 6 Exploring Langchain Part-1 <br>
 23 Nov Day - 7 Exploring Langchain Part-2 <br>
 29 Nov Day - 8 Exploring Langchain Part-3 <br>
-    - Vector Stores Tutorial: Qdrant & Weaviate <br>
-        - 🗄️ Part 1: Qdrant Vector Store <br>
-        - 🗄️ Part 2: Weaviate Vector Store <br>
-    - RAG Evaluation with Ragas Framework <br>
+- Vector Stores Tutorial: Qdrant & Weaviate <br>
+- 🗄️ Part 1: Qdrant Vector Store <br>
+- 🗄️ Part 2: Weaviate Vector Store <br>
+- RAG Evaluation with Ragas Framework <br>
 30 Nov Day - 9 Exploring Langchain Part-4 <br>
 
 ## Create the virtual environment in anaconda3 folder
