@@ -22,7 +22,8 @@ Learning Objectives <br>
 ✅ Smart code review with MCP servers <br>
 ✅ Agentic workflows with ReAct <br>
 
-# All Classes
+# Ultimate RAG Course
+This course is designed to provide students with a foundational, depth and practical understanding of RAG and Agents.
 ## 02 Nov Day - 1 Induction Session <br>
 ## 08 Nov Day - 2 Tools And Installation <br>
 ## 09 Nov Day - 3 Introduction To RAG <br>
