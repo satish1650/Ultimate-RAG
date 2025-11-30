@@ -78,7 +78,7 @@ This course is designed to provide students with a foundational, depth and pract
     - Warp Terminal
 
 ## 09 Nov Day - 3 Introduction To RAG <br>
-### Introduction to RAG
+### 📚🔎🧠 Introduction to RAG
 - RAG: Retrieval-Augmented Generation for Knowledge-Intensive NLP
     - Core Innovation
     - How It Works
@@ -91,8 +91,40 @@ This course is designed to provide students with a foundational, depth and pract
     - Transformers → https://jalammar.github.io/illustrated-transformer/
     - Udemy NLP Course → https://www.udemy.com/course/complete-machine-learning-nlp-bootcamp-mlops-deployment/?couponCode=ACCAGE0923
     - Transformer Explainer → https://www.youtube.com/watch?v=csWluHwfsB8
-    
+
 ## 15 Nov Day - 4 RAG Architectures & Survey <br>
+### 📚🔎🧠 RAG Detailed Survey
+#### Retrieval-Augmented Generation for Large Language Models: A Survey
+- Key Contributions
+    - Three RAG Paradigms
+    -  Core Components Analysis
+    - Comprehensive Evaluation Framework
+- Key Insights
+    - RAG Challenges
+    - RAG vs. Fine-tuning
+    - Future Directions
+- Practical Value
+- Research Papers
+    1. Pre-training (Orange/Yellow Branch - Left)
+    2. Fine-tuning (Green Branch - Center)
+    3.  Inference (Dark Blue/Teal Branch - Right)
+- Three RAG Paradigms
+    1. Naive RAG (Left - Blue)
+    2. Advanced RAG (Middle - Orange)
+    3. Modular RAG (Right - Blue/Orange)
+- Evolution Timeline
+- Practical Examples
+    - Naive RAG
+    - Advanced RAG
+    - Modular RAG
+    - Iterative RAG
+    - Recursive RAG
+    - Adaptive RAG
+- When to Use Each
+    - Use Iterative when
+    - Use Recursive when
+    - Use Adaptive when
+
 ## 16 Nov Day - 5 Exploring Langchain For RAG <br>
 ## 22 Nov Day - 6 Exploring Langchain Part-1
 ### 📁 Notebook 02: Document Loaders
