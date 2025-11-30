@@ -126,6 +126,36 @@ This course is designed to provide students with a foundational, depth and pract
     - Use Adaptive when
 
 ## 16 Nov Day - 5 Exploring Langchain For RAG <br>
+### Exploring Langchain
+- Updated Requirements.txt
+- LLM Selection OPENAI or GEMINI
+- Google Gemini Embeddings
+- 🎯 Maximum Marginal Relevance (MMR)
+    - How MMR Works
+    - MMR vs Cosine Similarity
+    - MMR would return
+#### 📋 All LangChain Vector Store Search Types
+1. Similarity Search (Default)
+1. MMR (Maximum Marginal Relevance)
+1. Similarity Score Threshold
+1. Metadata Filtering
+#### 📝Assignment
+##### 🚀Building a Hybrid Retriever System
+You are tasked with building a **Study Assistant** naive rag system that helps students learn about a technical topic (e.g., Machine Learning, Python Programming, or Data Science).
+
+The challenge: Students often need both **specific course material** (lecture notes, textbook excerpts) and **general background knowledge** (definitions, historical context, broader concepts).
+
+💿Dataset
+- Build your own dataset with multiple file formats including PDFS, HTML, TXT Files.
+- Create 5-7 sample documents on a topic of your choice
+
+***Choose any embedding model, any LLM, or any vector database of your choice***
+
+**Your solution should:**
+- Use a vector store to search through local study materials
+- Use an external retriever (Wikipedia) to provide general knowledge
+- Combine both sources intelligently to give comprehensive answers
+
 ## 22 Nov Day - 6 Exploring Langchain Part-1
 ### 📁 Notebook 02: Document Loaders
 #### 🎯 Learning Objectives
@@ -259,3 +289,5 @@ Resources
 [Ultimate RAG Course 👉 Software Checklist](https://krishnaikacademy.notion.site/Software-Checklist-2a5eba9593d08048927ed6fbd00f502d) <br>
 
 [Ultimate RAG Course 👉 Class Notes & Additional Materials](https://krishnaikacademy.notion.site/Ultimate-RAG-Course-2a5eba9593d08085ade8ceb2a6c6c8de) <br>
+
+[Ultimate RAG Document Hub 👉 Class Notes](https://krishnaikacademy.notion.site/ultimateragcourse?v=2a5eba9593d080a885b6000c6a7b8358) <br>
