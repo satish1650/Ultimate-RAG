@@ -22,10 +22,25 @@ Learning Objectives <br>
 ✅ Smart code review with MCP servers <br>
 ✅ Agentic workflows with ReAct <br>
 
-# Ultimate RAG Course
+# 📚 Learning Topics Related to Ultimate RAG Course
 This course is designed to provide students with a foundational, depth and practical understanding of RAG and Agents.
 ## 02 Nov Day - 1 Induction Session <br>
+- 📝 Agenda of Ultimate RAG course
+- ⏱️ Timeline to complete the course
+- 🎯 Objectives
+- 📚 Learning Topics of Ultimate RAG course
+- 💬 Q&A
+
 ## 08 Nov Day - 2 Tools And Installation <br>
+- General Software Checklist
+    - [ ]  Python Distribution
+    - [ ]  IDE
+    - [ ]  GIT ——> GIT BASH
+    - [ ]  DOCKER
+    - [ ]  POSTMAN (Optional)
+    - [ ]  WARP (Optional)
+    - [ ]  AWS CLI
+    
 ## 09 Nov Day - 3 Introduction To RAG <br>
 ## 15 Nov Day - 4 RAG Architectures & Survey <br>
 ## 16 Nov Day - 5 Exploring Langchain For RAG <br>
