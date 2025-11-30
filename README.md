@@ -78,6 +78,20 @@ This course is designed to provide students with a foundational, depth and pract
     - Warp Terminal
 
 ## 09 Nov Day - 3 Introduction To RAG <br>
+### Introduction to RAG
+- RAG: Retrieval-Augmented Generation for Knowledge-Intensive NLP
+    - Core Innovation
+    - How It Works
+    - Key Results
+    - Advantages
+    - RAG Architecture
+- Additional Study Materials
+    - NLP Book → https://web.stanford.edu/~jurafsky/slp3/
+    - Seq2Seq Model → https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/
+    - Transformers → https://jalammar.github.io/illustrated-transformer/
+    - Udemy NLP Course → https://www.udemy.com/course/complete-machine-learning-nlp-bootcamp-mlops-deployment/?couponCode=ACCAGE0923
+    - Transformer Explainer → https://www.youtube.com/watch?v=csWluHwfsB8
+    
 ## 15 Nov Day - 4 RAG Architectures & Survey <br>
 ## 16 Nov Day - 5 Exploring Langchain For RAG <br>
 ## 22 Nov Day - 6 Exploring Langchain Part-1
