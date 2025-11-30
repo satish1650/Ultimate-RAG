@@ -32,15 +32,51 @@ This course is designed to provide students with a foundational, depth and pract
 - 💬 Q&A
 
 ## 08 Nov Day - 2 Tools And Installation <br>
-- General Software Checklist
-    - [ ]  Python Distribution
-    - [ ]  IDE
-    - [ ]  GIT ——> GIT BASH
-    - [ ]  DOCKER
-    - [ ]  POSTMAN (Optional)
-    - [ ]  WARP (Optional)
-    - [ ]  AWS CLI
-    
+### General Software Checklist
+- [ ]  Python Distribution
+- [ ]  IDE
+- [ ]  GIT ——> GIT BASH
+- [ ]  DOCKER
+- [ ]  POSTMAN (Optional)
+- [ ]  WARP (Optional)
+- [ ]  AWS CLI
+### Python Distributions(Any One)
+- [ ] Anaconda (Majorly we will use in this course)
+- [ ] Python
+### Package Managers(Any One)
+- [ ]  Conda (*Rarely*)
+- [ ]  pip (*Majorly we will use in this course*)
+- [ ]  uv (*Optional*)
+### Local IDE or Text Editor(Any One)
+- [ ]  VSCODE (*Majorly we will use in this course*)
+- [ ]  CURSOR *PAID*
+- [ ]  WINDSURF *PAID*
+- [ ]  TRAE
+- [ ]  PYCHARM Community or Professional
+- [ ]  KIRO
+### OPTIONAL : Browser based Online IDE
+- [ ]  Lightning.ai
+- [ ]  Replit
+- [ ]  Firebase Studio
+### Working with virtual environment
+- [ ]  venv
+- [ ]  conda
+- [ ]  uv
+### Version Control System
+- [ ]  GIT (*Always we use in the course*)
+- [ ]  Github Desktop (*Optional)*
+### Extra Tools
+- [ ] Markdown
+    - [ ] Markdown Basics
+- [ ] Docker
+    - [ ] Docker Basics
+- [ ] Cloud CLI
+    - [ ] AWS CLI
+    - [ ] GCP CLI
+- [ ] API Tool
+    - [ ] Postman
+    - [ ] Warp Terminal
+
 ## 09 Nov Day - 3 Introduction To RAG <br>
 ## 15 Nov Day - 4 RAG Architectures & Survey <br>
 ## 16 Nov Day - 5 Exploring Langchain For RAG <br>
