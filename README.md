@@ -96,6 +96,16 @@ This notebook demonstrates building a **completely offline RAG (Retrieval-Augmen
 6. **Best Practices** - When and how to use each retriever effectively
 
 ## 29 Nov Day - 8 Exploring Langchain Part-3
+### Vector Stores Tutorial: Qdrant & Weaviate
+#### 🎯 Learning Objectives
+In this tutorial, you'll learn:
+- What vector stores are and why they're essential for RAG (Retrieval-Augmented Generation)
+- How to work with **Qdrant** (local, in-memory, and persistent storage)
+- How to work with **Weaviate** (Docker-based setup)
+- How to use **Ollama embeddings** for real semantic search
+- Metadata filtering with different vector store syntaxes
+- When to use each vector store based on your use case
+
 ### Notebook 10: RAG Evaluation with Ragas Framework
 #### 📚 What You'll Learn
 This notebook covers the complete lifecycle of building and evaluating a production-quality RAG system:
@@ -122,16 +132,6 @@ By the end of this notebook, you will:
 - Compare multiple RAG configurations systematically
 - Visualize and interpret evaluation results
 - Apply production best practices
-
-### Vector Stores Tutorial: Qdrant & Weaviate
-#### 🎯 Learning Objectives
-In this tutorial, you'll learn:
-- What vector stores are and why they're essential for RAG (Retrieval-Augmented Generation)
-- How to work with **Qdrant** (local, in-memory, and persistent storage)
-- How to work with **Weaviate** (Docker-based setup)
-- How to use **Ollama embeddings** for real semantic search
-- Metadata filtering with different vector store syntaxes
-- When to use each vector store based on your use case
 
 ### 30 Nov Day - 9 Exploring Langchain Part-4 <br>
 
