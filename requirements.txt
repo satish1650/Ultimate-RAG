@@ -46,6 +46,28 @@ chromadb
 # Pinecone (optional - cloud vector store)
 # langchain-pinecone==0.3.5
 # pinecone-client==5.0.2
+# ============================================================================
+# INSTALLATION INSTRUCTIONS
+# ============================================================================
+# For Qdrant:
+#   pip install langchain-qdrant qdrant-client
+langchain-qdrant
+qdrant-client
+#
+# For Weaviate:
+#   pip install langchain-weaviate weaviate-client
+weaviate
+langchain-weaviate 
+weaviate-client
+#
+# For Ollama (for real embeddings):
+#   pip install langchain-ollama
+#
+# For local Weaviate, you need Docker:
+#   docker run -d -p 8080:8080 -p 50051:50051 \
+#     --name weaviate \
+#     cr.weaviate.io/semitechnologies/weaviate:latest
+# ============================================================================
 
 # ============================================================================
 # DOCUMENT LOADERS
@@ -76,6 +98,27 @@ ipykernel
 
 # Numpy (required for similarity calculations)
 numpy
+
+# Matplotlib (required for visualizations)
+matplotlib
+
+# ============================================================================
+# RAG EVALUATION (required for Notebook 10)
+# ============================================================================
+# Ragas Framework (RAG evaluation)
+ragas==0.3.9
+
+# HuggingFace Datasets (required by Ragas)
+datasets>=2.14.0
+
+# Seaborn (enhanced visualizations)
+seaborn>=0.12.0
+
+# Pandas (data analysis)
+pandas
+
+# OPIK (optional - experiment tracking and observability)
+opik
 
 # ============================================================================
 # DEVELOPMENT & TESTING (optional)
@@ -109,27 +152,4 @@ numpy
 #   - For GPU support with FAISS, use: pip install faiss-gpu
 #   - Some packages may require additional system dependencies
 #
-# ============================================================================
-
-# ============================================================================
-# INSTALLATION INSTRUCTIONS
-# ============================================================================
-# For Qdrant:
-#   pip install langchain-qdrant qdrant-client
-langchain-qdrant
-qdrant-client
-#
-# For Weaviate:
-#   pip install langchain-weaviate weaviate-client
-weaviate
-langchain-weaviate 
-weaviate-client
-#
-# For Ollama (for real embeddings):
-#   pip install langchain-ollama
-#
-# For local Weaviate, you need Docker:
-#   docker run -d -p 8080:8080 -p 50051:50051 \
-#     --name weaviate \
-#     cr.weaviate.io/semitechnologies/weaviate:latest
 # ============================================================================
