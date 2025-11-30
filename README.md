@@ -67,7 +67,7 @@ This course is designed to provide students with a foundational, depth and pract
 - [ ]  Github Desktop (*Optional)*
 ### Extra Tools
 - [ ] Markdown
-    - [ ] Markdown Basics
+    - Markdown Basics
 - [ ] Docker
     - [ ] Docker Basics
 - [ ] Cloud CLI
