@@ -260,7 +260,15 @@ By the end of this notebook, you will:
 - Visualize and interpret evaluation results
 - Apply production best practices
 
-### 30 Nov Day - 9 Exploring Langchain Part-4 <br>
+## 30 Nov Day - 9 Exploring Langchain Part-4 <br>
+### 📊 Notebook 12: RAGAS Metrics Deep Dive
+**Understanding How RAG Evaluation Metrics Work Internally**
+## 🎯 Learning Objectives
+By the end of this notebook, you will:
+1. **Understand the internal calculation process** for each of the 6 core RAGAS metrics
+2. **See intermediate outputs** like extracted claims, generated questions, and identified entities
+3. **Learn to interpret scores with confidence** using threshold guidelines
+4. **Debug evaluation issues** by understanding what each metric actually measures
 
 ## Create the virtual environment in anaconda3 folder
 ```
