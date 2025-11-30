@@ -109,3 +109,13 @@ semitechnologies/weaviate
 https://hub.docker.com/r/semitechnologies/weaviate
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+29 Nov Day - 8 Exploring Langchain Part-3 
+*****************************************
+Code Download Link :- https://krishnaikacademy.notion.site/Exploring-Langchain-2adeba9593d080a9ba65f36aba9e283e
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+30 Nov Day - 9 Exploring Langchain Part-4 
+*****************************************
+Code Download Link :- https://krishnaikacademy.notion.site/Exploring-Langchain-2adeba9593d080a9ba65f36aba9e283e
+
+ragas==0.3.7
