@@ -69,13 +69,13 @@ This course is designed to provide students with a foundational, depth and pract
 - [ ] Markdown
     - Markdown Basics
 - [ ] Docker
-    - [ ] Docker Basics
+    - Docker Basics
 - [ ] Cloud CLI
-    - [ ] AWS CLI
-    - [ ] GCP CLI
+    - AWS CLI
+    - GCP CLI
 - [ ] API Tool
-    - [ ] Postman
-    - [ ] Warp Terminal
+    - Postman
+    - Warp Terminal
 
 ## 09 Nov Day - 3 Introduction To RAG <br>
 ## 15 Nov Day - 4 RAG Architectures & Survey <br>
