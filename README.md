@@ -134,13 +134,13 @@ This course is designed to provide students with a foundational, depth and pract
     - How MMR Works
     - MMR vs Cosine Similarity
     - MMR would return
-#### 📋 All LangChain Vector Store Search Types
+### 📋 All LangChain Vector Store Search Types
 1. Similarity Search (Default)
 1. MMR (Maximum Marginal Relevance)
 1. Similarity Score Threshold
 1. Metadata Filtering
-#### 📝Assignment
-##### 🚀Building a Hybrid Retriever System
+### 📝Assignment
+#### 🚀Building a Hybrid Retriever System
 You are tasked with building a **Study Assistant** naive rag system that helps students learn about a technical topic (e.g., Machine Learning, Python Programming, or Data Science).
 
 The challenge: Students often need both **specific course material** (lecture notes, textbook excerpts) and **general background knowledge** (definitions, historical context, broader concepts).
