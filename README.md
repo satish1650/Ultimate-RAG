@@ -270,6 +270,12 @@ By the end of this notebook, you will:
 3. **Learn to interpret scores with confidence** using threshold guidelines
 4. **Debug evaluation issues** by understanding what each metric actually measures
 
+## 04 Dec Day - 10 Exploring RAGAS and LLM as Judge
+
+## 06 Dec Day - 11 Document Parsers for RAG (Docling) Part-1 
+
+## 07 Dec Day - 12 Document Parsers for RAG (Unstructured) Part-2 
+
 ## Create the virtual environment in anaconda3 folder
 ```
 conda create -n venv_ur_name python==3.12 -y
