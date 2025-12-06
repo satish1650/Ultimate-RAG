@@ -1,12 +1,12 @@
 ========================================================================================================================================================================================================================
-															Ultimate RAG - Complete Class Notes
+																	Ultimate RAG - Complete Class Notes
 ========================================================================================================================================================================================================================
 02 Nov Day - 1 Induction Session
 ********************************
 Ultimate RAG Bootcamp: Building Traditional to Agentic Systems with Cloud Deployment:
 https://learn.krishnaikacademy.com/web/checkout/68bbbf371263fba553cd0492
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 08 Nov Day - 2 Tools And Installation
 *************************************
 Class Notes :- https://krishnaikacademy.notion.site/Software-Checklist-2a5eba9593d08048927ed6fbd00f502d?pvs=143
@@ -64,7 +64,7 @@ https://www.producthunt.com/products/xenodocs-2
 Speech and Natural Language Processing (NLP Book)
 https://web.stanford.edu/~jurafsky/slp3/
 
-Paper discussed :- [arxiv.org](https://arxiv.org/pdf/2005.11401) 2005.11401v4.pdf
+Paper discussed :- arxiv.org 👉 https://arxiv.org/pdf/2005.11401 👉 2005.11401v4.pdf
 Discussed Jupter Notebook -> Introduction To RAG.ipynb
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -157,8 +157,8 @@ Discussed below Jupter Notebook :-
 11_RAG_Evaluation_with_LLM_Judge.ipynb
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-06 Dec Day - 11 Document Parsers for RAG (Docling) Part-1  
-*********************************************************
+06 Dec Day - 11 Document Parsers for RAG Part-1  
+***********************************************
 Docling Documentation
 https://docling-project.github.io/docling/
 
@@ -174,8 +174,8 @@ https://docs.langchain.com/oss/python/integrations/document_loaders/docling
 Discussed Jupter Notebook -> docling_document_parsing.ipynb
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-07 Dec Day - 12 Document Parsers for RAG (Unstructured) Part-2
-**************************************************************
+07 Dec Day - 12 Document Parsers for RAG Part-2
+***********************************************
 Discussed Jupter Notebook -> unstructured_document_parsing.ipynb
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
