@@ -272,9 +272,9 @@ By the end of this notebook, you will:
 
 ## 04 Dec Day - 10 Exploring RAGAS and LLM as Judge
 
-## 06 Dec Day - 11 Document Parsers for RAG (Docling) Part-1 
+## 06 Dec Day - 11 Document Parsers for RAG Part-1 
 
-## 07 Dec Day - 12 Document Parsers for RAG (Unstructured) Part-2 
+## 07 Dec Day - 12 Document Parsers for RAG Part-2 
 
 ## Create the virtual environment in anaconda3 folder
 ```
