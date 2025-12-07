@@ -96,6 +96,8 @@ This course is designed to provide students with a foundational, depth and pract
     - Udemy NLP Course → https://www.udemy.com/course/complete-machine-learning-nlp-bootcamp-mlops-deployment/?couponCode=ACCAGE0923
     - Transformer Explainer → https://www.youtube.com/watch?v=csWluHwfsB8
 
+### `Explained This Research Paper in breif` 👉 https://arxiv.org/pdf/2005.11401
+
 ## 15 Nov Day - 4 RAG Architectures & Survey <br>
 ### 📚🔎🧠 RAG Detailed Survey
 #### Retrieval-Augmented Generation for Large Language Models: A Survey
@@ -130,6 +132,8 @@ This course is designed to provide students with a foundational, depth and pract
     - Use Iterative when
     - Use Recursive when
     - Use Adaptive when
+
+### `Explained This Research Paper in breif` 👉 https://arxiv.org/pdf/2312.10997
 
 ## 16 Nov Day - 5 Exploring Langchain For RAG <br>
 ### Exploring Langchain
