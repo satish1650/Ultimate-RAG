@@ -25,6 +25,8 @@ Learning Objectives <br>
 # 📚 Learning Topics Related to Ultimate RAG Course
 This course is designed to provide students with a foundational, depth and practical understanding of RAG and Agents.
 ## 02 Nov Day - 1 Induction Session <br>
+### Induction Session Regarding Ultimate RAG Course
+#### 🎯 Learning Objectives
 - 📝 Agenda of Ultimate RAG course
 - ⏱️ Timeline to complete the course
 - 🎯 Objectives
@@ -33,6 +35,7 @@ This course is designed to provide students with a foundational, depth and pract
 
 ## 08 Nov Day - 2 Tools And Installation <br>
 ### General Software Checklist
+#### 🎯 Learning Objectives
 - [ ]  Python Distribution
 - [ ]  IDE
 - [ ]  GIT ——> GIT BASH
@@ -79,6 +82,7 @@ This course is designed to provide students with a foundational, depth and pract
 
 ## 09 Nov Day - 3 Introduction To RAG <br>
 ### 📚🔎🧠 Introduction to RAG
+#### 🎯 Learning Objectives
 - RAG: Retrieval-Augmented Generation for Knowledge-Intensive NLP
     - Core Innovation
     - How It Works
