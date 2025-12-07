@@ -1,0 +1,84 @@
+# Document Parsers for RAG - Requirements
+# Python 3.10-3.12 recommended
+
+# =============================================================================
+# Core Dependencies (all notebooks)
+# =============================================================================
+python-dotenv>=1.0.0
+openai>=1.0.0
+chromadb>=0.4.0
+
+# =============================================================================
+# Docling (docling_document_parsing.ipynb)
+# =============================================================================
+docling==2.55.1
+docling-core[chunking]>=2.0.0
+langchain-docling>=0.1.0
+
+# Docling optional extras (uncomment as needed):
+# pip install 'docling[easyocr]'    # For EasyOCR support
+# pip install 'docling[vlm]'        # For Vision-Language Models
+# pip install 'docling[asr]'        # For Audio transcription
+# pip install 'docling[tesserocr]'  # For Tesseract OCR
+# pip install 'docling[ocrmac]'     # For macOS native OCR
+
+# =============================================================================
+# Unstructured (unstructured_document_parsing.ipynb)
+# =============================================================================
+unstructured==0.18.15
+langchain-unstructured>=0.1.0
+
+# Unstructured extras for file format support:
+# Install with: pip install "unstructured[pdf,docx,xlsx,pptx,html,md,image,email]"
+# Or install all: pip install "unstructured[all-docs]"
+
+# =============================================================================
+# LlamaParse (llamaparse_document_parsing_part1/2.ipynb)
+# =============================================================================
+llama-parse==0.6.77
+llama-index>=0.10.0
+llama-cloud-services>=0.1.0
+llama-index-vector-stores-chroma>=0.1.0
+llama-index-embeddings-openai>=0.1.0
+llama-index-llms-openai>=0.1.0
+nest-asyncio>=1.5.0
+
+# =============================================================================
+# LangChain (shared across notebooks)
+# =============================================================================
+langchain>=0.2.0
+langchain-community>=0.2.0
+langchain-openai>=0.1.0
+
+# =============================================================================
+# ML/NLP Libraries
+# =============================================================================
+transformers>=4.30.0
+sentence-transformers>=2.2.0
+
+# =============================================================================
+# Data Processing
+# =============================================================================
+pandas>=2.0.0
+openpyxl>=3.1.0
+
+# =============================================================================
+# Document Format Support (for sample file creation)
+# =============================================================================
+python-docx>=1.0.0
+python-pptx>=0.6.21
+Pillow>=10.0.0
+
+# =============================================================================
+# Vectorize.io (vectorize_document_parsing_part1/2.ipynb)
+# =============================================================================
+vectorize-client>=0.1.0
+
+# Optional: Pinecone for Vectorize pipeline integration
+# pinecone-client>=3.0.0
+
+# =============================================================================
+# Optional: For hi_res PDF processing in Unstructured
+# =============================================================================
+# pip install "unstructured[local-inference]"
+# Note: Requires system Tesseract installation for OCR
