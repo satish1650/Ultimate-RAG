@@ -159,7 +159,7 @@ The challenge: Students often need both **specific course material** (lecture no
 ## 22 Nov Day - 6 Exploring Langchain Part-1
 ### 📁 Notebook 02: Document Loaders
 #### 🎯 Learning Objectives
-By the end of this notebook, you will be able to:
+📚 By the end of this notebook, you will be able to:
 1. Load documents from **PDF files** using PyPDFLoader
 2. Load structured data from **CSV files**
 3. Load JSON data from **API responses** or files
@@ -250,7 +250,7 @@ Building a RAG system is only half the battle. Without proper evaluation, you ca
 **This notebook introduces the Ragas evaluation framework** - the industry-standard tool for measuring RAG system performance.
 
 #### 🎯 Learning Objectives
-By the end of this notebook, you will:
+📚 By the end of this notebook, you will Learn:
 - Understand the importance of RAG evaluation
 - Implement a complete RAG pipeline from scratch
 - Integrate the Ragas evaluation framework
@@ -264,7 +264,7 @@ By the end of this notebook, you will:
 ### 📊 Notebook 12: RAGAS Metrics Deep Dive
 **Understanding How RAG Evaluation Metrics Work Internally**
 #### 🎯 Learning Objectives
-By the end of this notebook, you will:
+By the end of this notebook, you will Learn:
 1. **Understand the internal calculation process** for each of the 6 core RAGAS metrics
 2. **See intermediate outputs** like extracted claims, generated questions, and identified entities
 3. **Learn to interpret scores with confidence** using threshold guidelines
@@ -274,7 +274,7 @@ By the end of this notebook, you will:
 ### Notebook 11: RAG Evaluation with LLM-as-Judge
 **Module 3: RAG Evaluation Techniques**
 #### 🎯 Learning Objectives
-By completing this notebook, you will:
+📚 By completing this notebook, you will Learn:
 - Understand the **LLM-as-Judge evaluation methodology**
 - Learn when to use LLM-as-Judge vs automated frameworks like Ragas
 - Implement a **complete RAG pipeline** (same as Notebook 10)
@@ -287,8 +287,24 @@ By completing this notebook, you will:
 - Understand **cost and performance trade-offs**
 
 ## 06 Dec Day - 11 Document Parsers for RAG Part-1 
+### 3.1 Document Parsing with Docling for RAG Systems
+#### 🎯 Learning Objectives
+📚 By completing this notebook, you will Learn:
+1. **Basic Document Conversion** - Convert PDFs and other formats to Markdown, JSON, HTML
+2. **Multiple File Formats** - PDF, DOCX, XLSX, PPTX, HTML, Markdown, Images, Audio
+3. **Pipeline Configuration** - OCR engines, table extraction, layout analysis, VLM
+4. **LangChain Integration** - DoclingLoader and RAG pipeline with Chroma
+5. **Advanced Topics** - Enrichment, error handling
 
 ## 07 Dec Day - 12 Document Parsers for RAG Part-2 
+### 3.2 Document Parsing with Unstructured for RAG Systems
+#### 🎯 Learning Objectives
+📚 By completing this notebook, you will Learn:
+1. **Core Concepts**: Understanding partition functions, elements, and metadata
+2. **Partitioning Strategies**: AUTO, FAST, HI_RES, and OCR_ONLY approaches
+3. **File Format Support**: Working with PDFs, Office documents, HTML, Markdown, Images, and more
+4. **LangChain Integration**: Seamless integration with LangChain for RAG pipelines
+5. **Complete RAG Example**: End-to-end implementation with vector stores
 
 ## Create the virtual environment in anaconda3 folder
 ```
