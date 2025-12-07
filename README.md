@@ -95,6 +95,8 @@ This course is designed to provide students with a foundational, depth and pract
 ## 15 Nov Day - 4 RAG Architectures & Survey <br>
 ### 📚🔎🧠 RAG Detailed Survey
 #### Retrieval-Augmented Generation for Large Language Models: A Survey
+#### 🎯 Learning Objectives
+📚 By the end of this notebook, you will Learn:
 - Key Contributions
     - Three RAG Paradigms
     -  Core Components Analysis
@@ -127,6 +129,8 @@ This course is designed to provide students with a foundational, depth and pract
 
 ## 16 Nov Day - 5 Exploring Langchain For RAG <br>
 ### Exploring Langchain
+#### 🎯 Learning Objectives
+📚 By the end of this notebook, you will Learn:
 - Updated Requirements.txt
 - LLM Selection OPENAI or GEMINI
 - Google Gemini Embeddings
@@ -169,6 +173,7 @@ The challenge: Students often need both **specific course material** (lecture no
 7. Understand Document object structure
 ### 🦙 Local Offline RAG with Ollama
 #### 🎯 Learning Objectives
+📚 By the end of this notebook, you will Learn:
 This notebook demonstrates building a **completely offline RAG (Retrieval-Augmented Generation)** system using **Ollama** for local LLMs and embeddings.
 #### 🚀 Benefits of Local RAG:
 - **100% Offline**: No internet required after setup
@@ -176,9 +181,11 @@ This notebook demonstrates building a **completely offline RAG (Retrieval-Augmen
 - **No API Costs**: Free to run unlimited queries
 - **Fast**: No network latency
 - **Full Control**: Customize models and parameters
+
 ## 23 Nov Day - 7 Exploring Langchain Part-2
 ### ✂️ Notebook 03: Text Splitting Strategies
 #### 🎯 Learning Objectives
+📚 By the end of this notebook, you will Learn:
 1. Understand **why** text splitting is necessary for RAG
 2. Master **RecursiveCharacterTextSplitter** (the recommended default)
 3. Learn other splitters: Character, HTMLHeader, RecursiveJson, Token
@@ -187,13 +194,16 @@ This notebook demonstrates building a **completely offline RAG (Retrieval-Augmen
 6. Apply the right splitter for different content types
 ### 🔢 Notebook 04: Embeddings and Vector Representations
 #### 🎯 Learning Objectives
+📚 By the end of this notebook, you will Learn:
 1. Understand what embeddings are
 2. Use OpenAI Embeddings
 3. Use Google Gemini Embeddings
 4. Compare embedding models
 5. Calculate similarity between vectors
+📚 By the end of this notebook, you will Learn:
 ### 🗄️ Notebook 05: Vector Stores
 #### 🎯 Learning Objectives
+📚 By the end of this notebook, you will Learn:
 1. Understand vector stores
 2. Use InMemoryVectorStore (testing)
 3. Use FAISS (production)
@@ -201,6 +211,7 @@ This notebook demonstrates building a **completely offline RAG (Retrieval-Augmen
 5. Compare vector stores
 ### 🔍 Notebook 06: Retrieval Strategies
 #### 🎯 Learning Objectives
+📚 By the end of this notebook, you will Learn:
 1. Create retrievers from vector stores
 2. Use similarity search
 3. Use MMR (diversity)
@@ -208,6 +219,7 @@ This notebook demonstrates building a **completely offline RAG (Retrieval-Augmen
 5. Compare strategies
 ### 🚀 Notebook 07: Complete RAG Pipeline
 #### 🎯 Learning Objectives
+📚 By the end of this notebook, you will Learn:
 1. Build a complete RAG application
 2. Use LCEL to chain components
 3. Create production-ready code
@@ -215,6 +227,7 @@ This notebook demonstrates building a **completely offline RAG (Retrieval-Augmen
 5. Implement best practices
 ### 08 - External Index Retrievers 🌐
 #### 🎯 Learning Objectives
+📚 By the end of this notebook, you will Learn:
 1. **What are External Index Retrievers** and how they differ from vector store retrievers
 2. **ArxivRetriever** - Search and retrieve scholarly articles from arxiv.org
 3. **WikipediaRetriever** - Access Wikipedia articles for general knowledge
@@ -225,7 +238,7 @@ This notebook demonstrates building a **completely offline RAG (Retrieval-Augmen
 ## 29 Nov Day - 8 Exploring Langchain Part-3
 ### Vector Stores Tutorial: Qdrant & Weaviate
 #### 🎯 Learning Objectives
-In this tutorial, you'll learn:
+📚 By the end of this notebook, you will Learn:
 - What vector stores are and why they're essential for RAG (Retrieval-Augmented Generation)
 - How to work with **Qdrant** (local, in-memory, and persistent storage)
 - How to work with **Weaviate** (Docker-based setup)
@@ -234,7 +247,8 @@ In this tutorial, you'll learn:
 - When to use each vector store based on your use case
 
 ### Notebook 10: RAG Evaluation with Ragas Framework
-#### 📚 What You'll Learn
+#### 🎯 Learning Objectives
+📚 By the end of this notebook, you will Learn:
 This notebook covers the complete lifecycle of building and evaluating a production-quality RAG system:
 1. ✅ **Basic RAG Pipeline** - Document loading, chunking, embeddings, retrieval, generation
 2. ✅ **Building RAG Applications** - Prompt engineering, response formatting, handling edge cases
@@ -264,7 +278,7 @@ Building a RAG system is only half the battle. Without proper evaluation, you ca
 ### 📊 Notebook 12: RAGAS Metrics Deep Dive
 **Understanding How RAG Evaluation Metrics Work Internally**
 #### 🎯 Learning Objectives
-By the end of this notebook, you will Learn:
+📚 By the end of this notebook, you will Learn:
 1. **Understand the internal calculation process** for each of the 6 core RAGAS metrics
 2. **See intermediate outputs** like extracted claims, generated questions, and identified entities
 3. **Learn to interpret scores with confidence** using threshold guidelines
