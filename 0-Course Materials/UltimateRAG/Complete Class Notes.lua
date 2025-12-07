@@ -75,7 +75,7 @@ Class Notes :- https://krishnaikacademy.notion.site/RAG-Detailed-Survey-2aceba95
 
 Class Notes :- https://drive.google.com/file/d/1_uRq1ZjtjNH7abY_bsHcS2JcJm83xkpn/view?usp=sharing
 
-Discussed Jupter Notebook -> RAG Detailed Survey.ipynb
+Discussed Jupter Notebook 👉 RAG Detailed Survey.ipynb
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 16 Nov Day - 5 Exploring Langchain For RAG
@@ -88,8 +88,7 @@ https://www.promptly.fyi/library
 simple-rag-langchain.zip
 Code Download Link :- https://drive.google.com/file/d/1gH9PaMtZUKb5-5nJ98s23ZkRzkJF6Zda/view?usp=sharing
 
-ChunkViz v0.1
-https://chunkviz.up.railway.app/
+ChunkViz v0.1 👉 https://chunkviz.up.railway.app/
 
 Discussed below Jupter Notebook :-
 01_Introduction_and_Fundamentals.ipynb
@@ -116,11 +115,9 @@ local_rag_ollama.ipynb
 *****************************************
 Code Download Link :- https://drive.google.com/file/d/1gH9PaMtZUKb5-5nJ98s23ZkRzkJF6Zda/view?usp=sharing
 
-MTEB Leaderboard
-https://huggingface.co/spaces/mteb/leaderboard
+MTEB Leaderboard 👉 https://huggingface.co/spaces/mteb/leaderboard
 
-semitechnologies/weaviate
-https://hub.docker.com/r/semitechnologies/weaviate
+semitechnologies/weaviate 👉 https://hub.docker.com/r/semitechnologies/weaviate
 
 Discussed below Jupter Notebook :-
 03_Text_Splitting_Strategies.ipynb
@@ -136,7 +133,7 @@ Vector_Stores_Tutorial.ipynb
 *****************************************
 Code Download Link :- https://krishnaikacademy.notion.site/Exploring-Langchain-2adeba9593d080a9ba65f36aba9e283e
 
-Discussed Jupter Notebook -> 10_RAG_Evaluation_with_Ragas.ipynb
+Discussed Jupter Notebook 👉 10_RAG_Evaluation_with_Ragas.ipynb
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 30 Nov Day - 9 Exploring Langchain Part-4 
@@ -145,7 +142,7 @@ Code Download Link :- https://krishnaikacademy.notion.site/Exploring-Langchain-2
 
 ragas==0.3.7
 
-Discussed Jupter Notebook -> 12_RAGAS_Metrics_Deep_Dive.ipynb
+Discussed Jupter Notebook 👉 12_RAGAS_Metrics_Deep_Dive.ipynb
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 04 Dec Day - 10 Exploring RAGAS and LLM as Judge 
@@ -159,23 +156,25 @@ Discussed below Jupter Notebook :-
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 06 Dec Day - 11 Document Parsers for RAG Part-1  
 ***********************************************
-Docling Documentation
-https://docling-project.github.io/docling/
+Docling Documentation 👉 https://docling-project.github.io/docling/
 
-Docling GitHub Repo
-https://github.com/docling-project/docling
+Docling GitHub Repo 👉 https://github.com/docling-project/docling
 
-Docling Preps Your Files for GenAI, RAG, and Beyond
-https://www.docling.ai/
+Docling Preps Your Files for GenAI, RAG, and Beyond 👉 https://www.docling.ai/
 
-Docling Langchain Docs 
-https://docs.langchain.com/oss/python/integrations/document_loaders/docling
+Docling Langchain Docs 👉 https://docs.langchain.com/oss/python/integrations/document_loaders/docling
 
 Discussed Jupter Notebook -> docling_document_parsing.ipynb
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 07 Dec Day - 12 Document Parsers for RAG Part-2
 ***********************************************
-Discussed Jupter Notebook -> unstructured_document_parsing.ipynb
+Discussed Jupter Notebook 👉 unstructured_document_parsing.ipynb
+
+poppler-windows 👉 https://github.com/oschwartz10612/poppler-windows/releases/tag/v25.12.0-0
+
+Windows 👉 https://github.com/UB-Mannheim/tesseract/wiki
+
+Llama-index 👉 https://www.llamaindex.ai/
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
