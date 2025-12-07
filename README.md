@@ -263,7 +263,7 @@ By the end of this notebook, you will:
 ## 30 Nov Day - 9 Exploring Langchain Part-4 <br>
 ### 📊 Notebook 12: RAGAS Metrics Deep Dive
 **Understanding How RAG Evaluation Metrics Work Internally**
-## 🎯 Learning Objectives
+#### 🎯 Learning Objectives
 By the end of this notebook, you will:
 1. **Understand the internal calculation process** for each of the 6 core RAGAS metrics
 2. **See intermediate outputs** like extracted claims, generated questions, and identified entities
@@ -271,6 +271,20 @@ By the end of this notebook, you will:
 4. **Debug evaluation issues** by understanding what each metric actually measures
 
 ## 04 Dec Day - 10 Exploring RAGAS and LLM as Judge
+### Notebook 11: RAG Evaluation with LLM-as-Judge
+**Module 3: RAG Evaluation Techniques**
+#### 🎯 Learning Objectives
+By completing this notebook, you will:
+- Understand the **LLM-as-Judge evaluation methodology**
+- Learn when to use LLM-as-Judge vs automated frameworks like Ragas
+- Implement a **complete RAG pipeline** (same as Notebook 10)
+- Design **structured evaluation prompts** with Pydantic models
+- Evaluate RAG systems across **3 core metrics**:
+  - 🎯 **Groundedness**: Is the answer faithful to retrieved context?
+  - 🎯 **Answer Relevance**: Does the answer address the question?
+  - 🎯 **Retrieval Quality**: Are the retrieved contexts relevant?
+- Analyze results with **detailed reasoning** and visualizations
+- Understand **cost and performance trade-offs**
 
 ## 06 Dec Day - 11 Document Parsers for RAG Part-1 
 
