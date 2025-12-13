@@ -1,3 +1,5 @@
 rag-venv
 .env
 rag-document-parser
+04-RAG-QA-Project/rag-qa-project-venv
+04-RAG-QA-Project/.env
