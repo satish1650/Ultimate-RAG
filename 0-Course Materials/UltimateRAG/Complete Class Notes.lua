@@ -178,3 +178,15 @@ Windows 👉 https://github.com/UB-Mannheim/tesseract/wiki
 Llama-index 👉 https://www.llamaindex.ai/
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+13 Dec Day - 13 Document Parsers for RAG Part-3
+***********************************************
+LlamaIndex 🦙 Docs : Welcome to LlamaIndex 🦙 👉 https://developers.llamaindex.ai/python/framework/
+
+Welcome to LlamaCloud : Welcome to LlamaCloud (Parse) 👉 https://developers.llamaindex.ai/python/cloud/llamaparse/getting_started/
+
+Llamaindex : The new standard for complex document processing 👉 https://www.llamaindex.ai/
+
+GitHub 👉 https://github.com/Sourangshu-Pal/document-parsers-rag
+
+GitHub 👉 https://github.com/sourangshupal/rag-qa-project
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
