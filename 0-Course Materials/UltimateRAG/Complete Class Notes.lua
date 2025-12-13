@@ -189,4 +189,6 @@ Llamaindex : The new standard for complex document processing 👉 https://www.l
 GitHub 👉 https://github.com/Sourangshu-Pal/document-parsers-rag
 
 GitHub 👉 https://github.com/sourangshupal/rag-qa-project
+
+Email : app@krishnaik.in
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
