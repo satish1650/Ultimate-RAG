@@ -328,6 +328,47 @@ Building a RAG system is only half the battle. Without proper evaluation, you ca
 4. **LangChain Integration**: Seamless integration with LangChain for RAG pipelines
 5. **Complete RAG Example**: End-to-end implementation with vector stores
 
+## 13 Dec Day - 13 Document Parsers for RAG Part-3 
+### 3.3 Document Parsing with LlamaParse for RAG Systems
+#### 🎯 Learning Objectives
+- Core Features & Parsing Fundamentals
+LlamaParse is a document parsing service by LlamaIndex that excels at:
+- **Complex Document Handling**: Financial reports, research papers, scanned PDFs
+- **Precise Extraction**: Tables, charts, images, and diagrams
+- **70+ File Formats**: PDF, DOCX, XLSX, PPTX, HTML, images, audio, and more
+- **LLM-Ready Output**: Clean markdown, text, or structured JSON
+
+#### Part 1 Contents
+1. Introduction & Setup
+2. Core Concepts
+3. Basic Document Parsing
+4. Presets & Built-in Configurations
+5. Parse Modes (Fast, Premium, Auto)
+6. Supported File Formats
+7. Multimodal Parsing Features
+8. Layout Extraction
+9. Structured Output
+
+**Part 2** covers: Custom Prompts, Advanced Configuration, Async Operations, LlamaIndex Integration, RAG Examples, CLI Usage, and Best Practices.
+
+## 14 Dec Day - 14 Poject-1 👉 RAG Q&A System 
+### 04 🤖 RAG Q&A System
+#### 🎯 Learning Objectives
+📖 **Overview**
+A **production-ready** RAG (Retrieval-Augmented Generation) system that enables intelligent Q&A over your documents. Built with modern AI stack and battle-tested in production environments.
+
+🎯 **What is RAG?**
+RAG combines the power of **retrieval** (finding relevant information) with **generation** (creating coherent answers) to provide accurate, context-aware responses to your questions based on your own documents.
+
+🌟 Key Highlights
+🚀 Production Ready: Docker + CI/CD + AWS deployment
+🧠 Smart AI: Powered by OpenAI GPT-4o & LangChain
+📊 Observable: LangSmith integration for full tracing
+✅ Evaluated: RAGAS metrics for answer quality
+🔒 Secure: Non-root Docker, API validation, error handling
+⚡ Fast: Async operations, streaming responses
+📈 Scalable: Cloud-native architecture
+
 ## Create the virtual environment in anaconda3 folder
 ```
 conda create -n venv_ur_name python==3.12 -y
