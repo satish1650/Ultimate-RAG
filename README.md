@@ -361,13 +361,13 @@ A **production-ready** RAG (Retrieval-Augmented Generation) system that enables 
 RAG combines the power of **retrieval** (finding relevant information) with **generation** (creating coherent answers) to provide accurate, context-aware responses to your questions based on your own documents.
 
 ##### 🌟 **Key Highlights**
-🚀 Production Ready: Docker + CI/CD + AWS deployment
-🧠 Smart AI: Powered by OpenAI GPT-4o & LangChain
-📊 Observable: LangSmith integration for full tracing
-✅ Evaluated: RAGAS metrics for answer quality
-🔒 Secure: Non-root Docker, API validation, error handling
-⚡ Fast: Async operations, streaming responses
-📈 Scalable: Cloud-native architecture
+🚀 Production Ready: Docker + CI/CD + AWS deployment <br>
+🧠 Smart AI: Powered by OpenAI GPT-4o & LangChain <br>
+📊 Observable: LangSmith integration for full tracing <br>
+✅ Evaluated: RAGAS metrics for answer quality <br>
+🔒 Secure: Non-root Docker, API validation, error handling <br>
+⚡ Fast: Async operations, streaming responses <br>
+📈 Scalable: Cloud-native architecture <br>
 
 ##### ✨ **Features**
 📄 **Document Management**
@@ -390,11 +390,11 @@ RAG combines the power of **retrieval** (finding relevant information) with **ge
 - ✅ Health Checks: Readiness & liveness endpoints
 
 🛠️ **Developer Experience**
-✅ Auto-generated Swagger docs at /docs
-✅ Type-safe Pydantic models
-✅ Comprehensive tests with 70%+ coverage
-✅ Hot reload in development
-✅ CI/CD pipeline with GitHub Actions
+✅ Auto-generated Swagger docs at /docs <br>
+✅ Type-safe Pydantic models <br>
+✅ Comprehensive tests with 70%+ coverage <br>
+✅ Hot reload in development <br>
+✅ CI/CD pipeline with GitHub Actions <br>
 
 ## Create the virtual environment in anaconda3 folder
 ```
