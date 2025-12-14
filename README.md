@@ -396,8 +396,6 @@ RAG combines the power of **retrieval** (finding relevant information) with **ge
 - ✅ Hot reload in development
 - ✅ CI/CD pipeline with GitHub Actions
 
----
-
 ## Create the virtual environment in anaconda3 folder
 ```
 conda create -n venv_ur_name python==3.12 -y
