@@ -191,4 +191,14 @@ GitHub 👉 https://github.com/Sourangshu-Pal/document-parsers-rag
 GitHub 👉 https://github.com/sourangshupal/rag-qa-project
 
 Email : app@krishnaik.in
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+14 Dec Day - 14 Poject-1 👉 RAG Q&A System
+*******************************************
+Code Download Link :- https://krishnaikacademy.notion.site/Project-2c9eba9593d080148461c7d1b9820d5a
+
+GitHub 👉 https://github.com/sourangshupal/rag-qa-project
+
+Email : app@krishnaik.in
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
