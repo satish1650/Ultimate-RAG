@@ -390,11 +390,11 @@ RAG combines the power of **retrieval** (finding relevant information) with **ge
 - ✅ Health Checks: Readiness & liveness endpoints
 
 🛠️ **Developer Experience**
-✅ Auto-generated Swagger docs at /docs <br>
-✅ Type-safe Pydantic models <br>
-✅ Comprehensive tests with 70%+ coverage <br>
-✅ Hot reload in development <br>
-✅ CI/CD pipeline with GitHub Actions <br>
+- ✅ Auto-generated Swagger docs at /docs
+- ✅ Type-safe Pydantic models
+- ✅ Comprehensive tests with 70%+ coverage
+- ✅ Hot reload in development
+- ✅ CI/CD pipeline with GitHub Actions
 
 ## Create the virtual environment in anaconda3 folder
 ```
