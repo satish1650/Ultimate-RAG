@@ -354,13 +354,13 @@ LlamaParse is a document parsing service by LlamaIndex that excels at:
 ## 14 Dec Day - 14 Poject-1 👉 RAG Q&A System 
 ### 04 🤖 RAG Q&A System
 #### 🎯 Learning Objectives
-📖 **Overview**
+##### 📖 **Overview**
 A **production-ready** RAG (Retrieval-Augmented Generation) system that enables intelligent Q&A over your documents. Built with modern AI stack and battle-tested in production environments.
 
-🎯 **What is RAG?**
+##### 🎯 **What is RAG?**
 RAG combines the power of **retrieval** (finding relevant information) with **generation** (creating coherent answers) to provide accurate, context-aware responses to your questions based on your own documents.
 
-🌟 Key Highlights
+##### 🌟 **Key Highlights**
 🚀 Production Ready: Docker + CI/CD + AWS deployment
 🧠 Smart AI: Powered by OpenAI GPT-4o & LangChain
 📊 Observable: LangSmith integration for full tracing
@@ -368,6 +368,33 @@ RAG combines the power of **retrieval** (finding relevant information) with **ge
 🔒 Secure: Non-root Docker, API validation, error handling
 ⚡ Fast: Async operations, streaming responses
 📈 Scalable: Cloud-native architecture
+
+##### ✨ **Features**
+📄 **Document Management**
+- ✅ Upload PDF, TXT, and CSV files
+- ✅ Automatic text extraction and chunking
+- ✅ Smart document splitting with overlap
+- ✅ Vector storage in Qdrant Cloud
+
+💬 **Intelligent Q&A**
+- ✅ Natural language questions
+- ✅ Context-aware answers
+- ✅ Source attribution (see which docs were used)
+- ✅ Streaming responses for real-time feedback
+- ✅ Multiple query modes (standard, search-only)
+
+🔍 **Observability & Quality**
+- ✅ LangSmith Tracing: Full chain visibility, token tracking, cost analysis
+- ✅ RAGAS Evaluation: Faithfulness & answer relevancy metrics
+- ✅ Structured Logging: Comprehensive error tracking
+- ✅ Health Checks: Readiness & liveness endpoints
+
+🛠️ **Developer Experience**
+✅ Auto-generated Swagger docs at /docs
+✅ Type-safe Pydantic models
+✅ Comprehensive tests with 70%+ coverage
+✅ Hot reload in development
+✅ CI/CD pipeline with GitHub Actions
 
 ## Create the virtual environment in anaconda3 folder
 ```
