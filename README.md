@@ -405,13 +405,17 @@ RAG combines the power of **retrieval** (finding relevant information) with **ge
 - Configuration management
 - Building APIs with FastAPI
 1. Introduction & Setup
-- What is Pydantic?
+- What is Pydantic? <br>
 Pydantic is a data validation library that uses Python type annotations to:
    - ✅ Validate data automatically
    - ✅ Parse and convert data types
    - ✅ Provide clear error messages
    - ✅ Generate JSON schemas
    - ✅ Power frameworks like FastAPI
+- Why Use Pydantic? <br>
+- Quick Intro to Type Hints
+- Installation
+  - !uv pip install pydantic
 2. Basic Models
 3. Field Types & Validation
 4. Nested Models & Complex Types
