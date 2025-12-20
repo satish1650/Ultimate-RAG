@@ -397,7 +397,7 @@ RAG combines the power of **retrieval** (finding relevant information) with **ge
 - ✅ CI/CD pipeline with GitHub Actions
 
 ## 18 Dec Day - 15 Extra Class 👉 Pydantic-FastAPI-Tutorials 
-### 05 Pydantic-FastAPI-Tutorials
+### 05-Pydantic-FastAPI-Tutorials
 #### 🎯 Learning Objectives
 - Data validation and type safety
 - Creating models for complex data structures
@@ -422,7 +422,7 @@ Pydantic is a data validation library that uses Python type annotations to:
 5. Custom Validators
 
 ## 20 Dec Day - 16 Poject-1 👉 AWS Deployment 
-### 06 🤖 rag-project-class
+### 🤖 06-RAG-QA-Project
 #### 🎯 Learning Objectives
 - rag-project-class project deployment using CI/CD Pipeline with Github Actions
 - CI/CD pipeline with GitHub Actions
