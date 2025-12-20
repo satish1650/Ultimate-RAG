@@ -396,6 +396,33 @@ RAG combines the power of **retrieval** (finding relevant information) with **ge
 - ✅ Hot reload in development
 - ✅ CI/CD pipeline with GitHub Actions
 
+## 18 Dec Day - 15 Extra Class 👉 Pydantic-FastAPI-Tutorials 
+### 05 Pydantic-FastAPI-Tutorials
+#### 🎯 Learning Objectives
+- Data validation and type safety
+- Creating models for complex data structures
+- Custom validation logic
+- Configuration management
+- Building APIs with FastAPI
+1. Introduction & Setup
+- What is Pydantic?
+Pydantic is a data validation library that uses Python type annotations to:
+   - ✅ Validate data automatically
+   - ✅ Parse and convert data types
+   - ✅ Provide clear error messages
+   - ✅ Generate JSON schemas
+   - ✅ Power frameworks like FastAPI
+2. Basic Models
+3. Field Types & Validation
+4. Nested Models & Complex Types
+5. Custom Validators
+
+## 20 Dec Day - 16 Poject-1 👉 AWS Deployment 
+### 06 🤖 rag-project-class
+#### 🎯 Learning Objectives
+- rag-project-class project deployment using CI/CD Pipeline with Github Actions
+- CI/CD pipeline with GitHub Actions
+
 ## Create the virtual environment in anaconda3 folder
 ```
 conda create -n venv_ur_name python==3.12 -y
