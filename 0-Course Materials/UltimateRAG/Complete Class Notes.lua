@@ -230,8 +230,9 @@ AWS Command :-
 	- aws apprunner delete-service --service-arn 
 
 Docker Build & Run :-
-	- docker build -t rag-project-class .
-	- docker run -p 8000:8000 --env-file .env rag-project-class
+    - Build an Image from a Dockerfile 👉 docker build -t rag-project-class .
+	- Run a container with and publish a container’s port(s) to the host.
+			docker run -p 8000:8000 --env-file .env rag-project-class
 
 GitHub 👉 https://github.com/sourangshupal/rag-project-class
 ENV VARS FOR GITHUB ACTIONS :-
