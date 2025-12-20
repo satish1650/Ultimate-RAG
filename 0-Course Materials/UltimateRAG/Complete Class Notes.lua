@@ -202,3 +202,50 @@ GitHub 👉 https://github.com/sourangshupal/rag-qa-project
 Email : app@krishnaik.in
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+18 Dec Day - 15 Extra Class 👉 Pydantic-FastAPI-Tutorials
+**********************************************************
+GitHub 👉 https://github.com/sourangshupal/pydantic-fastpi-tutorials
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+20 Dec Day - 16 Poject-1 👉 AWS Deployment
+*******************************************
+Class Notes :- https://krishnaikacademy.notion.site/Project-1-2c9eba9593d080148461c7d1b9820d5a
+
+GitHub 👉 https://github.com/sourangshupal/rag-project-class
+
+LangSmith 👉 https://www.langchain.com/langsmith/observability
+
+AWS CLI 👉 https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+
+AWS Service :-
+	- AmazonEC2ContainerRegistryFullAccess
+	- AWSAppRunnerFullAccess
+	- AmazonElasticContainerRegistryPublicFullAccess
+
+AWS Command :-
+	- aws ecr create-repository  --repository-name rag-qa-system  --region us-east-1
+	- aws ecr create-repository  --repository-name rag-qa-system  --region us-east-1
+	- aws ecr describe-repositories
+	- aws apprunner list-services --region us-east-1
+	- aws apprunner delete-service --service-arn 
+
+Docker Build & Run :-
+	- docker build -t rag-project-class .
+	- docker run -p 8000:8000 --env-file .env rag-project-class
+
+GitHub 👉 https://github.com/sourangshupal/rag-project-class
+ENV VARS FOR GITHUB ACTIONS :-
+	- APP_RUNNER_ECR_ACCESS_ROLE_ARN
+		- aws iam get-role --role-name AppRunnerECRAccessRole --query 'Role.Arn' --output text
+	- AWS_ACCESS_KEY_ID
+	- AWS_SECRET_ACCESS_KEY
+	- LANGSMITH_API_KEY
+	- OPENAI_API_KEY
+	- QDRANT_API_KEY
+	- QDRANT_URL
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+21 Dec Day - 17 Poject-1 👉 AWS Deployment
+*******************************************
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
