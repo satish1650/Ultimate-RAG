@@ -258,8 +258,25 @@ https://colab.research.google.com/drive/1Rq6HPI7AVEIx-RpiiZMDw16ZNgs37tVp?usp=sh
 27 Dec Day - 18 👉 Llama-Index-Part-2
 **************************************
 Class has been cancelled due to trainer unavailability.
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 28 Dec Day - 18 👉 Llama-Index-Part-2
 **************************************
 Class has been cancelled due to trainer unavailability.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+03 Jan Day - 18 👉 Llama-Index-Part-2 & Chonkie
+************************************************
+GitHub 👉 https://github.com/sourangshupal/llama-index-tutorials/tree/main
+
+Voyage AI 👉 https://www.voyageai.com/
+
+🦛 Chonkie  Documentation ✨ 👉 https://docs.chonkie.ai/common/welcome 
+
+GitHub Chonkie 👉 https://github.com/chonkie-inc/chonkie/tree/main/src/chonkie/chunker
+
+GitHub 👉 https://github.com/sourangshupal/chonkie-chunkers-tutorials
+
+Embedding-similarity-based chunking.ipynb 👉 https://colab.research.google.com/drive/1BdYwifTevArz1iFakL1hNdYxfTCQcHJe?usp=sharing
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
