@@ -3,8 +3,8 @@
 ========================================================================================================================================================================================================================
 02 Nov Day - 1 👉 Induction Session
 ************************************
-Ultimate RAG Bootcamp: Building Traditional to Agentic Systems with Cloud Deployment:
-https://learn.krishnaikacademy.com/web/checkout/68bbbf371263fba553cd0492
+Ultimate RAG Bootcamp: 
+Building Traditional to Agentic Systems with Cloud Deployment 👉 https://learn.krishnaikacademy.com/web/checkout/68bbbf371263fba553cd0492
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 08 Nov Day - 2 👉 Tools And Installation
@@ -64,7 +64,6 @@ Discussed Jupter Notebook 👉 Introduction To RAG.ipynb
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 15 Nov Day - 4 👉 RAG Architectures & Survey
 *********************************************
-
 Class Notes 👉 https://krishnaikacademy.notion.site/RAG-Detailed-Survey-2aceba9593d080d18acdf9a97ad9cfdd?pvs=143
 
 Class Notes 👉 https://drive.google.com/file/d/1_uRq1ZjtjNH7abY_bsHcS2JcJm83xkpn/view?usp=sharing
@@ -92,6 +91,8 @@ simple_rag_langchain.ipynb
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 22 Nov Day - 6 👉 Exploring Langchain Part-1 
 *********************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Ultimate-RAG-Course-2a5eba9593d08085ade8ceb2a6c6c8de
+
 GitHub Repo 👉 https://github.com/sourangshupal/simple-rag-langchain
 
 Code Download Link 👉 https://drive.google.com/file/d/1gH9PaMtZUKb5-5nJ98s23ZkRzkJF6Zda/view?usp=sharing
@@ -107,6 +108,8 @@ Discussed below Jupyter Notebook :-
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 23 Nov Day - 7 👉 Exploring Langchain Part-2 
 *********************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Ultimate-RAG-Course-2a5eba9593d08085ade8ceb2a6c6c8de
+
 Code Download Link :- https://drive.google.com/file/d/1gH9PaMtZUKb5-5nJ98s23ZkRzkJF6Zda/view?usp=sharing
 
 MTEB Leaderboard 👉 https://huggingface.co/spaces/mteb/leaderboard
@@ -125,6 +128,8 @@ Vector_Stores_Tutorial.ipynb
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 29 Nov Day - 8 👉 Exploring Langchain Part-3 
 *********************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Ultimate-RAG-Course-2a5eba9593d08085ade8ceb2a6c6c8de
+
 Code Download Link 👉 https://krishnaikacademy.notion.site/Exploring-Langchain-2adeba9593d080a9ba65f36aba9e283e
 
 Discussed Jupter Notebook 👉 10_RAG_Evaluation_with_Ragas.ipynb
@@ -132,6 +137,8 @@ Discussed Jupter Notebook 👉 10_RAG_Evaluation_with_Ragas.ipynb
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 30 Nov Day - 9 👉 Exploring Langchain Part-4 
 *********************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Ultimate-RAG-Course-2a5eba9593d08085ade8ceb2a6c6c8de
+
 Code Download Link 👉 https://krishnaikacademy.notion.site/Exploring-Langchain-2adeba9593d080a9ba65f36aba9e283e
 
 ragas==0.3.7
@@ -141,6 +148,8 @@ Discussed Jupter Notebook 👉 12_RAGAS_Metrics_Deep_Dive.ipynb
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 04 Dec Day - 10 👉 Exploring RAGAS and LLM as Judge 
 ***************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Ultimate-RAG-Course-2a5eba9593d08085ade8ceb2a6c6c8de
+
 Code Download Link 👉 https://krishnaikacademy.notion.site/Exploring-Langchain-2adeba9593d080a9ba65f36aba9e283e
 
 Discussed below Jupter Notebook :-
@@ -149,7 +158,9 @@ Discussed below Jupter Notebook :-
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 06 Dec Day - 11 👉 Document Parsers for RAG Part-1  
-**************************************************
+***************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Ultimate-RAG-Course-2a5eba9593d08085ade8ceb2a6c6c8de
+
 Docling Documentation 👉 https://docling-project.github.io/docling/
 
 Docling GitHub Repo 👉 https://github.com/docling-project/docling
@@ -163,6 +174,8 @@ Discussed Jupter Notebook 👉 docling_document_parsing.ipynb
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 07 Dec Day - 12 👉 Document Parsers for RAG Part-2
 ***************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Ultimate-RAG-Course-2a5eba9593d08085ade8ceb2a6c6c8de
+
 Discussed Jupter Notebook 👉 unstructured_document_parsing.ipynb
 
 poppler-windows 👉 https://github.com/oschwartz10612/poppler-windows/releases/tag/v25.12.0-0
@@ -174,6 +187,8 @@ Llama-index 👉 https://www.llamaindex.ai/
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 13 Dec Day - 13 👉 Document Parsers for RAG Part-3
 ***************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Ultimate-RAG-Course-2a5eba9593d08085ade8ceb2a6c6c8de
+
 LlamaIndex 🦙 Docs : Welcome to LlamaIndex 🦙 👉 https://developers.llamaindex.ai/python/framework/
 
 Welcome to LlamaCloud : Welcome to LlamaCloud (Parse) 👉 https://developers.llamaindex.ai/python/cloud/llamaparse/getting_started/
@@ -239,8 +254,10 @@ ENV VARS FOR GITHUB ACTIONS :-
 	- QDRANT_API_KEY
 	- QDRANT_URL
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-21 Dec Day - 17 👉 Llama-Index-Tutorials
-*****************************************
+21 Dec Day - 17 👉 Llama-Index-Tutorials-Part-1
+************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Ultimate-RAG-Course-2a5eba9593d08085ade8ceb2a6c6c8de
+
 Welcome to LlamaIndex 🦙 !!! 👉 https://developers.llamaindex.ai/python/framework/
 
 GitHub 👉 https://github.com/sourangshupal/llama-index-tutorials
@@ -267,6 +284,8 @@ Class has been cancelled due to trainer unavailability.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 03 Jan Day - 18 👉 Llama-Index-Part-2 & Chonkie
 ************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Ultimate-RAG-Course-2a5eba9593d08085ade8ceb2a6c6c8de
+
 GitHub 👉 https://github.com/sourangshupal/llama-index-tutorials/tree/main
 
 Voyage AI 👉 https://www.voyageai.com/
@@ -276,7 +295,27 @@ Voyage AI 👉 https://www.voyageai.com/
 GitHub Chonkie 👉 https://github.com/chonkie-inc/chonkie/tree/main/src/chonkie/chunker
 
 GitHub 👉 https://github.com/sourangshupal/chonkie-chunkers-tutorials
+- chonkie_complete_tutorial.ipynb
 
 Embedding-similarity-based chunking.ipynb 👉 https://colab.research.google.com/drive/1BdYwifTevArz1iFakL1hNdYxfTCQcHJe?usp=sharing
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+04 Jan Day - 19 👉 Llama-Index-Part-3 & Chonkie
+************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Chunking-2deeba9593d080e5a99af30da523d567
+
+🦛 Chonkie  Documentation ✨ 👉 https://docs.chonkie.ai/oss/chunkers/neural-chunker 
+
+🦛 Chonkie  Documentation ✨ 👉 https://docs.chonkie.ai/oss/chunkers/slumber-chunker
+
+GitHub Chonkie 👉 https://github.com/chonkie-inc/chonkie/tree/main/src/chonkie/chunker
+
+GitHub 👉 https://github.com/sourangshupal/chonkie-chunkers-tutorials
+- chonkie_complete_tutorial.ipynb
+
+sample_text = research_paper_text[:2000]
+
+GitHub 👉 https://github.com/sourangshupal/llama-index-tutorials/tree/main
+- advanced_retrieval copy.ipynb
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
