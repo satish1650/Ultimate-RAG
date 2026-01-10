@@ -484,7 +484,7 @@ Pydantic is a data validation library that uses Python type annotations to:
 - Installation
 - CHONK! 🦛✨
 
-## 04 Jan Day - 19 👉 🦛 Chonkie ✨: Chonkie-Chunkers-Tutorials
+## 04 Jan Day - 19 👉 🦛 Chonkie ✨ Chonkie-Chunkers-Tutorials
 ### 🦛 08-Chonkie-Chunkers-Tutorials
 #### 🎯 Learning Objectives
 - **9 Different Chunking Strategies:** From basic token splitting to advanced LLM-powered chunking
