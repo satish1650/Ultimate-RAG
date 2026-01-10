@@ -254,7 +254,7 @@ This notebook demonstrates building a **completely offline RAG (Retrieval-Augmen
 - Metadata filtering with different vector store syntaxes
 - When to use each vector store based on your use case
 
-### Notebook 10: RAG Evaluation with Ragas Framework
+### 📚 Notebook 10: RAG Evaluation with Ragas Framework
 #### 🎯 Learning Objectives
 📚 By the end of this notebook, you will Learn:
 This notebook covers the complete lifecycle of building and evaluating a production-quality RAG system:
@@ -293,7 +293,7 @@ Building a RAG system is only half the battle. Without proper evaluation, you ca
 4. **Debug evaluation issues** by understanding what each metric actually measures
 
 ## 04 Dec Day - 10 Exploring RAGAS and LLM as Judge
-### Notebook 11: RAG Evaluation with LLM-as-Judge
+### 📚 Notebook 11: RAG Evaluation with LLM-as-Judge
 **Module 3: RAG Evaluation Techniques**
 #### 🎯 Learning Objectives
 📚 By completing this notebook, you will Learn:
@@ -430,21 +430,51 @@ Pydantic is a data validation library that uses Python type annotations to:
 ## 21 Dec Day - 17 Llama-Index 👉 Part-1
 ### 🤖 Llama-Index-Tutorials
 #### 🎯 Learning Objectives
-#### Notebook 1: Setup & Basics
-    ✅ Understand LlamaIndex architecture and modular ecosystem <br>
-    ✅ Install and configure LlamaIndex with the latest modular packages <br>
-    ✅ Configure the Settings object (LLM, embeddings, chunk size) <br>
-    ✅ Create your first VectorStoreIndex from documents <br>
-    ✅ Execute basic queries and analyze responses <br>
-    ✅ Understand the Document → Node → Index flow <br>
+#### 📚 Notebook 1: Setup & Basics
+✅ Understand LlamaIndex architecture and modular ecosystem <br>
+✅ Install and configure LlamaIndex with the latest modular packages <br>
+✅ Configure the Settings object (LLM, embeddings, chunk size) <br>
+✅ Create your first VectorStoreIndex from documents <br>
+✅ Execute basic queries and analyze responses <br>
+✅ Understand the Document → Node → Index flow <br>
 
-#### Notebook 2: Documents & Chunking
-    ✅ Load documents from multiple sources (local files, PDFs, web) <br>
-    ✅ Implement different chunking strategies (sentence, token, semantic) <br>
-    ✅ Add custom metadata at document and node levels <br>
-    ✅ Create and manage node relationships <br>
-    ✅ Optimize chunking for retrieval quality <br>
-    ✅ Apply batch embedding optimization <br>
+#### 📚 Notebook 2: Documents & Chunking
+✅ Load documents from multiple sources (local files, PDFs, web) <br>
+✅ Implement different chunking strategies (sentence, token, semantic) <br>
+✅ Add custom metadata at document and node levels <br>
+✅ Create and manage node relationships <br>
+✅ Optimize chunking for retrieval quality <br>
+✅ Apply batch embedding optimization <br>
+
+#### 📚 Notebook 3: Indexing & Simple Queries
+✅ Integrate external vector stores (Qdrant, Chroma) <br>
+✅ Compare embedding models (OpenAI vs HuggingFace) <br>
+✅ Persist and load indexes from storage <br>
+✅ Configure query engines with different modes <br>
+✅ Implement VectorIndexRetriever and VectorIndexAutoRetriever <br>
+✅ Understand response synthesis modes <br>
+✅ Implement streaming responses <br>
+
+#### 📚 Notebook 4: Advanced Retrieval
+✅ Implement RecursiveRetriever for hierarchical document retrieval  <br>
+✅ Use QueryFusionRetriever to combine multiple retrieval strategies  <br>
+✅ Build custom retrievers with specialized ranking logic  <br>
+✅ Apply query transformation techniques (HyDE, rewriting, multi-query)  <br>
+✅ Implement complex metadata filtering (AND/OR/NOT logic)  <br>
+✅ Evaluate retrieval quality with metrics  <br>
+
+#### 📚 Notebook 5: Hybrid Search & Reranking
+✅ Understand dense vs sparse vectors and BM25 algorithm
+✅ Implement hybrid search combining semantic and keyword matching
+✅ Configure alpha parameter for optimal score fusion
+✅ Apply reranking models (Cohere, SentenceTransformer cross-encoders)
+
+#### 🔍 Evaluating the Ideal Chunk Size for a RAG System using LlamaIndex
+- Introduction
+- Why Chunk Size Matters
+- Setting Up Evaluators
+- Response Evaluation For A Chunk Size
+- Testing Across Different Chunk Sizes
 
 ## Create the virtual environment in anaconda3 folder
 ```
