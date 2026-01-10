@@ -464,10 +464,10 @@ Pydantic is a data validation library that uses Python type annotations to:
 ✅ Evaluate retrieval quality with metrics  <br>
 
 #### 📚 Notebook 5: Hybrid Search & Reranking
-✅ Understand dense vs sparse vectors and BM25 algorithm
-✅ Implement hybrid search combining semantic and keyword matching
-✅ Configure alpha parameter for optimal score fusion
-✅ Apply reranking models (Cohere, SentenceTransformer cross-encoders)
+✅ Understand dense vs sparse vectors and BM25 algorithm <br>
+✅ Implement hybrid search combining semantic and keyword matching <br>
+✅ Configure alpha parameter for optimal score fusion <br>
+✅ Apply reranking models (Cohere, SentenceTransformer cross-encoders) <br>
 
 #### 🔍 Evaluating the Ideal Chunk Size for a RAG System using LlamaIndex
 - Introduction
