@@ -84,8 +84,8 @@ Code Download Link 👉 https://drive.google.com/file/d/1gH9PaMtZUKb5-5nJ98s23Zk
 ChunkViz v0.1 👉 https://chunkviz.up.railway.app/
 
 Discussed below Jupyter Notebook :-
-	- 01_Introduction_and_Fundamentals.ipynb
-	- Exploring Langchain.ipynb
+	✅ 01_Introduction_and_Fundamentals.ipynb
+	✅ Exploring Langchain.ipynb
 simple_rag_langchain.ipynb
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -102,8 +102,8 @@ ChunkViz 👉 https://chunkviz.up.railway.app/
 OLLAMA DOWNLOAD 👉 https://ollama.com/download
 
 Discussed below Jupyter Notebook :-
-	- 02_Document_Loaders.ipynb
-	- local_rag_ollama.ipynb
+	✅ 02_Document_Loaders.ipynb
+	✅ local_rag_ollama.ipynb
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 23 Nov Day - 7 👉 Exploring Langchain Part-2 
@@ -117,13 +117,13 @@ MTEB Leaderboard 👉 https://huggingface.co/spaces/mteb/leaderboard
 semitechnologies/weaviate 👉 https://hub.docker.com/r/semitechnologies/weaviate
 
 Discussed below Jupter Notebook :-
-03_Text_Splitting_Strategies.ipynb
-04_Embeddings_and_Vector_Representations.ipynb
-05_Vector_Stores.ipynb
-06_Retrieval_Strategies.ipynb
-07_Complete_RAG_Pipeline.ipynb
-08_External_Index_Retrievers.ipynb
-Vector_Stores_Tutorial.ipynb
+	✅ 03_Text_Splitting_Strategies.ipynb
+	✅ 04_Embeddings_and_Vector_Representations.ipynb
+	✅ 05_Vector_Stores.ipynb
+	✅ 06_Retrieval_Strategies.ipynb
+	✅ 07_Complete_RAG_Pipeline.ipynb
+	✅ 08_External_Index_Retrievers.ipynb
+	✅ Vector_Stores_Tutorial.ipynb
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 29 Nov Day - 8 👉 Exploring Langchain Part-3 
@@ -153,8 +153,8 @@ Class Notes 👉 https://krishnaikacademy.notion.site/Ultimate-RAG-Course-2a5eba
 Code Download Link 👉 https://krishnaikacademy.notion.site/Exploring-Langchain-2adeba9593d080a9ba65f36aba9e283e
 
 Discussed below Jupter Notebook :-
-	- 10_RAG_Evaluation_with_Ragas.ipynb 
-	-11_RAG_Evaluation_with_LLM_Judge.ipynb
+	✅ 10_RAG_Evaluation_with_Ragas.ipynb 
+	✅ 11_RAG_Evaluation_with_LLM_Judge.ipynb
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 06 Dec Day - 11 👉 Document Parsers for RAG Part-1  
@@ -227,16 +227,16 @@ LangSmith 👉 https://www.langchain.com/langsmith/observability
 AWS CLI 👉 https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 
 AWS Service :-
-	- AmazonEC2ContainerRegistryFullAccess
-	- AWSAppRunnerFullAccess
-	- AmazonElasticContainerRegistryPublicFullAccess
+	✅ AmazonEC2ContainerRegistryFullAccess
+	✅ AWSAppRunnerFullAccess
+	✅ AmazonElasticContainerRegistryPublicFullAccess
 
 AWS Command :-
-	- aws ecr create-repository  --repository-name rag-qa-system  --region us-east-1
-	- aws ecr create-repository  --repository-name rag-qa-system  --region us-east-1
-	- aws ecr describe-repositories
-	- aws apprunner list-services --region us-east-1
-	- aws apprunner delete-service --service-arn 
+	✅ aws ecr create-repository  --repository-name rag-qa-system  --region us-east-1
+	✅ aws ecr create-repository  --repository-name rag-qa-system  --region us-east-1
+	✅ aws ecr describe-repositories
+	✅ aws apprunner list-services --region us-east-1
+	✅ aws apprunner delete-service --service-arn 
 
 Docker Build & Run :-
     - Build an Image from a Dockerfile 👉 docker build -t rag-project-class .
@@ -245,17 +245,17 @@ Docker Build & Run :-
 
 GitHub 👉 https://github.com/sourangshupal/rag-project-class
 ENV VARS FOR GITHUB ACTIONS :-
-	- APP_RUNNER_ECR_ACCESS_ROLE_ARN
+	✅ APP_RUNNER_ECR_ACCESS_ROLE_ARN
 		- aws iam get-role --role-name AppRunnerECRAccessRole --query 'Role.Arn' --output text
-	- AWS_ACCESS_KEY_ID
-	- AWS_SECRET_ACCESS_KEY
-	- LANGSMITH_API_KEY
-	- OPENAI_API_KEY
-	- QDRANT_API_KEY
-	- QDRANT_URL
+	✅ AWS_ACCESS_KEY_ID
+	✅ AWS_SECRET_ACCESS_KEY
+	✅ LANGSMITH_API_KEY
+	✅ OPENAI_API_KEY
+	✅ QDRANT_API_KEY
+	✅ QDRANT_URL
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-21 Dec Day - 17 👉 Llama-Index-Tutorials-Part-1
-************************************************
+21 Dec Day - 17 👉 Llama-Index-Tutorials: Part-1
+*************************************************
 Class Notes 👉 https://krishnaikacademy.notion.site/Ultimate-RAG-Course-2a5eba9593d08085ade8ceb2a6c6c8de
 
 Welcome to LlamaIndex 🦙 !!! 👉 https://developers.llamaindex.ai/python/framework/
@@ -266,24 +266,24 @@ GitHub 👉 https://github.com/sourangshupal/llama-index-tutorials
 LlamaIndex 🦙 Google GenAI 👉 https://developers.llamaindex.ai/python/examples/llm/google_genai/
 
 https://colab.research.google.com/drive/1LPvJyEON6btMpubYdwySfNs0FuNR9nza?usp=sharing
-	- Evaluating the Ideal Chunk Size for a RAG System using LlamaIndex.ipynb
+	✅ Evaluating the Ideal Chunk Size for a RAG System using LlamaIndex.ipynb
 
 https://colab.research.google.com/drive/1Rq6HPI7AVEIx-RpiiZMDw16ZNgs37tVp?usp=sharing#scrollTo=jlKICwXH6Tib
-	- Evaluating the Ideal Chunk Size for a RAG System using LlamaIndex.ipynb
+	✅ Evaluating the Ideal Chunk Size for a RAG System using LlamaIndex.ipynb
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-27 Dec Day - 18 👉 Llama-Index-Part-2
+27 Dec Day - 18 👉 Llama-Index: Part-2
+***************************************
+Class has been cancelled due to trainer unavailability.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+28 Dec Day - 18 👉 Llama-Index:Part-2
 **************************************
 Class has been cancelled due to trainer unavailability.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-28 Dec Day - 18 👉 Llama-Index-Part-2
-**************************************
-Class has been cancelled due to trainer unavailability.
-
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-03 Jan Day - 18 👉 Llama-Index-Part-2 & Chonkie
-************************************************
+03 Jan Day - 18 👉 Llama-Index: Part-2 & Chonkie
+*************************************************
 Class Notes 👉 https://krishnaikacademy.notion.site/Ultimate-RAG-Course-2a5eba9593d08085ade8ceb2a6c6c8de
 
 GitHub 👉 https://github.com/sourangshupal/llama-index-tutorials/tree/main
@@ -295,13 +295,13 @@ Voyage AI 👉 https://www.voyageai.com/
 GitHub Chonkie 👉 https://github.com/chonkie-inc/chonkie/tree/main/src/chonkie/chunker
 
 GitHub 👉 https://github.com/sourangshupal/chonkie-chunkers-tutorials
-- chonkie_complete_tutorial.ipynb
+	✅ chonkie_complete_tutorial.ipynb
 
 Embedding-similarity-based chunking.ipynb 👉 https://colab.research.google.com/drive/1BdYwifTevArz1iFakL1hNdYxfTCQcHJe?usp=sharing
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-04 Jan Day - 19 👉 Llama-Index-Part-3 & Chonkie
-************************************************
+04 Jan Day - 19 👉 Llama-Index: Part-3 & Chonkie
+*************************************************
 Class Notes 👉 https://krishnaikacademy.notion.site/Chunking-2deeba9593d080e5a99af30da523d567
 
 🦛 Chonkie  Documentation ✨ 👉 https://docs.chonkie.ai/oss/chunkers/neural-chunker 
@@ -311,11 +311,66 @@ Class Notes 👉 https://krishnaikacademy.notion.site/Chunking-2deeba9593d080e5a
 GitHub Chonkie 👉 https://github.com/chonkie-inc/chonkie/tree/main/src/chonkie/chunker
 
 GitHub 👉 https://github.com/sourangshupal/chonkie-chunkers-tutorials
-- chonkie_complete_tutorial.ipynb
+	✅ chonkie_complete_tutorial.ipynb
 
 sample_text = research_paper_text[:2000]
 
 GitHub 👉 https://github.com/sourangshupal/llama-index-tutorials/tree/main
-- advanced_retrieval copy.ipynb
+	✅ advanced_retrieval copy.ipynb
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+10 Jan Day - 20 👉 Advanced RAG: Part-1
+****************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Chunking-2deeba9593d080e5a99af30da523d567
+
+GitHub 👉 https://github.com/sourangshupal/advanced-rag-tutorials
+	✅ 01_HyDe.ipynb
+	✅ 02_fusion_retrieval.ipynb
+	✅ adv_sparse_embeddings.ipynb
+
+arXive Paper 👉 https://arxiv.org/pdf/2212.10496
+
+Data 👉 https://drive.google.com/drive/folders/1JzBh2kZd-LMA7GZ_VEfNuEsdO1GXpDrt?usp=sharing
+
+SPLADE for Sparse Vector Search Explained 👉 https://www.pinecone.io/learn/splade/
+
+SPLADE Paper 👉 chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://arxiv.org/pdf/2107.05720
+
+Run Milvus in Docker (Linux) 👉 https://milvus.io/docs/install_standalone-docker.md
+
+Install Milvus in Docker: 
+	# Download the installation script
+	$ curl -sfL https://raw.githubusercontent.com/milvus-io/milvus/master/scripts/standalone_embed.sh -o standalone_embed.sh
+	
+	# Start the Docker container
+	$ bash standalone_embed.sh start
+
+Install Milvus in Docker Windows:
+	1. Open Docker Desktop in administrator mode by right-clicking and selecting Run as administrator.
+	2. Download the installation script and save it as standalone.bat.
+		$ curl -L https://raw.githubusercontent.com/milvus-io/milvus/refs/heads/master/scripts/standalone_embed.bat -o standalone.bat
+	3. Run the downloaded script to start Milvus as a Docker container.
+		$ standalone.bat start
+
+	After running the installation script:
+	- A docker container named milvus-standalone has been started at port 19530.
+	- An embed etcd is installed along with Milvus in the same container and serves at port 2379. Its configuration file is mapped to embedEtcd.yaml in the current folder.
+	- The Milvus data volume is mapped to volumes/milvus in the current folder.
+
+	You can use the following commands to manage the Milvus container and stored data.
+	# Stop Milvus
+	C:\>standalone.bat stop
+	Stop successfully.
+
+	# Delete Milvus container
+	C:\>standalone.bat delete
+	Delete Milvus container successfully. # Container has been removed.
+	Delete successfully. # Data has been removed.
+
+huggingface 👉 https://huggingface.co/naver/splade-v3 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+11 Jan Day - 21 👉 Advanced RAG: Part-2
+****************************************
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
