@@ -24,7 +24,7 @@ Learning Objectives <br>
 
 # 📚 Learning Topics Related to Ultimate RAG Course
 This course is designed to provide students with a foundational, depth and practical understanding of RAG and Agents.
-## 02 Nov Day - 1 Induction Session <br>
+## 02 Nov Day - 1 👉 Induction Session <br>
 ### Induction Session Regarding Ultimate RAG Course
 #### 🎯 Learning Objectives
 - 📝 Agenda of Ultimate RAG course
@@ -33,7 +33,7 @@ This course is designed to provide students with a foundational, depth and pract
 - 📚 Learning Topics of Ultimate RAG course
 - 💬 Q&A
 
-## 08 Nov Day - 2 Tools And Installation <br>
+## 08 Nov Day - 2 👉 Tools And Installation <br>
 ### General Software Checklist
 #### 🎯 Learning Objectives
 - [ ]  Python Distribution
@@ -80,7 +80,7 @@ This course is designed to provide students with a foundational, depth and pract
     - Postman
     - Warp Terminal
 
-## 09 Nov Day - 3 Introduction To RAG <br>
+## 09 Nov Day - 3 👉 Introduction To RAG <br>
 ### 📚🔎🧠 Introduction to RAG
 #### 🎯 Learning Objectives
 - RAG: Retrieval-Augmented Generation for Knowledge-Intensive NLP
@@ -98,7 +98,7 @@ This course is designed to provide students with a foundational, depth and pract
 
 #### `Explained This Research Paper in breif` 👉 https://arxiv.org/pdf/2005.11401
 
-## 15 Nov Day - 4 RAG Architectures & Survey <br>
+## 15 Nov Day - 4 👉 RAG Architectures & Survey <br>
 ### 📚🔎🧠 RAG Detailed Survey
 #### Retrieval-Augmented Generation for Large Language Models: A Survey
 #### 🎯 Learning Objectives
@@ -135,7 +135,7 @@ This course is designed to provide students with a foundational, depth and pract
 
 #### `Explained This Research Paper in breif` 👉 https://arxiv.org/pdf/2312.10997
 
-## 16 Nov Day - 5 Exploring Langchain For RAG <br>
+## 16 Nov Day - 5 👉 Exploring Langchain For RAG <br>
 ### Exploring Langchain
 #### 🎯 Learning Objectives
 📚 By the end of this notebook, you will Learn:
@@ -168,7 +168,7 @@ The challenge: Students often need both **specific course material** (lecture no
 - Use an external retriever (Wikipedia) to provide general knowledge
 - Combine both sources intelligently to give comprehensive answers
 
-## 22 Nov Day - 6 Exploring Langchain Part-1
+## 22 Nov Day - 6 👉 Exploring Langchain: Part-1
 ### 📁 Notebook 02: Document Loaders
 #### 🎯 Learning Objectives
 📚 By the end of this notebook, you will be able to:
@@ -190,7 +190,7 @@ This notebook demonstrates building a **completely offline RAG (Retrieval-Augmen
 - **Fast**: No network latency
 - **Full Control**: Customize models and parameters
 
-## 23 Nov Day - 7 Exploring Langchain Part-2
+## 23 Nov Day - 7 👉 Exploring Langchain: Part-2
 ### ✂️ Notebook 03: Text Splitting Strategies
 #### 🎯 Learning Objectives
 📚 By the end of this notebook, you will Learn:
@@ -243,7 +243,7 @@ This notebook demonstrates building a **completely offline RAG (Retrieval-Augmen
 5. **Integration with RAG Chains** - Combine external retrievers with LLMs
 6. **Best Practices** - When and how to use each retriever effectively
 
-## 29 Nov Day - 8 Exploring Langchain Part-3
+## 29 Nov Day - 8 👉 Exploring Langchain: Part-3
 ### Vector Stores Tutorial: Qdrant & Weaviate
 #### 🎯 Learning Objectives
 📚 By the end of this notebook, you will Learn:
@@ -292,7 +292,7 @@ Building a RAG system is only half the battle. Without proper evaluation, you ca
 3. **Learn to interpret scores with confidence** using threshold guidelines
 4. **Debug evaluation issues** by understanding what each metric actually measures
 
-## 04 Dec Day - 10 Exploring RAGAS and LLM as Judge
+## 04 Dec Day - 10 👉 Exploring RAGAS and LLM as Judge
 ### 📚 Notebook 11: RAG Evaluation with LLM-as-Judge
 **Module 3: RAG Evaluation Techniques**
 #### 🎯 Learning Objectives
@@ -351,7 +351,7 @@ LlamaParse is a document parsing service by LlamaIndex that excels at:
 
 **Part 2** covers: Custom Prompts, Advanced Configuration, Async Operations, LlamaIndex Integration, RAG Examples, CLI Usage, and Best Practices.
 
-## 14 Dec Day - 14 Poject-1 👉 RAG Q&A System 
+## 14 Dec Day - 14 👉 Poject-1: RAG Q&A System 
 ### 04 🤖 RAG Q&A System
 #### 🎯 Learning Objectives
 ##### 📖 **Overview**
@@ -396,7 +396,7 @@ RAG combines the power of **retrieval** (finding relevant information) with **ge
 - ✅ Hot reload in development
 - ✅ CI/CD pipeline with GitHub Actions
 
-## 18 Dec Day - 15 Extra Class 👉 Pydantic-FastAPI-Tutorials 
+## 18 Dec Day - 15 👉 Extra Class: Pydantic-FastAPI-Tutorials 
 ### 05-Pydantic-FastAPI-Tutorials
 #### 🎯 Learning Objectives
 - Data validation and type safety
@@ -421,14 +421,14 @@ Pydantic is a data validation library that uses Python type annotations to:
 4. Nested Models & Complex Types
 5. Custom Validators
 
-## 20 Dec Day - 16 Poject-1 👉 AWS Deployment 
+## 20 Dec Day - 16 👉 Poject-1: AWS Deployment 
 ### 🤖 06-RAG-QA-Project
 #### 🎯 Learning Objectives
 - rag-project-class project deployment using CI/CD Pipeline with Github Actions
 - CI/CD pipeline with GitHub Actions
 
-## 21 Dec Day - 17 Llama-Index 👉 Part-1
-### 🤖 Llama-Index-Tutorials
+## 21 Dec Day - 17 👉 Llama-Index-Tutorials: Part-1
+### 🦙 07-Llama-Index-Tutorials
 #### 🎯 Learning Objectives
 #### 📚 Notebook 1: Setup & Basics
 ✅ Understand LlamaIndex architecture and modular ecosystem <br>
@@ -455,6 +455,9 @@ Pydantic is a data validation library that uses Python type annotations to:
 ✅ Understand response synthesis modes <br>
 ✅ Implement streaming responses <br>
 
+## 03 Jan Day - 18 👉 Llama-Index: Part-2 & 🦛 Chonkie ✨
+### 🦙 07-Llama-Index-Tutorials
+#### 🎯 Learning Objectives
 #### 📚 Notebook 4: Advanced Retrieval
 ✅ Implement RecursiveRetriever for hierarchical document retrieval  <br>
 ✅ Use QueryFusionRetriever to combine multiple retrieval strategies  <br>
@@ -475,6 +478,29 @@ Pydantic is a data validation library that uses Python type annotations to:
 - Setting Up Evaluators
 - Response Evaluation For A Chunk Size
 - Testing Across Different Chunk Sizes
+
+#### 🦛 Get Started with Chonkie
+- 🦛 Chonkie  Documentation ✨
+- Installation
+- CHONK! 🦛✨
+
+## 04 Jan Day - 19 👉 🦛 Chonkie ✨: Chonkie-Chunkers-Tutorials
+### 🦛 08-Chonkie-Chunkers-Tutorials
+#### 🎯 Learning Objectives
+- **9 Different Chunking Strategies:** From basic token splitting to advanced LLM-powered chunking
+- **Google Gemini Integration:** Using Gemini embeddings for semantic chunking
+- **Practical Examples:** Real-world applications with technical docs and research papers
+- **Performance Comparisons:** Side-by-side analysis of all chunkers
+- **Best Practices:** How to choose the right chunker for your use case
+
+#### Tutorial Structure
+1. Introduction & Setup
+1. Foundation Chunkers - Token, Sentence, Recursive
+1. Specialized Chunkers - Table, Code
+1. Semantic Chunkers - Semantic, Late, Neural
+1. Advanced Chunker - Slumber (LLM-powered)
+1. Comparative Analysis
+1. Best Practices
 
 ## Create the virtual environment in anaconda3 folder
 ```
