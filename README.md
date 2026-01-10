@@ -431,12 +431,12 @@ Pydantic is a data validation library that uses Python type annotations to:
 ### 🤖 Llama-Index-Tutorials
 #### 🎯 Learning Objectives
 #### Notebook 1: Setup & Basics
-✅ Understand LlamaIndex architecture and modular ecosystem
-✅ Install and configure LlamaIndex with the latest modular packages
-✅ Configure the Settings object (LLM, embeddings, chunk size)
-✅ Create your first VectorStoreIndex from documents
-✅ Execute basic queries and analyze responses
-✅ Understand the Document → Node → Index flow
+✅ Understand LlamaIndex architecture and modular ecosystem <br>
+✅ Install and configure LlamaIndex with the latest modular packages <br>
+✅ Configure the Settings object (LLM, embeddings, chunk size) <br>
+✅ Create your first VectorStoreIndex from documents <br>
+✅ Execute basic queries and analyze responses <br>
+✅ Understand the Document → Node → Index flow <br>
 
 ## Create the virtual environment in anaconda3 folder
 ```
