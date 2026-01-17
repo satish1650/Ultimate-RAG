@@ -414,10 +414,10 @@ GitHub 👉 https://github.com/sourangshupal/text2sql-rag
 LlamaIndex 👉 NL SQL table 👉 https://developers.llamaindex.ai/python/framework-api-reference/query_engine/NL_SQL_table/
 
 Supabase 👉 https://supabase.com/ 👉 Create account and login to Supabase
-
 postgresql://postgres:[YOUR-PASSWORD]@db.moxwowwouuevwpluzday.supabase.co:5432/postgres
 qOQ6JDgBTrMNlYpS
 
+Pinecone 👉	https://www.pinecone.io/ 
 
 GitHub 👉 https://github.com/sourangshupal/multidata-rag-project/tree/main
 
