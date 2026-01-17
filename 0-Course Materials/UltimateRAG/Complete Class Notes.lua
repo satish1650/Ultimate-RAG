@@ -372,5 +372,53 @@ huggingface 👉 https://huggingface.co/naver/splade-v3
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 11 Jan Day - 21 👉 Advanced RAG: Part-2
 ****************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Advanced-RAG-2e0eba9593d080f8b19cf479416dc8cc
+
+GitHub 👉 https://github.com/sourangshupal/advanced-rag-tutorials
+	✅ 03_reranking.ipynb
+	✅ 04_query_transformations.ipynb
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+17 Jan Day - 22 👉 Advanced RAG: Part-3 👉 Text2SQL
+****************************************************
+RAG 2.0 - Syllabus Feedback & Topic Suggestions 👉 https://forms.gle/5yU4VVr32EKbrMccA
+
+Class Notes 👉 https://krishnaikacademy.notion.site/Advanced-RAG-2e0eba9593d080f8b19cf479416dc8cc
+
+Today's Agenda: 
+	✅ Unified Modeling bge-M3
+	✅ ColBERT (Contextualized Late Interaction over BERT)
+	✅ Dense, Sparse (Hybrid Search), Multivector 
+    ✅ Dense with reranking (Post retrieval)
+	✅ Query Doc Encoder, Bi-Encoder, Cross-Encoder
+ 	✅ Text to SQL (Llamma) 
+	    
+Hugging Face: BAAI/bge-m3 👉 https://huggingface.co/BAAI/bge-m3
+
+M3 Embedding Paper 👉 https://arxiv.org/pdf/2402.03216
+
+Blended RAG Paper 👉 https://arxiv.org/pdf/2404.07220
+
+Install Milvus in Docker 👉 https://milvus.io/docs/install_standalone-docker.md
+
+GitHub 👉 https://github.com/sourangshupal/advanced-rag-tutorials
+	✅ bge_m3_multivector.ipynb
+
+🚀 Text-to-SQL with LlamaIndex
+GitHub 👉 https://github.com/sourangshupal/text2sql-rag
+	✅ 01_basic_text_to_sql.ipynb
+	✅ 02_intermediate_text_to_sql.ipynb
+	✅ 03_advanced_text_to_sql.ipynb
+	✅ 04_postgresql_text_to_sql.ipynb
+	
+LlamaIndex 👉 NL SQL table 👉 https://developers.llamaindex.ai/python/framework-api-reference/query_engine/NL_SQL_table/
+
+Supabase 👉 https://supabase.com/ 👉 Create account and login to Supabase
+
+postgresql://postgres:[YOUR-PASSWORD]@db.moxwowwouuevwpluzday.supabase.co:5432/postgres
+qOQ6JDgBTrMNlYpS
+
+
+GitHub 👉 https://github.com/sourangshupal/multidata-rag-project/tree/main
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
