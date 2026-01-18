@@ -381,9 +381,9 @@ GitHub 👉 https://github.com/sourangshupal/advanced-rag-tutorials
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 17 Jan Day - 22 👉 Advanced RAG: Part-3 👉 Text2SQL
 ****************************************************
-RAG 2.0 - Syllabus Feedback & Topic Suggestions 👉 https://forms.gle/5yU4VVr32EKbrMccA
-
 Class Notes 👉 https://krishnaikacademy.notion.site/Advanced-RAG-2e0eba9593d080f8b19cf479416dc8cc
+
+RAG 2.0 - Syllabus Feedback & Topic Suggestions 👉 https://forms.gle/5yU4VVr32EKbrMccA
 
 Today's Agenda: 
 	✅ Unified Modeling bge-M3
@@ -419,6 +419,15 @@ qOQ6JDgBTrMNlYpS
 
 Pinecone 👉	https://www.pinecone.io/ 
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+18 Jan Day - 23 👉 Advanced RAG: Part-3 👉 Project-2
+*****************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Project-2-2ebeba9593d08080a5c1ff04454fba0d?pvs=74
+
 GitHub 👉 https://github.com/sourangshupal/multidata-rag-project/tree/main
+
+Vanna Documentation 👉 https://vanna.ai/docs
+
+Spider 2.0: Enterprise Text-to-SQL Benchmark 👉 https://www.emergentmind.com/topics/spider-2-0-benchmark
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
