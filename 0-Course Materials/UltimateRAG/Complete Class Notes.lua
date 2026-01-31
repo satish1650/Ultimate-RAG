@@ -319,8 +319,8 @@ GitHub 👉 https://github.com/sourangshupal/llama-index-tutorials/tree/main
 	✅ advanced_retrieval copy.ipynb
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-10 Jan Day - 20 👉 Advanced RAG: Part-1
-****************************************
+10 Jan Day - 20 👉 Advanced RAG: Part-1 👉 advanced-rag-tutorials
+******************************************************************
 Class Notes 👉 https://krishnaikacademy.notion.site/Chunking-2deeba9593d080e5a99af30da523d567
 
 GitHub 👉 https://github.com/sourangshupal/advanced-rag-tutorials
@@ -370,8 +370,8 @@ Install Milvus in Docker Windows:
 huggingface 👉 https://huggingface.co/naver/splade-v3 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-11 Jan Day - 21 👉 Advanced RAG: Part-2
-****************************************
+11 Jan Day - 21 👉 Advanced RAG: Part-2 👉 advanced-rag-tutorials
+******************************************************************
 Class Notes 👉 https://krishnaikacademy.notion.site/Advanced-RAG-2e0eba9593d080f8b19cf479416dc8cc
 
 GitHub 👉 https://github.com/sourangshupal/advanced-rag-tutorials
@@ -379,9 +379,11 @@ GitHub 👉 https://github.com/sourangshupal/advanced-rag-tutorials
 	✅ 04_query_transformations.ipynb
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-17 Jan Day - 22 👉 Advanced RAG: Part-3 👉 Text2SQL
-****************************************************
+17 Jan Day - 22 👉 Advanced RAG: Part-1 👉 text2sql-rag
+********************************************************
 Class Notes 👉 https://krishnaikacademy.notion.site/Advanced-RAG-2e0eba9593d080f8b19cf479416dc8cc
+
+GitHub 👉 https://github.com/sourangshupal/text2sql-rag
 
 RAG 2.0 - Syllabus Feedback & Topic Suggestions 👉 https://forms.gle/5yU4VVr32EKbrMccA
 
@@ -420,8 +422,8 @@ qOQ6JDgBTrMNlYpS
 Pinecone 👉	https://www.pinecone.io/ 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-18 Jan Day - 23 👉 Advanced RAG: Part-3 👉 Project-2
-*****************************************************
+18 Jan Day - 23 👉 Advanced RAG: Part-1 👉 multidata-rag-project
+*******************************************************************************
 Class Notes 👉 https://krishnaikacademy.notion.site/Project-2-2ebeba9593d08080a5c1ff04454fba0d?pvs=74
 
 GitHub 👉 https://github.com/sourangshupal/multidata-rag-project/tree/main
@@ -431,3 +433,25 @@ Vanna Documentation 👉 https://vanna.ai/docs
 Spider 2.0: Enterprise Text-to-SQL Benchmark 👉 https://www.emergentmind.com/topics/spider-2-0-benchmark
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+24 Jan Day - 24 👉 Advanced RAG: Part-1 👉 Project-2 👉 text2sqlrag-project 👉 Code explnation
+************************************************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Project-2-2ebeba9593d08080a5c1ff04454fba0d
+
+GitHub 👉 https://github.com/sourangshupal/text2sqlrag-project
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+25 Jan Day - 25 👉 Advanced RAG: Part-2 👉 Project-2 👉 text2sqlrag-project 👉 Code explnation
+************************************************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Project-2-2ebeba9593d08080a5c1ff04454fba0d
+
+GitHub 👉 https://github.com/sourangshupal/text2sqlrag-project
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+31 Jan Day - 26 👉 Advanced RAG: Part-3 👉 Project-2 👉 text2sqlrag-project 👉 AWS Deployment
+***********************************************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Project-2-2ebeba9593d08080a5c1ff04454fba0d
+
+GitHub 👉 https://github.com/sourangshupal/text2sqlrag-project
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
