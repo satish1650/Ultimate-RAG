@@ -464,5 +464,7 @@ GitHub 👉 https://github.com/sourangshupal/text2sqlrag-project
 	✅ .github/workflows/deploy.yml
 	✅ docs/new_deploy.md 
 
+GitHub Gist 👉 gitmol777/deploy.yml 👉 https://gist.github.com/gitmol777/fab2621ab47a6b545789d9fc9970551e
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
