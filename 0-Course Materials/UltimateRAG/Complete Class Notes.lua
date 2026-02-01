@@ -446,20 +446,22 @@ Class Notes 👉 https://krishnaikacademy.notion.site/Project-2-2ebeba9593d08080
 
 GitHub 👉 https://github.com/sourangshupal/text2sqlrag-project
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 31 Jan Day - 26 👉 Advanced RAG: Part-3 👉 Project-2 👉 text2sqlrag-project 👉 AWS Deployment
 ***********************************************************************************************
 Class Notes 👉 https://krishnaikacademy.notion.site/Project-2-2ebeba9593d08080a5c1ff04454fba0d
 
 GitHub 👉 https://github.com/sourangshupal/text2sqlrag-project
-	✅ docs/new_deploy.md 
-	
+	✅ .github/workflows/deploy.yml
+	✅ docs/new_deploy.md  
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 01 Feb Day - 27 👉 Advanced RAG: Part-4 👉 Project-2 👉 text2sqlrag-project 👉 CI/CD Deployment using AWS
 ***********************************************************************************************************
 Class Notes 👉 https://krishnaikacademy.notion.site/Project-2-2ebeba9593d08080a5c1ff04454fba0d
 
 GitHub 👉 https://github.com/sourangshupal/text2sqlrag-project
+	✅ .github/workflows/deploy.yml
 	✅ docs/new_deploy.md 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
