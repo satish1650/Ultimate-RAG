@@ -467,4 +467,30 @@ GitHub 👉 https://github.com/sourangshupal/text2sqlrag-project
 GitHub Gist 👉 gitmol777/deploy.yml 👉 https://gist.github.com/gitmol777/fab2621ab47a6b545789d9fc9970551e
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+07 Feb Day - 28 👉 Advanced RAG: Part-5 👉 Project-2 👉 text2sqlrag-project 👉 Notebook & ECR, lambda funciton and AWS Dployment
+**********************************************************************************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Project-2-2ebeba9593d08080a5c1ff04454fba0d
 
+GitHub 👉 https://github.com/sourangshupal/text2sqlrag-project
+	✅ text2sqlrag-project/app/main.py
+	✅ text2sqlrag-project/lambda_handler.py
+	✅ text2sqlrag-project/DEPLOYMENT_OPTIMIZATION.md
+	✅ text2sqlrag-project/.github/workflows/deploy.yml
+	✅ text2sqlrag-project/Dockerfile.lambda.base
+	✅ text2sqlrag-project/docs/new_deploy.md
+	✅ text2sqlrag-project/Dockerfile.lambda
+	✅ text2sqlrag-project/build-base-image.sh
+	✅ text2sqlrag-project/requirements.txt
+
+Open Source LLM 👉 Kimi2.5 👉 https://www.kimi.com/en (7-Days Trail)
+
+Supercharging Search and Retrieval for Unstructured Data 👉 Voyage AI 👉 https://www.voyageai.com/
+Voyage AI 👉 Rerankers https://docs.voyageai.com/docs/reranker
+
+Agent-Native Software Development 👉 Factory AI 👉 https://factory.ai/
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+08 Feb Day - 29 👉 Advanced RAG: Part-5 👉 Project-2 👉 text2sqlrag-project 👉 Notebook & ECR, lambda funciton and AWS Dployment
+**********************************************************************************************************************************
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
