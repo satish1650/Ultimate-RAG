@@ -490,7 +490,43 @@ Voyage AI 👉 Rerankers https://docs.voyageai.com/docs/reranker
 Agent-Native Software Development 👉 Factory AI 👉 https://factory.ai/
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-08 Feb Day - 29 👉 Advanced RAG: Part-5 👉 Project-2 👉 text2sqlrag-project 👉 Notebook & ECR, lambda funciton and AWS Dployment
-**********************************************************************************************************************************
+08 Feb Day - 29 👉 Advanced RAG: 👉 advanced-rag-tutorials 👉 Query Transformations, CRAG, SRAG
+************************************************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Chunking-2deeba9593d080e5a99af30da523d567
+
+GitHub 👉 https://github.com/sourangshupal/advanced-rag-tutorials
+	✅ advanced-rag-tutorials/04_query_transformations.ipynb
+	✅ arXiv 👉 https://arxiv.org/abs/2401.15884
+	✅ CRAG(Corrective RAG) arXiv Paper 👉 https://arxiv.org/pdf/2401.15884
+		1 Introduction
+		2 Related Work
+		3 TaskFormulation
+		4 CRAG (Most Important)
+		  - 4.1 Overview of Model Inference
+		  - 4.2 Retrieval Evaluator
+		  - 4.3 Action Trigger
+		  - 4.4 Knowledge Refinement
+		  - 4.5 WebSearch
+		5 Experiments
+		  - 5.1 Tasks, Datasets and Metrics
+          - 5.2 Baselines
+		  - 5.3 Results
+		  - 5.4 Ablation Study
+	✅ advanced-rag-tutorials/crag.ipynb
+	✅ arXiv 👉 https://arxiv.org/pdf/2310.11511
+	✅ SRAG(Self RAG) arXiv Paper 👉 https://arxiv.org/pdf/2310.11511
+	    1 INTRODUCTION
+		2 RELATED WORK
+	    3 SELF-RAG: LEARNING TO RETRIEVE, GENERATE AND CRITIQUE (Most Important)
+			- 3.2 SELF-RAGTRAINING 
+			- 3.3 SELF-RAG INFERENCE
+	✅ advanced-rag-tutorials/self_rag.ipynb
+
+LlamaIndex 👉 Corrective RAG Workflow 👉 https://developers.llamaindex.ai/python/examples/workflow/corrective_rag_pack/
+
+Added Oracle 26AI unique features demo notebook for YT(You Tueb) Video
+	IS Oracle AI Database 26AI Vector Search Better Than Pinecone/Qdrant 👉 https://www.youtube.com/watch?v=76viwqWKaGw
+	Oracle 26AI is a converged database where vectors, relational data, JSON, spatial, and graph workloads run together with full SQL and ACID guarantees—unlike Pinecone or Qdrant, which require separate systems for transactional and analytical data.
+	Check out the entire github repo: https://fandf.co/3ZcQPAu
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
