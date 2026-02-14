@@ -491,7 +491,7 @@ Agent-Native Software Development 👉 Factory AI 👉 https://factory.ai/
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 08 Feb Day - 29 👉 Advanced RAG: 👉 advanced-rag-tutorials 👉 Query Transformations, CRAG, SRAG
-************************************************************************************************
+*************************************************************************************************
 Class Notes 👉 https://krishnaikacademy.notion.site/Chunking-2deeba9593d080e5a99af30da523d567
 
 GitHub 👉 https://github.com/sourangshupal/advanced-rag-tutorials
@@ -528,5 +528,28 @@ Added Oracle 26AI unique features demo notebook for YT(You Tueb) Video
 	IS Oracle AI Database 26AI Vector Search Better Than Pinecone/Qdrant 👉 https://www.youtube.com/watch?v=76viwqWKaGw
 	Oracle 26AI is a converged database where vectors, relational data, JSON, spatial, and graph workloads run together with full SQL and ACID guarantees—unlike Pinecone or Qdrant, which require separate systems for transactional and analytical data.
 	Check out the entire github repo: https://fandf.co/3ZcQPAu
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+14 Feb Day - 30 👉 Project-3 👉 Part-1 👉 corrective-self-reflective-rag
+**************************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Chunking-2deeba9593d080e5a99af30da523d567
+
+GitHub 👉 https://github.com/sourangshupal/corrective_self_reflective_rag
+	✅ corrective_self_reflective_rag/workflows
+	✅ corrective_self_reflective_rag/app/config.py
+	✅ corrective_self_reflective_rag/crag_mode.md
+	✅ corrective_self_reflective_rag/self_reflective_mode.md
+	✅ corrective_self_reflective_rag/both_mode.md
+
+Not discussed only shared during discussion:
+	GitHub 👉 https://github.com/sourangshupal/metadata-hybrid-rag 
+	GitHub 👉 https://github.com/zilliztech/GPTCache
+	GitHub 👉 https://github.com/aakriti1318/interview_questions
+
+Docling 👉 Force full page OCR 👉 https://docling-project.github.io/docling/examples/full_page_ocr/
+	
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+15 Feb Day - 31 👉 Project-3 👉 Part-2 👉 corrective-self-reflective-rag
+**************************************************************************
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
