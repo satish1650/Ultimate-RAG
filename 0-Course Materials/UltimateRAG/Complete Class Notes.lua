@@ -545,9 +545,18 @@ Not discussed only shared during discussion:
 	GitHub 👉 https://github.com/sourangshupal/metadata-hybrid-rag 
 	GitHub 👉 https://github.com/zilliztech/GPTCache
 	GitHub 👉 https://github.com/aakriti1318/interview_questions
+	GitHub 👉 https://gist.github.com/sourangshupal/885969045aeb2c8740fc5e44dd0602fc
 
 Docling 👉 Force full page OCR 👉 https://docling-project.github.io/docling/examples/full_page_ocr/
 	
+Search 40M documents in under 200ms on a CPU using binary embeddings and int8 rescoring.
+	https://medium.com/coding-nexus/search-40m-documents-in-under-200ms-on-a-cpu-using-binary-embeddings-and-int8-rescoring-4f5d34ad11ab
+
+Optimizing Memory for Bulk Uploads
+	https://qdrant.tech/articles/indexing-optimization/?q=quanti
+
+Running Qdrant on localhost 👉 http://localhost:6333/dashboard#/collections
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 15 Feb Day - 31 👉 Project-3 👉 Part-2 👉 corrective-self-reflective-rag
 **************************************************************************
