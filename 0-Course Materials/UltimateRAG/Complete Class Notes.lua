@@ -591,4 +591,7 @@ and 20+ top coding tools — starting at just $10/month. Subscribe now and grab 
 🔥 Firecrawl Docs 👉 https://docs.firecrawl.dev/introduction
 🔥 Firecrawl GitHub 👉 https://github.com/firecrawl/firecrawl
 
+COLBERT search implementation for search through VDB
+	https://github.com/Murtuzasaifee/C_S_RAG/commit/9c74d19a14109a30e9b1e50fc26e1b1044210638
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
