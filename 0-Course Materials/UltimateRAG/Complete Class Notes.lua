@@ -532,7 +532,7 @@ Added Oracle 26AI unique features demo notebook for YT(You Tueb) Video
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 14 Feb Day - 30 👉 Project-3 👉 Part-1 👉 corrective-self-reflective-rag
 **************************************************************************
-Class Notes 👉 https://krishnaikacademy.notion.site/Chunking-2deeba9593d080e5a99af30da523d567
+Class Notes 👉 https://krishnaikacademy.notion.site/Project-3-308eba9593d08068b4cec30947e62008
 
 GitHub 👉 https://github.com/sourangshupal/corrective_self_reflective_rag
 	✅ corrective_self_reflective_rag/workflows/project_architecture.md
@@ -560,7 +560,7 @@ Running Qdrant on localhost 👉 http://localhost:6333/dashboard#/collections
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 15 Feb Day - 31 👉 Project-3 👉 Part-2 👉 corrective-self-reflective-rag
 **************************************************************************
-Class Notes 👉 https://krishnaikacademy.notion.site/Chunking-2deeba9593d080e5a99af30da523d567
+Class Notes 👉 https://krishnaikacademy.notion.site/Project-3-308eba9593d08068b4cec30947e62008
 
 GitHub 👉 https://github.com/sourangshupal/corrective_self_reflective_rag
 	✅ corrective_self_reflective_rag/workflows/hybrid_search.md
