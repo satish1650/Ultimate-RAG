@@ -535,11 +535,11 @@ Added Oracle 26AI unique features demo notebook for YT(You Tueb) Video
 Class Notes 👉 https://krishnaikacademy.notion.site/Chunking-2deeba9593d080e5a99af30da523d567
 
 GitHub 👉 https://github.com/sourangshupal/corrective_self_reflective_rag
-	✅ corrective_self_reflective_rag/workflows
+	✅ corrective_self_reflective_rag/workflows/project_architecture.md
 	✅ corrective_self_reflective_rag/app/config.py
-	✅ corrective_self_reflective_rag/crag_mode.md
-	✅ corrective_self_reflective_rag/self_reflective_mode.md
-	✅ corrective_self_reflective_rag/both_mode.md
+	✅ corrective_self_reflective_rag/workflows/crag_mode.md
+	✅ corrective_self_reflective_rag/workflows/self_reflective_mode.md
+	✅ corrective_self_reflective_rag/workflows/both_mode.md
 
 Not discussed only shared during discussion:
 	GitHub 👉 https://github.com/sourangshupal/metadata-hybrid-rag 
@@ -560,5 +560,35 @@ Running Qdrant on localhost 👉 http://localhost:6333/dashboard#/collections
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 15 Feb Day - 31 👉 Project-3 👉 Part-2 👉 corrective-self-reflective-rag
 **************************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Chunking-2deeba9593d080e5a99af30da523d567
+
+GitHub 👉 https://github.com/sourangshupal/corrective_self_reflective_rag
+	✅ corrective_self_reflective_rag/workflows/hybrid_search.md
+	✅ corrective_self_reflective_rag/app/services/document_processor.py
+	✅ corrective_self_reflective_rag/app/services/vector_store.py
+	✅ corrective_self_reflective_rag/app/services/sparse_vector_service.py
+	✅ corrective_self_reflective_rag/app/services/embedding_service.py
+	✅ corrective_self_reflective_rag/app/api/upload.py
+	✅ corrective_self_reflective_rag/app/api/query.py
+    ✅ corrective_self_reflective_rag/app/core/retrieval.py	
+	✅ corrective_self_reflective_rag/app/models.py
+	✅ corrective_self_reflective_rag/app/services/hyde.py
+	✅ corrective_self_reflective_rag/app/services/web_search.py
+	✅ corrective_self_reflective_rag/app/services/llm_service.py
+
+Demo: Implementing a Hybrid Search System
+	https://qdrant.tech/course/essentials/day-3/hybrid-search-demo/#step-5-hybrid-search-with-reciprocal-rank-fusion
+
+Voyage AI 👉 Rerankers 👉 https://docs.voyageai.com/docs/reranker
+
+Voyage AI 👉 Text Embeddings 👉 https://docs.voyageai.com/docs/embeddings
+
+You’ve been invited to join the GLM Coding Plan! Enjoy full support for Claude Code, Cline, 
+and 20+ top coding tools — starting at just $10/month. Subscribe now and grab the limited-time deal! 
+	GLM Coding Plan 👉 Link 👉 https://z.ai/subscribe?ic=I3JCT4OXSS
+
+🔥 Firecrawl 👉 https://www.firecrawl.dev/
+🔥 Firecrawl Docs 👉 https://docs.firecrawl.dev/introduction
+🔥 Firecrawl GitHub 👉 https://github.com/firecrawl/firecrawl
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
