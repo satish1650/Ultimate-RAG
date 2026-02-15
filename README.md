@@ -354,7 +354,7 @@ LlamaParse is a document parsing service by LlamaIndex that excels at:
 ## 14 Dec Day - 14 👉 Poject-1: RAG Q&A System 
 ### 04 🤖 RAG Q&A System
 #### 🎯 Learning Objectives
-##### 📖 **Overview**
+#### 📖 **Overview**
 A **production-ready** RAG (Retrieval-Augmented Generation) system that enables intelligent Q&A over your documents. Built with modern AI stack and battle-tested in production environments.
 
 ##### 🎯 **What is RAG?**
@@ -501,6 +501,62 @@ Pydantic is a data validation library that uses Python type annotations to:
 1. Advanced Chunker - Slumber (LLM-powered)
 1. Comparative Analysis
 1. Best Practices
+
+## 10 Jan Day - 20 👉 Advanced RAG: Part-1 👉 advanced-rag-tutorials
+### 09-Advanced-Rag-Tutorials
+#### 🎯 Learning Objectives
+#### 📚 Notebook 1: 01_HyDe.ipynb
+#### **Hypothetical Document Embedding (HyDE) in Document Retrieval**
+#### **Key Components**
+1. PDF processing and text chunking
+1. Vector store creation using FAISS and OpenAI embeddings
+1. Language model for generating hypothetical documents
+1. Custom HyDERetriever class implementing the HyDE technique
+
+#### 📚 Notebook 2: 02_fusion_retrieval.ipynb
+#### **Fusion Retrieval in Document Search**
+#### **Key Components**
+1. PDF processing and text chunking
+1. Vector store creation using FAISS and OpenAI embeddings
+1. BM25 index creation for keyword-based retrieval
+1. Custom fusion retrieval function that combines both methods
+
+#### 📚 Notebook 3: adv_sparse_embeddings.ipynb
+#### **Advanced Sparse Embeddings**
+#### **Key Components**
+1. Setup and Installation
+1. Dataset and Corpus Preparation <br>
+   ✅ Sparse Retrieval Fundamentals <br>
+   ✅ BM25 (Statistical Method) <br>
+   ✅ SPLADE (Neural Method) <br>
+   ✅ Hybrid Search with RRF <br>
+   ✅ Score Interpretation <br>
+   ✅ Practical Decision Making <br>
+1. Cleanup and Next Steps
+1. When to Use Each Method
+1. Understanding Scores and Metrics
+1. Visualizing Score Comparisons
+
+## 11 Jan Day - 21 👉 Advanced RAG: Part-2 👉 advanced-rag-tutorials
+### 09-Advanced-Rag-Tutorials
+#### 🎯 Learning Objectives
+#### 📚 Notebook 4: 03_reranking.ipynb
+#### **Reranking Methods in RAG Systems**
+#### **Key Components**
+1. Initial Retriever: Often a vector store using embedding-based similarity search.
+1. Reranking Model: This can be either
+   - A Large Language Model (LLM) for scoring relevance
+   - A Cross-Encoder model specifically trained for relevance assessment 
+1. Scoring Mechanism: A method to assign relevance scores to documents
+1. Sorting and Selection Logic: To reorder documents based on new scores
+
+
+#### 📚 Notebook 5: 04_query_transformations.ipynb
+#### **Query Transformations for Improved Retrieval in RAG Systems**
+#### **Key Components**
+1. Query Rewriting: Reformulates queries to be more specific and detailed.
+1. Step-back Prompting: Generates broader queries for better context 1. retrieval.
+1. Sub-query Decomposition: Breaks down complex queries into simpler sub-queries.
 
 ## Create the virtual environment in anaconda3 folder
 ```
