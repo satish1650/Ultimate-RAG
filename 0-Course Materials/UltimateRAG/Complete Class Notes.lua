@@ -454,6 +454,7 @@ Spider 2.0: Enterprise Text-to-SQL Benchmark 👉 https://www.emergentmind.com/t
 Class Notes 👉 https://krishnaikacademy.notion.site/Project-2-2ebeba9593d08080a5c1ff04454fba0d
 
 GitHub 👉 https://github.com/sourangshupal/text2sqlrag-project
+	✅ text2sqlrag-project/workflows/01-system-architecture.md
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 25 Jan Day - 25 👉 Advanced RAG: Part-3 👉 Project-2 👉 text2sqlrag-project 👉 Code explnation
