@@ -600,7 +600,7 @@ Pydantic is a data validation library that uses Python type annotations to:
 ## 18 Jan Day - 23 👉 Advanced RAG: Part-1 👉 Project-2 👉 multidata-rag-project
 ## 11-Multidata-RAG-Project
 #### 🎯 Learning Objectives
-#### **Project-2 Setup & Implementation 👉 Multi-Source RAG + Text-to-SQL <br>
+#### **Project-2 Setup & Implementation 👉 Multi-Source RAG + Text-to-SQL** <br>
 ✅ Python 3.12+ <br>
 ✅ Configure your .env <br>
 ✅ Install Packages <br>
