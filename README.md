@@ -558,6 +558,91 @@ Pydantic is a data validation library that uses Python type annotations to:
 1. Step-back Prompting: Generates broader queries for better context 1. retrieval.
 1. Sub-query Decomposition: Breaks down complex queries into simpler sub-queries.
 
+## 17 Jan Day - 22 👉 Advanced RAG: Part-1 👉 Text-to-SQL with LlamaIndex
+### 10-Text2Sql-RAG
+#### 🎯 Learning Objectives
+#### 📚 Notebook 1: 01_basic_text_to_sql.ipynb
+#### **Basic Text-to-SQL with LlamaIndex**
+📚 By the end of this notebook, you will Learn:
+- Understand text-to-SQL fundamentals
+- Use NLSQLTableQueryEngine for structured queries
+- Work with SQLite databases
+- Inspect and understand generated SQL
+- Handle basic error cases
+- Apply security best practices
+
+#### 📚 Notebook 2: 02_intermediate_text_to_sql.ipynb
+#### **Intermediate Text-to-SQL with Dynamic Table Retrieval**
+📚 By the end of this notebook, you will Learn:
+- Work with multi-table databases
+- Use SQLTableRetrieverQueryEngine for large schemas
+- Implement dynamic table retrieval with ObjectIndex
+- Understand when to use different query engines
+- Query CSV files directly with DuckDB
+
+#### 📚 Notebook 3: 03_advanced_text_to_sql.ipynb
+#### **Advanced Text-to-SQL with Full WikiTableQuestions Dataset**
+📚 By the end of this notebook, you will Learn:
+- Understand LlamaIndex Workflow architecture
+- Implement query-time table retrieval workflows
+- Add query-time row retrieval with vector indices
+- Work with the FULL WikiTableQuestions dataset (2,000+ tables)
+- Build production-ready text-to-SQL systems
+- Implement error handling and SQL validation
+
+#### 📚 Notebook 4: 04_postgresql_text_to_sql.ipynb
+#### **PostgreSQL/Supabase Integration for Text-to-SQL**
+📚 By the end of this notebook, you will Learn:
+- Connect LlamaIndex to PostgreSQL/Supabase databases
+- Implement secure connection patterns
+- Query real data with natural language
+
+## 18 Jan Day - 23 👉 Advanced RAG: Part-1 👉 Project-2 👉 multidata-rag-project
+## 11-Multidata-RAG-Project
+#### 🎯 Learning Objectives
+#### **Project-2 Setup & Implementation 👉 Multi-Source RAG + Text-to-SQL <br>
+✅ Python 3.12+ <br>
+✅ Configure your .env <br>
+✅ Install Packages <br>
+✅ OpenAI API Key (for embeddings and LLM) <br>
+✅ Vanna AI <br>
+✅ Pinecone Account (for vector storage) <br>
+   - Create an index with dimension=1536, metric=cosine <br>
+   - Pinecone API Key <br>
+   
+✅ PostgreSQL Database (for Text-to-SQL) <br>
+   - Supabase recommended for easy setup
+   - Supabase DB Creation
+
+#### 📚 Notebook 1: notebooks/vanna_ai_text_to_sql_complete.ipynb
+#### **Text-to-SQL with Vanna.ai - Complete Tutorial**
+📚 By the end of this notebook, you will Learn:
+1. What Text-to-SQL is and why it matters
+1. How to set up Vanna.ai 2.0 with OpenAI and PostgreSQL
+1. Understanding the Agent framework architecture
+1. Generating SQL from natural language questions
+1. Executing queries and handling results
+1. Best practices for production deployment
+
+#### **Key Components**
+1. Section 1: Introduction to Text-to-SQL
+1. Section 2: Environment Setup
+1. Section 3: Initialize Vanna 2.0 Agent
+1. Section 4: Understanding the Database
+1. Section 5: Provide Schema Documentation to Agent
+1. Section 6: Querying with the Agent
+1. Section 7: Understanding How the Agent Works
+1. Section 8: Testing Various Question Types
+1. Section 9: Error Handling and Best Practices
+
+#### 📚 Notebook 2: data/generate_sample_data.py
+- Sample Data Generation Script
+- Generates realistic sample data for the e-commerce database.
+
+#### Notebook 3: supabase_con_test.py
+- Check Database connection
+
+
 ## Create the virtual environment in anaconda3 folder
 ```
 conda create -n venv_ur_name python==3.12 -y
