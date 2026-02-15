@@ -432,17 +432,17 @@ GitHub 👉 https://github.com/sourangshupal/multidata-rag-project/tree/main
 	✅ multidata-rag-projec/supabase_con_test.py
 
 Project-2 Setup 👉 multidata-rag-project
-✅ Python 3.12+
-✅ Configure your .env
-✅ Install Packages
-✅ OpenAI API Key (for embeddings and LLM)
-✅ Vanna AI
-✅ Pinecone Account (for vector storage)
-   - Create an index with dimension=1536, metric=cosine
-   - Pinecone API Key
-✅ PostgreSQL Database (for Text-to-SQL)
-   - Supabase recommended for easy setup
-   - Supabase DB Creation
+	✅ Python 3.12+
+	✅ Configure your .env
+	✅ Install Packages
+	✅ OpenAI API Key (for embeddings and LLM)
+	✅ Vanna AI
+	✅ Pinecone Account (for vector storage)
+	- Create an index with dimension=1536, metric=cosine
+	- Pinecone API Key
+	✅ PostgreSQL Database (for Text-to-SQL)
+	- Supabase recommended for easy setup
+	- Supabase DB Creation
 
 Vanna Documentation 👉 https://vanna.ai/docs
 
