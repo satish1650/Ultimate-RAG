@@ -422,32 +422,48 @@ qOQ6JDgBTrMNlYpS
 Pinecone 👉	https://www.pinecone.io/ 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-18 Jan Day - 23 👉 Advanced RAG: Part-1 👉 multidata-rag-project
+18 Jan Day - 23 👉 Advanced RAG: Part-1 👉 Project-2 👉 multidata-rag-project
 *******************************************************************************
 Class Notes 👉 https://krishnaikacademy.notion.site/Project-2-2ebeba9593d08080a5c1ff04454fba0d?pvs=74
 
 GitHub 👉 https://github.com/sourangshupal/multidata-rag-project/tree/main
+	✅ multidata-rag-projec/notebooks/vanna_ai_text_to_sql_complete.ipynb
+	✅ multidata-rag-projec/data/generate_sample_data.py
+	✅ multidata-rag-projec/supabase_con_test.py
+
+Project-2 Setup 👉 multidata-rag-project
+✅ Python 3.12+
+✅ Configure your .env
+✅ Install Packages
+✅ OpenAI API Key (for embeddings and LLM)
+✅ Vanna AI
+✅ Pinecone Account (for vector storage)
+   - Create an index with dimension=1536, metric=cosine
+   - Pinecone API Key
+✅ PostgreSQL Database (for Text-to-SQL)
+   - Supabase recommended for easy setup
+   - Supabase DB Creation
 
 Vanna Documentation 👉 https://vanna.ai/docs
 
 Spider 2.0: Enterprise Text-to-SQL Benchmark 👉 https://www.emergentmind.com/topics/spider-2-0-benchmark
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-24 Jan Day - 24 👉 Advanced RAG: Part-1 👉 Project-2 👉 text2sqlrag-project 👉 Code explnation
+24 Jan Day - 24 👉 Advanced RAG: Part-2 👉 Project-2 👉 text2sqlrag-project 👉 Code explnation
 ************************************************************************************************
 Class Notes 👉 https://krishnaikacademy.notion.site/Project-2-2ebeba9593d08080a5c1ff04454fba0d
 
 GitHub 👉 https://github.com/sourangshupal/text2sqlrag-project
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-25 Jan Day - 25 👉 Advanced RAG: Part-2 👉 Project-2 👉 text2sqlrag-project 👉 Code explnation
+25 Jan Day - 25 👉 Advanced RAG: Part-3 👉 Project-2 👉 text2sqlrag-project 👉 Code explnation
 ************************************************************************************************
 Class Notes 👉 https://krishnaikacademy.notion.site/Project-2-2ebeba9593d08080a5c1ff04454fba0d
 
 GitHub 👉 https://github.com/sourangshupal/text2sqlrag-project
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-31 Jan Day - 26 👉 Advanced RAG: Part-3 👉 Project-2 👉 text2sqlrag-project 👉 AWS Deployment
+31 Jan Day - 26 👉 Advanced RAG: Part-4 👉 Project-2 👉 text2sqlrag-project 👉 AWS Deployment
 ***********************************************************************************************
 Class Notes 👉 https://krishnaikacademy.notion.site/Project-2-2ebeba9593d08080a5c1ff04454fba0d
 
@@ -456,7 +472,7 @@ GitHub 👉 https://github.com/sourangshupal/text2sqlrag-project
 	✅ docs/new_deploy.md  
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-01 Feb Day - 27 👉 Advanced RAG: Part-4 👉 Project-2 👉 text2sqlrag-project 👉 CI/CD Deployment using AWS
+01 Feb Day - 27 👉 Advanced RAG: Part-5 👉 Project-2 👉 text2sqlrag-project 👉 CI/CD Deployment using AWS
 ***********************************************************************************************************
 Class Notes 👉 https://krishnaikacademy.notion.site/Project-2-2ebeba9593d08080a5c1ff04454fba0d
 
@@ -467,7 +483,7 @@ GitHub 👉 https://github.com/sourangshupal/text2sqlrag-project
 GitHub Gist 👉 gitmol777/deploy.yml 👉 https://gist.github.com/gitmol777/fab2621ab47a6b545789d9fc9970551e
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-07 Feb Day - 28 👉 Advanced RAG: Part-5 👉 Project-2 👉 text2sqlrag-project 👉 Notebook & ECR, lambda funciton and AWS Dployment
+07 Feb Day - 28 👉 Advanced RAG: Part-6 👉 Project-2 👉 text2sqlrag-project 👉 Notebook & ECR, lambda funciton and AWS Dployment
 **********************************************************************************************************************************
 Class Notes 👉 https://krishnaikacademy.notion.site/Project-2-2ebeba9593d08080a5c1ff04454fba0d
 
