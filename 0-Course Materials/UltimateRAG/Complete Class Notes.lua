@@ -438,11 +438,11 @@ Project-2 Setup 👉 multidata-rag-project
 	✅ OpenAI API Key (for embeddings and LLM)
 	✅ Vanna AI
 	✅ Pinecone Account (for vector storage)
-	- Create an index with dimension=1536, metric=cosine
-	- Pinecone API Key
+		- Create an index with dimension=1536, metric=cosine
+		- Pinecone API Key
 	✅ PostgreSQL Database (for Text-to-SQL)
-	- Supabase recommended for easy setup
-	- Supabase DB Creation
+		- Supabase recommended for easy setup
+		- Supabase DB Creation
 
 Vanna Documentation 👉 https://vanna.ai/docs
 
