@@ -642,7 +642,7 @@ Pydantic is a data validation library that uses Python type annotations to:
 #### Notebook 3: supabase_con_test.py
 - Check Database connection
 
-## 24 Jan Day - 24 👉 Advanced RAG: Part-2 👉 Project-2 👉 text2sqlrag-project 👉 Code explnation
+## 24 Jan Day - 24 👉 Advanced RAG: Part-2 👉 Project-2 👉 text2sqlrag-project 👉 Code explanation 👉 AWS Project-2 Deployment Configuration Setup
 ## 12-Text2Sql-RAG-Project-2
 #### 🎯 Learning Objectives
 #### **Project-2 Workflow**
