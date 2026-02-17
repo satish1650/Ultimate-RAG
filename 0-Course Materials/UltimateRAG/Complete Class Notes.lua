@@ -455,6 +455,37 @@ Class Notes 👉 https://krishnaikacademy.notion.site/Project-2-2ebeba9593d08080
 
 GitHub 👉 https://github.com/sourangshupal/text2sqlrag-project
 	✅ text2sqlrag-project/workflows/01-system-architecture.md
+	✅ text2sqlrag-project/workflows/02-unified-query-flow.md
+	✅ text2sqlrag-project/workflows/03-document-upload-pipeline.md
+	✅ text2sqlrag-project/workflows/04-rag-query-execution.md
+	✅ text2sqlrag-project/workflows/05-sql-query-execution.md
+	✅ text2sqlrag-project/workflows/06-multi-level-cache.md
+	✅ text2sqlrag-project/workflows/07-service-initialization.md
+
+📦 Prerequisites
+1. For Local Development
+	✅ Python 3.12+
+	✅ OpenAI API Key (for embeddings and LLM)
+	✅ Pinecone Account (for vector storage)
+	✅ Create an index with dimension=1536, metric=cosine
+	✅ PostgreSQL Database (for Text-to-SQL)
+	✅ Supabase recommended for easy setup
+	✅ OPIK API Key (optional, for monitoring)
+	✅ Upstash Redis (optional, for query caching - 40-60% cost savings)
+
+2. For AWS Lambda Deployment
+   All of the above, plus:
+	✅ Aws Account with Admin access or permissions for ECR, Lambda, IAM, API Gateway
+	✅ AWS CLI (version 2.x) configured with credentials
+	✅ Docker for building Lambda container images
+	✅ GitHub Repository for CI/CD pipeline
+	✅ Estimated Setup Time: 30-45 minutes (one-time)
+
+Upstash (Serverless Data Platform) 👉 Redis 👉 https://console.upstash.com/redis
+Upstash Docs 👉 https://upstash.com/docs/introduction
+
+Opik Sign Up 👉 https://www.comet.com/signup?from=llm
+Opik Docs 👉 https://www.comet.com/docs/opik/reference/rest-api/overview
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 25 Jan Day - 25 👉 Advanced RAG: Part-3 👉 Project-2 👉 text2sqlrag-project 👉 Code explnation
