@@ -642,6 +642,35 @@ Pydantic is a data validation library that uses Python type annotations to:
 #### Notebook 3: supabase_con_test.py
 - Check Database connection
 
+## 24 Jan Day - 24 👉 Advanced RAG: Part-2 👉 Project-2 👉 text2sqlrag-project 👉 Code explnation
+## 12-Text2Sql-RAG-Project-2
+#### 🎯 Learning Objectives
+#### **Project-2 Workflow**
+1. System Architecture
+1. Unified Query Flow
+1. Document Upload Pipeline
+1. RAG Query Execution
+1. SQL Query Execution
+1. Multi-Level Cache Architecture
+1. Service Initialization
+
+#### **Prerequisites**
+1. For Local Development
+    - **Python 3.12+**
+    - **OpenAI API Key** (for embeddings and LLM)
+    - **Pinecone Account** (for vector storage)
+        - Create an index with dimension=1536, metric=cosine
+    - **PostgreSQL Database** (for Text-to-SQL)
+        - Supabase recommended for easy setup
+    - **OPIK API Key** (optional, for monitoring)
+    - **Upstash Redis** (optional, for query caching - 40-60% cost savings)
+1. For AWS Lambda Deployment
+    - **AWS Account** with admin access or permissions for ECR, Lambda, IAM, API Gateway
+    - **AWS CLI** (version 2.x) configured with credentials
+    - **Docker** for building Lambda container images
+    - **GitHub Repository** for CI/CD pipeline
+    - **Estimated Setup Time:** 30-45 minutes (one-time)
+
 
 ## Create the virtual environment in anaconda3 folder
 ```
