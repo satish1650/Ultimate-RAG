@@ -449,8 +449,8 @@ Vanna Documentation 👉 https://vanna.ai/docs
 Spider 2.0: Enterprise Text-to-SQL Benchmark 👉 https://www.emergentmind.com/topics/spider-2-0-benchmark
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-24 Jan Day - 24 👉 Advanced RAG: Part-2 👉 Project-2 👉 text2sqlrag-project 👉 Code explanation 👉 AWS Project-2 Deployment Configuration Setup
-*************************************************************************************************************************************************
+24 Jan Day - 24 👉 Advanced RAG: Part-2 👉 Project-2 👉 text2sqlrag-project 👉 Code explanation 👉 Configuration Setup for Project-2 in AWS
+**********************************************************************************************************************************************
 Class Notes 👉 https://krishnaikacademy.notion.site/Project-2-2ebeba9593d08080a5c1ff04454fba0d
 
 GitHub 👉 https://github.com/sourangshupal/text2sqlrag-project
