@@ -647,12 +647,19 @@ Pydantic is a data validation library that uses Python type annotations to:
 #### 🎯 Learning Objectives
 #### **Project-2 Workflow**
 1. System Architecture
+    - text2sqlrag-project/workflows/01-system-architecture.md
 1. Unified Query Flow
+    - text2sqlrag-project/workflows/02-unified-query-flow.md
 1. Document Upload Pipeline
+    - text2sqlrag-project/workflows/03-document-upload-pipeline.md
 1. RAG Query Execution
+    - text2sqlrag-project/workflows/04-rag-query-execution.md
 1. SQL Query Execution
+    - text2sqlrag-project/workflows/05-sql-query-execution.md
 1. Multi-Level Cache Architecture
+    - text2sqlrag-project/workflows/06-multi-level-cache.md
 1. Service Initialization
+    - text2sqlrag-project/workflows/07-service-initialization.md
 
 #### **Prerequisites**
 1. For Local Development
@@ -671,6 +678,40 @@ Pydantic is a data validation library that uses Python type annotations to:
     - **GitHub Repository** for CI/CD pipeline
     - **Estimated Setup Time:** 30-45 minutes (one-time)
 
+## 25 Jan Day - 25 👉 Advanced RAG: Part-3 👉 Project-2 👉 text2sqlrag-project 👉 Code explnation
+## 12-Text2Sql-RAG-Project-2
+#### 🎯 Learning Objectives
+#### **Project-2 Workflow 👉 text2sqlrag-project/workflows/deployment.md**
+**AWS Lambda Deployment Architecture - Mermaid Diagrams**
+1. CI/CD Deployment Flow
+1. Runtime Architecture & Request Flow
+1. Cost Breakdown (Monthly Estimate)
+1. Key Architecture Benefits
+1. Technical Specifications
+    - Lambda Configuration
+    - Function URL Configuration
+    - Docker Image
+    - Environment Variables
+    - Quick Reference
+        - Test Endpoints
+        - Monitoring
+        - Deployment
+#### **Project-2 Deployment 👉 text2sqlrag-project/docs/new_deploy.md**
+#### **Complete AWS Deployment Guide for Fresh Account**
+- Multi-Source RAG + Text-to-SQL Systems
+
+#### **Project-2 👉 Code explnation of below python files**
+    ✅ text2sqlrag-project/app/config.py
+	✅ text2sqlrag-project/app/logging_config.py
+	✅ text2sqlrag-project/app/utils.py
+	✅ text2sqlrag-project/app/main.py
+	✅ text2sqlrag-project/app/services/document_service.py
+	✅ text2sqlrag-project/app/services/docling_service.py
+	✅ text2sqlrag-project/app/services/embedding_service.py
+	✅ text2sqlrag-project/app/services/vector_service.py
+	✅ text2sqlrag-project/app/services/s3_storage.py
+	✅ text2sqlrag-project/app/services/rag_service.py
+	✅ text2sqlrag-project/app/services/local_storage.py
 
 ## Create the virtual environment in anaconda3 folder
 ```
