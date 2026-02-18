@@ -449,7 +449,7 @@ Vanna Documentation 👉 https://vanna.ai/docs
 Spider 2.0: Enterprise Text-to-SQL Benchmark 👉 https://www.emergentmind.com/topics/spider-2-0-benchmark
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-24 Jan Day - 24 👉 Advanced RAG: Part-2 👉 Project-2 👉 text2sqlrag-project 👉 Code explanation 👉 Configuration Setup for Project-2 in AWS
+24 Jan Day - 24 👉 Advanced RAG: Part-2 👉 Project-2 👉 text2sqlrag-project 👉 Code Explanation 👉 Configuration Setup for Project-2 in AWS
 **********************************************************************************************************************************************
 Class Notes 👉 https://krishnaikacademy.notion.site/Project-2-2ebeba9593d08080a5c1ff04454fba0d
 
@@ -488,8 +488,8 @@ Opik Sign Up 👉 https://www.comet.com/signup?from=llm
 Opik Docs 👉 https://www.comet.com/docs/opik/reference/rest-api/overview
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-25 Jan Day - 25 👉 Advanced RAG: Part-3 👉 Project-2 👉 text2sqlrag-project 👉 Code explnation
-************************************************************************************************
+25 Jan Day - 25 👉 Advanced RAG: Part-3 👉 Project-2 👉 text2sqlrag-project 👉 Code Explanation
+*************************************************************************************************
 Class Notes 👉 https://krishnaikacademy.notion.site/Project-2-2ebeba9593d08080a5c1ff04454fba0d
 
 GitHub 👉 https://github.com/sourangshupal/text2sqlrag-project
