@@ -642,7 +642,7 @@ Pydantic is a data validation library that uses Python type annotations to:
 #### Notebook 3: supabase_con_test.py
 - Check Database connection
 
-## 24 Jan Day - 24 👉 Advanced RAG: Part-2 👉 Project-2 👉 text2sqlrag-project 👉 Code explanation 👉 Configuration Setup for Project-2 in AWS
+## 24 Jan Day - 24 👉 Advanced RAG: Part-2 👉 Project-2 👉 text2sqlrag-project 👉 Code Explanation 👉 Configuration Setup for Project-2 in AWS
 ## 12-Text2Sql-RAG-Project-2
 #### 🎯 Learning Objectives
 #### **Project-2 Workflow**
@@ -678,7 +678,7 @@ Pydantic is a data validation library that uses Python type annotations to:
     - **GitHub Repository** for CI/CD pipeline
     - **Estimated Setup Time:** 30-45 minutes (one-time)
 
-## 25 Jan Day - 25 👉 Advanced RAG: Part-3 👉 Project-2 👉 text2sqlrag-project 👉 Code explnation
+## 25 Jan Day - 25 👉 Advanced RAG: Part-3 👉 Project-2 👉 text2sqlrag-project 👉 Code Explanation
 ## 12-Text2Sql-RAG-Project-2
 #### 🎯 Learning Objectives
 #### **Project-2 Workflow 👉 text2sqlrag-project/workflows/deployment.md**
@@ -700,7 +700,7 @@ Pydantic is a data validation library that uses Python type annotations to:
 #### **Complete AWS Deployment Guide for Fresh Account**
 - Multi-Source RAG + Text-to-SQL Systems
 
-#### **Project-2 👉 Code explnation of below python files**
+#### **Project-2 👉 Code Explanation of below python files**
     ✅ text2sqlrag-project/app/config.py
 	✅ text2sqlrag-project/app/logging_config.py
 	✅ text2sqlrag-project/app/utils.py
