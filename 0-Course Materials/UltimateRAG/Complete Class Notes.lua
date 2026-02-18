@@ -493,6 +493,31 @@ Opik Docs 👉 https://www.comet.com/docs/opik/reference/rest-api/overview
 Class Notes 👉 https://krishnaikacademy.notion.site/Project-2-2ebeba9593d08080a5c1ff04454fba0d
 
 GitHub 👉 https://github.com/sourangshupal/text2sqlrag-project
+	✅ text2sqlrag-project/workflows/deployment.md
+	✅ text2sqlrag-project/docs/new_deploy.md
+	✅ text2sqlrag-project/app/config.py
+	✅ text2sqlrag-project/app/logging_config.py
+	✅ text2sqlrag-project/app/utils.py
+	✅ text2sqlrag-project/app/main.py
+	✅ text2sqlrag-project/app/services/document_service.py
+	✅ text2sqlrag-project/app/services/docling_service.py
+	✅ text2sqlrag-project/app/services/embedding_service.py
+	✅ text2sqlrag-project/app/services/vector_service.py
+	✅ text2sqlrag-project/app/services/s3_storage.py
+	✅ text2sqlrag-project/app/services/rag_service.py
+	✅ text2sqlrag-project/app/services/local_storage.py
+
+QEMU is a generic and open source machine & userspace emulator and virtualizer.
+QUME GitHub 👉 https://github.com/qemu/qemu
+QUME Docs 👉 https://www.qemu.org/documentation/
+
+AWS 👉 Function URL
+AWS 👉 Lambda 👉 Functions 👉 rag-text-to-sql-serverless
+
+semchunk 2.2.1 👉 semchunk 👉 Owing to its complex yet highly efficient chunking algorithm, semchunk is both more semantically accurate than 
+langchain.text_splitter.RecursiveCharacterTextSplitter (see How It Works 🔍) and is also over 80% faster than semantic-text-splitter (see the Benchmarks 📊).
+
+Docling 👉 Hybrid chunking 👉 https://docling-project.github.io/docling/examples/hybrid_chunking/
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 31 Jan Day - 26 👉 Advanced RAG: Part-4 👉 Project-2 👉 text2sqlrag-project 👉 AWS Deployment
