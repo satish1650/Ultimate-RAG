@@ -713,6 +713,60 @@ Pydantic is a data validation library that uses Python type annotations to:
 	✅ text2sqlrag-project/app/services/rag_service.py
 	✅ text2sqlrag-project/app/services/local_storage.py
 
+## 31 Jan Day - 26 👉 Advanced RAG: Part-4 👉 Project-2 👉 text2sqlrag-project 👉 AWS Deployment
+## 12-Text2Sql-RAG-Project-2
+#### 🎯 Learning Objectives
+#### **Project-2 Deployment 👉 text2sqlrag-project/docs/new_deploy.md**
+#### **Complete AWS Deployment Guide for Fresh Account**
+✅ text2sqlrag-project/docs/new_deploy.md
+- Multi-Source RAG + Text-to-SQL Systems
+    - Overview
+        - What Will Be Deployed
+        - Architecture Diagram
+        - Prerequisites Checklist
+    - Prerequisites & Requirements
+        - Install AWS CLI
+        - Install Docker (Optional but Recommended)
+        - Configure AWS CLI
+    - AWS IAM Setup
+        - Create Lambda Execution Role
+        - Add Deployment Permissions to User
+    - AWS Infrastructure Setup
+        - Create S3 Bucket for Document Cache
+        - Create ECR Repository
+        - Build and Push Initial Docker Image
+        - Create Lambda Function
+        - Create Lambda Function URL
+    - External Services Configuration
+        - OpenAI Setup
+        - Pinecone Setup
+        - Supabase/PostgreSQL Setup
+        - Upstash Redis Setup (Optional)
+        - OPIK Monitoring Setup (Optional)
+    - GitHub Repository Setup
+        - Fork or Clone Repository
+        - Configure GitHub Secrets
+        - Verify Workflow Configuration
+    -  Database Initialization
+        - Connect to Database
+        - Run Schema SQL
+        - Generate Sample Data (Optional but Recommended)
+
+#### **Project-2 👉 Code Explanation of below python files**
+    ✅ text2sqlrag-project/app/services/sql_service.py
+	✅ text2sqlrag-project/app/services/query_cache_service.py
+	✅ text2sqlrag-project/app/services/router_service.py
+	✅ text2sqlrag-project/docs/new_deploy.md
+	✅ text2sqlrag-project/.github/workflows/deploy.yml
+	✅ text2sqlrag-project/trust-policy.json
+	✅ text2sqlrag-project/github-actions-policy.json
+	✅ text2sqlrag-project/docker-compose.yml
+	✅ text2sqlrag-project/Dockerfile.lambda
+
+## 01 Feb Day - 27 👉 Advanced RAG: Part-5 👉 Project-2 👉 text2sqlrag-project 👉 CI/CD Deployment using AWS
+## 12-Text2Sql-RAG-Project-2
+#### 🎯 Learning Objectives
+
 ## Create the virtual environment in anaconda3 folder
 ```
 conda create -n venv_ur_name python==3.12 -y
