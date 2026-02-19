@@ -525,8 +525,28 @@ Docling 👉 Hybrid chunking 👉 https://docling-project.github.io/docling/exam
 Class Notes 👉 https://krishnaikacademy.notion.site/Project-2-2ebeba9593d08080a5c1ff04454fba0d
 
 GitHub 👉 https://github.com/sourangshupal/text2sqlrag-project
-	✅ .github/workflows/deploy.yml
-	✅ docs/new_deploy.md  
+	✅ text2sqlrag-project/app/services/sql_service.py
+	✅ text2sqlrag-project/app/services/query_cache_service.py
+	✅ text2sqlrag-project/app/services/router_service.py
+	✅ text2sqlrag-project/docs/new_deploy.md
+	✅ text2sqlrag-project/.github/workflows/deploy.yml
+	✅ text2sqlrag-project/trust-policy.json
+	✅ text2sqlrag-project/github-actions-policy.json
+	✅ text2sqlrag-project/docker-compose.yml
+	✅ text2sqlrag-project/Dockerfile.lambda
+
+🦙 LlamaIndex 👉 Routers 👉 https://developers.llamaindex.ai/python/framework/module_guides/querying/router/
+
+
+Complete AWS Deployment Guide for Fresh Account 👉 Multi-Source RAG + Text-to-SQL Systems
+Setup All secrets in your GitHub Repository as below :- 
+	text2sqlrag-project 👉 Settings 👉 Secrets and variables 👉 Actions 👉 New repository secret
+	✅ API_GATEWAY_URL ✅ AWS_ACCESS_KEY_ID ✅ AWS_ACCOUNT_ID ✅ AWS_SECRET_ACCESS_KEY ✅ DATABASE URL
+	✅ OPENAI_API_KEY ✅ OPIK_API_KYE ✅ PINECONE_API_KEY ✅ PINECONE_ENVIRONMENT ✅ PINECONE_INDEX_NAME 
+	✅ S3_CACHE_BUCKET ✅ LAMBDA_FUNCTION_URL ✅ UPSTASH_REDIS_TOKEN ✅ UPSTASH_REDIS_URL 
+
+Login to Your AWS Account 👉 IAM 👉 Users 👉 classcvdev 👉 Security Credentials 👉 Create access key 👉 Commnad Line Interface (CLI) 👉 Download the csv file
+Login to Your AWS Account 👉 IAM 👉 Users 👉 text2sqlrag
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 01 Feb Day - 27 👉 Advanced RAG: Part-5 👉 Project-2 👉 text2sqlrag-project 👉 CI/CD Deployment using AWS
