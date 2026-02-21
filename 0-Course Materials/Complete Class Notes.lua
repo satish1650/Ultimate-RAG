@@ -688,3 +688,208 @@ COLBERT search implementation for search through VDB
 	https://github.com/Murtuzasaifee/C_S_RAG/commit/9c74d19a14109a30e9b1e50fc26e1b1044210638
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+21 Feb Day - 32 👉 Project-3 👉 Part-3 👉 corrective-self-reflective-rag  👉 Docker mode + AWS Deployment using BeanStalk
+***************************************************************************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Project-3-308eba9593d08068b4cec30947e62008?pvs=74
+
+PoC Purpose AWS Deployment Guide:
+	Project-1 : AppRunner (Done)
+	Project-2 : Lambda (Done)
+	Project-3 : BeanStalk (Today's Class)
+
+Production Purpose AWS Deployment Guide:
+	Project-4 : ECS + Fargate (to be covered in next class)
+	Project-5 : EKS (Kubernetes) (to be covered in next class)
+
+Local ------> Quadrant 
+Quardrant API Key : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3MiOiJtIn0.g_zzLFUgqmme5MuRv2-mh3hGYoYPbasQMAseQMe1RG4
+Quardrant Cluster Endpoint : https://30b3ccab-63ba-4003-ac64-b637d3ac0369.sa-east-1-0.aws.cloud.qdrant.io
+
+GitHub 👉 https://github.com/sourangshupal/corrective_self_reflective_rag/tree/deploy/aws-eb
+	✅ corrective_self_reflective_rag/Dockerfile
+	✅ corrective_self_reflective_rag/deployment.md
+	✅ corrective_self_reflective_rag/Dockerrun.aws.json
+	✅ corrective_self_reflective_rag/pyproject.toml
+
+
+Setting up the EB command line interface (EB CLI) to manage Elastic Beanstalk
+	https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3.html
+
+	MAC Installation
+	brew install awsebcli 👉 for mac
+
+	Windows in PowerShell or Command window	
+		pip install awsebcli 👉 for windows
+
+	Verify that the EB CLI is installed correctly.
+	eb --version 👉 to verify installation
+
+Install Docker Desktop on Windows
+	https://docs.docker.com/desktop/setup/install/windows-install/
+
+AWS Services Installationg
+	✅ AmazonEC2ContainerRegistryReadOnly
+	✅ AdministratorAccess-AWSElasticBeanstalk
+
+Phase 1 — Build & Push Image to ECR
+	AWS_REGION="us-east-1"
+	AWS_ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
+	ECR_REPO="crag-rag-app"
+	ECR_IMAGE="$AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/$ECR_REPO:latest"
+
+	# Create the ECR repository (one-time)
+	aws ecr create-repository \
+		--repository-name $ECR_REPO \
+		--region $AWS_REGION \
+		--image-scanning-configuration scanOnPush=true
+
+	aws ecr create-repository \
+		repository-name crag-rag-app \
+		region us-east-1 \
+		image-scanning-configuration scanOnPush=true
+
+	# Authenticate Docker to ECR
+	aws ecr get-login-password --region $AWS_REGION | \
+		docker login --username AWS --password-stdin \
+		$AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com
+		
+
+	# Build for linux/amd64 (required on Apple Silicon M1/M2/M3)
+	docker build --platform linux/amd64 -t $ECR_REPO:latest .
+
+	docker build --platform linux/amd64 -t 685057748560.dkr.ecr.us-east-1.amazonaws.com/crag-rag-app:latest .
+
+	# Tag and push
+	docker tag $ECR_REPO:latest $ECR_IMAGE
+	docker push $ECR_IMAGE
+
+Phase 2 — Grant EC2 Instance ECR Pull Access
+	Elastic Beanstalk's EC2 instances use the IAM role aws-elasticbeanstalk-ec2-role to authenticate with AWS services. 
+	Attach the managed ECR read policy so the instance can pull your image:
+	aws iam attach-role-policy \
+    --role-name aws-elasticbeanstalk-ec2-role \
+    --policy-arn arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly
+
+Phase 3 — Update Dockerrun.aws.json
+	Fill in your real AWS account ID and region in Dockerrun.aws.json:
+		# Check the placeholder values
+		cat Dockerrun.aws.json
+
+	Edit the "Name" field to match your ECR image URI:
+		"Name": "123456789012.dkr.ecr.us-east-1.amazonaws.com/crag-rag-app:latest"
+
+	Verify it matches what you pushed:
+		aws ecr describe-images \
+		--repository-name $ECR_REPO \
+		--region $AWS_REGION \
+		--query 'imageDetails[*].imageTags'
+
+	Phase 4 — Initialize Beanstalk Application
+	Run this once from the project root:
+		eb init crag-rag-app \
+		--platform "Docker running on 64bit Amazon Linux 2023" \
+		--region $AWS_REGION
+	# Prompts:
+	#   Use CodeCommit? → No
+	#   Set up SSH?     → Yes (optional, useful for debugging)
+
+This creates .elasticbeanstalk/config.yml (already gitignored).
+
+Phase 5 — Create the Beanstalk Environment
+	# Single-instance mode (no load balancer — simplest, ~$62/mo)
+	eb create crag-rag-prod \
+		--instance-type t3.large \
+		--single
+
+	# OR with load balancer + auto-scaling (production-grade, ~$78/mo+)
+	eb create crag-rag-prod \
+		--instance-type t3.large
+
+Phase 6 — Set Environment Variables (API Keys)
+	API keys are stored encrypted inside Beanstalk and injected as container environment variables at runtime. No .env file is needed in the image.
+	eb setenv \
+    OPENAI_API_KEY="sk-your-openai-key" \
+    TAVILY_API_KEY="tvly-your-tavily-key" \
+    QDRANT_URL="https://your-cluster.eu-central-1-0.aws.cloud.qdrant.io" \
+    QDRANT_API_KEY="your-qdrant-api-key" \
+    RERANKER_BACKEND="local" \
+    UPLOAD_DIR="/var/app/uploads"
+
+Phase 7 — Deploy
+	# Bundle only the Beanstalk descriptor
+	zip deploy.zip Dockerrun.aws.json
+
+	# Deploy (EB pulls the ECR image on the EC2 instance)
+	eb deploy
+
+	# Stream deployment logs
+	eb logs
+
+	Verify the Deployment
+	# Open app in default browser
+	eb open
+
+	# Check environment health (should show "Green")
+	eb health
+
+	# Get the public URL
+	eb status | grep CNAME
+
+	# Test health endpoint
+	curl http://<your-env>.elasticbeanstalk.com/health
+	# Expected: {"status":"healthy"}
+
+	# Test upload
+	curl -X POST http://<your-env>.elasticbeanstalk.com/upload/ \
+	-F "file=@document.pdf"
+
+	# Test query
+	curl -X POST http://<your-env>.elasticbeanstalk.com/query/ \
+	-H "Content-Type: application/json" \
+	-d '{"query": "What is the main topic?", "mode": "both"}'
+
+	# View Swagger UI
+	open http://<your-env>.elasticbeanstalk.com/docs
+
+End-to-end verification checklist
+	✅ docker build succeeds locally
+	✅ docker run -p 8000:8000 --env-file .env crag-rag-app:latest works locally
+	✅ curl localhost:8000/health → {"status":"healthy"}
+	✅ Image visible in ECR console
+	✅ eb status shows Health: Green
+	✅ curl http://<eb-url>/health → 200
+	✅ PDF upload and query work end-to-end
+
+Re-deploy After Code Changes
+	# 1. Rebuild and push updated image to ECR
+	docker build --platform linux/amd64 -t $ECR_REPO:latest .
+	docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/$ECR_REPO:latest
+
+	# 2. Re-deploy (Beanstalk re-pulls :latest from ECR)
+	eb deploy
+
+Stop / Teardown AWS services
+# Suspend — terminate the EC2 instance (stops billing; environment config preserved)
+eb terminate crag-rag-prod
+
+# Nuke everything — delete the EB application entirely
+eb terminate --all
+eb terminate crag-rag-prod --force —all
+
+# Delete the ECR repository (bash)
+aws ecr delete-repository \
+    --repository-name $ECR_REPO \
+    --region $AWS_REGION \
+    --force
+
+# Delete the ECR repository (powershell)
+aws ecr delete-repository `
+    --repository-name $ECR_REPO `
+    --region $AWS_REGION `
+    --force
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+22 Feb Day - 33 👉 Project-3 👉 Part-4 👉 corrective-self-reflective-rag 👉 CI/CD Pipeline
+********************************************************************************************
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
