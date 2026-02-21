@@ -784,6 +784,63 @@ Pydantic is a data validation library that uses Python type annotations to:
 	✅ text2sqlrag-project/build-base-image.sh
 	✅ text2sqlrag-project/requirements.txt
 
+#### **Project-2 👉 DEPLOYMENT_OPTIMIZATION.md 👉 AWS Lambda Deployment Optimization Summary**
+- 🚀 NEW: Fully Automated Setup for New Users
+- 🎯 Results Overview
+- 🔄 How Auto-Build Works
+    - For New Users (First Deployment)
+    - For Existing Users (All Subsequent Deployments)
+    - When Base Image Needs Updating
+- ✅ Optimizations Implemented
+    - Tier 1: High-Impact Changes (25-28 minutes saved)
+    - Tier 2: Quick Wins (1-2 minutes saved)
+- 📊 Time Breakdown Comparison
+    - Before Optimization
+    - After Optimization
+- 💰 Cost Analysis
+    - New Monthly Costs
+    - Monthly Savings
+    - Net Impact
+- 📁 Files Modified
+    - New Files Created
+    - Modified Files
+    - AWS Resources Created
+- 🚀 Usage Guide
+    - First-Time Setup (New AWS Account)
+    - Normal Deployment (Fast)
+    - Deployment with S3 Tests
+    - Release Deployment (Full Tests)
+    - Updating Base Image (When System Dependencies Change)
+        - Automatic (Recommended)
+        - Manual (Faster for testing)
+- 🔍 Verification Steps
+    - After First Optimized Deployment
+        1. Check GitHub Actions Logs
+        1. Verify Base Image in ECR
+        1. Check BuildKit Cache
+        1. Test Lambda Function
+- 🐛 Troubleshooting
+    - Issue: Base Image Not Found
+    - Issue: BuildKit Cache Not Working
+    - Issue: S3 Tests Always Skip
+    - Issue: Deployment Fails After Base Image Update
+🔄 Rollback Plan
+    - Rollback Step 1: Restore Original Dockerfile
+    - Rollback Step 2: Restore Original Workflow
+    - Rollback Step 3: Clean Up (Optional)
+🌟 Benefits for New Users & Organizations
+    - Zero-Configuration Deployment
+    - Perfect for CI/CD
+    - Cost-Effective for Multiple Environments
+    - Developer Experience
+🎉 Success Metrics
+    ✅ Deployment time: 32 min → 5 min (84% faster) <br>
+    ✅ Docker build stage: 28 min → 2 min (93% faster) <br>
+    ✅ GitHub Actions cost: -$21/month savings <br>
+    ✅ ECR storage cost: +$0.40/month (minimal) <br>
+    ✅ Net monthly savings: +$21/month <br>
+    ✅ Developer velocity: 6-7x faster iteration <br>
+
 ## 08 Feb Day - 29 👉 Advanced RAG: 👉 advanced-rag-tutorials 👉 Query Transformations, CRAG, SRAG
 ## 09-Advanced-Rag-Tutorials
 #### 🎯 Learning Objectives
