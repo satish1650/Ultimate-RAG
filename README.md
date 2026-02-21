@@ -741,6 +741,7 @@ Pydantic is a data validation library that uses Python type annotations to:
 ## 25 Jan Day - 25 👉 Advanced RAG: Part-3 👉 Project-2 👉 text2sqlrag-project 👉 Code Explanation
 ## 12-Text2Sql-RAG-Project-2
 #### 🎯 Learning Objectives
+#### Multi-Source RAG + Text-to-SQL System
 #### **Project-2 Workflow 👉 text2sqlrag-project/workflows/deployment.md**
 **AWS Lambda Deployment Architecture - Mermaid Diagrams**
 1. CI/CD Deployment Flow
@@ -776,6 +777,7 @@ Pydantic is a data validation library that uses Python type annotations to:
 ## 31 Jan Day - 26 👉 Advanced RAG: Part-4 👉 Project-2 👉 text2sqlrag-project 👉 AWS Deployment
 ## 12-Text2Sql-RAG-Project-2
 #### 🎯 Learning Objectives
+#### Multi-Source RAG + Text-to-SQL System
 #### **Project-2 Deployment 👉 text2sqlrag-project/docs/new_deploy.md**
 #### **Complete AWS Deployment Guide for Fresh Account**
 ✅ text2sqlrag-project/docs/new_deploy.md
@@ -826,6 +828,7 @@ Pydantic is a data validation library that uses Python type annotations to:
 ## 01 Feb Day - 27 👉 Advanced RAG: Part-5 👉 Project-2 👉 text2sqlrag-project 👉 CI/CD Deployment using AWS
 ## 12-Text2Sql-RAG-Project-2
 #### 🎯 Learning Objectives
+#### Multi-Source RAG + Text-to-SQL System
 #### **Project-2 👉 Code Explanation of below python files**
     ✅ .github/workflows/deploy.yml
 	✅ docs/new_deploy.md
@@ -833,6 +836,7 @@ Pydantic is a data validation library that uses Python type annotations to:
 ## 07 Feb Day - 28 👉 Advanced RAG: Part-6 👉 Project-2 👉 text2sqlrag-project 👉 Notebook & ECR, lambda funciton and AWS Dployment
 ## 12-Text2Sql-RAG-Project-2
 #### 🎯 Learning Objectives
+#### Multi-Source RAG + Text-to-SQL System
 #### **Project-2 👉 Code Explanation of below python files**
     ✅ text2sqlrag-project/app/main.py
 	✅ text2sqlrag-project/lambda_handler.py
@@ -904,6 +908,7 @@ Pydantic is a data validation library that uses Python type annotations to:
 ## 08 Feb Day - 29 👉 Advanced RAG: 👉 advanced-rag-tutorials 👉 Query Transformations, CRAG, SRAG
 ## 09-Advanced-Rag-Tutorials
 #### 🎯 Learning Objectives
+#### 📚 Advanced RAG Tutorials
 #### **Code Explanation of below python files**
     ✅ advanced-rag-tutorials/04_query_transformations.ipynb
     ✅ advanced-rag-tutorials/crag.ipynb
@@ -911,7 +916,6 @@ Pydantic is a data validation library that uses Python type annotations to:
     ✅ CRAG(Corrective RAG) arXiv Paper 👉 https://arxiv.org/pdf/2401.15884
     ✅ SRAG(Self RAG) arXiv Paper 👉 https://arxiv.org/pdf/2310.11511
 
-### 📚 Advanced RAG Tutorials
 #### **Query Transformations for Improved Retrieval in RAG Systems**
 - **Query Rewriting:** Reformulates queries to be more specific and detailed.
 - **Step-back Prompting:** Generates broader queries for better context retrieval.
@@ -934,6 +938,75 @@ Pydantic is a data validation library that uses Python type annotations to:
 - **Quality Assurance:** The support assessment and utility evaluation provide a way to gauge the quality of generated responses.
 - **Flexibility:** The system can generate responses with or without retrieval, adapting to the available information.
 - **Improved Accuracy:** By grounding responses in relevant retrieved information and assessing their support, the system can produce more accurate outputs.
+
+## 14 Feb Day - 30 👉 Project-3 👉 Part-1 👉 corrective-self-reflective-rag
+## 13-Corrective-Self-Reflective-RAG
+#### 🎯 Learning Objectives
+#### 🔮 Corrective + Self-Reflective RAG
+#### **Code Explanation of below python files**
+	✅ corrective_self_reflective_rag/workflows/project_architecture.md
+	✅ corrective_self_reflective_rag/app/config.py
+	✅ corrective_self_reflective_rag/workflows/crag_mode.md
+	✅ corrective_self_reflective_rag/workflows/self_reflective_mode.md
+	✅ corrective_self_reflective_rag/workflows/both_mode.md
+
+## 15 Feb Day - 31 👉 Project-3 👉 Part-2 👉 corrective-self-reflective-rag
+## 13-Corrective-Self-Reflective-RAG
+#### 🎯 Learning Objectives
+#### 🔮 Corrective + Self-Reflective RAG
+#### **Code Explanation of below python files**
+	✅ corrective_self_reflective_rag/workflows/hybrid_search.md
+	✅ corrective_self_reflective_rag/app/services/document_processor.py
+	✅ corrective_self_reflective_rag/app/services/vector_store.py
+	✅ corrective_self_reflective_rag/app/services/sparse_vector_service.py
+	✅ corrective_self_reflective_rag/app/services/embedding_service.py
+	✅ corrective_self_reflective_rag/app/api/upload.py
+	✅ corrective_self_reflective_rag/app/api/query.py
+    ✅ corrective_self_reflective_rag/app/core/retrieval.py	
+	✅ corrective_self_reflective_rag/app/models.py
+	✅ corrective_self_reflective_rag/app/services/hyde.py
+	✅ corrective_self_reflective_rag/app/services/web_search.py
+	✅ corrective_self_reflective_rag/app/services/llm_service.py
+
+## 21 Feb Day - 32 👉 Project-3 👉 Part-3 👉 corrective-self-reflective-rag  👉 Docker mode + AWS Deployment using BeanStalk
+## 13-Corrective-Self-Reflective-RAG-Deployment-AWS-Project-3
+#### 🎯 Learning Objectives
+#### 🔮 Corrective + Self-Reflective RAG
+#### **Code Explanation of below python files**
+	✅ corrective_self_reflective_rag/Dockerfile
+	✅ corrective_self_reflective_rag/deployment.md
+	✅ corrective_self_reflective_rag/Dockerrun.aws.json
+	✅ corrective_self_reflective_rag/pyproject.toml
+
+#### AWS Elastic Beanstalk Deployment Guide
+### **corrective_self_reflective_rag/deployment.md**
+- Architecture Overview
+- Prerequisites
+    - Phase 1 — Build & Push Image to ECR
+    - Phase 2 — Grant EC2 Instance ECR Pull Access
+    - Phase 3 — Update Dockerrun.aws.json
+    - Phase 4 — Initialize Beanstalk Application
+    - Phase 5 — Create the Beanstalk Environment
+    - Phase 6 — Set Environment Variables (API Keys)
+    - Phase 7 — Deploy
+- Verify the Deployment
+    - End-to-end verification checklist
+    - Re-deploy After Code Changes
+- Cost Estimate
+- Stop / Teardown AWS Services
+- Troubleshooting
+- Key Design Notes
+- Related Files 
+
+## Related Files
+| File | Purpose |
+|---|---|
+| `Dockerfile` | Builds the container image |
+| `.dockerignore` | Excludes `.venv`, secrets, tests from the build context |
+| `Dockerrun.aws.json` | Tells Beanstalk which ECR image to pull and run |
+| `app/config.py` | `pydantic-settings` — reads all config from environment variables |
+| `pyproject.toml` + `uv.lock` | Required in build context for `uv sync --frozen` |
+| `workflows/aws_eb_deployment.md` | Mermaid architecture and deployment flow diagrams |
 
 ## Create the virtual environment in anaconda3 folder
 ```
