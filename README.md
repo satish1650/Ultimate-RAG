@@ -427,6 +427,66 @@ Pydantic is a data validation library that uses Python type annotations to:
 - rag-project-class project deployment using CI/CD Pipeline with Github Actions
 - CI/CD pipeline with GitHub Actions
 
+#### 🤖 RAG Q&A System
+✅ rag-qa-project/README.md
+- 📖 Overview
+- 🎯 What is RAG?
+- 🌟 Key Highlights
+- ✨ Features
+- 🏗️ Architecture
+- 🚀 Quick Start
+    - Prerequisites
+        - 🐍 Python 3.12+
+        - 🔑 OpenAI API key
+        - 🗄️ Qdrant Cloud account
+    - 1️⃣ Clone & Install
+    - 2️⃣ Configure Environment
+    - 3️⃣ Run Application
+    - 4️⃣ Access API
+        - 🌐 Swagger UI: http://localhost:8000/docs 
+        - 📚 ReDoc: http://localhost:8000/redoc 
+        - 🔍 Health Check: http://localhost:8000/health
+    - 📝 API Endpoints
+        - Document Management
+        - Query & Search
+        - Health & Monitoring
+    - 💡 Usage Examples
+        - Upload a Document
+        - Ask a Question
+        - Query with RAGAS Evaluation
+- 🐳 Docker Deployment
+    - Using Docker Compose (Recommended)
+    - Using Docker Directly
+- ☁️ Deployment using AWS
+    - AWS App Runner (Serverless)
+      Fully automated deployment with GitHub Actions: <br>
+        1️⃣ Setup AWS Resources
+        2️⃣ Configure GitHub Secrets
+        3️⃣ Deploy
+        4️⃣ Access Your API
+- 🧪 Testing
+    - Run All Tests
+    - Run Specific Tests
+    - Code Quality
+- ⚙️ Configuration
+    - Environment Variables
+- 📊 Project Structure
+- 🔄 CI/CD Pipeline
+    - Continuous Integration (.github/workflows/ci.yml)
+    ✅ Code Quality <br>
+    ✅ Testing <br>
+    ✅ Docker Build <br>
+    ✅ Security <br>
+    - Continuous Deployment (.github/workflows/deploy.yml)
+    🏗️ Build & Push <br>
+    🚀 Deploy <br>
+    ✅ Verify <br>
+- 🤝 Contributing
+    - 🐛 Report Bugs
+    - 💡 Suggest Features
+    - 🔧 Submit Pull Requests
+    - 📜 Development Guidelines
+
 ## 21 Dec Day - 17 👉 Llama-Index-Tutorials: Part-1
 ### 🦙 07-Llama-Index-Tutorials
 #### 🎯 Learning Objectives
