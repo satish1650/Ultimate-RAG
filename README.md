@@ -834,12 +834,12 @@ Pydantic is a data validation library that uses Python type annotations to:
     - Cost-Effective for Multiple Environments
     - Developer Experience
 - 🎉 Success Metrics <br>
-    ✅ Deployment time: 32 min → 5 min (84% faster) <br>
-    ✅ Docker build stage: 28 min → 2 min (93% faster) <br>
-    ✅ GitHub Actions cost: -$21/month savings <br>
-    ✅ ECR storage cost: +$0.40/month (minimal) <br>
-    ✅ Net monthly savings: +$21/month <br>
-    ✅ Developer velocity: 6-7x faster iteration <br>
+        ✅ Deployment time: 32 min → 5 min (84% faster) <br>
+        ✅ Docker build stage: 28 min → 2 min (93% faster) <br>
+        ✅ GitHub Actions cost: -$21/month savings <br>
+        ✅ ECR storage cost: +$0.40/month (minimal) <br>
+        ✅ Net monthly savings: +$21/month <br>
+        ✅ Developer velocity: 6-7x faster iteration <br>
 
 ## 08 Feb Day - 29 👉 Advanced RAG: 👉 advanced-rag-tutorials 👉 Query Transformations, CRAG, SRAG
 ## 09-Advanced-Rag-Tutorials
