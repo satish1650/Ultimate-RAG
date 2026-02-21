@@ -472,12 +472,12 @@ Pydantic is a data validation library that uses Python type annotations to:
     - Environment Variables
 - 📊 Project Structure
 - 🔄 CI/CD Pipeline
-    - Continuous Integration (.github/workflows/ci.yml)
+    - Continuous Integration (.github/workflows/ci.yml) <br>
     ✅ Code Quality <br>
     ✅ Testing <br>
     ✅ Docker Build <br>
     ✅ Security <br>
-    - Continuous Deployment (.github/workflows/deploy.yml)
+    - Continuous Deployment (.github/workflows/deploy.yml) <br>
     🏗️ Build & Push <br>
     🚀 Deploy <br>
     ✅ Verify <br>
