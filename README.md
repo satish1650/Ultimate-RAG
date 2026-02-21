@@ -766,6 +766,57 @@ Pydantic is a data validation library that uses Python type annotations to:
 ## 01 Feb Day - 27 👉 Advanced RAG: Part-5 👉 Project-2 👉 text2sqlrag-project 👉 CI/CD Deployment using AWS
 ## 12-Text2Sql-RAG-Project-2
 #### 🎯 Learning Objectives
+#### **Project-2 👉 Code Explanation of below python files**
+    ✅ .github/workflows/deploy.yml
+	✅ docs/new_deploy.md
+
+## 07 Feb Day - 28 👉 Advanced RAG: Part-6 👉 Project-2 👉 text2sqlrag-project 👉 Notebook & ECR, lambda funciton and AWS Dployment
+## 12-Text2Sql-RAG-Project-2
+#### 🎯 Learning Objectives
+#### **Project-2 👉 Code Explanation of below python files**
+    ✅ text2sqlrag-project/app/main.py
+	✅ text2sqlrag-project/lambda_handler.py
+	✅ text2sqlrag-project/DEPLOYMENT_OPTIMIZATION.md
+	✅ text2sqlrag-project/.github/workflows/deploy.yml
+	✅ text2sqlrag-project/Dockerfile.lambda.base
+	✅ text2sqlrag-project/docs/new_deploy.md
+	✅ text2sqlrag-project/Dockerfile.lambda
+	✅ text2sqlrag-project/build-base-image.sh
+	✅ text2sqlrag-project/requirements.txt
+
+## 08 Feb Day - 29 👉 Advanced RAG: 👉 advanced-rag-tutorials 👉 Query Transformations, CRAG, SRAG
+## 09-Advanced-Rag-Tutorials
+#### 🎯 Learning Objectives
+#### **Code Explanation of below python files**
+    ✅ advanced-rag-tutorials/04_query_transformations.ipynb
+    ✅ advanced-rag-tutorials/crag.ipynb
+    ✅ advanced-rag-tutorials/self_rag.ipynb
+    ✅ CRAG(Corrective RAG) arXiv Paper 👉 https://arxiv.org/pdf/2401.15884
+    ✅ SRAG(Self RAG) arXiv Paper 👉 https://arxiv.org/pdf/2310.11511
+
+### 📚 Advanced RAG Tutorials
+#### **Query Transformations for Improved Retrieval in RAG Systems**
+- **Query Rewriting:** Reformulates queries to be more specific and detailed.
+- **Step-back Prompting:** Generates broader queries for better context retrieval.
+- **Sub-query Decomposition:** Breaks down complex queries into simpler sub-queries.
+
+#### **Corrective RAG Process:** Retrieval-Augmented Generation with Dynamic Correction
+***Benefits of the Corrective RAG Approach***
+- **Dynamic Correction:** Adapts to the quality of retrieved information, ensuring relevance and accuracy.
+- **Flexibility:** Leverages both pre-existing knowledge and web search as needed.
+- **Accuracy:** Evaluates the relevance of information before using it, ensuring high-quality responses.
+- **Transparency:** Provides source information, allowing users to verify the origin of the information.
+- **Efficiency:** Uses vector search for quick retrieval from large knowledge bases.
+- **Contextual Understanding:** Combines multiple sources of information when necessary to provide comprehensive responses.
+- **Up-to-date Information:** Can supplement or replace outdated local knowledge with current web information.
+
+#### **Self-RAG:** A Dynamic Approach to Retrieval-Augmented Generation
+***Benefits of the Approach***
+- **Dynamic Retrieval:** By deciding whether retrieval is necessary, the system can adapt to different types of queries efficiently.
+- **Relevance Filtering:** The relevance evaluation step ensures that only pertinent information is used, reducing noise in the generation process.
+- **Quality Assurance:** The support assessment and utility evaluation provide a way to gauge the quality of generated responses.
+- **Flexibility:** The system can generate responses with or without retrieval, adapting to the available information.
+- **Improved Accuracy:** By grounding responses in relevant retrieved information and assessing their support, the system can produce more accurate outputs.
 
 ## Create the virtual environment in anaconda3 folder
 ```
