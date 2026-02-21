@@ -998,7 +998,6 @@ Pydantic is a data validation library that uses Python type annotations to:
 - Key Design Notes
 - Related Files 
 
-## Related Files
 | File | Purpose |
 |---|---|
 | `Dockerfile` | Builds the container image |
