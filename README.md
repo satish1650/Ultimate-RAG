@@ -833,7 +833,7 @@ Pydantic is a data validation library that uses Python type annotations to:
     - Perfect for CI/CD
     - Cost-Effective for Multiple Environments
     - Developer Experience
-🎉 Success Metrics
+🎉 Success Metrics <br>
     ✅ Deployment time: 32 min → 5 min (84% faster) <br>
     ✅ Docker build stage: 28 min → 2 min (93% faster) <br>
     ✅ GitHub Actions cost: -$21/month savings <br>
