@@ -888,11 +888,11 @@ Pydantic is a data validation library that uses Python type annotations to:
     - Issue: BuildKit Cache Not Working
     - Issue: S3 Tests Always Skip
     - Issue: Deployment Fails After Base Image Update
-🔄 Rollback Plan
+- 🔄 Rollback Plan
     - Rollback Step 1: Restore Original Dockerfile
     - Rollback Step 2: Restore Original Workflow
     - Rollback Step 3: Clean Up (Optional)
-🌟 Benefits for New Users & Organizations
+- 🌟 Benefits for New Users & Organizations
     - Zero-Configuration Deployment
     - Perfect for CI/CD
     - Cost-Effective for Multiple Environments
