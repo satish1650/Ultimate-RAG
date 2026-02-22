@@ -1007,6 +1007,48 @@ Pydantic is a data validation library that uses Python type annotations to:
 | `pyproject.toml` + `uv.lock` | Required in build context for `uv sync --frozen` |
 | `workflows/aws_eb_deployment.md` | Mermaid architecture and deployment flow diagrams |
 
+## 22 Feb Day - 33 👉 Project-3 👉 Part-4 👉 corrective-self-reflective-rag 👉 Complete CI/CD Pipeline Deployment
+## 15-Corrective-Self-Reflective-RAG-Deploy-AWS-EB-CICD Pipeline-Project-3
+#### 🎯 Learning Objectives
+#### 🔮 Corrective + Self-Reflective RAG + CI/CD Pipeline Deployment
+#### **Code Explanation of below python files**
+	✅ corrective_self_reflective_rag/AWS_Deployment.md
+	✅ corrective_self_reflective_rag/AWS_Deployment_Architecture.md
+	✅ corrective_self_reflective_rag/.github/workflows/deploy.yml
+
+#### AWS Elastic Beanstalk Deployment Guide
+### **corrective_self_reflective_rag-deploy-aws-eb/AWS_Deployment.md**
+- Infrastructure Summary
+- Repository Structure (Deployment-Relevant Files)
+- CI/CD Workflow
+    - Steps
+        - Checkout
+        - Configure AWS Credentials
+        -  Login to Amazon ECR
+        - Build and Push Docker Image
+        - Package EB Bundle
+        - Upload Bundle to S3
+        - Create EB Application Version
+        - Update EB Environment
+        - Poll for Readiness
+- GitHub Secrets
+    - All secrets are configured under Repository **Settings → Secrets and variables → Actions**.
+- IAM Permissions Required
+- Environment Variables on the EC2 Instance
+- Dockerrun.aws.json
+- Health Check
+- Deployment Version Naming Convention
+- Known Issues & Fixes Applied
+
+#### AWS Deployment Architecture
+### **corrective_self_reflective_rag-deploy-aws-eb/AWS_Deployment_Architecture.md**
+- CI/CD Pipeline Flow
+- GitHub Secrets Flow
+- EB Bundle Structure
+- Deployment Sequence
+
+---
+
 ## Create the virtual environment in anaconda3 folder
 ```
 conda create -n venv_ur_name python==3.12 -y
