@@ -889,7 +889,34 @@ aws ecr delete-repository `
     --force
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-22 Feb Day - 33 👉 Project-3 👉 Part-4 👉 corrective-self-reflective-rag 👉 CI/CD Pipeline
-********************************************************************************************
+22 Feb Day - 33 👉 Project-3 👉 Part-4 👉 corrective-self-reflective-rag 👉 Complete CI/CD Pipeline Deployment
+****************************************************************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Project-3-308eba9593d08068b4cec30947e62008?pvs=74
 
+GitHub 👉 https://github.com/sourangshupal/corrective_self_reflective_rag/tree/deploy/aws-eb
+	✅ corrective_self_reflective_rag/AWS_Deployment.md
+	✅ corrective_self_reflective_rag/AWS_Deployment_Architecture.md
+	✅ corrective_self_reflective_rag/.github/workflows/deploy.yml
+
+Deployment CI/CD pipeline Command Reference:
+	# 1. Verify EB CLI is working
+	eb --version
+
+	# 2. Initialize EB app (run once)
+	eb init crag-rag-app \
+		--platform "Docker running on 64bit Amazon Linux 2023" \
+		--region us-east-1
+
+	eb init crag-rag-appp --region us-east-1 --platform docker
+
+	# 3. Create EB environment (run once)
+	eb create crag-rag-prod \
+		--instance-type t3.large \
+		--single
+
+	eb create crag-rag-prod --single --instance-type t3.medium
+
+	aws elasticbeanstalk describe-environments
+
+Take GitHub to the command line (GitHub Installer) 👉 https://cli.github.com/
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
