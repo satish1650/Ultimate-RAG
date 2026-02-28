@@ -970,4 +970,5 @@ Class Notes 👉 https://krishnaikacademy.notion.site/Ultimate-RAG-Course-2a5eba
 GitHub 👉 https://github.com/sourangshupal/graph-rag
 	✅ graph-rag/graph-rag\graphrag_langchain.ipynb
 	
+	
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
