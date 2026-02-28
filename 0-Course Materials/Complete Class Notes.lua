@@ -962,6 +962,8 @@ Cypher Documentation 👉 https://neo4j.com/docs/cypher-refcard/current/
 
 ZEP: A TEMPORAL KNOWLEDGE GRAPH ARCHITECTURE FOR AGENT MEMORY 👉  Research arXiv Paper 👉 https://arxiv.org/pdf/2501.13956
 
+Introducing Contextual Retrieval 👉 https://www.anthropic.com/engineering/contextual-retrieval
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 01 Mar Day - 35 👉 Ultimate RAG 👉 Graph RAG
 *********************************************
