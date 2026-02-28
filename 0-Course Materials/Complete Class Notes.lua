@@ -920,3 +920,54 @@ Deployment CI/CD pipeline Command Reference:
 
 Take GitHub to the command line (GitHub Installer) 👉 https://cli.github.com/
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+28 Feb Day - 34 👉 Ultimate RAG 👉 Graph RAG
+*********************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Ultimate-RAG-Course-2a5eba9593d08085ade8ceb2a6c6c8de
+
+GitHub 👉 https://github.com/sourangshupal/graph-rag
+	✅ graph-rag/neo4j_browser_guide.md
+	✅ graph-rag/Getting_Started_GraphRAG.ipynb
+
+From Local to Global: A GraphRAG Approach to Query-Focused Summarization 👉 Research arXiv Paper 👉 https://arxiv.org/pdf/2404.16130
+	✅ Abstract
+	✅ 1 Introduction
+	✅ 6.1 Limitations of evaluation approach
+	✅ A.2 Self-Reflection
+    ✅ C Context Window Selection
+
+	Explained below are some of the key concepts and algorithms mentioned in the paper:
+	QFS(Query Focused Summarization) is a task that aims to generate a concise and informative summary of a document that is relevant 
+	to a specific query.
+
+	CDA(Community Detection Algorithms):
+		1. Louvain Method
+		2. Girvan-Newman Algorithm
+		3. Label Propagation Algorithm
+		4. Infomap Algorithm
+		5. Spectral Clustering
+
+	What is the purpose of using Grrah RAG:
+		Solve Global Sense Making(QFS) using Graph Database and Graph Algorithms
+
+Download Neo4j for Desktop 👉 https://neo4j.com/download/
+	graphtest/Welcome@123 👉 grphtest(Local Instances) 👉 http://127.0.0.1:7687 or http://127.0.0.1:7474 (Default one) 
+Neo4j Documentation 👉 https://neo4j.com/docs/
+
+Building Cloud Native RAG Solutions 👉 https://forms.gle/Sm9YBKq8UKNAn8Kp9
+
+🧠 LLMGraphTransformer 👉 GitHub 👉 https://github.com/dhiaaeddine16/LLMGraphTransformer/tree/main
+
+CQL (Cypher Query Language) is a powerful and expressive query language designed for querying and manipulating graph databases, particularly Neo4j.
+Cypher Documentation 👉 https://neo4j.com/docs/cypher-refcard/current/
+
+ZEP: A TEMPORAL KNOWLEDGE GRAPH ARCHITECTURE FOR AGENT MEMORY 👉  Research arXiv Paper 👉 https://arxiv.org/pdf/2501.13956
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+01 Mar Day - 35 👉 Ultimate RAG 👉 Graph RAG
+*********************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Ultimate-RAG-Course-2a5eba9593d08085ade8ceb2a6c6c8de
+
+GitHub 👉 https://github.com/sourangshupal/graph-rag
+	✅ graph-rag/graph-rag\graphrag_langchain.ipynb
+	
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
