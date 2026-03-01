@@ -1016,8 +1016,8 @@ Pydantic is a data validation library that uses Python type annotations to:
 	✅ corrective_self_reflective_rag/AWS_Deployment_Architecture.md
 	✅ corrective_self_reflective_rag/.github/workflows/deploy.yml
 
-#### AWS Elastic Beanstalk Deployment Guide
-### **corrective_self_reflective_rag-deploy-aws-eb/AWS_Deployment.md**
+### AWS Elastic Beanstalk Deployment Guide
+#### **corrective_self_reflective_rag-deploy-aws-eb/AWS_Deployment.md**
 - Infrastructure Summary
 - Repository Structure (Deployment-Relevant Files)
 - CI/CD Workflow
@@ -1040,12 +1040,53 @@ Pydantic is a data validation library that uses Python type annotations to:
 - Deployment Version Naming Convention
 - Known Issues & Fixes Applied
 
-#### AWS Deployment Architecture
-### **corrective_self_reflective_rag-deploy-aws-eb/AWS_Deployment_Architecture.md**
+### AWS Deployment Architecture
+#### **corrective_self_reflective_rag-deploy-aws-eb/AWS_Deployment_Architecture.md**
 - CI/CD Pipeline Flow
 - GitHub Secrets Flow
 - EB Bundle Structure
 - Deployment Sequence
+
+## 28 Feb Day - 34 👉 Ultimate RAG 👉 Graph RAG
+## 16-Graph-RAG
+#### 🎯 Learning Objectives
+#### 🔮 GraphRAG with LangChain + Neo4j
+#### **Code Explanation of below python files**
+	✅ graph-rag/neo4j_browser_guide.md
+	✅ graph-rag/Getting_Started_GraphRAG.ipynb
+
+#### Neo4j & Cypher: Step-by-Step Browser Guide
+### **graph-rag/neo4j_browser_guide.md**
+1. What is Neo4j?
+1. Opening Neo4j Browser
+1. Step 1 — Verify Connection
+1. Step 2 — CREATE Nodes
+    1. Create a Single Person Node
+    1. Create Multiple Nodes in One Query
+    1. Create a Movie Node
+    1. See the Full Graph So Far
+1. Step 3 — CREATE Relationships
+    1. Relationship Syntax
+    1. Link Alice to The Matrix
+    1. Create a KNOWS Relationship Between People
+    1. Visualize the Full Graph
+1. Step 4 — MATCH & Query
+    1. Return All Nodes
+    1. Filter by Label and Property
+    1. Traverse a Relationship
+    1. ORDER BY and LIMIT
+    1. Multi-Hop Traversal (Friends-of-Friends Pattern)
+    1. Find Relationship Types Dynamically
+1. Step 5 — MERGE (Upsert)
+    1.  MERGE with ON CREATE / ON MATCH
+    1. MERGE a Relationship Safely
+1. Step 6 — UPDATE Properties (SET)
+    1. Update Node Properties
+    1. Add a Property to a Relationship
+1. Step 7 — DELETE Nodes and Relationships
+    1. Delete a Single Relationship
+    1. Delete a Node (DETACH DELETE)
+    1. Clear the Entire Database (Demo Reset)
 
 ---
 
