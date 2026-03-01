@@ -978,8 +978,8 @@ Pydantic is a data validation library that uses Python type annotations to:
 	✅ corrective_self_reflective_rag/Dockerrun.aws.json
 	✅ corrective_self_reflective_rag/pyproject.toml
 
-#### AWS Elastic Beanstalk Deployment Guide
-### **corrective_self_reflective_rag/deployment.md**
+### AWS Elastic Beanstalk Deployment Guide
+#### **corrective_self_reflective_rag/deployment.md**
 - Architecture Overview
 - Prerequisites
     - Phase 1 — Build & Push Image to ECR
@@ -1055,8 +1055,8 @@ Pydantic is a data validation library that uses Python type annotations to:
 	✅ graph-rag/neo4j_browser_guide.md
 	✅ graph-rag/Getting_Started_GraphRAG.ipynb
 
-#### Neo4j & Cypher: Step-by-Step Browser Guide
-### **graph-rag/neo4j_browser_guide.md**
+### Neo4j & Cypher: Step-by-Step Browser Guide
+#### **graph-rag/neo4j_browser_guide.md**
 1. What is Neo4j?
 1. Opening Neo4j Browser
 1. Step 1 — Verify Connection
