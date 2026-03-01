@@ -919,6 +919,7 @@ Deployment CI/CD pipeline Command Reference:
 	aws elasticbeanstalk describe-environments
 
 Take GitHub to the command line (GitHub Installer) 👉 https://cli.github.com/
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 28 Feb Day - 34 👉 Ultimate RAG 👉 Graph RAG
 *********************************************
@@ -966,6 +967,11 @@ Introducing Contextual Retrieval 👉 https://www.anthropic.com/engineering/cont
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 01 Mar Day - 35 👉 Ultimate RAG 👉 Graph RAG
+*********************************************
+Class has been cancelled due to trainer unavailability.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+07 Mar Day - 35 👉 Ultimate RAG 👉 Graph RAG
 *********************************************
 Class Notes 👉 https://krishnaikacademy.notion.site/Ultimate-RAG-Course-2a5eba9593d08085ade8ceb2a6c6c8de
 
