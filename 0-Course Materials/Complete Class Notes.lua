@@ -991,13 +991,19 @@ GitHub 👉 https://github.com/sourangshupal/vector-graph-rag
 	✅ vector-graph-rag/retrieve/neo4j_pinecone.py
 	✅ vector-graph-rag/Falkordb_Graphiti_Demo26.ipynb
 
-Whento use Graphs in RAG 👉 https://arxiv.org/pdf/2404.16130
-KG-RAG: Bridging the Gap Between Knowledge and Creativity 👉 https://arxiv.org/abs/2405.12035
+Discussed below arXiv Paper of GraphRAG:
 
-From Local to Global: A GraphRAG Approach to Query-Focused Summarization 👉 https://arxiv.org/pdf/2404.16130
+	✅ When to use Graphs in RAG: A Comprehensive Analysis for Graph Retrieval-Augmented Generation 👉 https://arxiv.org/pdf/2506.05690v1
 
-OG-RAG: Ontology-Grounded Retrieval-Augmented Generation For Large Language Models
-https://www.microsoft.com/en-us/research/publication/og-rag-ontology-grounded-retrieval-augmented-generation-for-large-language-models/
+	✅ KG-RAG: Bridging the Gap Between Knowledge and Creativity 👉 https://arxiv.org/abs/2405.12035
+
+	✅ From Local to Global: A GraphRAG Approach to Query-Focused Summarization 👉 https://arxiv.org/pdf/2404.16130
+
+	✅ OG-RAG: ONTOLOGY-GROUNDED RETRIEVAL-AUGMENTED GENERATION FOR LARGE LANGUAGE MODELS 👉 https://arxiv.org/pdf/2412.15235
+
+	✅ OG-RAG: Ontology-Grounded Retrieval-Augmented Generation For Large Language Models 👉	https://www.microsoft.com/en-us/research/publication/og-rag-ontology-grounded-retrieval-augmented-generation-for-large-language-models/
+
+	✅ Ontology Generated Retrieval Augmented Generation (OG-RAG) 👉 GitHub 👉 https://github.com/microsoft/ograg2
 
 Access Local Instances of Neo4j 👉 http://localhost:7474/browser/
 
