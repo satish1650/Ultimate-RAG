@@ -992,7 +992,7 @@ GitHub 👉 https://github.com/sourangshupal/vector-graph-rag
 
 Discussed below arXiv Paper of GraphRAG:
 	✅ When to use Graphs in RAG: A Comprehensive Analysis for Graph Retrieval-Augmented Generation 👉 https://arxiv.org/pdf/2506.05690v1
-	✅ KG-RAG: Bridging the Gap Between Knowledge and Creativity 👉 https://arxiv.org/abs/2405.12035
+	✅ KG-RAG: Bridging the Gap Between Knowledge and Creativity 👉 https://arxiv.org/abs/2405.12035 or https://arxiv.org/pdf/2405.12035
 	✅ From Local to Global: A GraphRAG Approach to Query-Focused Summarization 👉 https://arxiv.org/pdf/2404.16130
 	✅ OG-RAG: ONTOLOGY-GROUNDED RETRIEVAL-AUGMENTED GENERATION FOR LARGE LANGUAGE MODELS 👉 https://arxiv.org/pdf/2412.15235
 	✅ OG-RAG: Ontology-Grounded Retrieval-Augmented Generation For Large Language Models 👉	https://www.microsoft.com/en-us/research/publication/og-rag-ontology-grounded-retrieval-augmented-generation-for-large-language-models/
