@@ -1011,10 +1011,10 @@ Falkordb 👉 Ultra-fast, Multi-tenant Graph Database Powering GenAI 👉 https:
 	
 	https://colab.research.google.com/drive/1V0Z9FPvq2F77WjOdAPIHBv1k8_S8ZwGJ?usp=sharing	
 		✅ Falkordb_Graphiti_Demo26.ipynb
-		FALKORDB_HOST r-6jissuruar.instance-wti6u7znd.hc-2uaqqpjgg.us-east-2.aws.f2e0a955bb84.cloud
-		FALKORDB_PORT 57069
-		FALKORDB_USERNAME falkordb
-		FALKORDB_PASSWORD Welcome@123
+			FALKORDB_HOST r-6jissurXXX.instance-wti6u7znd.hc-2uaqqpjgg.us-east-2.aws.f2e0a955bb84.cloud
+			FALKORDB_PORT 5XX69
+			FALKORDB_USERNAME falXXXdb
+			FALKORDB_PASSWORD XXXXXXX@123
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 08 Mar Day - 36 👉 Ultimate RAG 👉 Vector Graph RAG
