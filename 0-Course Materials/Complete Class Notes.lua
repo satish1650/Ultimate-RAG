@@ -923,7 +923,7 @@ Take GitHub to the command line (GitHub Installer) 👉 https://cli.github.com/
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 28 Feb Day - 34 👉 Ultimate RAG 👉 Graph RAG
 *********************************************
-Class Notes 👉 https://krishnaikacademy.notion.site/Ultimate-RAG-Course-2a5eba9593d08085ade8ceb2a6c6c8de
+Class Notes 👉 https://krishnaikacademy.notion.site/Graph-RAG-315eba9593d080779e45f685bd4b2ac9
 
 GitHub 👉 https://github.com/sourangshupal/graph-rag
 	✅ graph-rag/neo4j_browser_guide.md
@@ -966,17 +966,52 @@ ZEP: A TEMPORAL KNOWLEDGE GRAPH ARCHITECTURE FOR AGENT MEMORY 👉  Research arX
 Introducing Contextual Retrieval 👉 https://www.anthropic.com/engineering/contextual-retrieval
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-01 Mar Day - 35 👉 Ultimate RAG 👉 Graph RAG
+01 Mar Day - 35 👉 Ultimate RAG 👉 Graph RAG 
 *********************************************
 Class has been cancelled due to trainer unavailability.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-07 Mar Day - 35 👉 Ultimate RAG 👉 Graph RAG
-*********************************************
-Class Notes 👉 https://krishnaikacademy.notion.site/Ultimate-RAG-Course-2a5eba9593d08085ade8ceb2a6c6c8de
+07 Mar Day - 35 👉 Ultimate RAG 👉 Graph RAG 👉 Ontologies & Knowledge Graphs for GraphRAG
+07 Mar Day - 35 👉 Ultimate RAG 👉 Vector Graph RAG
+********************************************************************************************
+Class Notes 👉 Class Notes 👉 https://krishnaikacademy.notion.site/Graph-RAG-315eba9593d080779e45f685bd4b2ac9
 
 GitHub 👉 https://github.com/sourangshupal/graph-rag
-	✅ graph-rag/graph-rag\graphrag_langchain.ipynb
+	✅ graph-rag/graphrag_ontologies.md
+	✅ graph-rag/graphrag_langchain.ipynb
 	
-	
+
+GitHub 👉 https://github.com/sourangshupal/vector-graph-rag
+	✅ vector-graph-rag/main.ipynb
+	✅ vector-graph-rag/config/llm.py
+	✅ vector-graph-rag/config/neo4j.py
+	✅ vector-graph-rag/config/pinecone_cfg.py
+	✅ vector-graph-rag/ingest/neo4j.py
+	✅ vector-graph-rag/ingest/pinecone_ingest.py
+	✅ vector-graph-rag/retrieve/neo4j_pinecone.py
+	✅ vector-graph-rag/Falkordb_Graphiti_Demo26.ipynb
+
+Whento use Graphs in RAG 👉 https://arxiv.org/pdf/2404.16130
+KG-RAG: Bridging the Gap Between Knowledge and Creativity 👉 https://arxiv.org/abs/2405.12035
+
+From Local to Global: A GraphRAG Approach to Query-Focused Summarization 👉 https://arxiv.org/pdf/2404.16130
+
+OG-RAG: Ontology-Grounded Retrieval-Augmented Generation For Large Language Models
+https://www.microsoft.com/en-us/research/publication/og-rag-ontology-grounded-retrieval-augmented-generation-for-large-language-models/
+
+Access Local Instances of Neo4j 👉 http://localhost:7474/browser/
+
+Falkordb 👉 Ultra-fast, Multi-tenant Graph Database Powering GenAI 👉 https://www.falkordb.com/
+	https://colab.research.google.com/drive/1V0Z9FPvq2F77WjOdAPIHBv1k8_S8ZwGJ?usp=sharing	
+		✅ Falkordb_Graphiti_Demo26.ipynb
+			FALKORDB_HOST r-6jissuruar.instance-wti6u7znd.hc-2uaqqpjgg.us-east-2.aws.f2e0a955bb84.cloud
+			FALKORDB_PORT 57069
+			FALKORDB_USERNAME falkordb
+			FALKORDB_PASSWORD Welcome@123
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+08 Mar Day - 36 👉 Ultimate RAG 👉 Vector Graph RAG
+*****************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Graph-RAG-315eba9593d080779e45f685bd4b2ac9
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
