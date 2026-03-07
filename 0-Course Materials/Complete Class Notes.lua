@@ -979,7 +979,6 @@ Class Notes 👉 Class Notes 👉 https://krishnaikacademy.notion.site/Graph-RAG
 GitHub 👉 https://github.com/sourangshupal/graph-rag
 	✅ graph-rag/graphrag_ontologies.md
 	✅ graph-rag/graphrag_langchain.ipynb
-	
 
 GitHub 👉 https://github.com/sourangshupal/vector-graph-rag
 	✅ vector-graph-rag/main.ipynb
@@ -992,7 +991,6 @@ GitHub 👉 https://github.com/sourangshupal/vector-graph-rag
 	✅ vector-graph-rag/Falkordb_Graphiti_Demo26.ipynb
 
 Discussed below arXiv Paper of GraphRAG:
-
 	✅ When to use Graphs in RAG: A Comprehensive Analysis for Graph Retrieval-Augmented Generation 👉 https://arxiv.org/pdf/2506.05690v1
 	✅ KG-RAG: Bridging the Gap Between Knowledge and Creativity 👉 https://arxiv.org/abs/2405.12035
 	✅ From Local to Global: A GraphRAG Approach to Query-Focused Summarization 👉 https://arxiv.org/pdf/2404.16130
@@ -1004,7 +1002,7 @@ Access Local Instances of Neo4j 👉 http://localhost:7474/browser/
 
 Falkordb 👉 Ultra-fast, Multi-tenant Graph Database Powering GenAI 👉 https://www.falkordb.com/
 	
-	https://colab.research.google.com/drive/1V0Z9FPvq2F77WjOdAPIHBv1k8_S8ZwGJ?usp=sharing	
+	Falkordb Graphiti Demo 👉 https://colab.research.google.com/drive/1V0Z9FPvq2F77WjOdAPIHBv1k8_S8ZwGJ?usp=sharing	
 		✅ Falkordb_Graphiti_Demo26.ipynb
 			FALKORDB_HOST r-6jissurXXX.instance-wti6u7znd.hc-2uaqqpjgg.us-east-2.aws.f2e0a955bb84.cloud
 			FALKORDB_PORT 5XX69
