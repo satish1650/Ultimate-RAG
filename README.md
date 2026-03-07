@@ -1148,6 +1148,12 @@ Pydantic is a data validation library that uses Python type annotations to:
     - LangChain : Neo4j graph client and text splitting utilities
     - uv : Python package and project manager
 
+#### **Discussed below arXiv Paper of GrapRAG**
+- [When to use Graphs in RAG](https://arxiv.org/pdf/2506.05690v1) : A Comprehensive Analysis for Graph Retrieval-Augmented Generation
+- [KG-RAG](https://arxiv.org/pdf/2405.12035) : Bridging the Gap Between Knowledge and Creativity
+- [From Local to Global](https://arxiv.org/pdf/2404.16130) : A GraphRAG Approach to Query-Focused Summarization
+- [OG-RAG](https://arxiv.org/pdf/2412.15235): ONTOLOGY-GROUNDED RETRIEVAL-AUGMENTED GENERATION FOR LARGE LANGUAGE MODELS
+
 ---
 
 ## Create the virtual environment in anaconda3 folder
