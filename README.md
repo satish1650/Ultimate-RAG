@@ -1088,6 +1088,66 @@ Pydantic is a data validation library that uses Python type annotations to:
     1. Delete a Node (DETACH DELETE)
     1. Clear the Entire Database (Demo Reset)
 
+## 07 Mar Day - 35 👉 Ultimate RAG 👉 Graph RAG 👉 Ontologies + Vector GraphRAG
+## 17-Vector-Graph-RAG
+#### 🎯 Learning Objectives
+#### 🔮 Hybrid RAG: Vector Search + Knowledge Graph
+#### **Code Explanation of below python files**
+    ✅ graph-rag/graphrag_ontologies.md
+	✅ graph-rag/graphrag_langchain.ipynb
+    ✅ vector-graph-rag/main.ipynb
+	✅ vector-graph-rag/config/llm.py
+	✅ vector-graph-rag/config/neo4j.py
+	✅ vector-graph-rag/config/pinecone_cfg.py
+	✅ vector-graph-rag/ingest/neo4j.py
+	✅ vector-graph-rag/ingest/pinecone_ingest.py
+	✅ vector-graph-rag/retrieve/neo4j_pinecone.py
+	✅ vector-graph-rag/Falkordb_Graphiti_Demo26.ipynb
+
+### GraphRAG Ontologies & Knowledge GraphRAG
+#### **graph-rag/graphrag_ontologies.md**
+- 📊 USE CASE 1 — Financial Documents
+    - 1.1 — Document Ontology (Financial)
+        - Node & Edge Type Registry
+    - 1.2 — Attribute Schemas (Financial)
+    - 1.3 — Knowledge Graph Build Pipeline (Financial)
+- 📱 USE CASE 2 — Social Media
+    - 2.1 — Document Ontology (Social Media)
+        - Node & Edge Type Registry
+    - 2.2 — Attribute Schemas (Social Media)
+    - 2.3 — Knowledge Graph Build Pipeline (Social Media)
+- 🔁 Cross-Use-Case Comparison
+
+### Hybrid RAG: Vector Search + Knowledge Graph
+#### **vector-graph-rag/README.md**
+- What is RAG?
+- Why Hybrid? The Limitation of Standard RAG
+- Architecture
+- The Jupyter Notebook (vector-graph-rag/main.ipynb)
+    - Step 1 — Connect to Databases
+    - Step 2 — Define Data Sources
+    - Step 3 — Ingest into Neo4j: Create Nodes
+    - Step 4 — Create Relationships in the Graph
+    - Step 5 — Ingest into Pinecone: Vector Embeddings
+    - Step 6 — Define the Graph Traversal Query
+    - Step 7 — Run Hybrid Search
+- Project Structure
+- Why This Approach Is Valuable
+    - For learners
+    - For practitioners
+    - For researchers
+- Prerequisites
+    - Setup
+        1. Install dependencies
+        1. Create a .env file in the project root
+        1. Open the notebook
+- Technology Stack
+    - Pinecone : Vector database — stores and searches embeddings
+    - Neo4j : Graph database — stores entities and their relationships
+    - OpenAI : Embedding model (`text-embedding-3-small`)
+    - LangChain : Neo4j graph client and text splitting utilities
+    - uv : Python package and project manager
+
 ---
 
 ## Create the virtual environment in anaconda3 folder
