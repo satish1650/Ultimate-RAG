@@ -1048,5 +1048,6 @@ Next Week Assignment (Research & Explore) 👉 The Multi-Armed Bandit Problem �
 
 Next Batch 👉 Modern Route-Full Stack GenerativeAI And Agentic AI Bootcamp 👉 https://www.krishnaik.in/liveclass2/genai?id=9
 
-Remember GPTcache 
+Remember GPTcache 👉 GPTCache Quick Start 👉 GitHub 👉 https://github.com/zilliztech/GPTCache/tree/main
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
