@@ -1154,6 +1154,84 @@ Pydantic is a data validation library that uses Python type annotations to:
 - [From Local to Global](https://arxiv.org/pdf/2404.16130) : A GraphRAG Approach to Query-Focused Summarization
 - [OG-RAG](https://arxiv.org/pdf/2412.15235): ONTOLOGY-GROUNDED RETRIEVAL-AUGMENTED GENERATION FOR LARGE LANGUAGE MODELS
 
+## 08 Mar Day - 36 👉 Ultimate RAG 👉 Haystack-AI-Tutorials
+## 18-Heystack-AI-Tutorials
+#### 🎯 Learning Objectives
+- Fundamentals
+    - RAG architecture and core components
+    - Document stores and retrieval mechanisms
+    - Prompt engineering for RAG
+    - Building basic Q&A pipelines
+- Advanced Retrieval
+    - Dense embeddings and semantic search
+    - Hybrid retrieval (BM25 + vector search)
+    - Query expansion techniques
+    - Reranking strategies for precision
+- Agentic & Adaptive RAG
+    - Conditional routing and decision-making
+    - Web search fallback mechanisms
+    - Self-correcting RAG pipelines
+    - Conversational RAG with memory
+- Specialized Techniques
+    - Corrective RAG (CRAG) patterns
+    - GraphRAG with knowledge graphs
+    - Long-context document handling
+    - Multimodal RAG (vision + text)
+
+#### 🔮 Haystack AI RAG Tutorials
+#### **Code Explanation of below python files**
+    ✅ haystack-ai-tutorials/README.md
+	✅ haystack-ai-tutorials/01_rag_fundamentals.ipynb
+	✅ haystack-ai-tutorials/02_advanced_retrieval.ipynb
+	✅ haystack-ai-tutorials/03_agentic_rag.ipynb
+	✅ haystack-ai-tutorials/04_specialized_techniques.ipynb
+
+### Haystack AI RAG Tutorials
+#### **Notebooks**
+1. **01_rag_fundamentals.ipynb** - RAG Fundamentals & Basic Implementation
+    - Core RAG concepts and architecture
+    - Building your first RAG pipeline
+    - Prompt engineering basics
+    - Simple Q&A systems
+1. **02_advanced_retrieval.ipynb** - Advanced Retrieval Techniques
+    - Semantic search with embeddings
+    - Hybrid retrieval strategies
+    - Query expansion
+    - Reranking for improved precision
+1. **03_agentic_rag.ipynb** - Advanced RAG Patterns & Agentic Behavior
+    - Conditional routing
+    - Web search fallback
+    - Self-correcting pipelines
+    - Conversational RAG with memory
+1. **04_specialized_techniques.ipynb** - Specialized RAG Techniques
+    - Corrective RAG (CRAG)
+    - GraphRAG with Neo4j
+    - Long-context handling
+    - Multimodal RAG
+
+#### **haystack-ai-tutorials/README.md**
+- Prerequisites
+    - System Requirements
+        - **Python:** 3.9-3.12
+        - **RAM:** 8GB minimum (16GB recommended for local embeddings)
+        - **Disk Space:** 10GB+ for datasets and models
+        - **Internet:** Required for API calls and dataset downloads
+        - **Optional:** CUDA-capable GPU for local model inference
+    - Knowledge Prerequisites
+        - Intermediate Python programming
+        - Basic understanding of machine learning
+        - Familiarity with LLMs and embeddings
+        - Basic command line usage
+- Setup Instructions
+1. Clone or Download this Repository
+1. Create a Virtual Environment
+1. Install Dependencies
+1. Configure Environment Variables
+1. (Optional) Setup Neo4j for Notebook 4
+    - **Option A: Docker (Recommended)**
+    - **Option B: Desktop Installation** Download from: https://neo4j.com/download/
+1. Launch JupyterLab
+
 ---
 
 ## Create the virtual environment in anaconda3 folder
