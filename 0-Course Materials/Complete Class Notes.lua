@@ -1010,8 +1010,43 @@ Falkordb 👉 Ultra-fast, Multi-tenant Graph Database Powering GenAI 👉 https:
 			FALKORDB_PASSWORD XXXXXXX@123
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-08 Mar Day - 36 👉 Ultimate RAG 👉 Vector Graph RAG
-*****************************************************
-Class Notes 👉 https://krishnaikacademy.notion.site/Graph-RAG-315eba9593d080779e45f685bd4b2ac9
+08 Mar Day - 36 👉 Ultimate RAG 👉 Haystack-AI-Tutorials
+*********************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Ultimate-RAG-Course-2a5eba9593d08085ade8ceb2a6c6c8de
 
+GitHub 👉 https://github.com/sourangshupal/haystack-ai-tutorials
+	✅ haystack-ai-tutorials/README.md
+	✅ haystack-ai-tutorials/01_rag_fundamentals.ipynb
+	✅ haystack-ai-tutorials/02_advanced_retrieval.ipynb
+	✅ haystack-ai-tutorials/03_agentic_rag.ipynb
+	✅ haystack-ai-tutorials/04_specialized_techniques.ipynb
+
+Login to Cohere and generate API keys 👉 https://dashboard.cohere.com/welcome/login
+The World Fastest & Cheapest Google Search API 👉 Login to Serper and generate API keys 👉 https://serper.dev/
+
+Heystack Documentation 👉 https://docs.haystack.deepset.ai/docs/intro
+Heystack Blog 👉 Articles about Haystack, LLMs, Agents, and latest AI technologies. 👉 https://haystack.deepset.ai/blog
+Heystack Integrations 👉 https://haystack.deepset.ai/integrations
+
+deepset-ai 👉 haystack-cookbook 👉 GitHub 👉 https://github.com/deepset-ai/haystack-cookbook/tree/main/notebooks
+	✅ Agent-Powered Retrieval with Haystack 👉 haystack-cookbook/notebooks/agent_powered_retrieval.ipynb
+
+Keras: Deep Learning for humans 👉 A superpower for ML developers 👉 https://keras.io/ 
+
+NexusRaven-V2 👉 GitHub 👉 https://github.com/nexusflowai/NexusRaven-V2
+
+Building Cloud Native RAG Solutions 👉 https://forms.gle/BcH9zKyix5V5W13n7
+
+Super excited to announce the NVIDIA GTC event. You can register for the sessions here for free: 👉 https://nvda.ws/4kcF6vc
+https://www.linkedin.com/feed/update/urn:li:activity:7434505622559137792/
+
+Sourangshu Pal 👉 https://www.linkedin.com/in/sourangshu-pal-0774b212a/
+
+Check this one 👉 GitHub 👉 https://github.com/CSE442-17F/
+
+Next Week Assignment (Research & Explore) 👉 The Multi-Armed Bandit Problem 👉 https://cse442-17f.github.io/LinUCB/
+
+Next Batch 👉 Modern Route-Full Stack GenerativeAI And Agentic AI Bootcamp 👉 https://www.krishnaik.in/liveclass2/genai?id=9
+
+Remember GPTcache 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
