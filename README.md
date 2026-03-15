@@ -1232,6 +1232,14 @@ Pydantic is a data validation library that uses Python type annotations to:
     - **Option B: Desktop Installation** Download from: https://neo4j.com/download/
 1. Launch JupyterLab
 
+## 15 Mar Day - 37 👉 Ultimate RAG 👉 Multimodal RAG 👉 Project-4 Discussion & Lightning AI
+## Lightning AI 👉 [click here](https://lightning.ai/)
+#### 🎯 Learning Objectives
+- Project-4 Discussion using Multimodal RAG
+- Sign up Lightning AI
+- Lightning AI Complete setup 
+- Demo `multi_model_rag_with_colpali.ipynb` in Lightning AI
+
 ---
 
 ## Create the virtual environment in anaconda3 folder
