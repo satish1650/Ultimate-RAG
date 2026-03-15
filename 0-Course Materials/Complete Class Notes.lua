@@ -1056,7 +1056,38 @@ Remember GPTcache 👉 GPTCache Quick Start 👉 GitHub 👉 https://github.com/
 Class has been cancelled due to trainer unavailability.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-16 Mar Day - 37 👉 Ultimate RAG 👉 Multimodal RAG
-**************************************************
+16 Mar Day - 37 👉 Ultimate RAG 👉 Multimodal RAG 👉 Project-4 Discussion & Lightning AI
+******************************************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Ultimate-RAG-Course-2a5eba9593d08085ade8ceb2a6c6c8de
+
+Project-4 Discussion:
+	Step:1
+	👉 Doc parser
+	👉 Text + Image (Diagram + Charts + Tables)
+	👉 OCR -> Mistral OCR, Azure Docs Intellegence, MinerU
+	
+	Step:2
+	👉	Image Embeddings -> Voyage-multimodal, ColQwen 2.5 / Jina
+	
+	Step:3
+	👉 Table Extractor -> Tableformer, GPT-4o, MLLM
+	
+	Step:4
+	👉 Hybrid Retrieval -> Sparse + Dense + ColPALI + SPLADE + COLBERT + RRF Fusion
+
+	Step:5
+	👉 VLLM -> RAG Reasoning -> GPT 4o
+
+NVIDIA RAG Blueprint 👉 GitHub 👉 https://github.com/NVIDIA-AI-Blueprints/rag 
+
+Lightning AI Pricing 👉 https://lightning.ai/pricing (Use only Development Purpose not Production use becuase It is very expensive)
+
+Free Edu accounts 👉 https://etempmail.com/ 
+
+RunPOD 👉 GPU Cloud for AI Training and Inference 👉 https://www.runpod.io/
+
+https://colab.research.google.com/drive/1jAeVi_CDCyb-iYlqw5Ytiwu9ClLQKj0b?usp=sharing
+	✅ multi_model_rag_with_colpali.ipynb
+		!pip install optimum qwen-vl-utils bitsandbytes transformers accelerate
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
