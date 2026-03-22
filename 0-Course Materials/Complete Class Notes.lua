@@ -1096,11 +1096,11 @@ https://colab.research.google.com/drive/1jAeVi_CDCyb-iYlqw5Ytiwu9ClLQKj0b?usp=sh
 Class has been cancelled due to trainer unavailability.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-22 Mar Day - 38 👉 Ultimate RAG 👉 Multimodal RAG 👉 Paradigm 👉 COLAPALI & (Layout Detection + OCR) 👉 MinerU
+22 Mar Day - 38 👉 Ultimate RAG 👉 Multimodal RAG 👉 Paradigm 👉 COLPALI & (Layout Detection + OCR) 👉 MinerU
 *****************************************************************************************************************
 Class Notes 👉 https://krishnaikacademy.notion.site/Ultimate-RAG-Course-2a5eba9593d08085ade8ceb2a6c6c8de
 
-Paradigm A: COLAPALI
+Paradigm A: COLPALI
     colplali engine github 👉 https://github.com/illuin-tech/colpali
 
 	Explained below notebook(COLPALI 👉 Text to Images patches)  in breif:
