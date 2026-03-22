@@ -1240,6 +1240,30 @@ Pydantic is a data validation library that uses Python type annotations to:
 - Lightning AI Complete setup 
 - Demo `multi_model_rag_with_colpali.ipynb` in Lightning AI
 
+## 22 Mar Day - 38 👉 Ultimate RAG 👉 Paradigm 👉 COLPALI & (Layout Detection + OCR) 👉 MinerU, Mistral and Nemotron Parse OCR
+## Colpali 👉 [click here](https://arxiv.org/pdf/2407.01449)
+#### 🎯 Learning Objectives
+#### **Code Explanation of below python files**
+    ✅ Multimodal_Rag_with_Colpali.ipynb
+    ✅ Docling_Granite_Parsing.ipynb
+    ✅ Mineru_test.ipynb
+    ✅ mineru_multimodal_rag.ipynb
+
+#### Paradigm A: COLPALI
+#### **Explained COLPALI Research Paper in brief**
+1. INTRODUCTION
+1. PROBLEM FORMULATION & RELATED WORK
+1. THE ViDoRe BENCHMARK
+1. LATE INTERACTION BASED VISION RETRIEVAL
+1. RESULTS
+1. ABLATION STUDY
+1. CONCLUSIONS
+
+#### Paradigm B: MinerU, Mistral and Nemotron Parse OCR
+1. MinerU Implementation
+1. Mistral Implementation
+1. Nemotron Implementation
+
 ---
 
 ## Create the virtual environment in anaconda3 folder
