@@ -1279,5 +1279,5 @@ MinerU Implementation
 
 	Multimodal RAG with MinerU: Layout-Aware Academic PDF Parsing
 		https://colab.research.google.com/drive/1tbxp5y1Qlv9nV6dyitA-_PClVL4vBl9w?usp=sharing
-			
+		
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
