@@ -1265,7 +1265,7 @@ Paradigm B:
 	
 	- Single Stage or Unified Models
 		1. Nemotron Parse
-	Explained COLPALI Research Paper in brief:	
+	Explained below notebook(Docling Granite Parsing)  in breif::	
 		https://colab.research.google.com/drive/1sEvwg0Zrzm_P4omcc7LeVy0EWLINznbG?usp=sharing
 			✅ Docling_Granite_Parsing.ipynb
 
