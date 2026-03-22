@@ -1091,3 +1091,193 @@ https://colab.research.google.com/drive/1jAeVi_CDCyb-iYlqw5Ytiwu9ClLQKj0b?usp=sh
 		!pip install optimum qwen-vl-utils bitsandbytes transformers accelerate
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+21 Mar Day - 38 👉 Ultimate RAG 👉 Multimodal RAG 
+**************************************************
+Class has been cancelled due to trainer unavailability.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+22 Mar Day - 38 👉 Ultimate RAG 👉 Multimodal RAG 👉 Paradigm 👉 COLAPALI & (Layout Detection + OCR) 👉 MinerU
+*****************************************************************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Ultimate-RAG-Course-2a5eba9593d08085ade8ceb2a6c6c8de
+
+Paradigm A: COLAPALI
+    colplali engine github 👉 https://github.com/illuin-tech/colpali
+
+	Explained below notebook(COLPALI 👉 Text to Images patches)  in breif:
+		✅ multi_model_rag_with_colpali.ipynb
+		✅ COLPALI takes only images as input. Images converts into 10 patches per Image.
+
+	Explained COLPALI Research Paper in brief:
+		✅ COLPALI Reseach Paper 👉 ColPali: Efficient Document Retrieval with Vision Language Models 👉 https://arxiv.org/abs/2407.01449
+		✅ COLPALI Reseach Paper 👉 ColPali: EFFICIENT DOCUMENT RETRIEVAL WITH VISION LANGUAGE MODELS 👉 https://arxiv.org/pdf/2407.01449
+			1 INTRODUCTION	
+				Document layout detection models can then be run to segment paragraphs, titles, and other page objects such as tables,
+				figures, and headers. A chunking strategy is then defined to group text passages with some semantical coherence, and modern 
+				retrieval setups may even integrate a captioning step to describe visually rich elements in a natural language form, more suitable 
+				for embedding models.
+			- Contribution 1: ViDoRe		
+				Figure 1: ColPali simplifies document retrieval w.r.t. standard retrieval methods while achieving stronger performances with better
+						latencies. Latencies and results are detailed in section 5 and subsection B.4.
+
+			Contribution 2: ColPali 
+				These results demonstrate the potential and the many benefits of this novel Retrieval in Vision Space concept, which could significantly
+				alter the way document retrieval is approached in the industry moving forward. We release all resources at https://hf.co/vidore.
+			
+			2 PROBLEM FORMULATION & RELATED WORK
+				2.1 TEXTUAL RETRIEVAL METHODS
+					Document Retrieval in Text Space
+					Neural Retrievers
+					Multi-Vector retrieval via late interaction. 
+						The idea is to benefit from the rich interaction between individual query and document terms while taking advantage of the
+						offline computation and fast query matching enabled by bi-encoders. 
+					Retrieval Evaluation
+				2.2 INTEGRATING VISUAL FEATURES
+					- Contrastive Vision Language Models
+					- Visually Rich Document Understanding
+					PaliGemma
+				3 THE ViDoRe BENCHMARK
+				3.1 BENCHMARK DESIGN
+				3.2 ASSESSING CURRENT SYSTEMS
+					- Unstructured
+					- Unstructured + X
+					- Embedding Model
+					- Contrastive VLMs
+					- Results
+						PDF Parser
+						- Layout Detection
+						- OCR
+						- Captioning
+						- Page Encoding
+						Latency  
+				4 LATE INTERACTION BASED VISION RETRIEVAL
+					4.1 ARCHITECTURE
+						- Vision-Language Models
+						- Late Interaction
+						- Contrastive Loss
+					4.2 MODEL TRAINING
+						- Dataset
+						- Parameters
+						- Query Augmentation
+				5 RESULTS
+					Unstructured text-only
+					- BM25
+					- BGE-M3
+					Unstructured + OCR
+					- BM25
+					- BGE-M3
+					Unstructured + Captioning
+					- BM25
+					- BGE-M3
+					Contrastive VLMs
+					- Jina-CLIP
+					- Nomic-vision
+					- SigLIP (Vanilla) 
+					Ours
+					- SigLIP (Vanilla)
+					- BiSigLIP (+fine-tuning) 
+					- BiPali (+LLM) 
+					- ColPali (+Late Inter.)
+					
+					Table 2: Comprehensive evaluation of baseline models and our proposed method on ViDoRe. 
+							Results are presented using nDCG@5 metrics, and illustrate the impact of different components. Text-only metrics are 
+							not computed for benchmarks with only visual elements.
+					
+					5.1 PERFORMANCE (R1)
+					- Fine-tuning a Vision Model on a document retrieval oriented dataset: BiSigLIP
+					- Feeding image patches to a LLM: BiPali
+					- Leveraging Multi-Vector Embeddings through Late Interaction: ColPali
+					- Negative Results.
+
+					5.2 LATENCIES & MEMORY FOOTPRINT
+					- Online Querying. (R2)
+					- Offline Indexing. (R3)
+					- Storage Footprint
+					- Token pooling
+						Figure 3: (Left: Token Pooling) Relative performance degradation when reducing the number of stored embeddings per document. (Right: Interpretability) For each term in a user query, ColPali
+								identifies the most relevant document image patches (highlighted zones) and computes a query-topage matching score
+					5.3 INTERPRETABILITY
+				6 ABLATION STUDY
+					- Tradeoffs between model size and the number of image patches
+					- Unfreezing the vision component
+					- Impact of “query augmentation” tokens
+					- Impact of the Pairwise CE loss
+					- Adapting models to new tasks
+					- Better VLMs lead to better visual retrievers
+					- Out-of-domain generalization
+				7 CONCLUSIONS
+					- Future Work
+
+	Explained COLPALI Research Paper in brief:
+		https://colab.research.google.com/drive/1SDHPXLup6dojRXlI6AcKpCqPabEpD6Hr?usp=sharing
+			✅ multi_model_rag_with_colpali.ipynb
+				Overview: This code implements one of the multiple ways of multi-model RAG. This project processes a PDF file, retrieves relevant content using 
+						Colpali, and generates answers using a multi-modal RAG system. The process includes document indexing, querying, and summarizing with
+						the Gemini model.
+				Key Components:
+					- RAGMultiModalModel: Used for document indexing and retrieval.
+					- PDF Processing: Downloads and processes "Attention is All You Need" paper.
+					- Gemini Model: Used for content generation from retrieved images and queries.
+					- Base64 Encoding/Decoding: Manages image data retrieved during search.
+				Diagram:
+					- Reliable-RAG
+				Motivation:
+					To enable efficient querying and content generation from multi-modal documents (PDFs with text and images) in response to natural language queries.
+				Method Details:
+					- Indexing: The PDF is indexed using the RAGMultiModalModel, storing both text and image data.
+					- Querying: Natural language queries retrieve relevant document segments.
+					- Image Processing: Images from the document are decoded, displayed, and used in conjunction with the Gemini model to generate content.
+				Benefits:
+					- Multi-modal support for both text and images.
+					- Streamlined retrieval and summarization pipeline.
+					- Flexible content generation using advanced LLMs (Gemini model).
+				Implementation:
+					- PDF is indexed, and the content is split into text and image segments.
+					- A query is run against the indexed document to fetch the relevant results.
+					- Retrieved image data is decoded and passed through the Gemini model for answer generation.
+				Summary:
+					This project integrates document indexing, retrieval, and content generation in a multi-modal setting, enabling efficient queries on 
+					complex documents like research papers.
+
+Paradigm B: 
+	- Layout Detection + OCR
+		1. PP DocLayout (Paddle OCR, Baidu OCR)
+		2. DocLayout YOLO
+		3. Layout LLM
+		4. Surya Layout (Omini Benchmark)
+		5. Docling (HERON)
+
+	- OCR (Optical Character Recognition): All below are Open Source OCR except Mistral OCR
+		1. GLM OCR
+		2. Mistral OCR (Enterperise OCR)
+		3. Paddle OCR
+		4. MinerU OCR
+		6. DOT OCR
+		7. Surya OCR
+		8. Monkey OCR
+		9. Nemo OCR
+	
+	- Dual Stage: Combo
+		1. PP Doc Layout V3 + GLM OCR 	
+		2. PP Doc Layout V3 + Paddle OCR
+		3. MinerU (VOLO DocLayout + VLM OCR)		
+		4. Docling (HERON100 + Layout with 258 Model)
+	
+	- Single Stage or Unified Models
+		1. Nemotron Parse
+	Explained COLPALI Research Paper in brief:	
+		https://colab.research.google.com/drive/1sEvwg0Zrzm_P4omcc7LeVy0EWLINznbG?usp=sharing
+			✅ Docling_Granite_Parsing.ipynb
+
+	GLM OCR Research Paper 👉 GLM-OCRTechnicalReport 👉 https://arxiv.org/pdf/2603.10910
+
+MinerU Implementation
+	GitHub 👉 https://github.com/opendatalab/mineru
+	MinerU Docs 👉 https://opendatalab.github.io/MinerU/quick_start/
+
+	https://colab.research.google.com/drive/1NJVSDztLRv2vE6Lo-_fjHDJnAxfwOSYb?usp=sharing
+		✅ Mineru_test.ipynb
+
+	Multimodal RAG with MinerU: Layout-Aware Academic PDF Parsing
+		https://colab.research.google.com/drive/1tbxp5y1Qlv9nV6dyitA-_PClVL4vBl9w?usp=sharing
+			
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
