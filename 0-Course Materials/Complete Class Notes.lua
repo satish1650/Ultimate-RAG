@@ -1104,6 +1104,7 @@ Paradigm A: COLAPALI
     colplali engine github 👉 https://github.com/illuin-tech/colpali
 
 	Explained below notebook(COLPALI 👉 Text to Images patches)  in breif:
+	https://colab.research.google.com/drive/1jAeVi_CDCyb-iYlqw5Ytiwu9ClLQKj0b?usp=sharing
 		✅ multi_model_rag_with_colpali.ipynb
 		✅ COLPALI takes only images as input. Images converts into 10 patches per Image.
 
