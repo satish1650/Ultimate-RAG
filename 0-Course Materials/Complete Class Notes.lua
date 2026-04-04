@@ -1282,3 +1282,79 @@ MinerU Implementation
 		https://colab.research.google.com/drive/1tbxp5y1Qlv9nV6dyitA-_PClVL4vBl9w?usp=sharing
 		
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+28 Mar Day - 39 👉 Ultimate RAG 👉 Multimodal RAG 👉 🧠 MultiModal RAG Pipeline Implementation using 🦙 Ollama (Locally) and Lightning AI(GUP), JinaAI
+*********************************************************************************************************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Ultimate-RAG-Course-2a5eba9593d08085ade8ceb2a6c6c8de
+
+Local Setup 👉 GitHub 👉 https://github.com/sourangshupal/multi-modal-rag
+		  ✅ multi-modal-rag/TESTING.md
+		  ✅ multi-modal-rag/README.md
+		  ✅ multi-modal-rag/ollama/test_parse.py
+				uv run python ollama/test_parse.py data/raw/test_page1.pdf --output ./ollama/output/
+		  ✅ multi-modal-rag/ollama/visualize.py
+				uv run streamlit ollama/visualize.py
+		  ✅ multi-modal-rag/scripts/parse.py
+		  ✅ multi-modal-rag/scripts/ingest.py	
+		  ✅ multi-modal-rag/scripts/search.py
+		  ✅ multi-modal-rag/scripts/serve.py
+		  ✅ multi-modal-rag/scripts/debug_raw.py
+		  ✅ multi-modal-rag/src/doc_parser/api/app.py
+		  ✅ multi-modal-rag/src/doc_parser/api/dependencies.py
+		  ✅ multi-modal-rag/src/doc_parser/api/middleware.py
+		  ✅ multi-modal-rag/src/doc_parser/api/schemas.py
+		  ✅ multi-modal-rag/src/doc_parser/api/routes/ingest.py
+		  ✅ multi-modal-rag/src/doc_parser/api/routes/search.py
+		  ✅ multi-modal-rag/src/doc_parser/api/routes/generate.py
+		  ✅ multi-modal-rag/src/doc_parser/api/routes/health.py
+
+GPU Setup 👉 GitHub 👉 https://github.com/sourangshupal/multi-modal-rag/tree/deployment
+		  ✅ multi-modal-rag/LIGHTNING_AI_DEPLOY.md
+
+HYBRID --> SPARSE + DENSE + MULTIVECTOR + GRAPH (TEXT)
+HYBRID --> COLAPLI + (Layout Detection + OCR) (MULTIMODAL)
+
+MULTIMODAL
+  1. COLPALI
+  2. a. GLM OCR
+     b. Paddle VL OCR
+
+Login to JinaAI 👉 https://jina.ai/ 👉 Signin and take Jina API Key
+JinaAI Reranker API 👉 https://jina.ai/reranker/
+
+Make Sure 🦙 Local Mode (Ollama), Docker and Quadrant Should Run
+
+Section 1 — CLI Scripts
+	scripts/parse.py — Parse a document
+	scripts/ingest.py — Ingest a document into Qdrant
+	scripts/search.py — Query the vector store
+
+Section 2 — FastAPI Application
+	Start the API server
+		- uv run uvicorn doc_parser.api.app:app --host 0.0.0.0 --port 8000
+				- GET /health — Health check
+				- GET /collections — List collections
+				- POST /ingest — Ingest by file path
+				- POST /ingest/file — Ingest via file upload
+				- POST /search — Search the vector store
+
+GPU Setup Using Lightning AI
+	Login to Lightning AI 👉 https://lightning.ai/ 
+	GitHub 👉 https://github.com/sourangshupal/multi-modal-rag/tree/deployment
+				✅ multi-modal-rag/LIGHTNING_AI_DEPLOY.md
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+29 Mar Day - 40 👉 Ultimate RAG 👉 Multimodal RAG 👉 Paradigm 👉 COLPALI & (Layout Detection + OCR) 👉 MinerU
+*****************************************************************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Ultimate-RAG-Course-2a5eba9593d08085ade8ceb2a6c6c8de
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+04 Apr Day - 41 👉 Ultimate RAG 👉 Multimodal RAG 
+**************************************************
+Class has been cancelled due to trainer unavailability.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+05 Apr Day - 41 👉 Ultimate RAG 👉 Multimodal RAG 
+**************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Ultimate-RAG-Course-2a5eba9593d08085ade8ceb2a6c6c8de
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
