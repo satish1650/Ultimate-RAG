@@ -1284,68 +1284,70 @@ MinerU Implementation
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 28 Mar Day - 39 👉 Ultimate RAG 👉 Multimodal RAG 👉 🧠 MultiModal RAG Pipeline Implementation using 🦙 Ollama (Locally) and Lightning AI(GUP), JinaAI
 *********************************************************************************************************************************************************
-Class Notes 👉 https://krishnaikacademy.notion.site/Ultimate-RAG-Course-2a5eba9593d08085ade8ceb2a6c6c8de
+Class Notes 👉 https://krishnaikacademy.notion.site/Multimodal-Project-RAG-337eba9593d080eab198f12eaff1d977
 
-Local Setup 👉 GitHub 👉 https://github.com/sourangshupal/multi-modal-rag
-		  ✅ multi-modal-rag/TESTING.md
-		  ✅ multi-modal-rag/README.md
-		  ✅ multi-modal-rag/ollama/test_parse.py
-				uv run python ollama/test_parse.py data/raw/test_page1.pdf --output ./ollama/output/
-		  ✅ multi-modal-rag/ollama/visualize.py
-				uv run streamlit ollama/visualize.py
-		  ✅ multi-modal-rag/scripts/parse.py
-		  ✅ multi-modal-rag/scripts/ingest.py	
-		  ✅ multi-modal-rag/scripts/search.py
-		  ✅ multi-modal-rag/scripts/serve.py
-		  ✅ multi-modal-rag/scripts/debug_raw.py
-		  ✅ multi-modal-rag/src/doc_parser/api/app.py
-		  ✅ multi-modal-rag/src/doc_parser/api/dependencies.py
-		  ✅ multi-modal-rag/src/doc_parser/api/middleware.py
-		  ✅ multi-modal-rag/src/doc_parser/api/schemas.py
-		  ✅ multi-modal-rag/src/doc_parser/api/routes/ingest.py
-		  ✅ multi-modal-rag/src/doc_parser/api/routes/search.py
-		  ✅ multi-modal-rag/src/doc_parser/api/routes/generate.py
-		  ✅ multi-modal-rag/src/doc_parser/api/routes/health.py
+A complete pipeline for Multi-modal RAG with GLM OCR with Ollama support.
 
-GPU Setup 👉 GitHub 👉 https://github.com/sourangshupal/multi-modal-rag/tree/deployment
-		  ✅ multi-modal-rag/LIGHTNING_AI_DEPLOY.md
+	Local Setup 👉 multi-modal-rag master branch 👉 GitHub 👉 https://github.com/sourangshupal/multi-modal-rag
+			✅ multi-modal-rag/TESTING.md
+			✅ multi-modal-rag/README.md
+			✅ multi-modal-rag/ollama/test_parse.py
+					uv run python ollama/test_parse.py data/raw/test_page1.pdf --output ./ollama/output/
+			✅ multi-modal-rag/ollama/visualize.py
+					uv run streamlit ollama/visualize.py
+			✅ multi-modal-rag/scripts/parse.py
+			✅ multi-modal-rag/scripts/ingest.py	
+			✅ multi-modal-rag/scripts/search.py
+			✅ multi-modal-rag/scripts/serve.py
+			✅ multi-modal-rag/scripts/debug_raw.py
+			✅ multi-modal-rag/src/doc_parser/api/app.py
+			✅ multi-modal-rag/src/doc_parser/api/dependencies.py
+			✅ multi-modal-rag/src/doc_parser/api/middleware.py
+			✅ multi-modal-rag/src/doc_parser/api/schemas.py
+			✅ multi-modal-rag/src/doc_parser/api/routes/ingest.py
+			✅ multi-modal-rag/src/doc_parser/api/routes/search.py
+			✅ multi-modal-rag/src/doc_parser/api/routes/generate.py
+			✅ multi-modal-rag/src/doc_parser/api/routes/health.py
 
-HYBRID --> SPARSE + DENSE + MULTIVECTOR + GRAPH (TEXT)
-HYBRID --> COLAPLI + (Layout Detection + OCR) (MULTIMODAL)
+	GPU Setup 👉 multi-modal-rag deployment branch 👉 GitHub 👉 https://github.com/sourangshupal/multi-modal-rag/tree/deployment
+			✅ multi-modal-rag/LIGHTNING_AI_DEPLOY.md
 
-MULTIMODAL
-  1. COLPALI
-  2. a. GLM OCR
-     b. Paddle VL OCR
+	HYBRID --> SPARSE + DENSE + MULTIVECTOR + GRAPH (TEXT)
+	HYBRID --> COLAPLI + (Layout Detection + OCR) (MULTIMODAL)
 
-Login to JinaAI 👉 https://jina.ai/ 👉 Signin and take Jina API Key
-JinaAI Reranker API 👉 https://jina.ai/reranker/
+	MULTIMODAL
+	1. COLPALI
+	2. a. GLM OCR
+		b. Paddle VL OCR
 
-Make Sure 🦙 Local Mode (Ollama), Docker and Quadrant Should Run
+	Login to JinaAI 👉 https://jina.ai/ 👉 Signin and take Jina API Key
+	JinaAI Reranker API 👉 https://jina.ai/reranker/
 
-Section 1 — CLI Scripts
-	scripts/parse.py — Parse a document
-	scripts/ingest.py — Ingest a document into Qdrant
-	scripts/search.py — Query the vector store
+	Make Sure 🦙 Local Mode (Ollama), Docker and Quadrant Should Run
 
-Section 2 — FastAPI Application
-	Start the API server
-		- uv run uvicorn doc_parser.api.app:app --host 0.0.0.0 --port 8000
-				- GET /health — Health check
-				- GET /collections — List collections
-				- POST /ingest — Ingest by file path
-				- POST /ingest/file — Ingest via file upload
-				- POST /search — Search the vector store
+	Section 1 — CLI Scripts
+		scripts/parse.py — Parse a document
+		scripts/ingest.py — Ingest a document into Qdrant
+		scripts/search.py — Query the vector store
 
-GPU Setup Using Lightning AI
-	Login to Lightning AI 👉 https://lightning.ai/ 
-	GitHub 👉 https://github.com/sourangshupal/multi-modal-rag/tree/deployment
-				✅ multi-modal-rag/LIGHTNING_AI_DEPLOY.md
+	Section 2 — FastAPI Application
+		Start the API server
+			- uv run uvicorn doc_parser.api.app:app --host 0.0.0.0 --port 8000
+					- GET /health — Health check
+					- GET /collections — List collections
+					- POST /ingest — Ingest by file path
+					- POST /ingest/file — Ingest via file upload
+					- POST /search — Search the vector store
+
+	GPU Setup Using Lightning AI
+		Login to Lightning AI 👉 https://lightning.ai/ 
+		GitHub 👉 https://github.com/sourangshupal/multi-modal-rag/tree/deployment
+					✅ multi-modal-rag/LIGHTNING_AI_DEPLOY.md
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 29 Mar Day - 40 👉 Ultimate RAG 👉 Multimodal RAG 👉 Paradigm 👉 COLPALI & (Layout Detection + OCR) 👉 MinerU
 *****************************************************************************************************************
-Class Notes 👉 https://krishnaikacademy.notion.site/Ultimate-RAG-Course-2a5eba9593d08085ade8ceb2a6c6c8de
+Class Notes 👉 https://krishnaikacademy.notion.site/Multimodal-Project-RAG-337eba9593d080eab198f12eaff1d977
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 04 Apr Day - 41 👉 Ultimate RAG 👉 Multimodal RAG 
@@ -1353,8 +1355,30 @@ Class Notes 👉 https://krishnaikacademy.notion.site/Ultimate-RAG-Course-2a5eba
 Class has been cancelled due to trainer unavailability.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-05 Apr Day - 41 👉 Ultimate RAG 👉 Multimodal RAG 
-**************************************************
-Class Notes 👉 https://krishnaikacademy.notion.site/Ultimate-RAG-Course-2a5eba9593d08085ade8ceb2a6c6c8de
+05 Apr Day - 41 👉 Ultimate RAG 👉 Multimodal RAG 👉 🧠 MultiModal RAG Pipeline Implementation using Qwen Model
+*****************************************************************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Multimodal-Project-RAG-337eba9593d080eab198f12eaff1d977
+
+New Syllabus for Frontier AI 2026 : Research to Engineering: https://forms.gle/W9KDd7nKwMfh63R66
+This program is designed for highly committed individuals aiming to transition from theoretical understanding to production-level AI engineering.
+
+Whatsapp Channel 👉 https://whatsapp.com/channel/0029Vb7ASFR1XquZTyr6yh16
+
+A complete pipeline for Multi-modal RAG with GLM OCR with Ollama support.
+
+	Executed both deployment and qwen branch in GPU Environment using Lightning AI and JinaAI Reranker API.
+
+    multi-modal-rag deployment branch 👉 GitHub 👉 https://github.com/sourangshupal/multi-modal-rag/tree/deployment
+		✅ multi-modal-rag/LIGHTNING_AI_DEPLOY.md
+
+	multi-modal-rag Qwen brach 👉 GitHub 👉 https://github.com/sourangshupal/multi-modal-rag/tree/qwen
+		✅ multi-modal-rag/Qwen_testing.md
+
+	Hugging Face 👉 Qwen collections 👉 https://huggingface.co/Qwen/collections
+
+
+Runpod Serverless GPU 👉 https://www.runpod.io/serverless-gpu
+
+Qdrant 👉 Capacity & Pricing Preview 👉 https://cloud.qdrant.io/calculator
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
