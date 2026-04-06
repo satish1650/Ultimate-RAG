@@ -1265,8 +1265,8 @@ Pydantic is a data validation library that uses Python type annotations to:
 1. Nemotron Implementation
 
 ## 28 Mar Day - 39 👉 Ultimate RAG 👉 Multimodal RAG 👉 🧠 MultiModal RAG Pipeline Implementation using 🦙 Ollama (Locally) and Lightning AI(GUP), JinaAI
-## A complete pipeline for Multi-modal RAG with GLM OCR with Ollama support.
-### 19-Multi-Modal-RAG
+## A complete pipeline for Multi-Modal RAG with GLM OCR with Ollama support.
+## 19-Multi-Modal-RAG
 #### 🎯 Learning Objectives
 - Local Setup
 - `multi-modal-rag` master branch
@@ -1318,6 +1318,69 @@ Pydantic is a data validation library that uses Python type annotations to:
         - Ollama parse fails: Connection refused
         - Bounding boxes appear misaligned in Streamlit
     - 🏗️ Tech Stack
+
+## 29 Mar Day - 40 👉 Ultimate RAG 👉 Multimodal RAG 👉 🧠 MultiModal RAG Pipeline Implementation
+## A complete pipeline for Multi-Modal RAG with GLM OCR with Ollama support.
+## 20-Multi-Modal-RAG
+#### 🎯 Learning Objectives
+
+## 04 Apr Day - 41 👉 Ultimate RAG 👉 Multimodal RAG 👉 🧠 MultiModal RAG Pipeline Implementation 👉 Lightning AI GPU Deployment
+## A complete pipeline for Multi-Modal RAG with GLM OCR with Ollama support.
+## 21-Multi-Modal-RAG-Deployment
+#### 🎯 Learning Objectives
+- Lightning AI — GPU Deployment Guide
+- `multi-modal-rag` deployment branch
+- `multi-modal-rag` qwen branch
+#### **Code Explanation of below python files**
+- multi-modal-rag deployment branch
+    ✅ multi-modal-rag/LIGHTNING_AI_DEPLOY.md
+- multi-modal-rag Qwen brach
+    ✅ multi-modal-rag/Qwen_testing.md
+
+#### Lightning AI — GPU Deployment Guide
+- Step 1 — Open a Terminal in Lightning AI
+- Step 2 — Verify GPU is Available
+- Step 3 — Clone the Repository
+- Step 4 — Create the .env File
+- Step 5 — Pull the GLM-OCR Model into Ollama
+- Step 6 — Build and Start the Full Stack
+- Step 7 — Verify All Services are Running
+- Step 8 — Ingest a PDF
+- Step 9 — Search
+- Step 10 — Generate (Full RAG Answer)
+
+#### Qwen Branch — Testing Guide
+- Two Testing Modes
+    - Mode A — FastAPI Direct
+    - Mode B — Full Docker Compose
+- Stack Overview
+1. API Keys Required
+1. Ollama Setup — Pull the GLM-OCR Model
+1. Environment Setup
+    - Confirm branch
+    - Install dependencies
+    - Create .env
+    - Start Infrastructure Services (required for both modes)
+1. Unit Tests (no API keys needed — ~3–4 s)
+1. Integration Tests (require infrastructure running)
+1. Manual Pipeline Testing (step by step)
+    - Step 1 — Parse only (verify GLM-OCR output)
+    - Step 2 — Full ingestion (parse → caption → embed → upsert)
+    - Step 3 — Search + rerank
+1. FastAPI Server Testing
+    - Mode A — FastAPI Direct (app runs on host)
+        - Step 1 — Ensure infrastructure is running
+        - Step 2 — Warm up models (run once before starting the server)
+        - Step 3 — Start the FastAPI server
+        - Step 4 — Model loading sequence on first request
+        - Step 5 — Health check
+        - Step 6 — Ingest a PDF
+        - Step 7 — Search
+        - Step 9 — List collections
+    - Mode B — Full Docker Compose (everything in Docker)
+        - Step 1 — Start the full stack
+        - Step 2 — Pull GLM-OCR model (first time only)
+        - Step 3 — Watch the warm-up sequence
 
 ---
 
