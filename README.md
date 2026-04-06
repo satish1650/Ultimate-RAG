@@ -1264,6 +1264,61 @@ Pydantic is a data validation library that uses Python type annotations to:
 1. Mistral Implementation
 1. Nemotron Implementation
 
+## 28 Mar Day - 39 👉 Ultimate RAG 👉 Multimodal RAG 👉 🧠 MultiModal RAG Pipeline Implementation using 🦙 Ollama (Locally) and Lightning AI(GUP), JinaAI
+## A complete pipeline for Multi-modal RAG with GLM OCR with Ollama support.
+### 19-Multi-Modal-RAG
+#### 🎯 Learning Objectives
+- Local Setup
+- `multi-modal-rag` master branch
+#### **Code Explanation of below python files**
+    ✅ multi-modal-rag/TESTING.md
+    ✅ multi-modal-rag/README.md
+#### 🧠 MultiModal RAG Pipeline 
+- ✨ What Is This?
+- 🚀 Key Features
+- 📋 Table of Contents
+    - 🛠️ Prerequisites
+    - ⚡ Quick Start
+    - 🖥️ CLI Reference
+        - multi-modal-rag/scripts/parse.py — Parse PDFs into Markdown + JSON
+        - multi-modal-rag/scripts/ingest.py — Embed + Upsert to Qdrant
+        - multi-modal-rag/scripts/search.py — Query + Re-rank
+    - 🌐 REST API
+        - Interactive docs at http://localhost:8000/docs
+            - POST /search
+            - POST /ingest
+    - 🔌 Embedding Providers
+    - 🎯 Re-ranker Backends
+        - openai (default)
+        - Jina
+        - bge
+        - qwen
+    - 🦙 Local Mode (Ollama)
+        - Setup
+        - Enable in .env
+        - Parse directly from the Streamlit visualizer
+        - Cloud vs Local
+    - 🎨 Visual Inspector
+        - Cloud API inspector
+        - Ollama inspector
+    - 📦 Output Formats
+        - 📝 Markdown output (document.md)
+        - 🗂️ JSON output (document.json)
+        - 🧩 Chunks output (document_chunks.json)
+    - ⚙️ Configuration Reference
+    - 🗂️ Project Structure
+    - 🧪 Running Tests
+    - 🔧 Development
+    - 🔍 Troubleshooting
+        - ModuleNotFoundError: No module named 'glmocr'
+        - ValidationError: Z_AI_API_KEY is required when PARSER_BACKEND=cloud
+        - ValueError: JINA_API_KEY must be set
+        - ImportError: BGE / Qwen / Gemini reranker
+        - Qdrant connection refused
+        - Ollama parse fails: Connection refused
+        - Bounding boxes appear misaligned in Streamlit
+    - 🏗️ Tech Stack
+
 ---
 
 ## Create the virtual environment in anaconda3 folder
