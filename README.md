@@ -1381,6 +1381,36 @@ Pydantic is a data validation library that uses Python type annotations to:
         - Step 1 — Start the full stack
         - Step 2 — Pull GLM-OCR model (first time only)
         - Step 3 — Watch the warm-up sequence
+        - Step 4 — Verify the stack
+        - Step 5 — Test via API (same curl commands as Mode A)
+1. GPU / Model Loading Verification
+1. Linting
+1. Troubleshooting
+1. Key Config Defaults (qwen branch)
+1. Local vLLM Mode (No RunPod Required)
+    - GPU Requirements
+    - .env Settings for Local vLLM
+    - Starting the Stack
+    - Watch vLLM Start Up
+    - Verify vLLM from the Host
+    - Troubleshooting
+1. Running Everything on Lightning.ai (Full Local GPU)
+    - Choose the Right GPU Instance
+    - Open a Terminal on the Instance
+    - Verify Prerequisites
+    - Clone the Repository and Switch to qwen Branch
+    - Create and Fill .env
+    - Start the Full Stack
+        - Pull the GLM-OCR Model into Ollama (first time only)
+    - Wait for vLLM to Load (First Run Only)
+    - Verify the Full Stack is Healthy
+    - Run the Pipeline
+        - Option A — CLI scripts (recommended for learning and debugging)
+        - Option B — REST API
+    - What to Watch for in Logs
+    - Port Reference
+    - Key Reminders
+    - Troubleshooting (Lightning.ai specific)
 
 ---
 
