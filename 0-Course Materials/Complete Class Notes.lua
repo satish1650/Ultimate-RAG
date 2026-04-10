@@ -1345,9 +1345,22 @@ A complete pipeline for Multi-modal RAG with GLM OCR with Ollama support.
 					✅ multi-modal-rag/LIGHTNING_AI_DEPLOY.md
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-29 Mar Day - 40 👉 Ultimate RAG 👉 Multimodal RAG 👉 Paradigm 👉 COLPALI & (Layout Detection + OCR) 👉 MinerU
-*****************************************************************************************************************
+29 Mar Day - 40 👉 Ultimate RAG 👉 Multimodal RAG 👉 🧠 MultiModal RAG Pipeline Implementation using Deployment Branch 👉 Workflows
+**************************************************************************************************************************************
 Class Notes 👉 https://krishnaikacademy.notion.site/Multimodal-Project-RAG-337eba9593d080eab198f12eaff1d977
+
+A complete pipeline for Multi-modal RAG with GLM OCR with Ollama support.
+	Local Setup 👉 multi-modal-rag master branch 👉 GitHub 👉 https://github.com/sourangshupal/multi-modal-rag
+					✅ multi-modal-rag/workflows/01-system-overview.md
+					✅ multi-modal-rag/workflows/02-full-rag-pipeline.md
+					✅ multi-modal-rag/workflows/03-ingestion-pipeline.md
+					✅ multi-modal-rag/workflows/04-retrieval-pipeline.md
+					✅ multi-modal-rag/workflows/05-data-structures.md
+					✅ multi-modal-rag/workflows/06-parsing-pipeline.md
+					✅ multi-modal-rag/workflows/11-reranking-backends.md
+
+	GPU Setup 👉 multi-modal-rag deployment branch 👉 GitHub 👉 https://github.com/sourangshupal/multi-modal-rag/tree/deployment
+		✅ multi-modal-rag/LIGHTNING_AI_DEPLOY.md
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 04 Apr Day - 41 👉 Ultimate RAG 👉 Multimodal RAG 
@@ -1355,14 +1368,13 @@ Class Notes 👉 https://krishnaikacademy.notion.site/Multimodal-Project-RAG-337
 Class has been cancelled due to trainer unavailability.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-05 Apr Day - 41 👉 Ultimate RAG 👉 Multimodal RAG 👉 🧠 MultiModal RAG Pipeline Implementation using Qwen Model
-*****************************************************************************************************************
+05 Apr Day - 41 👉 Ultimate RAG 👉 Multimodal RAG 👉 🧠 MultiModal RAG Pipeline Implementation using Qwen3-VL-Embedding Model
+*******************************************************************************************************************************
 Class Notes 👉 https://krishnaikacademy.notion.site/Multimodal-Project-RAG-337eba9593d080eab198f12eaff1d977
 
-New Syllabus for Frontier AI 2026 : Research to Engineering: https://forms.gle/W9KDd7nKwMfh63R66
-This program is designed for highly committed individuals aiming to transition from theoretical understanding to production-level AI engineering.
+Qwen3-VL-Embedding 👉 https://qwen.ai/blog?id=qwen3-vl-embedding
 
-Whatsapp Channel 👉 https://whatsapp.com/channel/0029Vb7ASFR1XquZTyr6yh16
+HuggingFace 👉 Qwen/Qwen3-VL-Embedding-8B 👉 https://huggingface.co/Qwen/Qwen3-VL-Embedding-8B
 
 A complete pipeline for Multi-modal RAG with GLM OCR with Ollama support.
 
@@ -1380,5 +1392,18 @@ A complete pipeline for Multi-modal RAG with GLM OCR with Ollama support.
 Runpod Serverless GPU 👉 https://www.runpod.io/serverless-gpu
 
 Qdrant 👉 Capacity & Pricing Preview 👉 https://cloud.qdrant.io/calculator
+
+New Syllabus for Frontier AI 2026 : Research to Engineering: https://forms.gle/W9KDd7nKwMfh63R66
+This program is designed for highly committed individuals aiming to transition from theoretical understanding to production-level AI engineering.
+
+Whatsapp Channel 👉 https://whatsapp.com/channel/0029Vb7ASFR1XquZTyr6yh16
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+11 Apr Day - 42 👉 Ultimate RAG 👉 Multimodal RAG 
+**************************************************
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12 Apr Day - 43 👉 Ultimate RAG 👉 Multimodal RAG 
+**************************************************
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
