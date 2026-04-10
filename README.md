@@ -1319,14 +1319,14 @@ Pydantic is a data validation library that uses Python type annotations to:
         - Bounding boxes appear misaligned in Streamlit
     - 🏗️ Tech Stack
 
-## 29 Mar Day - 40 👉 Ultimate RAG 👉 Multimodal RAG 👉 🧠 MultiModal RAG Pipeline Implementation
+## 29 Mar Day - 40 👉 Ultimate RAG 👉 Multimodal RAG 👉 🧠 MultiModal RAG Pipeline Implementation Using Deployment Branch
 ## A complete pipeline for Multi-Modal RAG with GLM OCR with Ollama support.
-## 20-Multi-Modal-RAG
+## 20-Multi-Modal-RAG-Deployment-Branch
 #### 🎯 Learning Objectives
 
-## 04 Apr Day - 41 👉 Ultimate RAG 👉 Multimodal RAG 👉 🧠 MultiModal RAG Pipeline Implementation 👉 Lightning AI GPU Deployment
+## 05 Apr Day - 41 👉 Ultimate RAG 👉 Multimodal RAG 👉 🧠 MultiModal RAG Pipeline Implementation Using Qwen Branch 👉 Lightning AI GPU Deployment
 ## A complete pipeline for Multi-Modal RAG with GLM OCR with Ollama support.
-## 21-Multi-Modal-RAG-Deployment
+## 21-Multi-Modal-RAG-Qwen-Branch
 #### 🎯 Learning Objectives
 - Lightning AI — GPU Deployment Guide
 - `multi-modal-rag` deployment branch
