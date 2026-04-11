@@ -1321,14 +1321,25 @@ Pydantic is a data validation library that uses Python type annotations to:
 
 ## 29 Mar Day - 40 👉 Ultimate RAG 👉 Multimodal RAG 👉 🧠 MultiModal RAG Pipeline Implementation Using Deployment Branch
 ## A complete pipeline for Multi-Modal RAG with GLM OCR with Ollama support.
-## 20-Multi-Modal-RAG-Deployment-Branch
+## 20-Multi-Modal-RAG-Deployment
 #### 🎯 Learning Objectives
+- `Lightning AI` GPU Deployment Guide
+- `multi-modal-rag` deployment branch
+- `multi-modal-rag/workflows` master branch
+##### **Code Explanation of below python files**
+		✅ multi-modal-rag/workflows/01-system-overview.md
+        ✅ multi-modal-rag/workflows/02-full-rag-pipeline.md
+		✅ multi-modal-rag/workflows/03-ingestion-pipeline.md
+		✅ multi-modal-rag/workflows/04-retrieval-pipeline.md
+		✅ multi-modal-rag/workflows/05-data-structures.md
+		✅ multi-modal-rag/workflows/06-parsing-pipeline.md
+		✅ multi-modal-rag/workflows/11-reranking-backends.md
 
 ## 05 Apr Day - 41 👉 Ultimate RAG 👉 Multimodal RAG 👉 🧠 MultiModal RAG Pipeline Implementation Using Qwen Branch 👉 Lightning AI GPU Deployment
 ## A complete pipeline for Multi-Modal RAG with GLM OCR with Ollama support.
-## 21-Multi-Modal-RAG-Qwen-Branch
+## 21-Multi-Modal-RAG-Qwen-Model
 #### 🎯 Learning Objectives
-- Lightning AI — GPU Deployment Guide
+- `Lightning AI` GPU Deployment Guide
 - `multi-modal-rag` deployment branch
 - `multi-modal-rag` qwen branch
 #### **Code Explanation of below python files**
@@ -1337,7 +1348,7 @@ Pydantic is a data validation library that uses Python type annotations to:
 - multi-modal-rag Qwen brach
     ✅ multi-modal-rag/Qwen_testing.md
 
-#### Lightning AI — GPU Deployment Guide
+#### Lightning AI — GPU Deployment Guide (LIGHTNING_AI_DEPLOY.md)
 - Step 1 — Open a Terminal in Lightning AI
 - Step 2 — Verify GPU is Available
 - Step 3 — Clone the Repository
@@ -1349,7 +1360,7 @@ Pydantic is a data validation library that uses Python type annotations to:
 - Step 9 — Search
 - Step 10 — Generate (Full RAG Answer)
 
-#### Qwen Branch — Testing Guide
+#### Qwen Branch — Testing Guide (Qwen_testing.md)
 - Two Testing Modes
     - Mode A — FastAPI Direct
     - Mode B — Full Docker Compose
@@ -1411,6 +1422,60 @@ Pydantic is a data validation library that uses Python type annotations to:
     - Port Reference
     - Key Reminders
     - Troubleshooting (Lightning.ai specific)
+
+## 11 Apr Day - 42 👉 Ultimate RAG 👉 Multimodal RAG 👉 🧠 MultiModal RAG Pipeline Implementation Using Qwen/Qwen3-VL-Embedding-2B 👉 Lightning AI GPU Deployment
+## A complete pipeline for Multi-Modal RAG with GLM OCR with Ollama support.
+## 22-Multi-Modal-RAG-Qwen3-VL-Embedding-Model
+#### 🎯 Learning Objectives
+    	✅ multi-modal-rag-Qwen3-VL-Embedding-2B/docker-compose.yml
+		✅ multi-modal-rag-Qwen3-VL-Embedding-2B/Docker_Compose_Testing.md
+        ✅ multi-modal-rag-Qwen3-VL-Embedding-2B/ollama/config.docker.yaml
+        ✅ multi-modal-rag-Qwen3-VL-Embedding-2B/src/doc_parser/ingestion/image_captioner.py
+        ✅ multi-modal-rag-Qwen3-VL-Embedding-2B/src/doc_parser/retrieval/reranker.py
+
+#### Docker Compose Testing Guide — Local GPU Stack (Docker_Compose_Testing.md)
+1. Prerequisites
+1. Configure `.env`
+1. Build and start everything
+1. Confirm all containers are running
+1. Per-service health checks
+    - Qdrant
+    - Ollama (GLM-OCR)
+    - vLLM (Qwen3-VL-4B-Instruct-AWQ)
+    - App (FastAPI)
+1. GPU verification
+    - Host view
+    - Inside the app container
+1. Inspect logs
+    - Per-service log commands
+    - What to look for during a healthy startup
+        - **vLLM** (`logs vllm`)
+        - **Ollama** (`logs ollama`)
+        - **App** (`logs app`)
+        - **App on first** `/ingest/file`
+1. End-to-end smoke test
+    - Ingest a PDF
+    - Verify chunks contain real text
+    - Generate an answer
+1. Common operations
+    - Restart one service (no rebuild)
+    - Force-recreate a service after editing `.env` or compose file
+    - Rebuild after editing source code or Dockerfile
+    - Stop everything (containers persist, can be restarted)
+    - Tear down everything (containers gone, volumes preserved)
+    - Tear down INCLUDING volumes (wipes Qdrant + HF cache + Ollama models)
+    - Open a shell inside the app container
+    - Inspect the embedder/reranker on GPU mid-run
+1. Troubleshooting
+    - Symptom: `nvidia-smi` shows GPU but `cuda available:` False in app
+    - Symptom: `/generate` returns `404 — model X does not exist`
+    - Symptom: vLLM crashes at startup with OOM
+    - Symptom: Chunks contain `"##"` or `"[figure]"` placeholders, no real text
+    - Symptom: Image embedding fails with `argument of type 'NoneType' is not iterable`
+    - Symptom: Reranker fails with `Unrecognized configuration class … for AutoModelForSequenceClassification`
+    - Symptom: Qdrant version skew warning in app logs
+    - Symptom: Ollama `ollama ps` shows `100% CPU` instead of GPU
+1. Quick reference — full happy-path command sequence
 
 ---
 
