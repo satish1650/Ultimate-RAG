@@ -1399,8 +1399,8 @@ This program is designed for highly committed individuals aiming to transition f
 Whatsapp Channel 👉 https://whatsapp.com/channel/0029Vb7ASFR1XquZTyr6yh16
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-11 Apr Day - 42 👉 Ultimate RAG 👉 Multimodal RAG 👉 Qwen/Qwen3-VL-Embedding-2B
-*********************************************************************************
+11 Apr Day - 42 👉 Ultimate RAG 👉 Multimodal RAG 👉 🧠 MultiModal RAG Pipeline 👉 Qwen/Qwen3-VL-Embedding-2B
+****************************************************************************************************************
 Class Notes 👉 https://krishnaikacademy.notion.site/Multimodal-Project-RAG-337eba9593d080eab198f12eaff1d977
 
 multi-modal-rag Qwen brach 👉 GitHub 👉 https://github.com/sourangshupal/multi-modal-rag/tree/qwen
