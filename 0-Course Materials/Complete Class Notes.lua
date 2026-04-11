@@ -1407,6 +1407,10 @@ multi-modal-rag Qwen brach 👉 GitHub 👉 https://github.com/sourangshupal/mul
 		✅ multi-modal-rag/docker-compose.yml
 		✅ multi-modal-rag/Docker_Compose_Testing.md
 
+Qwen3-VL-Embedding 👉 https://qwen.ai/blog?id=qwen3-vl-embedding
+
+HuggingFace 👉 Qwen/Qwen3-VL-Embedding-8B 👉 https://huggingface.co/Qwen/Qwen3-VL-Embedding-8B
+
 Frontier AI 2026 : Research to Engineering 👉 https://forms.gle/TeTtj7nVwrDMLBmr9
 
 How Dukaan moved out of Cloud and on to Bare Metal 👉 https://www.youtube.com/watch?v=vFxQyZX84Ro
