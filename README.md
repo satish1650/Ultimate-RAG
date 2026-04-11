@@ -1327,13 +1327,13 @@ Pydantic is a data validation library that uses Python type annotations to:
 - `multi-modal-rag` deployment branch
 - `multi-modal-rag/workflows` master branch
 ##### **Code Explanation of below python files**
-		✅ multi-modal-rag/workflows/01-system-overview.md
-        ✅ multi-modal-rag/workflows/02-full-rag-pipeline.md
-		✅ multi-modal-rag/workflows/03-ingestion-pipeline.md
-		✅ multi-modal-rag/workflows/04-retrieval-pipeline.md
-		✅ multi-modal-rag/workflows/05-data-structures.md
-		✅ multi-modal-rag/workflows/06-parsing-pipeline.md
-		✅ multi-modal-rag/workflows/11-reranking-backends.md
+    ✅ multi-modal-rag/workflows/01-system-overview.md
+    ✅ multi-modal-rag/workflows/02-full-rag-pipeline.md
+    ✅ multi-modal-rag/workflows/03-ingestion-pipeline.md
+    ✅ multi-modal-rag/workflows/04-retrieval-pipeline.md
+    ✅ multi-modal-rag/workflows/05-data-structures.md
+    ✅ multi-modal-rag/workflows/06-parsing-pipeline.md
+    ✅ multi-modal-rag/workflows/11-reranking-backends.md
 
 ## 05 Apr Day - 41 👉 Ultimate RAG 👉 Multimodal RAG 👉 🧠 MultiModal RAG Pipeline Implementation Using Qwen Branch 👉 Lightning AI GPU Deployment
 ## A complete pipeline for Multi-Modal RAG with GLM OCR with Ollama support.
@@ -1343,9 +1343,9 @@ Pydantic is a data validation library that uses Python type annotations to:
 - `multi-modal-rag` deployment branch
 - `multi-modal-rag` qwen branch
 #### **Code Explanation of below python files**
-- multi-modal-rag deployment branch
+- `multi-modal-rag` deployment branch <br>
     ✅ multi-modal-rag/LIGHTNING_AI_DEPLOY.md
-- multi-modal-rag Qwen brach
+- `multi-modal-rag` qwen brach <br>
     ✅ multi-modal-rag/Qwen_testing.md
 
 #### Lightning AI — GPU Deployment Guide (LIGHTNING_AI_DEPLOY.md)
@@ -1427,11 +1427,11 @@ Pydantic is a data validation library that uses Python type annotations to:
 ## A complete pipeline for Multi-Modal RAG with GLM OCR with Ollama support.
 ## 22-Multi-Modal-RAG-Qwen3-VL-Embedding-Model
 #### 🎯 Learning Objectives
-    	✅ multi-modal-rag-Qwen3-VL-Embedding-2B/docker-compose.yml
-		✅ multi-modal-rag-Qwen3-VL-Embedding-2B/Docker_Compose_Testing.md
-        ✅ multi-modal-rag-Qwen3-VL-Embedding-2B/ollama/config.docker.yaml
-        ✅ multi-modal-rag-Qwen3-VL-Embedding-2B/src/doc_parser/ingestion/image_captioner.py
-        ✅ multi-modal-rag-Qwen3-VL-Embedding-2B/src/doc_parser/retrieval/reranker.py
+    ✅ multi-modal-rag-Qwen3-VL-Embedding-2B/docker-compose.yml
+    ✅ multi-modal-rag-Qwen3-VL-Embedding-2B/Docker_Compose_Testing.md
+    ✅ multi-modal-rag-Qwen3-VL-Embedding-2B/ollama/config.docker.yaml
+    ✅ multi-modal-rag-Qwen3-VL-Embedding-2B/src/doc_parser/ingestion/image_captioner.py
+    ✅ multi-modal-rag-Qwen3-VL-Embedding-2B/src/doc_parser/retrieval/reranker.py
 
 #### Docker Compose Testing Guide — Local GPU Stack (Docker_Compose_Testing.md)
 1. Prerequisites
@@ -1452,7 +1452,7 @@ Pydantic is a data validation library that uses Python type annotations to:
         - **vLLM** (`logs vllm`)
         - **Ollama** (`logs ollama`)
         - **App** (`logs app`)
-        - **App on first** `/ingest/file`
+        - **App on first** (`/ingest/file`)
 1. End-to-end smoke test
     - Ingest a PDF
     - Verify chunks contain real text
