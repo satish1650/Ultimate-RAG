@@ -1399,11 +1399,20 @@ This program is designed for highly committed individuals aiming to transition f
 Whatsapp Channel 👉 https://whatsapp.com/channel/0029Vb7ASFR1XquZTyr6yh16
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-11 Apr Day - 42 👉 Ultimate RAG 👉 Multimodal RAG 
-**************************************************
+11 Apr Day - 42 👉 Ultimate RAG 👉 Multimodal RAG 👉 Qwen/Qwen3-VL-Embedding-2B
+*********************************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Multimodal-Project-RAG-337eba9593d080eab198f12eaff1d977
+
+multi-modal-rag Qwen brach 👉 GitHub 👉 https://github.com/sourangshupal/multi-modal-rag/tree/qwen
+		✅ multi-modal-rag/docker-compose.yml
+		✅ multi-modal-rag/Docker_Compose_Testing.md
+
+Frontier AI 2026 : Research to Engineering 👉 https://forms.gle/TeTtj7nVwrDMLBmr9
+
+How Dukaan moved out of Cloud and on to Bare Metal 👉 https://www.youtube.com/watch?v=vFxQyZX84Ro
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 12 Apr Day - 43 👉 Ultimate RAG 👉 Multimodal RAG 
 **************************************************
-
+No class due to trainer unavailability.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
