@@ -1477,7 +1477,7 @@ Pydantic is a data validation library that uses Python type annotations to:
     - Symptom: Ollama `ollama ps` shows `100% CPU` instead of GPU
 1. Quick reference — full happy-path command sequence
 
-## 16 Apr Day - 43 👉 Ultimate RAG 👉 Extra Class 👉 Metadata Enrichment in RAG Pipelines 👉 metadata-hybrid-rag, langextract-rag, semantic_highlight_hhem_rag
+## 16 Apr Day - 43 👉 Ultimate RAG 👉 Extra Class 👉 Metadata Enrichment in RAG Pipelines 👉 metadata-hybrid-rag, langextract-rag and semantic_highlight_hhem_rag
 ## Metadata Enrichment in RAG Pipelines
 ## 23-Metadata-Enrichment-RAG
 - 23.1-MetaData-Hybrid-RAG/metadata-hybrid-rag
