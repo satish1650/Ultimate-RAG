@@ -1574,6 +1574,73 @@ End-to-end tutorial comparing RAG without metadata vs with GLiNER2-enriched meta
     - Section 7  →  Student exercises
 
 > **Before you start:** Set the environment variable `OPENAI_API_KEY` in your shell or in a `.env` file at the project root. The semantic and HHEM sections do not require an OpenAI key — only Section 6 does.
+
+
+## 18 Apr Day - 44 👉 Ultimate RAG 👉 Multimodal RAG 👉 Preoject-4 👉 AWS Deployment 👉 multi-modal-rag
+## A complete pipeline for Multi-Modal RAG with GLM OCR with Ollama support.
+## 24-Multi-Modal-RAG-Deployment-Using-AWS
+- AWS Architecture Explainer — Multi-Modal RAG Pipeline
+- multi-modal-rag - Step-by-Step AWS Deployment Guide
+
+#### 🎯 Learning Objectives
+#### `multi-modal-rag/docs/AWS_ARCHITECTURE_EXPLAINER.md`
+##### AWS Architecture Explainer — Multi-Modal RAG Pipeline
+1. What We Built — The Big Picture
+1. The Full Architecture Diagram (Text)
+1. Every AWS Service Used — and Why <br>
+    3.1 Amazon ECS Fargate <br>
+    3.2 Application Load Balancer (ALB) <br>
+    3.3 Amazon EFS (Elastic File System) <br>
+    3.4 Amazon ECR (Elastic Container Registry) <br>
+    3.5 AWS Secrets Manager <br>
+    3.6 AWS CloudWatch Logs <br>
+    3.7 IAM Roles <br>
+1. Networking Deep Dive — VPC, Subnets, Security Groups <br>
+    4.1 What is a VPC? <br>
+    4.2 What We Used (Default VPC) <br>
+    4.3 What a Custom VPC Would Look Like (Enterprise) <br>
+    4.4 Security Groups — The Virtual Firewall <br>
+    4.5 awsvpc Network Mode <br>
+1. The Multi-Container Sidecar Pattern
+1. Storage Strategy — Why EFS Over EBS or S3
+1. Security Design
+1. Is This Enterprise-Grade? <br>
+    - Current state: Production-ready for low-to-medium traffic <br>
+1. Rough Monthly Cost Estimate
+    - Fixed costs (running 24/7)
+    - Variable costs (usage-dependent)
+    - Rough total scenarios
+    - Cost optimization levers
+1. Future Enhancements — The Production Roadmap <br>
+    - Phase 1: Security Hardening (Immediate) <br>
+        10.1 HTTPS with a Custom Domain <br>
+        10.2 API Authentication <br>
+        10.3 Custom VPC with Private Subnets <br>
+    - Phase 2: Reliability and Availability <br>
+        10.4 Multi-AZ Deployment <br>
+        10.5 Auto Scaling <br>
+        10.6 Circuit Breaker on ECS Service <br>
+    - Phase 3: Performance <br>
+        10.7 GPU-Enabled Instances for Ollama <br>
+        10.8 Model Caching — Pre-warm on Startup <br>
+        10.9 Async Ingestion with SQS <br>
+    - Phase 4: Observability <br>
+        10.10 CloudWatch Dashboard <br>
+        10.11 Distributed Tracing with AWS X-Ray <br>
+        10.12 Alerting <br>
+    - Phase 5: Data and ML Enhancements <br>
+        10.13 S3 for Document Storage <br>
+        10.14 Qdrant Collection Versioning <br>
+        10.15 Fine-Tuned Embedding Model <br>
+        10.16 Streaming Responses <br>
+    - Phase 6: CI/CD and GitOps <br>
+        10.17 GitHub Actions Pipeline <br>
+        10.18 Infrastructure as Code (Terraform or AWS CDK) <br>
+1. Key Architectural Trade-offs Made
+1. Glossary for Students
+
+#### `multi-modal-rag/docs/STEP_BY_STEP_DEPLOY.md`
+##### Step-by-Step AWS Deployment Guide
 ---
 
 ## Create the virtual environment in anaconda3 folder
