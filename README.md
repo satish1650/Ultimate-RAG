@@ -1577,7 +1577,7 @@ End-to-end tutorial comparing RAG without metadata vs with GLiNER2-enriched meta
 
 
 ## 18 Apr Day - 44 👉 Ultimate RAG 👉 Multimodal RAG 👉 Preoject-4 👉 AWS Deployment 👉 multi-modal-rag
-## A complete pipeline for Multi-Modal RAG with GLM OCR with Ollama support.
+## A complete End to End `multi-modal-rag` deployment using AWS Cloud Service
 ## 24-Multi-Modal-RAG-Deployment-Using-AWS
 - AWS Architecture Explainer — Multi-Modal RAG Pipeline
 - multi-modal-rag - Step-by-Step AWS Deployment Guide
@@ -1674,9 +1674,9 @@ End-to-end tutorial comparing RAG without metadata vs with GLiNER2-enriched meta
 1. CloudWatch Log Groups
 1. ECS Task Definitions <br>
     12.1 App Task Definition <br>
-        - **app** — FastAPI backend (port 8000)
-        - **qdrant** — vector database sidecar (port 6333, EFS-backed)
-        - **ollama** — local LLM / OCR engine (port 11434, EFS-backed, essential: true)
+        - **app** — FastAPI backend (port 8000) <br>
+        - **qdrant** — vector database sidecar (port 6333, EFS-backed) <br>
+        - **ollama** — local LLM / OCR engine (port 11434, EFS-backed, essential: true) <br>
 1. Application Load Balancer
 1. ECS Services
 1. Ollama Model Bootstrap
