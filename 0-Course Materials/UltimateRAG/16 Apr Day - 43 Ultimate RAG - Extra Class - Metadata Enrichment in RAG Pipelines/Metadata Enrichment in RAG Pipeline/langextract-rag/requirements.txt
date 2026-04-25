@@ -1,0 +1,23 @@
+# Core Framework
+langchain>=0.3.0
+langchain-openai>=0.2.0
+langchain-pinecone>=0.2.0
+
+# LangExtract - Google's structured metadata extraction
+langextract[openai]>=1.1.0
+
+# Pinecone Python SDK (v8.0.0+ requires Python 3.10+)
+pinecone>=8.0.0
+
+# PDF Processing
+pypdf>=5.0.0
+
+# Environment Management
+python-dotenv>=1.0.0
+
+# Optional: For evaluation
+# ragas>=0.2.0
+# deepeval>=0.21.0
+
+# Optional: For visualization
+# ipython>=8.0.0

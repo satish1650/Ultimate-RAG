@@ -1,0 +1,87 @@
+[project]
+name = "langextract-rag"
+version = "0.1.0"
+description = "Metadata-enriched RAG pipeline using LangExtract + LangChain + Pinecone"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+
+dependencies = [
+    # ── LangChain Ecosystem ───────────────────────────────────────────────────
+    # Stay on 0.3.x: langchain-pinecone 0.2.x requires langchain-core>=0.3,<0.4
+    # and is therefore incompatible with langchain 1.x (which requires langchain-core>=1.x).
+    # langchain-community is REQUIRED — PyPDFLoader lives here (was missing from requirements.txt)
+    "langchain>=0.3.25,<1.0",
+    "langchain-openai>=0.3.16,<1.0",
+    "langchain-community>=0.3.24,<1.0",
+    "langchain-pinecone>=0.2.7",
+    "langchain-text-splitters>=0.3.8",   # RecursiveCharacterTextSplitter
+
+    # ── Metadata Extraction ───────────────────────────────────────────────────
+    "langextract[openai]>=1.1.0",
+
+    # ── Vector Database ───────────────────────────────────────────────────────
+    # langchain-pinecone 0.2.7 requires pinecone[async]>=6.0.0,<8.0.0
+    # CloudProvider, AwsRegion, Metric enums used in pinecone_store.py are available in v6+
+    "pinecone>=6.0.0,<8.0.0",
+
+    # ── PDF Processing ────────────────────────────────────────────────────────
+    # pypdf v5+ is the actively maintained successor to PyPDF2 (which is abandoned)
+    "pypdf>=5.0.0",
+
+    # ── Configuration & Validation ────────────────────────────────────────────
+    "python-dotenv>=1.0.0",
+    "pydantic>=2.10.0",
+]
+
+[project.optional-dependencies]
+
+# Install with: uv pip install -e ".[notebook]"
+notebook = [
+    "langchain-chroma>=0.2.0",
+    "chromadb>=0.5.0",
+    "pandas>=2.2.0",
+    "matplotlib>=3.9.0",
+    "ipython>=8.26.0",
+    "jupyterlab>=4.2.0",
+    "nbformat>=5.10.0",
+]
+
+# Install with: uv pip install -e ".[dev]"
+dev = [
+    "pytest>=8.4.0",
+    "pytest-asyncio>=0.25.0",
+    "ruff>=0.11.0",
+    "mypy>=1.15.0",
+]
+
+# Install everything: uv pip install -e ".[notebook,dev]"
+
+[project.scripts]
+langextract-rag = "main:main"
+
+# ── Build System ──────────────────────────────────────────────────────────────
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+# Packages live at the project root (flat layout, not src/)
+packages = ["ingest", "retrieval", "evaluation"]
+
+# ── Linting & Formatting (ruff) ───────────────────────────────────────────────
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "B", "UP"]
+ignore = ["E501"]
+
+[tool.ruff.format]
+quote-style = "double"
+
+# ── Testing ───────────────────────────────────────────────────────────────────
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
