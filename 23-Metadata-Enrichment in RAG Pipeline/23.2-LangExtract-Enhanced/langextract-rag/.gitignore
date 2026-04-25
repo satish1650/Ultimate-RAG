@@ -1,0 +1,45 @@
+# Internal planning / implementation notes
+implementation.md
+
+# Environment & secrets
+.env
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Data (potentially large or sensitive)
+data/pdfs/*.pdf
+data/*.jsonl
+data/notebook_results.jsonl
+
+# Jupyter
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Ruff / mypy caches
+.ruff_cache/
+.mypy_cache/
