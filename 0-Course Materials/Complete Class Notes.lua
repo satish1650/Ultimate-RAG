@@ -688,8 +688,818 @@ COLBERT search implementation for search through VDB
 	https://github.com/Murtuzasaifee/C_S_RAG/commit/9c74d19a14109a30e9b1e50fc26e1b1044210638
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-25 April Day - 47 👉 Ultimate RAG 👉 Multi-Modal 👉 Project-4 👉 Code Base Discussion
-***************************************************************************************
+21 Feb Day - 32 👉 Project-3 👉 Part-3 👉 corrective-self-reflective-rag  👉 Docker mode + AWS Deployment using BeanStalk
+***************************************************************************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Project-3-308eba9593d08068b4cec30947e62008?pvs=74
+
+PoC Purpose AWS Deployment Guide:
+	Project-1 : AppRunner (Done)
+	Project-2 : Lambda (Done)
+	Project-3 : BeanStalk (Today's Class)
+
+Production Purpose AWS Deployment Guide:
+	Project-4 : ECS + Fargate (to be covered in next class)
+	Project-5 : EKS (Kubernetes) (to be covered in next class)
+
+Local ------> Quadrant 
+Quardrant API Key : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3MiOiJtIn0.g_zzLFUgqmme5MuRv2-mh3hGYoYPbasQMAseQMe1RG4
+Quardrant Cluster Endpoint : https://30b3ccab-63ba-4003-ac64-b637d3ac0369.sa-east-1-0.aws.cloud.qdrant.io
+
+GitHub 👉 https://github.com/sourangshupal/corrective_self_reflective_rag/tree/deploy/aws-eb
+	✅ corrective_self_reflective_rag/Dockerfile
+	✅ corrective_self_reflective_rag/deployment.md
+	✅ corrective_self_reflective_rag/Dockerrun.aws.json
+	✅ corrective_self_reflective_rag/pyproject.toml
+
+
+Setting up the EB command line interface (EB CLI) to manage Elastic Beanstalk
+	https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3.html
+
+	MAC Installation
+	brew install awsebcli 👉 for mac
+
+	Windows in PowerShell or Command window	
+		pip install awsebcli 👉 for windows
+
+	Verify that the EB CLI is installed correctly.
+	eb --version 👉 to verify installation
+
+Install Docker Desktop on Windows
+	https://docs.docker.com/desktop/setup/install/windows-install/
+
+AWS Services Installationg
+	✅ AmazonEC2ContainerRegistryReadOnly
+	✅ AdministratorAccess-AWSElasticBeanstalk
+
+Phase 1 — Build & Push Image to ECR
+	AWS_REGION="us-east-1"
+	AWS_ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
+	ECR_REPO="crag-rag-app"
+	ECR_IMAGE="$AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/$ECR_REPO:latest"
+
+	# Create the ECR repository (one-time)
+	aws ecr create-repository \
+		--repository-name $ECR_REPO \
+		--region $AWS_REGION \
+		--image-scanning-configuration scanOnPush=true
+
+	aws ecr create-repository \
+		repository-name crag-rag-app \
+		region us-east-1 \
+		image-scanning-configuration scanOnPush=true
+
+	# Authenticate Docker to ECR
+	aws ecr get-login-password --region $AWS_REGION | \
+		docker login --username AWS --password-stdin \
+		$AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com
+		
+
+	# Build for linux/amd64 (required on Apple Silicon M1/M2/M3)
+	docker build --platform linux/amd64 -t $ECR_REPO:latest .
+
+	docker build --platform linux/amd64 -t 685057748560.dkr.ecr.us-east-1.amazonaws.com/crag-rag-app:latest .
+
+	# Tag and push
+	docker tag $ECR_REPO:latest $ECR_IMAGE
+	docker push $ECR_IMAGE
+
+Phase 2 — Grant EC2 Instance ECR Pull Access
+	Elastic Beanstalk's EC2 instances use the IAM role aws-elasticbeanstalk-ec2-role to authenticate with AWS services. 
+	Attach the managed ECR read policy so the instance can pull your image:
+	aws iam attach-role-policy \
+    --role-name aws-elasticbeanstalk-ec2-role \
+    --policy-arn arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly
+
+Phase 3 — Update Dockerrun.aws.json
+	Fill in your real AWS account ID and region in Dockerrun.aws.json:
+		# Check the placeholder values
+		cat Dockerrun.aws.json
+
+	Edit the "Name" field to match your ECR image URI:
+		"Name": "123456789012.dkr.ecr.us-east-1.amazonaws.com/crag-rag-app:latest"
+
+	Verify it matches what you pushed:
+		aws ecr describe-images \
+		--repository-name $ECR_REPO \
+		--region $AWS_REGION \
+		--query 'imageDetails[*].imageTags'
+
+	Phase 4 — Initialize Beanstalk Application
+	Run this once from the project root:
+		eb init crag-rag-app \
+		--platform "Docker running on 64bit Amazon Linux 2023" \
+		--region $AWS_REGION
+	# Prompts:
+	#   Use CodeCommit? → No
+	#   Set up SSH?     → Yes (optional, useful for debugging)
+
+This creates .elasticbeanstalk/config.yml (already gitignored).
+
+Phase 5 — Create the Beanstalk Environment
+	# Single-instance mode (no load balancer — simplest, ~$62/mo)
+	eb create crag-rag-prod \
+		--instance-type t3.large \
+		--single
+
+	# OR with load balancer + auto-scaling (production-grade, ~$78/mo+)
+	eb create crag-rag-prod \
+		--instance-type t3.large
+
+Phase 6 — Set Environment Variables (API Keys)
+	API keys are stored encrypted inside Beanstalk and injected as container environment variables at runtime. No .env file is needed in the image.
+	eb setenv \
+    OPENAI_API_KEY="sk-your-openai-key" \
+    TAVILY_API_KEY="tvly-your-tavily-key" \
+    QDRANT_URL="https://your-cluster.eu-central-1-0.aws.cloud.qdrant.io" \
+    QDRANT_API_KEY="your-qdrant-api-key" \
+    RERANKER_BACKEND="local" \
+    UPLOAD_DIR="/var/app/uploads"
+
+Phase 7 — Deploy
+	# Bundle only the Beanstalk descriptor
+	zip deploy.zip Dockerrun.aws.json
+
+	# Deploy (EB pulls the ECR image on the EC2 instance)
+	eb deploy
+
+	# Stream deployment logs
+	eb logs
+
+	Verify the Deployment
+	# Open app in default browser
+	eb open
+
+	# Check environment health (should show "Green")
+	eb health
+
+	# Get the public URL
+	eb status | grep CNAME
+
+	# Test health endpoint
+	curl http://<your-env>.elasticbeanstalk.com/health
+	# Expected: {"status":"healthy"}
+
+	# Test upload
+	curl -X POST http://<your-env>.elasticbeanstalk.com/upload/ \
+	-F "file=@document.pdf"
+
+	# Test query
+	curl -X POST http://<your-env>.elasticbeanstalk.com/query/ \
+	-H "Content-Type: application/json" \
+	-d '{"query": "What is the main topic?", "mode": "both"}'
+
+	# View Swagger UI
+	open http://<your-env>.elasticbeanstalk.com/docs
+
+End-to-end verification checklist
+	✅ docker build succeeds locally
+	✅ docker run -p 8000:8000 --env-file .env crag-rag-app:latest works locally
+	✅ curl localhost:8000/health → {"status":"healthy"}
+	✅ Image visible in ECR console
+	✅ eb status shows Health: Green
+	✅ curl http://<eb-url>/health → 200
+	✅ PDF upload and query work end-to-end
+
+Re-deploy After Code Changes
+	# 1. Rebuild and push updated image to ECR
+	docker build --platform linux/amd64 -t $ECR_REPO:latest .
+	docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/$ECR_REPO:latest
+
+	# 2. Re-deploy (Beanstalk re-pulls :latest from ECR)
+	eb deploy
+
+Stop / Teardown AWS services
+# Suspend — terminate the EC2 instance (stops billing; environment config preserved)
+eb terminate crag-rag-prod
+
+# Nuke everything — delete the EB application entirely
+eb terminate --all
+eb terminate crag-rag-prod --force —all
+
+# Delete the ECR repository (bash)
+aws ecr delete-repository \
+    --repository-name $ECR_REPO \
+    --region $AWS_REGION \
+    --force
+
+# Delete the ECR repository (powershell)
+aws ecr delete-repository `
+    --repository-name $ECR_REPO `
+    --region $AWS_REGION `
+    --force
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+22 Feb Day - 33 👉 Project-3 👉 Part-4 👉 corrective-self-reflective-rag 👉 Complete CI/CD Pipeline Deployment
+****************************************************************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Project-3-308eba9593d08068b4cec30947e62008?pvs=74
+
+GitHub 👉 https://github.com/sourangshupal/corrective_self_reflective_rag/tree/deploy/aws-eb
+	✅ corrective_self_reflective_rag/AWS_Deployment.md
+	✅ corrective_self_reflective_rag/AWS_Deployment_Architecture.md
+	✅ corrective_self_reflective_rag/.github/workflows/deploy.yml
+
+Deployment CI/CD pipeline Command Reference:
+	# 1. Verify EB CLI is working
+	eb --version
+
+	# 2. Initialize EB app (run once)
+	eb init crag-rag-app \
+		--platform "Docker running on 64bit Amazon Linux 2023" \
+		--region us-east-1
+
+	eb init crag-rag-appp --region us-east-1 --platform docker
+
+	# 3. Create EB environment (run once)
+	eb create crag-rag-prod \
+		--instance-type t3.large \
+		--single
+
+	eb create crag-rag-prod --single --instance-type t3.medium
+
+	aws elasticbeanstalk describe-environments
+
+Take GitHub to the command line (GitHub Installer) 👉 https://cli.github.com/
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+28 Feb Day - 34 👉 Ultimate RAG 👉 Graph RAG
+*********************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Graph-RAG-315eba9593d080779e45f685bd4b2ac9
+
+GitHub 👉 https://github.com/sourangshupal/graph-rag
+	✅ graph-rag/neo4j_browser_guide.md
+	✅ graph-rag/Getting_Started_GraphRAG.ipynb
+
+From Local to Global: A GraphRAG Approach to Query-Focused Summarization 👉 Research arXiv Paper 👉 https://arxiv.org/pdf/2404.16130
+	✅ Abstract
+	✅ 1 Introduction
+	✅ 6.1 Limitations of evaluation approach
+	✅ A.2 Self-Reflection
+    ✅ C Context Window Selection
+
+	Explained below are some of the key concepts and algorithms mentioned in the paper:
+	QFS(Query Focused Summarization) is a task that aims to generate a concise and informative summary of a document that is relevant 
+	to a specific query.
+
+	CDA(Community Detection Algorithms):
+		1. Louvain Method
+		2. Girvan-Newman Algorithm
+		3. Label Propagation Algorithm
+		4. Infomap Algorithm
+		5. Spectral Clustering
+
+	What is the purpose of using Grrah RAG:
+		Solve Global Sense Making(QFS) using Graph Database and Graph Algorithms
+
+Download Neo4j for Desktop 👉 https://neo4j.com/download/
+	graphtest/Welcome@123 👉 grphtest(Local Instances) 👉 http://127.0.0.1:7687 or http://127.0.0.1:7474 (Default one) 
+Neo4j Documentation 👉 https://neo4j.com/docs/
+
+Building Cloud Native RAG Solutions 👉 https://forms.gle/Sm9YBKq8UKNAn8Kp9
+
+🧠 LLMGraphTransformer 👉 GitHub 👉 https://github.com/dhiaaeddine16/LLMGraphTransformer/tree/main
+
+CQL (Cypher Query Language) is a powerful and expressive query language designed for querying and manipulating graph databases, particularly Neo4j.
+Cypher Documentation 👉 https://neo4j.com/docs/cypher-refcard/current/
+
+ZEP: A TEMPORAL KNOWLEDGE GRAPH ARCHITECTURE FOR AGENT MEMORY 👉  Research arXiv Paper 👉 https://arxiv.org/pdf/2501.13956
+
+Introducing Contextual Retrieval 👉 https://www.anthropic.com/engineering/contextual-retrieval
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+01 Mar Day - 35 👉 Ultimate RAG 👉 Graph RAG 
+*********************************************
+Class has been cancelled due to trainer unavailability.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+07 Mar Day - 35 👉 Ultimate RAG 👉 Graph RAG 👉 Ontologies & Knowledge Graphs for GraphRAG
+07 Mar Day - 35 👉 Ultimate RAG 👉 Vector Graph RAG
+********************************************************************************************
+Class Notes 👉 Class Notes 👉 https://krishnaikacademy.notion.site/Graph-RAG-315eba9593d080779e45f685bd4b2ac9
+
+GitHub 👉 https://github.com/sourangshupal/graph-rag
+	✅ graph-rag/graphrag_ontologies.md
+	✅ graph-rag/graphrag_langchain.ipynb
+
+GitHub 👉 https://github.com/sourangshupal/vector-graph-rag
+	✅ vector-graph-rag/main.ipynb
+	✅ vector-graph-rag/config/llm.py
+	✅ vector-graph-rag/config/neo4j.py
+	✅ vector-graph-rag/config/pinecone_cfg.py
+	✅ vector-graph-rag/ingest/neo4j.py
+	✅ vector-graph-rag/ingest/pinecone_ingest.py
+	✅ vector-graph-rag/retrieve/neo4j_pinecone.py
+	✅ vector-graph-rag/Falkordb_Graphiti_Demo26.ipynb
+
+Discussed below arXiv Paper of GraphRAG:
+	✅ When to use Graphs in RAG: A Comprehensive Analysis for Graph Retrieval-Augmented Generation 👉 https://arxiv.org/pdf/2506.05690v1
+	✅ KG-RAG: Bridging the Gap Between Knowledge and Creativity 👉 https://arxiv.org/abs/2405.12035 or https://arxiv.org/pdf/2405.12035
+	✅ From Local to Global: A GraphRAG Approach to Query-Focused Summarization 👉 https://arxiv.org/pdf/2404.16130
+	✅ OG-RAG: ONTOLOGY-GROUNDED RETRIEVAL-AUGMENTED GENERATION FOR LARGE LANGUAGE MODELS 👉 https://arxiv.org/pdf/2412.15235
+	✅ OG-RAG: Ontology-Grounded Retrieval-Augmented Generation For Large Language Models 👉	https://www.microsoft.com/en-us/research/publication/og-rag-ontology-grounded-retrieval-augmented-generation-for-large-language-models/
+	✅ Ontology Generated Retrieval Augmented Generation (OG-RAG) 👉 GitHub 👉 https://github.com/microsoft/ograg2
+
+Access Local Instances of Neo4j 👉 http://localhost:7474/browser/
+
+Falkordb 👉 Ultra-fast, Multi-tenant Graph Database Powering GenAI 👉 https://www.falkordb.com/
+	
+	Falkordb Graphiti Demo 👉 https://colab.research.google.com/drive/1V0Z9FPvq2F77WjOdAPIHBv1k8_S8ZwGJ?usp=sharing	
+		✅ Falkordb_Graphiti_Demo26.ipynb
+			FALKORDB_HOST r-6jissurXXX.instance-wti6u7znd.hc-2uaqqpjgg.us-east-2.aws.f2e0a955bb84.cloud
+			FALKORDB_PORT 5XX69
+			FALKORDB_USERNAME falXXXdb
+			FALKORDB_PASSWORD XXXXXXX@123
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+08 Mar Day - 36 👉 Ultimate RAG 👉 Haystack-AI-Tutorials
+*********************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Ultimate-RAG-Course-2a5eba9593d08085ade8ceb2a6c6c8de
+
+GitHub 👉 https://github.com/sourangshupal/haystack-ai-tutorials
+	✅ haystack-ai-tutorials/README.md
+	✅ haystack-ai-tutorials/01_rag_fundamentals.ipynb
+	✅ haystack-ai-tutorials/02_advanced_retrieval.ipynb
+	✅ haystack-ai-tutorials/03_agentic_rag.ipynb
+	✅ haystack-ai-tutorials/04_specialized_techniques.ipynb
+
+Login to Cohere and generate API keys 👉 https://dashboard.cohere.com/welcome/login
+The World Fastest & Cheapest Google Search API 👉 Login to Serper and generate API keys 👉 https://serper.dev/
+
+Heystack Documentation 👉 https://docs.haystack.deepset.ai/docs/intro
+Heystack Blog 👉 Articles about Haystack, LLMs, Agents, and latest AI technologies. 👉 https://haystack.deepset.ai/blog
+Heystack Integrations 👉 https://haystack.deepset.ai/integrations
+
+deepset-ai 👉 haystack-cookbook 👉 GitHub 👉 https://github.com/deepset-ai/haystack-cookbook/tree/main/notebooks
+	✅ Agent-Powered Retrieval with Haystack 👉 haystack-cookbook/notebooks/agent_powered_retrieval.ipynb
+
+Keras: Deep Learning for humans 👉 A superpower for ML developers 👉 https://keras.io/ 
+
+NexusRaven-V2 👉 GitHub 👉 https://github.com/nexusflowai/NexusRaven-V2
+
+Building Cloud Native RAG Solutions 👉 https://forms.gle/BcH9zKyix5V5W13n7
+
+Super excited to announce the NVIDIA GTC event. You can register for the sessions here for free: 👉 https://nvda.ws/4kcF6vc
+https://www.linkedin.com/feed/update/urn:li:activity:7434505622559137792/
+
+Sourangshu Pal 👉 https://www.linkedin.com/in/sourangshu-pal-0774b212a/
+
+Check this one 👉 GitHub 👉 https://github.com/CSE442-17F/
+
+Next Week Assignment (Research & Explore) 👉 The Multi-Armed Bandit Problem 👉 https://cse442-17f.github.io/LinUCB/
+
+Next Batch 👉 Modern Route-Full Stack GenerativeAI And Agentic AI Bootcamp 👉 https://www.krishnaik.in/liveclass2/genai?id=9
+
+Remember GPTcache 👉 GPTCache Quick Start 👉 GitHub 👉 https://github.com/zilliztech/GPTCache/tree/main
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+15 Mar Day - 37 👉 Ultimate RAG 👉 Multimodal RAG 
+**************************************************
+Class has been cancelled due to trainer unavailability.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16 Mar Day - 37 👉 Ultimate RAG 👉 Multimodal RAG 👉 Project-4 Discussion & Lightning AI
+******************************************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Ultimate-RAG-Course-2a5eba9593d08085ade8ceb2a6c6c8de
+
+Project-4 Discussion:
+	Step:1
+	👉 Doc parser
+	👉 Text + Image (Diagram + Charts + Tables)
+	👉 OCR -> Mistral OCR, Azure Docs Intellegence, MinerU
+	
+	Step:2
+	👉	Image Embeddings -> Voyage-multimodal, ColQwen 2.5 / Jina
+	
+	Step:3
+	👉 Table Extractor -> Tableformer, GPT-4o, MLLM
+	
+	Step:4
+	👉 Hybrid Retrieval -> Sparse + Dense + ColPALI + SPLADE + COLBERT + RRF Fusion
+
+	Step:5
+	👉 VLLM -> RAG Reasoning -> GPT 4o
+
+NVIDIA RAG Blueprint 👉 GitHub 👉 https://github.com/NVIDIA-AI-Blueprints/rag 
+
+Lightning AI Pricing 👉 https://lightning.ai/pricing (Use only Development Purpose not Production use becuase It is very expensive)
+
+Free Edu accounts 👉 https://etempmail.com/ 
+
+RunPOD 👉 GPU Cloud for AI Training and Inference 👉 https://www.runpod.io/
+
+https://colab.research.google.com/drive/1jAeVi_CDCyb-iYlqw5Ytiwu9ClLQKj0b?usp=sharing
+	✅ multi_model_rag_with_colpali.ipynb
+		!pip install optimum qwen-vl-utils bitsandbytes transformers accelerate
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+21 Mar Day - 38 👉 Ultimate RAG 👉 Multimodal RAG 
+**************************************************
+Class has been cancelled due to trainer unavailability.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+22 Mar Day - 38 👉 Ultimate RAG 👉 Multimodal RAG 👉 Paradigm 👉 COLPALI & (Layout Detection + OCR) 👉 MinerU
+*****************************************************************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Ultimate-RAG-Course-2a5eba9593d08085ade8ceb2a6c6c8de
+
+Paradigm A: COLPALI
+    colplali engine github 👉 https://github.com/illuin-tech/colpali
+
+	Explained below notebook(COLPALI 👉 Text to Images patches)  in breif:
+	https://colab.research.google.com/drive/1jAeVi_CDCyb-iYlqw5Ytiwu9ClLQKj0b?usp=sharing
+		✅ multi_model_rag_with_colpali.ipynb
+		✅ COLPALI takes only images as input. Images converts into 10 patches per Image.
+
+	Explained COLPALI Research Paper in brief:
+		✅ COLPALI Reseach Paper 👉 ColPali: Efficient Document Retrieval with Vision Language Models 👉 https://arxiv.org/abs/2407.01449
+		✅ COLPALI Reseach Paper 👉 ColPali: EFFICIENT DOCUMENT RETRIEVAL WITH VISION LANGUAGE MODELS 👉 https://arxiv.org/pdf/2407.01449
+			1 INTRODUCTION	
+				Document layout detection models can then be run to segment paragraphs, titles, and other page objects such as tables,
+				figures, and headers. A chunking strategy is then defined to group text passages with some semantical coherence, and modern 
+				retrieval setups may even integrate a captioning step to describe visually rich elements in a natural language form, more suitable 
+				for embedding models.
+			- Contribution 1: ViDoRe		
+				Figure 1: ColPali simplifies document retrieval w.r.t. standard retrieval methods while achieving stronger performances with better
+						latencies. Latencies and results are detailed in section 5 and subsection B.4.
+
+			Contribution 2: ColPali 
+				These results demonstrate the potential and the many benefits of this novel Retrieval in Vision Space concept, which could significantly
+				alter the way document retrieval is approached in the industry moving forward. We release all resources at https://hf.co/vidore.
+			
+			2 PROBLEM FORMULATION & RELATED WORK
+				2.1 TEXTUAL RETRIEVAL METHODS
+					Document Retrieval in Text Space
+					Neural Retrievers
+					Multi-Vector retrieval via late interaction. 
+						The idea is to benefit from the rich interaction between individual query and document terms while taking advantage of the
+						offline computation and fast query matching enabled by bi-encoders. 
+					Retrieval Evaluation
+				2.2 INTEGRATING VISUAL FEATURES
+					- Contrastive Vision Language Models
+					- Visually Rich Document Understanding
+					PaliGemma
+				3 THE ViDoRe BENCHMARK
+				3.1 BENCHMARK DESIGN
+				3.2 ASSESSING CURRENT SYSTEMS
+					- Unstructured
+					- Unstructured + X
+					- Embedding Model
+					- Contrastive VLMs
+					- Results
+						PDF Parser
+						- Layout Detection
+						- OCR
+						- Captioning
+						- Page Encoding
+						Latency  
+				4 LATE INTERACTION BASED VISION RETRIEVAL
+					4.1 ARCHITECTURE
+						- Vision-Language Models
+						- Late Interaction
+						- Contrastive Loss
+					4.2 MODEL TRAINING
+						- Dataset
+						- Parameters
+						- Query Augmentation
+				5 RESULTS
+					Unstructured text-only
+					- BM25
+					- BGE-M3
+					Unstructured + OCR
+					- BM25
+					- BGE-M3
+					Unstructured + Captioning
+					- BM25
+					- BGE-M3
+					Contrastive VLMs
+					- Jina-CLIP
+					- Nomic-vision
+					- SigLIP (Vanilla) 
+					Ours
+					- SigLIP (Vanilla)
+					- BiSigLIP (+fine-tuning) 
+					- BiPali (+LLM) 
+					- ColPali (+Late Inter.)
+					
+					Table 2: Comprehensive evaluation of baseline models and our proposed method on ViDoRe. 
+							Results are presented using nDCG@5 metrics, and illustrate the impact of different components. Text-only metrics are 
+							not computed for benchmarks with only visual elements.
+					
+					5.1 PERFORMANCE (R1)
+					- Fine-tuning a Vision Model on a document retrieval oriented dataset: BiSigLIP
+					- Feeding image patches to a LLM: BiPali
+					- Leveraging Multi-Vector Embeddings through Late Interaction: ColPali
+					- Negative Results.
+
+					5.2 LATENCIES & MEMORY FOOTPRINT
+					- Online Querying. (R2)
+					- Offline Indexing. (R3)
+					- Storage Footprint
+					- Token pooling
+						Figure 3: (Left: Token Pooling) Relative performance degradation when reducing the number of stored embeddings per document. (Right: Interpretability) For each term in a user query, ColPali
+								identifies the most relevant document image patches (highlighted zones) and computes a query-topage matching score
+					5.3 INTERPRETABILITY
+				6 ABLATION STUDY
+					- Tradeoffs between model size and the number of image patches
+					- Unfreezing the vision component
+					- Impact of “query augmentation” tokens
+					- Impact of the Pairwise CE loss
+					- Adapting models to new tasks
+					- Better VLMs lead to better visual retrievers
+					- Out-of-domain generalization
+				7 CONCLUSIONS
+					- Future Work
+
+	Explained COLPALI Research Paper in brief:
+		https://colab.research.google.com/drive/1SDHPXLup6dojRXlI6AcKpCqPabEpD6Hr?usp=sharing
+			✅ multi_model_rag_with_colpali.ipynb
+				Overview: This code implements one of the multiple ways of multi-model RAG. This project processes a PDF file, retrieves relevant content using 
+						Colpali, and generates answers using a multi-modal RAG system. The process includes document indexing, querying, and summarizing with
+						the Gemini model.
+				Key Components:
+					- RAGMultiModalModel: Used for document indexing and retrieval.
+					- PDF Processing: Downloads and processes "Attention is All You Need" paper.
+					- Gemini Model: Used for content generation from retrieved images and queries.
+					- Base64 Encoding/Decoding: Manages image data retrieved during search.
+				Diagram:
+					- Reliable-RAG
+				Motivation:
+					To enable efficient querying and content generation from multi-modal documents (PDFs with text and images) in response to natural language queries.
+				Method Details:
+					- Indexing: The PDF is indexed using the RAGMultiModalModel, storing both text and image data.
+					- Querying: Natural language queries retrieve relevant document segments.
+					- Image Processing: Images from the document are decoded, displayed, and used in conjunction with the Gemini model to generate content.
+				Benefits:
+					- Multi-modal support for both text and images.
+					- Streamlined retrieval and summarization pipeline.
+					- Flexible content generation using advanced LLMs (Gemini model).
+				Implementation:
+					- PDF is indexed, and the content is split into text and image segments.
+					- A query is run against the indexed document to fetch the relevant results.
+					- Retrieved image data is decoded and passed through the Gemini model for answer generation.
+				Summary:
+					This project integrates document indexing, retrieval, and content generation in a multi-modal setting, enabling efficient queries on 
+					complex documents like research papers.
+
+Paradigm B: 
+	- Layout Detection + OCR
+		1. PP DocLayout (Paddle OCR, Baidu OCR)
+		2. DocLayout YOLO
+		3. Layout LLM
+		4. Surya Layout (Omini Benchmark)
+		5. Docling (HERON)
+
+	- OCR (Optical Character Recognition): All below are Open Source OCR except Mistral OCR
+		1. GLM OCR
+		2. Mistral OCR (Enterperise OCR)
+		3. Paddle OCR
+		4. MinerU OCR
+		6. DOT OCR
+		7. Surya OCR
+		8. Monkey OCR
+		9. Nemo OCR
+	
+	- Dual Stage: Combo
+		1. PP Doc Layout V3 + GLM OCR 	
+		2. PP Doc Layout V3 + Paddle OCR
+		3. MinerU (VOLO DocLayout + VLM OCR)		
+		4. Docling (HERON100 + Layout with 258 Model)
+	
+	- Single Stage or Unified Models
+		1. Nemotron Parse
+	Explained below notebook(Docling Granite Parsing)  in breif::	
+		https://colab.research.google.com/drive/1sEvwg0Zrzm_P4omcc7LeVy0EWLINznbG?usp=sharing
+			✅ Docling_Granite_Parsing.ipynb
+
+	GLM OCR Research Paper 👉 GLM-OCRTechnicalReport 👉 https://arxiv.org/pdf/2603.10910
+
+MinerU Implementation
+	GitHub 👉 https://github.com/opendatalab/mineru
+	MinerU Docs 👉 https://opendatalab.github.io/MinerU/quick_start/
+
+	https://colab.research.google.com/drive/1NJVSDztLRv2vE6Lo-_fjHDJnAxfwOSYb?usp=sharing
+		✅ Mineru_test.ipynb
+
+	Multimodal RAG with MinerU: Layout-Aware Academic PDF Parsing
+		https://colab.research.google.com/drive/1tbxp5y1Qlv9nV6dyitA-_PClVL4vBl9w?usp=sharing
+		
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+28 Mar Day - 39 👉 Ultimate RAG 👉 Multimodal RAG 👉 🧠 MultiModal RAG Pipeline Implementation using 🦙 Ollama (Locally) and Lightning AI(GUP), JinaAI
+*********************************************************************************************************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Multimodal-Project-RAG-337eba9593d080eab198f12eaff1d977
+
+A complete pipeline for Multi-modal RAG with GLM OCR with Ollama support.
+
+	Local Setup 👉 multi-modal-rag master branch 👉 GitHub 👉 https://github.com/sourangshupal/multi-modal-rag
+			✅ multi-modal-rag/TESTING.md
+			✅ multi-modal-rag/README.md
+			✅ multi-modal-rag/ollama/test_parse.py
+					uv run python ollama/test_parse.py data/raw/test_page1.pdf --output ./ollama/output/
+			✅ multi-modal-rag/ollama/visualize.py
+					uv run streamlit ollama/visualize.py
+			✅ multi-modal-rag/scripts/parse.py
+			✅ multi-modal-rag/scripts/ingest.py	
+			✅ multi-modal-rag/scripts/search.py
+			✅ multi-modal-rag/scripts/serve.py
+			✅ multi-modal-rag/scripts/debug_raw.py
+			✅ multi-modal-rag/src/doc_parser/api/app.py
+			✅ multi-modal-rag/src/doc_parser/api/dependencies.py
+			✅ multi-modal-rag/src/doc_parser/api/middleware.py
+			✅ multi-modal-rag/src/doc_parser/api/schemas.py
+			✅ multi-modal-rag/src/doc_parser/api/routes/ingest.py
+			✅ multi-modal-rag/src/doc_parser/api/routes/search.py
+			✅ multi-modal-rag/src/doc_parser/api/routes/generate.py
+			✅ multi-modal-rag/src/doc_parser/api/routes/health.py
+
+	GPU Setup 👉 multi-modal-rag deployment branch 👉 GitHub 👉 https://github.com/sourangshupal/multi-modal-rag/tree/deployment
+			✅ multi-modal-rag/LIGHTNING_AI_DEPLOY.md
+
+	HYBRID --> SPARSE + DENSE + MULTIVECTOR + GRAPH (TEXT)
+	HYBRID --> COLAPLI + (Layout Detection + OCR) (MULTIMODAL)
+
+	MULTIMODAL
+	1. COLPALI
+	2. a. GLM OCR
+		b. Paddle VL OCR
+
+	Login to JinaAI 👉 https://jina.ai/ 👉 Signin and take Jina API Key
+	JinaAI Reranker API 👉 https://jina.ai/reranker/
+
+	Make Sure 🦙 Local Mode (Ollama), Docker and Quadrant Should Run
+
+	Section 1 — CLI Scripts
+		scripts/parse.py — Parse a document
+		scripts/ingest.py — Ingest a document into Qdrant
+		scripts/search.py — Query the vector store
+
+	Section 2 — FastAPI Application
+		Start the API server
+			- uv run uvicorn doc_parser.api.app:app --host 0.0.0.0 --port 8000
+					- GET /health — Health check
+					- GET /collections — List collections
+					- POST /ingest — Ingest by file path
+					- POST /ingest/file — Ingest via file upload
+					- POST /search — Search the vector store
+
+	GPU Setup Using Lightning AI
+		Login to Lightning AI 👉 https://lightning.ai/ 
+		GitHub 👉 https://github.com/sourangshupal/multi-modal-rag/tree/deployment
+					✅ multi-modal-rag/LIGHTNING_AI_DEPLOY.md
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+29 Mar Day - 40 👉 Ultimate RAG 👉 Multimodal RAG 👉 🧠 MultiModal RAG Pipeline Implementation using Deployment Branch 👉 Workflows
+**************************************************************************************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Multimodal-Project-RAG-337eba9593d080eab198f12eaff1d977
+
+A complete pipeline for Multi-modal RAG with GLM OCR with Ollama support.
+	Local Setup 👉 multi-modal-rag master branch 👉 GitHub 👉 https://github.com/sourangshupal/multi-modal-rag
+					✅ multi-modal-rag/workflows/01-system-overview.md
+					✅ multi-modal-rag/workflows/02-full-rag-pipeline.md
+					✅ multi-modal-rag/workflows/03-ingestion-pipeline.md
+					✅ multi-modal-rag/workflows/04-retrieval-pipeline.md
+					✅ multi-modal-rag/workflows/05-data-structures.md
+					✅ multi-modal-rag/workflows/06-parsing-pipeline.md
+					✅ multi-modal-rag/workflows/11-reranking-backends.md
+
+	GPU Setup 👉 multi-modal-rag deployment branch 👉 GitHub 👉 https://github.com/sourangshupal/multi-modal-rag/tree/deployment
+		✅ multi-modal-rag/LIGHTNING_AI_DEPLOY.md
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+04 Apr Day - 41 👉 Ultimate RAG 👉 Multimodal RAG 
+**************************************************
+Class has been cancelled due to trainer unavailability.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+05 Apr Day - 41 👉 Ultimate RAG 👉 Multimodal RAG 👉 🧠 MultiModal RAG Pipeline Implementation using Qwen3-VL-Embedding Model
+*******************************************************************************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Multimodal-Project-RAG-337eba9593d080eab198f12eaff1d977
+
+Qwen3-VL-Embedding 👉 https://qwen.ai/blog?id=qwen3-vl-embedding
+
+HuggingFace 👉 Qwen/Qwen3-VL-Embedding-8B 👉 https://huggingface.co/Qwen/Qwen3-VL-Embedding-8B
+
+A complete pipeline for Multi-modal RAG with GLM OCR with Ollama support.
+
+	Executed both deployment and qwen branch in GPU Environment using Lightning AI and JinaAI Reranker API.
+
+    multi-modal-rag deployment branch 👉 GitHub 👉 https://github.com/sourangshupal/multi-modal-rag/tree/deployment
+		✅ multi-modal-rag/LIGHTNING_AI_DEPLOY.md
+
+	multi-modal-rag Qwen brach 👉 GitHub 👉 https://github.com/sourangshupal/multi-modal-rag/tree/qwen
+		✅ multi-modal-rag/Qwen_testing.md
+
+	Hugging Face 👉 Qwen collections 👉 https://huggingface.co/Qwen/collections
+
+
+Runpod Serverless GPU 👉 https://www.runpod.io/serverless-gpu
+
+Qdrant 👉 Capacity & Pricing Preview 👉 https://cloud.qdrant.io/calculator
+
+New Syllabus for Frontier AI 2026 : Research to Engineering: https://forms.gle/W9KDd7nKwMfh63R66
+This program is designed for highly committed individuals aiming to transition from theoretical understanding to production-level AI engineering.
+
+Whatsapp Channel 👉 https://whatsapp.com/channel/0029Vb7ASFR1XquZTyr6yh16
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+11 Apr Day - 42 👉 Ultimate RAG 👉 Multimodal RAG 👉 🧠 MultiModal RAG Pipeline 👉 Qwen/Qwen3-VL-Embedding-2B
+****************************************************************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Multimodal-Project-RAG-337eba9593d080eab198f12eaff1d977
+
+multi-modal-rag Qwen brach 👉 GitHub 👉 https://github.com/sourangshupal/multi-modal-rag/tree/qwen
+		✅ multi-modal-rag/docker-compose.yml
+		✅ multi-modal-rag/Docker_Compose_Testing.md
+
+Qwen3-VL-Embedding 👉 https://qwen.ai/blog?id=qwen3-vl-embedding
+
+HuggingFace 👉 Qwen/Qwen3-VL-Embedding-8B 👉 https://huggingface.co/Qwen/Qwen3-VL-Embedding-8B
+
+Frontier AI 2026 : Research to Engineering 👉 https://forms.gle/TeTtj7nVwrDMLBmr9
+
+How Dukaan moved out of Cloud and on to Bare Metal 👉 https://www.youtube.com/watch?v=vFxQyZX84Ro
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12 Apr Day - 43 👉 Ultimate RAG 👉 Multimodal RAG 
+**************************************************
+No class due to trainer unavailability.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16 Apr Day - 43 👉 Extra Class 👉 Ultimate RAG 👉 Metadata Enrichment(metadata-hybrid-rag, langextract-rag, semantic_highlight_hhem_rag) in RAG Systems
+*********************************************************************************************************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Extra-Class-344eba9593d0806aa265fff22dd71afc
+
+Metadata Enrichment in RAG Systems
+	- GLINER2 👉 GitHub 👉 https://github.com/sourangshupal/metadata-hybrid-rag
+	- LANGEXTRACT 👉 GitHub 👉 https://github.com/sourangshupal/langextract-rag
+	- SEMANTIC HIGHLIGHTING & HALLUCINATION DETECTION 👉 GitHub 👉 https://github.com/sourangshupal/semantic_highlight_hhem_rag	
+
+Discussed on below :-
+	HYBRID RAG with Metadata Enrichment
+		GitHub 👉 https://github.com/sourangshupal/metadata-hybrid-rag
+			✅ metadata-hybrid-rag/README.md
+			✅ metadata-hybrid-rag/notebooks/metadata_enrichment_tutorial.ipynb
+	
+	🔬 Metadata Enrichment in RAG Pipelines
+		GitHub 👉 https://github.com/sourangshupal/langextract-rag
+			✅langextract-rag/notebooks/metadata_enrichment_tutorial.ipynb
+
+	RAG Optimization: Semantic Highlighting & Hallucination Detection (Semantic Highlighting + HHEM RAG)
+		GitHub 👉 https://github.com/sourangshupal/semantic_highlight_hhem_rag
+			✅ semantic_highlight_hhem_rag/notebooks/rag_showcase.ipynb
+
+Qdrant 👉 What is Vector Quantization? 👉 https://qdrant.tech/articles/what-is-vector-quantization/
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+18 Apr Day - 44 👉 Ultimate RAG 👉 Multimodal RAG 👉 Preoject-4 👉 AWS Deployment 👉 multi-modal-rag
+*******************************************************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Commands-346eba9593d0800db812fb45e956d54f
+
+GitHub 👉 https://github.com/sourangshupal/multi-modal-rag/tree/deployment
+		✅ multi-modal-rag/docs/docs/AWS_ARCHITECTURE_EXPLAINER.md
+		✅ multi-modal-rag/docs/docs/docs/STEP_BY_STEP_DEPLOY.md
+
+--------------------------------------------------------------------
+multi-modal-rag/docs/docs/docs/STEP_BY_STEP_DEPLOY.md
+Step-by-Step AWS Deployment Guide
+
+1. Prerequisites
+    1.1 AWS CLI v2
+    1.2 Docker
+    1.3 jq
+    1.4 GitHub CLI (for setting secrets later)
+
+2. IAM — Create Admin User
+2.1 Create the user
+    AWS User -> doc-parser-admin
+
+2.2 Attach permissions
+AdministratorAccess
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+19 Apr Day - 45 👉 Ultimate RAG 👉 Multimodal RAG 👉 Preoject-4 👉 AWS Deployment 👉 multi-modal-rag
+*******************************************************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Commands-346eba9593d0800db812fb45e956d54f
+
+GitHub 👉 https://github.com/sourangshupal/multi-modal-rag/tree/deployment
+		✅ multi-modal-rag/docs/docs/AWS_ARCHITECTURE_EXPLAINER.md
+		✅ multi-modal-rag/docs/docs/docs/STEP_BY_STEP_DEPLOY.md
+
+multi-modal-rag/docs/docs/docs/STEP_BY_STEP_DEPLOY.md
+Step-by-Step AWS Deployment Guide
+1. Prerequisites
+    1.1 AWS CLI v2
+    1.2 Docker
+    1.3 jq
+    1.4 GitHub CLI (for setting secrets later)
+
+2. IAM — Create Admin User
+2.1 Create the user
+    AWS User -> doc-parser-admin
+
+2.2 Attach permissions
+AdministratorAccess
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+25 April Day - 46 👉 Ultimate RAG 👉 Multimodal RAG 👉 Project-4 👉 Code Base Discussion
+*******************************************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Commands-346eba9593d0800db812fb45e956d54f
 
 GitHub 👉 https://github.com/sourangshupal/multi-modal-rag/
     ✅ multi-modal-rag/ollama/visualize.py
@@ -714,5 +1524,10 @@ GitHub 👉 https://github.com/sourangshupal/multi-modal-rag/
 	✅ multi-modal-rag/src/doc_parser/ingestion/embedder.py
 	✅ multi-modal-rag/src/doc_parser/ingestion/image_captioner.py
 	✅ multi-modal-rag/src/doc_parser/ingestion/vector_store.py
+	✅ multi-modal-rag/src/doc_parser/retrieval/reranker.py
  
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+26 Apr Day - 47 👉 Ultimate RAG 👉 Multimodal RAG 👉 Project-4 👉 Code Base Discussion
+****************************************************************************************
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
