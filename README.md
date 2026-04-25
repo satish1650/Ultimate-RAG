@@ -1477,6 +1477,95 @@ Pydantic is a data validation library that uses Python type annotations to:
     - Symptom: Ollama `ollama ps` shows `100% CPU` instead of GPU
 1. Quick reference — full happy-path command sequence
 
+## 16 Apr Day - 43 👉 Ultimate RAG 👉 Extra Class 👉 Metadata Enrichment in RAG Pipelines 👉 metadata-hybrid-rag, langextract-rag, semantic_highlight_hhem_rag in RAG Systems
+## Metadata Enrichment in RAG Pipelines
+## 23-Metadata-Enrichment-RAG
+- 23.1-MetaData-Hybrid-RAG/metadata-hybrid-rag
+- 23.2-LangExtract-Enhanced/langextract-rag
+- 23.3-Semantic-Highlight-HHEM-RAG/semantic-highlight-hhem-rag
+### 🎯 Learning Objectives
+ - GLINER2 👉 HYBRID RAG with Metadata Enrichment
+ - LANGEXTRACT 👉 LangExtract-Enhanced RAG System
+ - SEMANTIC HIGHLIGHTING & HALLUCINATION DETECTION
+#### 23.1-MetaData-Hybrid-RAG/metadata-hybrid-rag
+#### HYBRID RAG with Metadata Enrichment
+Production-ready RAG system with metadata enrichment using GLiNER2, Qdrant, and OpenAI.
+##### 🌟 Key Features
+- Multi-format document upload (PDF, Markdown, TXT, JSON)
+- Docling HybridChunker for intelligent semantic chunking
+- GLiNER2 for zero-shot metadata extraction (entities, domain, content type, tech specs)
+- Qdrant vector store with hybrid search (BM25 + dense embeddings)
+- OpenAI GPT-4o-mini for answer generation
+- Metadata filtering by domain, content type, and entities
+
+##### 📓 Notebooks
+`metadata-hybrid-rag/notebooks/metadata_enrichment_tutorial.ipynb` <br>
+End-to-end tutorial comparing RAG without metadata vs with GLiNER2-enriched metadata.
+- How to design metadata for any RAG system (4 categories, decision framework)
+- Baseline ingestion (baseline_rag collection) — structural fields only
+- Enriched ingestion (enriched_rag collection) — full GLiNER2 pipeline with timing
+- Domain, content-type, entity, and combined filter demos
+- Side-by-side retrieval quality comparison across 4 benchmark queries
+- Ingestion and retrieval timing tables
+
+`metadata-hybrid-rag/notebooks/gliner2_complete_features.ipynb`
+- Comprehensive showcase of all GLiNER2 capabilities — no Qdrant or OpenAI key needed.
+- Basic NER (list labels vs. descriptions)
+- Single-label and multi-label text classification
+- Confidence scores with filtering
+- Structured extraction (basic fields, choices/enum, per-field thresholds)
+- RegexValidator (full match, partial match, exclude modes)
+- Multi-task combined extraction in one forward pass
+- Batch processing (batch_extract, batch_classify_text) with timing
+- Schema Builder API (full HR/CV pipeline)
+- Schema caching best practices
+- Base vs Large model comparison
+- End-to-end news intelligence pipeline
+
+#### 23.2-LangExtract-Enhanced/langextract-rag
+#### LangExtract-Enhanced RAG System
+##### 🌟 Key Features
+- 🧠 LangExtract Integration: Automatically extracts structured metadata (topic, category, entities, version, summary) from documents
+- 🔍 Metadata-Filtered Retrieval: Filter search results by document type, version, entities, and more
+- 🤖 Self-Querying Retriever: LLM automatically generates metadata filters from natural language queries
+- 📄 PDF Processing: Load and chunk PDF documents with intelligent text splitting
+- 💾 Pinecone Vector Store: Scalable vector storage with metadata filtering
+- 🚀 Multiple Retrieval Strategies: Basic, filtered, scored, and self-query retrieval
+
+##### 📓 Notebooks
+`semantic_highlight_hhem_rag/notebooks/rag_showcase.ipynb`
+- **RAG Optimization:** Semantic Highlighting & Hallucination Detection
+- **Semantic Highlighting:** Standard RAG sends ALL retrieved text to the LLM, including irrelevant sentences
+- **HHEM Validation:** LLMs sometimes generate confident-sounding but wrong answers
+- How This Notebook Is Organised
+    - Section 1  →  Setup (imports + services)
+    - Section 2  →  Sample corpus
+    - Section 3  →  PART 1 — Semantic Highlighting
+    - Section 4  →  PART 2 — Hallucination Detection (HHEM)
+    - Section 5  →  Combined summary visualisation
+    - Section 6  →  End-to-end pipeline (optional, needs Qdrant)
+    - Section 7  →  Student exercises
+
+#### 23.3-Semantic-Highlight-HHEM-RAG/semantic-highlight-hhem-rag
+#### Semantic Highlighting + HHEM RAG
+##### 🌟 Key Features
+- Upload documents (PDF, MD, TXT, JSON)
+- Semantic Highlighting for context pruning
+- HHEM validation for hallucination detection
+- Comparison endpoint (with vs without optimizations)
+- Metrics tracking and cost analysis
+##### 📓 Notebooks
+`langextract-rag/notebooks/metadata_enrichment_tutorial.ipynb`
+- Metadata Enrichment in RAG Pipelines
+- From Sparse Chunks to Precision Retrieval with LangExtract + LangChain
+- Audience: Advanced — you know RAG, embeddings, and LangChain basics.
+- This notebook focuses entirely on the metadata enrichment layer and how it transforms retrieval quality.
+- **What you will build:** <br>
+    Raw text chunks (2 metadata fields) <br>
+        → LangExtract enrichment  (LLM extracts structured metadata per chunk) <br>
+        → Rich documents (10+ metadata fields) <br>
+        → 4 retrieval strategies  (basic → filtered → scored → self-query) <br>
+        → Measurable improvement in retrieval precision + timing data <br>
 ---
 
 ## Create the virtual environment in anaconda3 folder
