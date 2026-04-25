@@ -1419,4 +1419,122 @@ How Dukaan moved out of Cloud and on to Bare Metal 👉 https://www.youtube.com/
 12 Apr Day - 43 👉 Ultimate RAG 👉 Multimodal RAG 
 **************************************************
 No class due to trainer unavailability.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16 Apr Day - 43 👉 Extra Class 👉 Ultimate RAG 👉 Metadata Enrichment(metadata-hybrid-rag, langextract-rag, semantic_highlight_hhem_rag) in RAG Systems
+*********************************************************************************************************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Extra-Class-344eba9593d0806aa265fff22dd71afc
+
+Metadata Enrichment in RAG Systems
+	- GLINER2 👉 GitHub 👉 https://github.com/sourangshupal/metadata-hybrid-rag
+	- LANGEXTRACT 👉 GitHub 👉 https://github.com/sourangshupal/langextract-rag
+	- SEMANTIC HIGHLIGHTING & HALLUCINATION DETECTION 👉 GitHub 👉 https://github.com/sourangshupal/semantic_highlight_hhem_rag	
+
+Discussed on below :-
+	HYBRID RAG with Metadata Enrichment
+		GitHub 👉 https://github.com/sourangshupal/metadata-hybrid-rag
+			✅ metadata-hybrid-rag/README.md
+			✅ metadata-hybrid-rag/notebooks/metadata_enrichment_tutorial.ipynb
+	
+	🔬 Metadata Enrichment in RAG Pipelines
+		GitHub 👉 https://github.com/sourangshupal/langextract-rag
+			✅langextract-rag/notebooks/metadata_enrichment_tutorial.ipynb
+
+	RAG Optimization: Semantic Highlighting & Hallucination Detection (Semantic Highlighting + HHEM RAG)
+		GitHub 👉 https://github.com/sourangshupal/semantic_highlight_hhem_rag
+			✅ semantic_highlight_hhem_rag/notebooks/rag_showcase.ipynb
+
+Qdrant 👉 What is Vector Quantization? 👉 https://qdrant.tech/articles/what-is-vector-quantization/
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+18 Apr Day - 44 👉 Ultimate RAG 👉 Multimodal RAG 👉 Preoject-4 👉 AWS Deployment 👉 multi-modal-rag
+*******************************************************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Commands-346eba9593d0800db812fb45e956d54f
+
+GitHub 👉 https://github.com/sourangshupal/multi-modal-rag/tree/deployment
+		✅ multi-modal-rag/docs/docs/AWS_ARCHITECTURE_EXPLAINER.md
+		✅ multi-modal-rag/docs/docs/docs/STEP_BY_STEP_DEPLOY.md
+
+--------------------------------------------------------------------
+multi-modal-rag/docs/docs/docs/STEP_BY_STEP_DEPLOY.md
+Step-by-Step AWS Deployment Guide
+
+1. Prerequisites
+    1.1 AWS CLI v2
+    1.2 Docker
+    1.3 jq
+    1.4 GitHub CLI (for setting secrets later)
+
+2. IAM — Create Admin User
+2.1 Create the user
+    AWS User -> doc-parser-admin
+
+2.2 Attach permissions
+AdministratorAccess
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+19 Apr Day - 45 👉 Ultimate RAG 👉 Multimodal RAG 👉 Preoject-4 👉 AWS Deployment 👉 multi-modal-rag
+*******************************************************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Commands-346eba9593d0800db812fb45e956d54f
+
+GitHub 👉 https://github.com/sourangshupal/multi-modal-rag/tree/deployment
+		✅ multi-modal-rag/docs/docs/AWS_ARCHITECTURE_EXPLAINER.md
+		✅ multi-modal-rag/docs/docs/docs/STEP_BY_STEP_DEPLOY.md
+
+multi-modal-rag/docs/docs/docs/STEP_BY_STEP_DEPLOY.md
+Step-by-Step AWS Deployment Guide
+1. Prerequisites
+    1.1 AWS CLI v2
+    1.2 Docker
+    1.3 jq
+    1.4 GitHub CLI (for setting secrets later)
+
+2. IAM — Create Admin User
+2.1 Create the user
+    AWS User -> doc-parser-admin
+
+2.2 Attach permissions
+AdministratorAccess
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+25 April Day - 46 👉 Ultimate RAG 👉 Multimodal RAG 👉 Project-4 👉 Code Base Discussion Part-1
+*************************************************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Commands-346eba9593d0800db812fb45e956d54f
+
+GitHub 👉 https://github.com/sourangshupal/multi-modal-rag/
+    ✅ multi-modal-rag/ollama/visualize.py
+    ✅ multi-modal-rag/ollama/test_parse.py
+    ✅ multi-modal-rag/scripts/warmup.py
+    ✅ multi-modal-rag/scripts/set_github_secrets.sh
+    ✅ multi-modal-rag/scripts/serve.py
+    ✅ multi-modal-rag/src/doc_parser/pdf_utils.py
+    ✅ multi-modal-rag/src/doc_parser/chunker.py
+    ✅ multi-modal-rag/src/doc_parser/config.py
+	✅ multi-modal-rag/src/doc_parser/logging_config.py
+	✅ multi-modal-rag/src/doc_parser/post_processor.py
+	✅ multi-modal-rag/src/doc_parser/pipeline.py
+	✅ multi-modal-rag/src/doc_parser/api/routes/generate.py
+	✅ multi-modal-rag/routes/ingest.py
+	✅ multi-modal-rag/routes/health.py
+	✅ multi-modal-rag/routes/search.py
+	✅ multi-modal-rag/src/doc_parser/api/dependencies.py
+	✅ multi-modal-rag/src/doc_parser/api/middleware.py
+	✅ multi-modal-rag/src/doc_parser/api/schemas.py
+	✅ multi-modal-rag/src/doc_parser/api/app.py
+	✅ multi-modal-rag/src/doc_parser/ingestion/embedder.py
+	✅ multi-modal-rag/src/doc_parser/ingestion/image_captioner.py
+	✅ multi-modal-rag/src/doc_parser/ingestion/vector_store.py
+	✅ multi-modal-rag/src/doc_parser/retrieval/reranker.py
+
+ModelArk Coding Plan 👉 https://www.byteplus.com/en/activity/codingplan?ac=MMAUCIS9NT1S&rc=WEAQVQSC?ac=MMAUCIS9NT1S&rc=WEAQVQSC
+GLM Coding Plan 👉 https://z.ai/subscribe?code=code-171b9fcb1373&state=a0bf43925b97eb9d78e1d1aaaee29431
+Hermes Agent 👉 https://github.com/nousresearch/hermes-agent
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+26 Apr Day - 47 👉 Ultimate RAG 👉 Multimodal RAG 👉 Project-4 👉 Code Base Discussion Part-2 & LangGraph 👉 Basics
+**********************************************************************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Commands-346eba9593d0800db812fb45e956d54f
+
+GitHub 👉 https://github.com/sourangshupal/multi-modal-rag/
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
