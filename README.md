@@ -1477,7 +1477,7 @@ Pydantic is a data validation library that uses Python type annotations to:
     - Symptom: Ollama `ollama ps` shows `100% CPU` instead of GPU
 1. Quick reference — full happy-path command sequence
 
-## 16 Apr Day - 43 👉 Ultimate RAG 👉 Extra Class 👉 Metadata Enrichment in RAG Pipelines 👉 metadata-hybrid-rag, langextract-rag, semantic_highlight_hhem_rag in RAG Systems
+## 16 Apr Day - 43 👉 Ultimate RAG 👉 Extra Class 👉 Metadata Enrichment in RAG Pipelines 👉 metadata-hybrid-rag, langextract-rag, semantic_highlight_hhem_rag
 ## Metadata Enrichment in RAG Pipelines
 ## 23-Metadata-Enrichment-RAG
 - 23.1-MetaData-Hybrid-RAG/metadata-hybrid-rag
@@ -1499,7 +1499,7 @@ Production-ready RAG system with metadata enrichment using GLiNER2, Qdrant, and 
 - Metadata filtering by domain, content type, and entities
 
 ##### 📓 Notebooks
-`metadata-hybrid-rag/notebooks/metadata_enrichment_tutorial.ipynb` <br>
+##### `metadata-hybrid-rag/notebooks/metadata_enrichment_tutorial.ipynb` <br>
 End-to-end tutorial comparing RAG without metadata vs with GLiNER2-enriched metadata.
 - How to design metadata for any RAG system (4 categories, decision framework)
 - Baseline ingestion (baseline_rag collection) — structural fields only
@@ -1508,7 +1508,9 @@ End-to-end tutorial comparing RAG without metadata vs with GLiNER2-enriched meta
 - Side-by-side retrieval quality comparison across 4 benchmark queries
 - Ingestion and retrieval timing tables
 
-`metadata-hybrid-rag/notebooks/gliner2_complete_features.ipynb`
+> **Requirements:** OpenAI API key, Qdrant running (`docker-compose up -d`)
+
+##### `metadata-hybrid-rag/notebooks/gliner2_complete_features.ipynb`
 - Comprehensive showcase of all GLiNER2 capabilities — no Qdrant or OpenAI key needed.
 - Basic NER (list labels vs. descriptions)
 - Single-label and multi-label text classification
@@ -1522,6 +1524,8 @@ End-to-end tutorial comparing RAG without metadata vs with GLiNER2-enriched meta
 - Base vs Large model comparison
 - End-to-end news intelligence pipeline
 
+> **Requirements:** `pip install gliner` only (models download on first run ~500MB)
+
 #### 23.2-LangExtract-Enhanced/langextract-rag
 #### LangExtract-Enhanced RAG System
 ##### 🌟 Key Features
@@ -1533,7 +1537,30 @@ End-to-end tutorial comparing RAG without metadata vs with GLiNER2-enriched meta
 - 🚀 Multiple Retrieval Strategies: Basic, filtered, scored, and self-query retrieval
 
 ##### 📓 Notebooks
-`semantic_highlight_hhem_rag/notebooks/rag_showcase.ipynb`
+##### `langextract-rag/notebooks/metadata_enrichment_tutorial.ipynb`
+- Metadata Enrichment in RAG Pipelines
+- From Sparse Chunks to Precision Retrieval with LangExtract + LangChain
+- Audience: Advanced — you know RAG, embeddings, and LangChain basics.
+- This notebook focuses entirely on the metadata enrichment layer and how it transforms retrieval quality.
+- **What you will build:** <br>
+    Raw text chunks (2 metadata fields) <br>
+        → LangExtract enrichment  (LLM extracts structured metadata per chunk) <br>
+        → Rich documents (10+ metadata fields) <br>
+        → 4 retrieval strategies  (basic → filtered → scored → self-query) <br>
+        → Measurable improvement in retrieval precision + timing data <br>
+
+> **Before you start:** Only `OPENAI_API_KEY` is required. No Pinecone needed — we use Chroma (in-memory) throughout.
+
+#### 23.3-Semantic-Highlight-HHEM-RAG/semantic-highlight-hhem-rag
+#### Semantic Highlighting + HHEM RAG
+##### 🌟 Key Features
+- Upload documents (PDF, MD, TXT, JSON)
+- Semantic Highlighting for context pruning
+- HHEM validation for hallucination detection
+- Comparison endpoint (with vs without optimizations)
+- Metrics tracking and cost analysis
+##### 📓 Notebooks
+##### `semantic-highlight-hhem-rag/notebooks/rag_showcase.ipynb`
 - **RAG Optimization:** Semantic Highlighting & Hallucination Detection
 - **Semantic Highlighting:** Standard RAG sends ALL retrieved text to the LLM, including irrelevant sentences
 - **HHEM Validation:** LLMs sometimes generate confident-sounding but wrong answers
@@ -1546,26 +1573,7 @@ End-to-end tutorial comparing RAG without metadata vs with GLiNER2-enriched meta
     - Section 6  →  End-to-end pipeline (optional, needs Qdrant)
     - Section 7  →  Student exercises
 
-#### 23.3-Semantic-Highlight-HHEM-RAG/semantic-highlight-hhem-rag
-#### Semantic Highlighting + HHEM RAG
-##### 🌟 Key Features
-- Upload documents (PDF, MD, TXT, JSON)
-- Semantic Highlighting for context pruning
-- HHEM validation for hallucination detection
-- Comparison endpoint (with vs without optimizations)
-- Metrics tracking and cost analysis
-##### 📓 Notebooks
-`langextract-rag/notebooks/metadata_enrichment_tutorial.ipynb`
-- Metadata Enrichment in RAG Pipelines
-- From Sparse Chunks to Precision Retrieval with LangExtract + LangChain
-- Audience: Advanced — you know RAG, embeddings, and LangChain basics.
-- This notebook focuses entirely on the metadata enrichment layer and how it transforms retrieval quality.
-- **What you will build:** <br>
-    Raw text chunks (2 metadata fields) <br>
-        → LangExtract enrichment  (LLM extracts structured metadata per chunk) <br>
-        → Rich documents (10+ metadata fields) <br>
-        → 4 retrieval strategies  (basic → filtered → scored → self-query) <br>
-        → Measurable improvement in retrieval precision + timing data <br>
+> **Before you start:** Set the environment variable `OPENAI_API_KEY` in your shell or in a `.env` file at the project root. The semantic and HHEM sections do not require an OpenAI key — only Section 6 does.
 ---
 
 ## Create the virtual environment in anaconda3 folder
