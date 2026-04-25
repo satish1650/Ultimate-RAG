@@ -1641,6 +1641,77 @@ End-to-end tutorial comparing RAG without metadata vs with GLiNER2-enriched meta
 
 #### `multi-modal-rag/docs/STEP_BY_STEP_DEPLOY.md`
 ##### Step-by-Step AWS Deployment Guide
+1. Prerequisites
+    1.1 AWS CLI v2
+    1.2 Docker
+    1.3 jq
+    1.4 GitHub CLI (for setting secrets later)
+1. IAM — Create Admin User
+    2.1 Create the user
+    2.2 Attach permissions
+    2.3 Generate access keys
+    2.4 Configure AWS CLI
+    2.5 Verify
+    2.6 Export profile for the session
+1. Shell Variables
+    3.1 Retrieve your default VPC and subnets
+    3.2 Export all variables
+    3.3 Verify
+1. Security Groups
+    Two security groups are needed: <br>
+    - **ALB SG** — faces the internet, accepts port 80
+    - **ECS SG** — faces the ALB only, accepts port 8000
+1. ECR Repositories
+1. ECS Cluster
+1. EFS — Persistent Storage
+    EFS provides two persistent volumes that survive deployments: <br>
+    - `/qdrant/storage` — Qdrant vector database data
+    - `/root/.ollama` — Ollama model weights (downloaded once, reused forever)
+    > Save FS_ID, QDRANT_AP, and OLLAMA_AP — required for task definitions in Phase 12.
+1. Secrets Manager
+1. IAM — CI/CD Bot User
+1. IAM — ECS Task Execution Role
+1. CloudWatch Log Groups
+1. ECS Task Definitions <br>
+    12.1 App Task Definition <br>
+        - **app** — FastAPI backend (port 8000)
+        - **qdrant** — vector database sidecar (port 6333, EFS-backed)
+        - **ollama** — local LLM / OCR engine (port 11434, EFS-backed, essential: true)
+1. Application Load Balancer
+1. ECS Services
+1. Ollama Model Bootstrap
+1. GitHub Actions Secrets
+    - The CI/CD pipeline needs these secrets set in GitHub: **Repository → Settings → Secrets and variables → Actions**
+1. Verify Deployment
+1. Troubleshooting Common Deployment Issues
+    - A — Task fails to start: AccessDeniedException on Secrets Manager
+    - B — ALB health checks timing out: `Target.Timeout`
+    - C — Qdrant NFS warning on EFS (not a fatal error)
+1. CI/CD Flow Reference
+1. Rollback Procedure
+1. Cost Overview — What This Infrastructure Charges Per Month
+1. How to Stop the Infrastructure (Save Money, Keep Data)
+    - Step 1 — Scale the ECS service to zero tasks
+    - Step 2 — Delete the ALB listener and ALB (stops the $16/month fixed charge)
+1. How to Restart the Infrastructure
+    - Step 1 — Recreate the ALB
+    - Step 2 — Set the ALB idle timeout to 300 seconds
+    - Step 3 — Recreate the listener pointing to the existing target group
+    - Step 4 — Scale the ECS service back up
+    - Step 5 — Get the new ALB DNS name and verify
+1. How to Tear Down Everything (Full Deletion)
+    - Step 1 — Stop and delete the ECS service
+    - Step 2 — Delete the ALB, listener, and target group
+    - Step 3 — Delete the EFS filesystem (permanent data loss)
+    - Step 4 — Delete the ECS cluster
+    - Step 5 — Delete ECR repositories and images
+    - Step 6 — Delete CloudWatch log group
+    - Step 7 — Delete Secrets Manager secret
+    - Step 8 — Delete IAM role and policies
+    - Step 9 — Delete Security Groups
+    - Step 10 — Delete IAM users (optional)
+    - Step 11 — Verify everything is gone
+
 ---
 
 ## Create the virtual environment in anaconda3 folder
