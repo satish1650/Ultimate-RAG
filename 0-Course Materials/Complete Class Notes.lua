@@ -714,5 +714,5 @@ GitHub 👉 https://github.com/sourangshupal/multi-modal-rag/
 	✅ multi-modal-rag/src/doc_parser/ingestion/embedder.py
 	✅ multi-modal-rag/src/doc_parser/ingestion/image_captioner.py
 	✅ multi-modal-rag/src/doc_parser/ingestion/vector_store.py
-  
+ 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
