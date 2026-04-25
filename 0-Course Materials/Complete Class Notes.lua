@@ -700,5 +700,19 @@ GitHub 👉 https://github.com/sourangshupal/multi-modal-rag/
     ✅ multi-modal-rag/src/doc_parser/pdf_utils.py
     ✅ multi-modal-rag/src/doc_parser/chunker.py
     ✅ multi-modal-rag/src/doc_parser/config.py
-    
+	✅ multi-modal-rag/src/doc_parser/logging_config.py
+	✅ multi-modal-rag/src/doc_parser/post_processor.py
+	✅ multi-modal-rag/src/doc_parser/pipeline.py
+	✅ multi-modal-rag/src/doc_parser/api/routes/generate.py
+	✅ multi-modal-rag/routes/ingest.py
+	✅ multi-modal-rag/routes/health.py
+	✅ multi-modal-rag/routes/search.py
+	✅ multi-modal-rag/src/doc_parser/api/dependencies.py
+	✅ multi-modal-rag/src/doc_parser/api/middleware.py
+	✅ multi-modal-rag/src/doc_parser/api/schemas.py
+	✅ multi-modal-rag/src/doc_parser/api/app.py
+	✅ multi-modal-rag/src/doc_parser/ingestion/embedder.py
+	✅ multi-modal-rag/src/doc_parser/ingestion/image_captioner.py
+	✅ multi-modal-rag/src/doc_parser/ingestion/vector_store.py
+  
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
