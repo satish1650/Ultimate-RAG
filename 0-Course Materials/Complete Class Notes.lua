@@ -688,3 +688,17 @@ COLBERT search implementation for search through VDB
 	https://github.com/Murtuzasaifee/C_S_RAG/commit/9c74d19a14109a30e9b1e50fc26e1b1044210638
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+25 April Day - 47 👉 Ultimate RAG 👉 Multi-Modal 👉 Project-4 👉 Code Base Discussion
+***************************************************************************************
+
+GitHub 👉 https://github.com/sourangshupal/multi-modal-rag/
+    ✅ multi-modal-rag/ollama/visualize.py
+    ✅ multi-modal-rag/ollama/test_parse.py
+    ✅ multi-modal-rag/scripts/warmup.py
+    ✅ multi-modal-rag/scripts/set_github_secrets.sh
+    ✅ multi-modal-rag/scripts/serve.py
+    ✅ multi-modal-rag/src/doc_parser/pdf_utils.py
+    ✅ multi-modal-rag/src/doc_parser/chunker.py
+    ✅ multi-modal-rag/src/doc_parser/config.py
+    
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
