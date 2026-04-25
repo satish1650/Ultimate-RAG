@@ -1582,7 +1582,7 @@ End-to-end tutorial comparing RAG without metadata vs with GLiNER2-enriched meta
 - AWS Architecture Explainer — Multi-Modal RAG Pipeline
 - multi-modal-rag - Step-by-Step AWS Deployment Guide
 
-#### 🎯 Learning Objectives
+### 🎯 Learning Objectives
 #### `multi-modal-rag/docs/AWS_ARCHITECTURE_EXPLAINER.md`
 ##### AWS Architecture Explainer — Multi-Modal RAG Pipeline
 1. What We Built — The Big Picture
@@ -1711,6 +1711,45 @@ End-to-end tutorial comparing RAG without metadata vs with GLiNER2-enriched meta
     - Step 9 — Delete Security Groups
     - Step 10 — Delete IAM users (optional)
     - Step 11 — Verify everything is gone
+
+## 19 Apr Day - 45 👉 Ultimate RAG 👉 Multimodal RAG 👉 Preoject-4 👉 AWS Deployment 👉 multi-modal-rag
+## A complete End to End `multi-modal-rag` deployment using AWS Cloud Service
+## 24-Multi-Modal-RAG-Deployment-Using-AWS
+- AWS Architecture Explainer — Multi-Modal RAG Pipeline
+- multi-modal-rag - Step-by-Step AWS Deployment Guide
+
+### 🎯 Learning Objectives
+    ✅ multi-modal-rag/docs/docs/AWS_ARCHITECTURE_EXPLAINER.md
+    ✅ multi-modal-rag/docs/docs/docs/STEP_BY_STEP_DEPLOY.md
+
+## 25 April Day - 46 👉 Ultimate RAG 👉 Multimodal RAG 👉 Project-4 👉 Code Base Discussion Part-1
+## Project-4 : Code Base Discussion
+## 24-Multi-Modal-RAG-Deployment-Using-AWS
+### 🎯 Learning Objectives
+#### Explained below Code:-
+    ✅ multi-modal-rag/ollama/visualize.py
+    ✅ multi-modal-rag/ollama/test_parse.py
+    ✅ multi-modal-rag/scripts/warmup.py
+    ✅ multi-modal-rag/scripts/set_github_secrets.sh
+    ✅ multi-modal-rag/scripts/serve.py
+    ✅ multi-modal-rag/src/doc_parser/pdf_utils.py
+    ✅ multi-modal-rag/src/doc_parser/chunker.py
+    ✅ multi-modal-rag/src/doc_parser/config.py
+	✅ multi-modal-rag/src/doc_parser/logging_config.py
+	✅ multi-modal-rag/src/doc_parser/post_processor.py
+	✅ multi-modal-rag/src/doc_parser/pipeline.py
+	✅ multi-modal-rag/src/doc_parser/api/routes/generate.py
+	✅ multi-modal-rag/routes/ingest.py
+	✅ multi-modal-rag/routes/health.py
+	✅ multi-modal-rag/routes/search.py
+	✅ multi-modal-rag/src/doc_parser/api/dependencies.py
+	✅ multi-modal-rag/src/doc_parser/api/middleware.py
+	✅ multi-modal-rag/src/doc_parser/api/schemas.py
+	✅ multi-modal-rag/src/doc_parser/api/app.py
+	✅ multi-modal-rag/src/doc_parser/ingestion/embedder.py
+	✅ multi-modal-rag/src/doc_parser/ingestion/image_captioner.py
+	✅ multi-modal-rag/src/doc_parser/ingestion/vector_store.py
+	✅ multi-modal-rag/src/doc_parser/retrieval/reranker.py
 
 ---
 
