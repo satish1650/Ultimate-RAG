@@ -1497,8 +1497,8 @@ Step-by-Step AWS Deployment Guide
 AdministratorAccess
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-25 April Day - 46 👉 Ultimate RAG 👉 Multimodal RAG 👉 Project-4 👉 Code Base Discussion
-*******************************************************************************************
+25 April Day - 46 👉 Ultimate RAG 👉 Multimodal RAG 👉 Project-4 👉 Code Base Discussion Part-1
+*************************************************************************************************
 Class Notes 👉 https://krishnaikacademy.notion.site/Commands-346eba9593d0800db812fb45e956d54f
 
 GitHub 👉 https://github.com/sourangshupal/multi-modal-rag/
@@ -1525,9 +1525,16 @@ GitHub 👉 https://github.com/sourangshupal/multi-modal-rag/
 	✅ multi-modal-rag/src/doc_parser/ingestion/image_captioner.py
 	✅ multi-modal-rag/src/doc_parser/ingestion/vector_store.py
 	✅ multi-modal-rag/src/doc_parser/retrieval/reranker.py
- 
+
+ModelArk Coding Plan 👉 https://www.byteplus.com/en/activity/codingplan?ac=MMAUCIS9NT1S&rc=WEAQVQSC?ac=MMAUCIS9NT1S&rc=WEAQVQSC
+GLM Coding Plan 👉 https://z.ai/subscribe?code=code-171b9fcb1373&state=a0bf43925b97eb9d78e1d1aaaee29431
+Hermes Agent 👉 https://github.com/nousresearch/hermes-agent
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-26 Apr Day - 47 👉 Ultimate RAG 👉 Multimodal RAG 👉 Project-4 👉 Code Base Discussion
-****************************************************************************************
+26 Apr Day - 47 👉 Ultimate RAG 👉 Multimodal RAG 👉 Project-4 👉 Code Base Discussion Part-2 & LangGraph 👉 Basics
+**********************************************************************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Commands-346eba9593d0800db812fb45e956d54f
+
+GitHub 👉 https://github.com/sourangshupal/multi-modal-rag/
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
