@@ -1,0 +1,5118 @@
+WEBVTT
+
+1
+00:00:01.611 --> 00:00:05.590
+Krish NAik: So… Today, we'll be working on
+
+
+2
+00:00:05.781 --> 00:00:10.671
+Krish NAik: On that CICD, I was testing the application. Right now, I just created the script.
+
+
+3
+00:00:11.001 --> 00:00:12.411
+Krish NAik: Okay. Sold.
+
+
+4
+00:00:13.071 --> 00:00:14.920
+Krish NAik: But again, like,
+
+
+5
+00:00:15.171 --> 00:00:33.510
+Krish NAik: because here, also, the same logic happens, just like, Lambda. You cannot create a new, environment every time, otherwise the URL will be different. So, the idea is to set up your main environment, and within that, once you have created the application, then the URL remains the same for your app.
+
+
+6
+00:00:33.731 --> 00:00:39.410
+Krish NAik: Okay, so we will continue with that. So I think, where is my Zoom window? Just wait.
+
+
+7
+00:00:40.201 --> 00:00:41.320
+Krish NAik: Next doctor.
+
+
+8
+00:00:43.491 --> 00:00:44.610
+Krish NAik: Well, great.
+
+
+9
+00:00:44.801 --> 00:00:49.441
+Krish NAik: You guys, I think everybody can open it in your, editor, I think.
+
+
+10
+00:00:49.941 --> 00:00:52.541
+Krish NAik: Please do check out the new branch.
+
+
+11
+00:00:52.701 --> 00:01:01.260
+Krish NAik: The same branch that we were using yesterday. There, only I have added, 3 to 4 different things that I will let you know.
+
+
+12
+00:01:01.840 --> 00:01:05.701
+Krish NAik: So, let's talk about the branch, I think.
+
+
+13
+00:01:06.161 --> 00:01:08.221
+Krish NAik: Which account is? This is the one.
+
+
+14
+00:01:11.561 --> 00:01:27.310
+Krish NAik: everybody, you can take a Git pull. You can see here, in this particular deploy AWS branch, yesterday we were working. So, here are a few things that I have added. Like, yesterday, most of the things were added, only, I think, two things that I have added. One is…
+
+
+15
+00:01:27.541 --> 00:01:31.321
+Krish NAik: This one, where you have the deploy.yml file.
+
+
+16
+00:01:31.861 --> 00:01:45.930
+Krish NAik: Okay, now this is your entire, like, pushing the image to ECR from ECR. Beamstock will pull it, and rest of the deployment. And a few secrets that you guys need to take care of, I will show that part to you. Other than that,
+
+
+17
+00:01:46.061 --> 00:01:59.371
+Krish NAik: the default timeout was 60 seconds in Beanstalk, okay? So, we need to increase that, so I increased it to 300 seconds. So, let me show you that particular setting also that I have done.
+
+
+18
+00:01:59.591 --> 00:02:11.380
+Krish NAik: Because you time out things that default one on top of AWS, so I changed it. So, can you see here the default? Because by default, 60 seconds for Nginx, so I've added this timeout.configuration.
+
+
+19
+00:02:11.661 --> 00:02:29.810
+Krish NAik: So generally, in Linux, we do a very similar approach that I have taken here also. Because at the end of the day, what we have, it's an EC2 instance. So if it's an EC2 instance, everything that we can handle it from our side. That's the benefit. You can add Linux scripts and everything through Beamstock.
+
+
+20
+00:02:30.671 --> 00:02:33.331
+Krish NAik: So, just wait.
+
+
+21
+00:02:34.831 --> 00:02:38.200
+Krish NAik: Today's agent tab, we will just do the deployment, nothing more.
+
+
+22
+00:02:38.691 --> 00:02:43.600
+Krish NAik: Okay, next week we will start with Grafra. People who are asking with respect to the agenda.
+
+
+23
+00:02:43.731 --> 00:02:54.700
+Krish NAik: Yesterday, it came 502, because I think yesterday, for many, it worked, but please have it checked today. Please send the GitHub link, it's the same GitHub link, please don't ask again and again the same stuff.
+
+
+24
+00:02:55.011 --> 00:02:58.210
+Krish NAik: For the past week, the GitHub link has not changed.
+
+
+25
+00:03:00.401 --> 00:03:11.311
+Krish NAik: Okay, not muted, I can hear already. Okay, so everybody, please do have a check, only these two things that I have updated from my site. So, first of all, please take the Git poll.
+
+
+26
+00:03:12.651 --> 00:03:21.241
+Krish NAik: I have not done any margin with my main branch, just keep it in the main one only, so the deploy slash AWS hyphen b branch for now.
+
+
+27
+00:03:22.341 --> 00:03:27.091
+Krish NAik: I missed a few sessions, jethan, it's done…
+
+
+28
+00:03:27.241 --> 00:03:31.971
+Krish NAik: in the month of, I think, December.
+
+
+29
+00:03:35.221 --> 00:03:42.111
+Krish NAik: you have not missed, then, not a few sessions, I think. You might have missed more than one month or two months of sessions.
+
+
+30
+00:03:43.421 --> 00:03:48.840
+Krish NAik: previously sent the GitHub link did not join yesterday. Last week, also, the link was seen.
+
+
+31
+00:03:49.461 --> 00:03:52.711
+Krish NAik: There has been no changes with respect to the lake.
+
+
+32
+00:03:54.581 --> 00:03:57.370
+Krish NAik: Okay, just wait, but again, I will share.
+
+
+33
+00:03:57.851 --> 00:03:59.471
+Krish NAik: Just wait.
+
+
+34
+00:04:05.191 --> 00:04:19.141
+Krish NAik: Now, Sriju is asking how suggested 300 seconds, so I did it that way, only deployed it using… Alright, fine. That is, fine. If you have done that stuff, you also ask ChatGPT and you change that timeout to 300 seconds, fine.
+
+
+35
+00:04:19.181 --> 00:04:25.991
+Krish NAik: Because the default one is 60. If you upload a bigger PDF, even for me, background processing was happening, but
+
+
+36
+00:04:26.061 --> 00:04:28.821
+Krish NAik: Because of the service, it will throw you an error.
+
+
+37
+00:04:28.921 --> 00:04:41.360
+Krish NAik: Okay, but actually, it's not an error, just like, using API Gateway, where you have 29 seconds hard limit. So here, the hard limit was 60 seconds, so that's why I updated that configuration file through NGINX.
+
+
+38
+00:04:42.391 --> 00:05:01.000
+Krish NAik: Santosh is asking, today we have to start from here, like image building. You don't have to do anything, today. See, the first step, please take the git pull, then I will say step-by-step, okay? Everybody first do the Git pull. Once the git pull is done, let me know in the chat. You'll be setting up your secrets.
+
+
+39
+00:05:01.351 --> 00:05:07.151
+Krish NAik: Okay, so here you will be going, and here are all these secrets that you need to pass.
+
+
+40
+00:05:07.471 --> 00:05:15.830
+Krish NAik: Yesterday, you used that command. How many of you remember that, command here with respect to GH?
+
+
+41
+00:05:16.631 --> 00:05:19.881
+Krish NAik: Anybody remembers that command, so just wait.
+
+
+42
+00:05:20.331 --> 00:05:22.640
+Krish NAik: Let me just duplicate this stuff.
+
+
+43
+00:05:23.541 --> 00:05:25.230
+Krish NAik: Which one should I book?
+
+
+44
+00:05:25.611 --> 00:05:26.901
+Krish NAik: Duplicate.
+
+
+45
+00:05:29.981 --> 00:05:33.001
+Krish NAik: In the deploy.md, there was a file
+
+
+46
+00:05:33.131 --> 00:05:39.641
+Krish NAik: With respect to setting up your secrets. Now, that process needs to be automated through GitHub Secrets.
+
+
+47
+00:05:40.021 --> 00:05:44.171
+Krish NAik: Okay, so just… Pairing that, but yes, this was the command.
+
+
+48
+00:05:45.231 --> 00:05:45.991
+Krish NAik: Okay.
+
+
+49
+00:05:46.231 --> 00:05:53.261
+Krish NAik: Now, I want to run this command in during the deployment, so all these things, I'll be adding it there.
+
+
+50
+00:05:53.501 --> 00:05:55.231
+Krish NAik: Okay, so please have it checked.
+
+
+51
+00:05:56.431 --> 00:06:03.721
+Krish NAik: Okay, so the first thing, once you guys have taken the pull, the second step is please set up your secrets.
+
+
+52
+00:06:03.911 --> 00:06:15.601
+Krish NAik: You already have this information, I think, within a command. Yesterday, you have used it. Please create the secrets today. Two things for AWS, OpenAI quadrant, URL read anchor, backend, which will be local.
+
+
+53
+00:06:15.601 --> 00:06:25.791
+Krish NAik: Then comes your Tabula API key and the upload directory. All these things are available, so you can check it from your main deploy.md, the default configurations.
+
+
+54
+00:06:26.291 --> 00:06:31.191
+Krish NAik: So please do this, I think it should be done within 2 to 3 minutes. Everybody.
+
+
+55
+00:06:31.371 --> 00:06:38.890
+Krish NAik: First, take git pull. Once the git pull is ready, please set the environment variables in GitHub Secrets.
+
+
+56
+00:06:47.051 --> 00:06:50.760
+Krish NAik: My Docker image is 5.5GB. Again, like…
+
+
+57
+00:06:50.871 --> 00:06:55.861
+Krish NAik: Even I have not checked the… after deployment, what is the docker size of it, let me check.
+
+
+58
+00:06:57.411 --> 00:06:59.011
+Krish NAik: run ECR.
+
+
+59
+00:07:12.261 --> 00:07:21.970
+Krish NAik: I think, no, during the auto-deployment also. And, like, I have changed another thing in the Docker file.
+
+
+60
+00:07:22.071 --> 00:07:40.881
+Krish NAik: Yesterday, if you remember, there was a touch command. Using the touch command, I was creating uv.log, and then I was updating. So this time, from gitignore, I have actually removed UV.log, and directly I've updated it in the report. Okay, that is the other change, because it is application-level change, just to maintain the packages.
+
+
+61
+00:07:41.571 --> 00:07:53.210
+Krish NAik: But, MSBC do have a check that, in your case, why 5.5 GB? Because, for 3 or 4 people yesterday, they mentioned about that. It can be OS level, some stuff.
+
+
+62
+00:07:53.521 --> 00:08:01.791
+Krish NAik: Amar is asking, after successful deployment yesterday… see, Amar, yesterday you did the deployment manual using commands.
+
+
+63
+00:08:01.961 --> 00:08:10.230
+Krish NAik: Today, I have added that CICD through GitHub Actions. That's the thing you have to test, because today, nothing more we are going to discuss.
+
+
+64
+00:08:10.611 --> 00:08:11.571
+Krish NAik: Okay.
+
+
+65
+00:08:12.481 --> 00:08:16.801
+Krish NAik: for everybody, I think today's session will be done by, I think, by 11.
+
+
+66
+00:08:17.111 --> 00:08:27.111
+Krish NAik: Quickly, if everybody is on the same track. So, please, first of all, create the GitHub secret, so we will automate that EST stuff that manually we have done.
+
+
+67
+00:08:27.641 --> 00:08:31.510
+Krish NAik: Yeah, so everybody. I think these are the list of secrets.
+
+
+68
+00:08:31.761 --> 00:08:36.540
+Krish NAik: If you want, like, just wait. Let me open mine.
+
+
+69
+00:08:36.851 --> 00:08:38.301
+Krish NAik: 15.
+
+
+70
+00:08:38.981 --> 00:08:40.361
+Krish NAik: I think Victor won't
+
+
+71
+00:09:20.701 --> 00:09:21.951
+Krish NAik: No details.
+
+
+72
+00:09:22.141 --> 00:09:35.990
+Krish NAik: So, as you can see, like, you can also do the verification from the terminal or from the UI. Just be sure 1, 2, 3, 4, 5, 6, 7, 8, total 8 environment variables are there, so please count it.
+
+
+73
+00:09:36.961 --> 00:09:38.271
+Krish NAik: From your side.
+
+
+74
+00:09:42.171 --> 00:09:45.480
+Krish NAik: Can you have a script instead of manually writing one by one?
+
+
+75
+00:09:46.491 --> 00:09:53.050
+Krish NAik: You can have a script, like, you can read your .env file, Amar, and from there, you can actually pick it up.
+
+
+76
+00:09:53.391 --> 00:09:54.670
+Krish NAik: That's possible.
+
+
+77
+00:09:54.811 --> 00:09:57.031
+Krish NAik: Just create that script if you feel.
+
+
+78
+00:10:00.531 --> 00:10:14.430
+Krish NAik: Before to set the secret, first we need to commit the code. No, no, no, no, no, nothing, no commit. Directly go to settings, from settings, like, go to actions, okay, so here, secret and variables action, directly copy-paste the stuff.
+
+
+79
+00:10:24.981 --> 00:10:28.510
+Krish NAik: Once, the first part is done, please do let me know.
+
+
+80
+00:10:34.171 --> 00:10:37.390
+Krish NAik: Does the secret gets lost after I save?
+
+
+81
+00:10:38.361 --> 00:10:43.251
+Krish NAik: Does the secret get lost after I say, like,
+
+
+82
+00:10:43.661 --> 00:10:51.431
+Krish NAik: Okay, yes, yes, like, generally, like, in GitHub, you cannot, like, actually see it.
+
+
+83
+00:10:51.691 --> 00:10:56.801
+Krish NAik: Okay, once you have done, you can only update that stuff, but you cannot delete.
+
+
+84
+00:11:00.471 --> 00:11:06.280
+Krish NAik: So it becomes actually harder to do the verification, so we always update, and update and update.
+
+
+85
+00:11:11.161 --> 00:11:21.911
+Krish NAik: Right now, you don't have to do any commit, Abhishek, okay? So, first, set up the secrets, then you can actually move ahead with the commit, but before committing, I have to tell exactly what are the things that you need to do.
+
+
+86
+00:11:22.761 --> 00:11:34.841
+Krish NAik: Because few things manual are there. Because, I have not done those two commands. If you remember yesterday, we have done that eB init and eB create, that, environment.
+
+
+87
+00:11:36.031 --> 00:11:42.321
+Krish NAik: Because if I try to automate stuff, every time the URL will change. So, manually, we will do that.
+
+
+88
+00:11:48.211 --> 00:12:02.140
+Krish NAik: Yes, like, security reasons, I'm guessing. No, like, simply, if you want, you can create a bash script, because you already have that ENV file. From that ENV file, you can actually do a check. It's easy only, creating the bash script and updating that.
+
+
+89
+00:12:02.301 --> 00:12:10.681
+Krish NAik: But, to update that, you need this GH package. If you have GH in your local machine, simply you can create a script and update those things.
+
+
+90
+00:12:12.341 --> 00:12:21.501
+Krish NAik: Satish is asking, we have to update secret in our GitHub, right? This is GitHub only, no, what I have opened. This is github.com, I think.
+
+
+91
+00:12:22.271 --> 00:12:27.890
+Krish NAik: So, I am hoping… Soham is asking, okay, that is installed in Project 2 already, yes.
+
+
+92
+00:12:42.931 --> 00:12:49.251
+Krish NAik: Alright, so everybody, once you guys have done… this is telling you, Paul, just to confirm, today's agent is only WPS right now.
+
+
+93
+00:12:49.671 --> 00:12:58.920
+Krish NAik: Yes, next week, new topic we'll be discussing, exactly correct. Since I missed the last class, just wanted to know what is the next topic. Next topic will be graph rack. Already, I have told the sequence of topics.
+
+
+94
+00:13:00.121 --> 00:13:04.240
+Krish NAik: Hmm… I think, yes, study also I discussed.
+
+
+95
+00:13:04.371 --> 00:13:16.070
+Krish NAik: But again, I'm just repeating for now, okay? For everybody, if you want to skip today's class, that's fine if you have missed it. So, see. Next week, we'll be working with,
+
+
+96
+00:13:17.041 --> 00:13:18.321
+Krish NAik: GraphRag.
+
+
+97
+00:13:18.601 --> 00:13:24.931
+Krish NAik: Okay? So… again, I'm just repeating the stuff. In the meantime, everybody please set your secrets.
+
+
+98
+00:13:25.291 --> 00:13:31.311
+Krish NAik: And don't start the deployment before deployment, two things that needs to be taken care of, that way.
+
+
+99
+00:13:31.721 --> 00:13:34.561
+Krish NAik: After graph rag, multimodal drag.
+
+
+100
+00:13:35.661 --> 00:13:47.841
+Krish NAik: Okay, so you can think about, between this, I can take a haystack session, okay, or, like, after multimodal track, because after multimodal track, you will be having the project 4, which will be, like, next month.
+
+
+101
+00:13:48.041 --> 00:13:55.560
+Krish NAik: the project core will be based completely on multimodal stuff. Okay, so MR I will try for now.
+
+
+102
+00:13:55.701 --> 00:13:57.920
+Krish NAik: Then, we will start with Langraph.
+
+
+103
+00:14:00.721 --> 00:14:20.550
+Krish NAik: Okay, so that will be our agent tick, part. So here, we'll be talking about a little bit about agentic RAG, the same things that we have done, self-rag and everything, which can be… we can do the implementation. So, pretty much simple examples that we'll be looking into, and then finally, I think Project 5. Project 5 will be in the month of April. Either you can take this one.
+
+
+104
+00:14:21.131 --> 00:14:27.430
+Krish NAik: Okay, so April 1st week and second week, that we'll be doing the discussion. So this is the high-level intuition that we have.
+
+
+105
+00:14:28.501 --> 00:14:34.270
+Krish NAik: Yes, I think by second week of April, 12th of April, that's the rough idea.
+
+
+106
+00:14:35.701 --> 00:14:45.091
+Krish NAik: Okay, after that, like, I won't be teaching anything, but we'll be having some certain discussions with respect to what are the new things and those stuff, but…
+
+
+107
+00:14:45.211 --> 00:14:49.641
+Krish NAik: Like, I think, by second week of April, I think it should be done.
+
+
+108
+00:14:50.571 --> 00:14:57.360
+Krish NAik: Alright, I've told you again, so just be sure you know that exactly what is going to happen in the next 1.5 months.
+
+
+109
+00:14:57.911 --> 00:14:58.801
+Krish NAik: Perfect.
+
+
+110
+00:15:02.481 --> 00:15:04.961
+Krish NAik: Hmm, alrighty, to now,
+
+
+111
+00:15:05.281 --> 00:15:20.920
+Krish NAik: Yes, by the end, it's not end, Shiba, I think, before that second week, how long we can access this course? See, don't think about accessing, just try to complete the course within 6 months. The things that I'm teaching, again, these things will be irrelevant, rightfully. A lot of things with respect to code updates.
+
+
+112
+00:15:21.041 --> 00:15:30.221
+Krish NAik: So if you purchase a course, try to complete it within 6 to 8 months. It's not about purchasing something just like in Udemy 399, and after that, nobody wears the video.
+
+
+113
+00:15:36.501 --> 00:15:41.421
+Krish NAik: Because I think having one year of access is more than enough for anybody.
+
+
+114
+00:15:43.301 --> 00:15:47.260
+Krish NAik: If somebody's really into learning, then for them.
+
+
+115
+00:15:48.241 --> 00:15:56.821
+Krish NAik: Alright, please let me know once you guys have done this part, then I'll be talking about the next step, which is the deploy.yml file.
+
+
+116
+00:15:58.131 --> 00:16:07.040
+Krish NAik: End date, I won't say, because, I can say the core completion date will be around
+
+
+117
+00:16:07.301 --> 00:16:10.441
+Krish NAik: What's today's date, just like it?
+
+
+118
+00:16:11.951 --> 00:16:16.780
+Krish NAik: I think it will be 12 that the calendar hosted.
+
+
+119
+00:16:18.341 --> 00:16:19.011
+Krish NAik: Hmm.
+
+
+120
+00:16:29.531 --> 00:16:33.421
+Krish NAik: Yes, it will be around, the second week only.
+
+
+121
+00:16:33.561 --> 00:16:36.210
+Krish NAik: rough sign. You can take it 12th.
+
+
+122
+00:16:36.371 --> 00:16:45.680
+Krish NAik: What values, we need to put in relancer backend? Alright, please do have a check, ESTSDeployment.md, there I have already uploaded.
+
+
+123
+00:16:48.421 --> 00:16:50.001
+Krish NAik: Please do have a check.
+
+
+124
+00:16:52.911 --> 00:16:54.041
+Krish NAik: Everybody.
+
+
+125
+00:16:57.201 --> 00:17:06.961
+Krish NAik: Use a script, create your own back scripts, guys. By this time in the course, don't ask for those things, I think you guys should be able to create your own scripts.
+
+
+126
+00:17:08.321 --> 00:17:10.870
+Krish NAik: I heard CAG use, CAG part.
+
+
+127
+00:17:11.031 --> 00:17:15.870
+Krish NAik: Page index is coming, but again, that's, not completely, like, open source.
+
+
+128
+00:17:16.181 --> 00:17:17.361
+Krish NAik: That's the thing.
+
+
+129
+00:17:18.921 --> 00:17:28.900
+Krish NAik: It's not famous, but a limited one. That's why, like, later on we can talk about those things in the month of… probably end of April or May.
+
+
+130
+00:17:29.181 --> 00:17:34.050
+Krish NAik: Because those things I'm not going to teach or any stuff. We will be doing the discussions.
+
+
+131
+00:17:38.401 --> 00:17:46.590
+Krish NAik: Okay, so once… please let me know, because I think the next thing that we need to discuss is the deploy.yml file. Just wait.
+
+
+132
+00:17:54.860 --> 00:17:59.680
+Krish NAik: In the deploy.yml file, see, these are a few of the settings that we do have.
+
+
+133
+00:17:59.920 --> 00:18:08.341
+Krish NAik: So, according to that, you just need two commands to execute in your current environment. It means that, first of all, that eB init
+
+
+134
+00:18:08.681 --> 00:18:18.131
+Krish NAik: Okay, so here you can see the ECR repo. If you have a different repo name, please use that particular name. Okay, because in my script, these things are hard-coded.
+
+
+135
+00:18:19.101 --> 00:18:35.510
+Krish NAik: Okay, then comes your app name and environment name. Okay, now, app name is basically that EB init that you do, and after that, when you do an EB create, that is the environment creation. So, two things are here. So, according to your settings, you have to pass these things.
+
+
+136
+00:18:37.391 --> 00:18:48.440
+Krish NAik: Okay, so now this is very, very important, so whenever… if you are doing so, let me just show you this part. So, please let me know that the secrets part is done, can I proceed ahead with the next step?
+
+
+137
+00:18:50.871 --> 00:18:57.270
+Krish NAik: Because you don't have to do anything, it's just you have to update this part. The rest, I think the deployment will do the trigger.
+
+
+138
+00:18:57.611 --> 00:19:02.471
+Krish NAik: Can you show the GitHub variables once more? Alright, GitHub variables…
+
+
+139
+00:19:02.701 --> 00:19:05.081
+Krish NAik: Once more you want to see.
+
+
+140
+00:19:08.411 --> 00:19:10.031
+Krish NAik: Settings…
+
+
+141
+00:19:13.091 --> 00:19:16.860
+Krish NAik: Nathan, I have added that, document also for deployment.
+
+
+142
+00:19:17.841 --> 00:19:19.181
+Krish NAik: Secrets.
+
+
+143
+00:19:19.401 --> 00:19:24.181
+Krish NAik: Totally 8 things are there. 1, 2, 3, 4, 5, 6, 7, 8.
+
+
+144
+00:19:24.341 --> 00:19:26.061
+Krish NAik: 8 things are there.
+
+
+145
+00:19:29.291 --> 00:19:31.060
+Krish NAik: Please take it, I think.
+
+
+146
+00:19:33.731 --> 00:19:40.211
+Krish NAik: Let me just wait, I think. I have added this… I've added, actually, the URL.
+
+
+147
+00:19:40.601 --> 00:19:41.871
+Krish NAik: Just indeed.
+
+
+148
+00:20:04.711 --> 00:20:11.701
+Krish NAik: Alright, I have added that in the markdown file also, if you want to do that verification, like, what are the secrets that needs to be passed.
+
+
+149
+00:20:12.271 --> 00:20:19.871
+Krish NAik: It showed at 5, but please let me know when the secrets are done. Most of you have done it. Now the next step is only two things.
+
+
+150
+00:20:20.461 --> 00:20:30.480
+Krish NAik: Okay, so if I show you, so here, I have added both the markdown files for your reference. One is that AWS deployment architecture, one is the AWS deployment.
+
+
+151
+00:20:31.191 --> 00:20:36.940
+Krish NAik: Okay, so now this is the actual CICD pipeline flow that you have.
+
+
+152
+00:20:37.101 --> 00:20:41.721
+Krish NAik: Okay, I'll be talking about the flow, but in the meantime, please complete the first part.
+
+
+153
+00:20:47.561 --> 00:20:49.561
+Krish NAik: Then I will start the discussion.
+
+
+154
+00:20:59.031 --> 00:21:04.880
+Krish NAik: Because before starting the discussion, the idea is to trigger the deployment at least once.
+
+
+155
+00:21:05.861 --> 00:21:08.101
+Krish NAik: Because the deployment will take time.
+
+
+156
+00:21:08.411 --> 00:21:13.511
+Krish NAik: If I show you how much time it took for me just wait.
+
+
+157
+00:21:13.721 --> 00:21:14.551
+Krish NAik: Chinese…
+
+
+158
+00:21:18.271 --> 00:21:20.441
+Krish NAik: 6 minutes, 51 seconds.
+
+
+159
+00:21:22.411 --> 00:21:30.571
+Krish NAik: Okay, so roughly around 6 minutes, 51 seconds was the time, so I think for you also, very similar time that we take.
+
+
+160
+00:21:30.611 --> 00:21:42.581
+Krish NAik: Alright, now, the first thing, can I proceed ahead with the deployment part? Please let me know, because I will do the architecture discussion, those documents. But first of all, let me trigger, because it will take some time.
+
+
+161
+00:21:43.671 --> 00:21:46.121
+Krish NAik: Please let me know with a yes in the chat quickly.
+
+
+162
+00:21:46.701 --> 00:21:47.841
+Krish NAik: Yes, I'm…
+
+
+163
+00:21:53.541 --> 00:21:58.220
+Krish NAik: Rajat is asking, where is this WAS key, AWS key?
+
+
+164
+00:21:58.721 --> 00:22:04.091
+Krish NAik: Where is this AWS key, Rajat? I could not get to your, question, like…
+
+
+165
+00:22:05.191 --> 00:22:16.711
+Krish NAik: VOAG API key not required. Right now, the Read Anchor backend is local, or invoice. If you change that Read Anchor backend to VOAG, then actually that VOAG API key is much more important.
+
+
+166
+00:22:17.901 --> 00:22:23.991
+Krish NAik: In secret, there is AWS key, you showed. Yes, there is AWS key.
+
+
+167
+00:22:24.331 --> 00:22:27.230
+Krish NAik: You don't know how to get to your AWS keys?
+
+
+168
+00:22:29.511 --> 00:22:35.480
+Krish NAik: That's two projects you have worked until now, if you ask this question, like, it becomes very confusing for me.
+
+
+169
+00:22:36.361 --> 00:22:38.560
+Krish NAik: From where you get your AWS keys.
+
+
+170
+00:22:38.971 --> 00:22:40.761
+Krish NAik: In the previous two projects.
+
+
+171
+00:22:41.831 --> 00:22:44.121
+Krish NAik: It means blindly what doing.
+
+
+172
+00:22:45.241 --> 00:22:46.191
+Krish NAik: Yes?
+
+
+173
+00:22:46.311 --> 00:22:49.700
+Krish NAik: From how… from where you got those keys, guys, please let me know in the chat.
+
+
+174
+00:22:50.921 --> 00:22:54.690
+Krish NAik: Well, I really, like… I was expecting more.
+
+
+175
+00:22:54.831 --> 00:22:55.811
+Krish NAik: But…
+
+
+176
+00:22:56.081 --> 00:23:01.411
+Krish NAik: when you see these keys, from where you get these two keys? Anybody, please let me know in the chat.
+
+
+177
+00:23:07.331 --> 00:23:12.890
+Krish NAik: That's as simple as that. It's simply, when you create your IAM user.
+
+
+178
+00:23:14.961 --> 00:23:17.610
+Krish NAik: I hope, Rajat, you remember that part.
+
+
+179
+00:23:18.931 --> 00:23:26.190
+Krish NAik: Please, guys, at least by this time in this course, don't ask such questions, from where I will get the AWS keys.
+
+
+180
+00:23:27.291 --> 00:23:35.000
+Krish NAik: Alright, so now I will trigger the deployment, okay? Before triggering, so let me just,
+
+
+181
+00:23:35.331 --> 00:23:38.550
+Krish NAik: delete everything, okay? So, let's…
+
+
+182
+00:23:39.401 --> 00:23:47.190
+Krish NAik: I will just do EB, if you remember, that termination that I have done, terminate, hyphen, hyphen.
+
+
+183
+00:23:47.411 --> 00:23:52.160
+Krish NAik: All and hyphen hyphen 4, those are the parameters that let me add it.
+
+
+184
+00:23:52.161 --> 00:24:07.811
+Krish NAik: Whatever the thing that I have currently in my deployment, I will delete everything. If we terminate all iPhone 4s, alright? Now, this will take some time. Okay, now this directory has not been set up. Just wait. I think my other directory that I have…
+
+
+185
+00:24:07.831 --> 00:24:14.381
+Krish NAik: Mmm… All right. Why? Can anybody tell me why I'm getting this error?
+
+
+186
+00:24:15.881 --> 00:24:16.981
+Krish NAik: Yes.
+
+
+187
+00:24:26.731 --> 00:24:29.990
+Krish NAik: Because I was not in my branch, that's all.
+
+
+188
+00:24:30.901 --> 00:24:34.730
+Krish NAik: Actually, it's work tree, but, similar to branch only, that's it.
+
+
+189
+00:24:35.471 --> 00:24:41.050
+Krish NAik: Just wait, once this entire deletion is done, I will delete my ECR everything, I will clean mine.
+
+
+190
+00:24:42.311 --> 00:24:43.740
+Krish NAik: This entire thing.
+
+
+191
+00:24:45.441 --> 00:24:54.121
+Krish NAik: Okay, anything you guys feel that I should delete more? Because the ECR is empty, I'm deleting my environments completely.
+
+
+192
+00:24:54.611 --> 00:25:00.320
+Krish NAik: Okay. These two are the main things, because everything is right now blank, and
+
+
+193
+00:25:00.531 --> 00:25:16.511
+Krish NAik: My expectation is that these things are pre-built, okay? That's why these things are hard-coded in your deploy.yml. When you look into your deploy, okay, these are hard-coded. So, just be sure, it's not like that during runtime, I'm creating the report.
+
+
+194
+00:25:16.751 --> 00:25:31.771
+Krish NAik: Because whenever the deployment will be done, I don't think every time it's a good practice to create your ECR report. Similarly, your app name and ENV name. Whenever you do the initialization, that URL will change. So, these things, we will keep it fixed for now.
+
+
+195
+00:25:34.071 --> 00:25:48.960
+Krish NAik: Rest, everything, it will be picked up. I'll be coming to this, you can see this is, that's GH, setup, so those things, updating with our Docker run file and other things, step-by-step, whichever we have done, so those things will come.
+
+
+196
+00:25:49.031 --> 00:25:54.340
+Krish NAik: So, just wait, once this entire termination is done, then I will start a fresh deployment.
+
+
+197
+00:25:56.111 --> 00:26:00.360
+Krish NAik: AB init file missing, there is no AB init file millionth.
+
+
+198
+00:26:02.831 --> 00:26:09.451
+Krish NAik: Okay. It's just, from which directly you are doing that part, that matters.
+
+
+199
+00:26:13.181 --> 00:26:20.571
+Krish NAik: In your case, I think you guys will be using that particular branch, so when I go into this folder, automatically, it acts like a branch.
+
+
+200
+00:26:22.081 --> 00:26:31.921
+Krish NAik: Can we set any app name? Yes, any app name that you can set. See, just wait, San. Like, I'll be… if you remember yesterday's two commands, one was EBINIT.
+
+
+201
+00:26:32.051 --> 00:26:39.621
+Krish NAik: Okay? So, and after that, we did EDCreate. So, whatever the name that you are passing, we have to maintain that in our deploy.v.
+
+
+202
+00:26:40.351 --> 00:26:54.191
+Krish NAik: That's the only requirement, which is bare minimum. Okay, so once this termination is done, I will show you from the UI that I don't have any existing environment, neither any application, then we will do a complete fresh.
+
+
+203
+00:27:03.611 --> 00:27:07.210
+Krish NAik: I think this is taking some time.
+
+
+204
+00:27:08.321 --> 00:27:09.061
+Krish NAik: Hmm.
+
+
+205
+00:27:17.711 --> 00:27:20.940
+Krish NAik: React? I don't think it's part of the syllabus, Mundo, sir.
+
+
+206
+00:27:25.611 --> 00:27:27.950
+Krish NAik: Because I will check that part.
+
+
+207
+00:27:33.821 --> 00:27:36.361
+Krish NAik: In booking environment.
+
+
+208
+00:28:04.391 --> 00:28:18.311
+Krish NAik: Okay, in the meantime, I think this will take… okay, so right now, everything is deleted. Okay, as I've deleted, so just for a verification, if I show you my, I think, elastic sock…
+
+
+209
+00:28:19.211 --> 00:28:20.750
+Krish NAik: Be hooked.
+
+
+210
+00:28:26.031 --> 00:28:34.370
+Krish NAik: Okay, now I can see this is terminated, so soon it will be removed also. Okay, so there are, nothing else with respect to the applications.
+
+
+211
+00:28:34.671 --> 00:28:40.611
+Krish NAik: Okay, now this is an old application that I was working with, but, nothing. So it's pretty much clean, I can say.
+
+
+212
+00:28:40.741 --> 00:28:44.540
+Krish NAik: Now, the first thing that I will do is the eB init.
+
+
+213
+00:28:44.551 --> 00:29:00.951
+Krish NAik: Okay? And now, according to the naming convention that I have used it here, it's very, very important. Please follow the naming convention. In my first case, if I do the init, first we create the application, then the environment, in two steps. So simply, like, eB init command, let me get my eB init.
+
+
+214
+00:29:00.951 --> 00:29:09.601
+Krish NAik: I think, yes. So, the first one… Let me pass it.
+
+
+215
+00:29:11.431 --> 00:29:15.831
+Krish NAik: Now, this is the same command, just like yesterday I have done.
+
+
+216
+00:29:16.141 --> 00:29:22.071
+Krish NAik: See, here I have added triple P, because in my script, there is triple P.
+
+
+217
+00:29:22.331 --> 00:29:28.181
+Krish NAik: Okay, now, you can give any name here. So, when you decide, this is the time to decide exactly what you want to do.
+
+
+218
+00:29:28.321 --> 00:29:42.491
+Krish NAik: Okay, whatever the application name that you will be passing. In the next step, again, the environment thing. So, right now, CRAG app A triple P. Okay, so the first step is the application, and I will just simply hit enter. It be in it.
+
+
+219
+00:29:47.911 --> 00:29:58.810
+Krish NAik: Alright, the application has been created. Now, in the next step, we need to work on the environment. In the environment, yesterday, I think we have worked with T3 large, let's go with T3 medium this time.
+
+
+220
+00:29:58.991 --> 00:30:16.601
+Krish NAik: Should you repeat it again? Yes, like, if you have deleted everything, because I have terminated everything, okay? So, only these two commands are required, and then we can actually, like, start our deployment phase. So, let me just add my next command, which is… and this time, I will be using a T3 medium.
+
+
+221
+00:30:17.431 --> 00:30:35.150
+Krish NAik: Okay, because I have done the testing, so I know. So, here you can see if we create yesterday test command, now CRAG app prod, okay? Now, can you see here? CRAG app prod, so just be sure, these things are matching. If these things doesn't match, you will get an error.
+
+
+222
+00:30:35.951 --> 00:30:48.790
+Krish NAik: Just be sure, only these things you need to take care of, and according to you, your AWS and EGen. So, please take care of these variables, don't set anything random. Then, if you try to trigger the deployment, it won't work.
+
+
+223
+00:30:49.031 --> 00:31:01.160
+Krish NAik: Okay, so I think, EV create, the same instance single I need, I don't need any type of load balancing. Instance type, okay, T3.medium. So, let me execute this one.
+
+
+224
+00:31:02.341 --> 00:31:09.360
+Krish NAik: Now, this will take some time, because, the launch of EC2 instance and other things which will happen.
+
+
+225
+00:31:14.421 --> 00:31:27.361
+Krish NAik: Should we repeat it again? If you are terminating everything, just like me, if you terminate all, then you can repeat these two steps. In your case, see, you have to understand, in your case, do you have already the environment?
+
+
+226
+00:31:27.601 --> 00:31:31.940
+Krish NAik: Or the application, if the names are there, you don't need to do anything.
+
+
+227
+00:31:31.971 --> 00:31:41.931
+Krish NAik: But, if you want to, like, create it from scratch, please terminate and then do it. Because I'm showing you, in my case, it was already deployed.
+
+
+228
+00:31:41.931 --> 00:32:01.781
+Krish NAik: So, I'm just deleting everything so that I can show you from scratch. In your case, it's not required. If you feel that you don't want to do it from scratch, skip it. Yesterday, whatever the variables that you have used, check from your history. Okay, you will be getting from history the command that you have executed, use those variables.
+
+
+229
+00:32:01.891 --> 00:32:04.360
+Krish NAik: That is also fine, I have no issues with that.
+
+
+230
+00:32:05.861 --> 00:32:12.251
+Krish NAik: Can you share the commands? It's yesterday's commands only. There is, but just wait, I will share the commands again in Notion then.
+
+
+231
+00:32:18.191 --> 00:32:23.981
+Krish NAik: Hmm… Just checking.
+
+
+232
+00:32:51.631 --> 00:33:00.151
+Krish NAik: Alright, so the first command that I did, EB, okay, and then terminate, I deleted every stuff, okay, terminate Nate, I'm writing everything.
+
+
+233
+00:33:00.581 --> 00:33:06.261
+Krish NAik: 4, hyphen hyphen all. This is an easy command to remember. Then in the next step,
+
+
+234
+00:33:06.751 --> 00:33:15.451
+Krish NAik: Once everything is terminated, the first thing that you'll be creating is the application for that eB init. Okay, so this is the eB init part.
+
+
+235
+00:33:16.121 --> 00:33:19.020
+Krish NAik: Now, once your EV init is done.
+
+
+236
+00:33:20.361 --> 00:33:23.541
+Krish NAik: Then, in the next step, you will be doing, EVCreate.
+
+
+237
+00:33:23.651 --> 00:33:25.250
+Krish NAik: Okay, and please…
+
+
+238
+00:33:25.411 --> 00:33:33.791
+Krish NAik: Be sure that these things you are actually passing correct, okay? That is the only requirement, guys. Other than that, I don't think anything is there.
+
+
+239
+00:33:34.361 --> 00:33:38.521
+Krish NAik: If these two things now, the next thing, I will trigger the deployment.
+
+
+240
+00:33:42.961 --> 00:33:45.620
+Krish NAik: I think you guys can see the commodities.
+
+
+241
+00:33:46.111 --> 00:33:49.071
+Krish NAik: If you want, I can paste it in the chat also.
+
+
+242
+00:33:49.821 --> 00:33:52.561
+Krish NAik: It's pretty much self-explanatory commands.
+
+
+243
+00:33:55.381 --> 00:34:10.151
+Krish NAik: Now, Balaji is telling I am attached policies, rule, okay, now that was yesterday's thing, Balaji, but yes, because the last one is the most important one. I think the last two, easy to container, registry, read-only.
+
+
+244
+00:34:10.271 --> 00:34:17.290
+Krish NAik: And, registry read only. Two same things are there, I can say. Policy R and policy name.
+
+
+245
+00:34:19.161 --> 00:34:25.801
+Krish NAik: Now, these things, yesterday I validated, but… EV creatures feeling.
+
+
+246
+00:34:27.011 --> 00:34:33.020
+Krish NAik: For how many of you EB Create is failing? Please let me know, like, what is the error with respect to EB Create.
+
+
+247
+00:34:35.041 --> 00:34:38.091
+Krish NAik: Because EB Create should work.
+
+
+248
+00:34:39.021 --> 00:34:43.171
+Krish NAik: Will these commands create app and image in ECR as well?
+
+
+249
+00:34:44.211 --> 00:34:47.120
+Krish NAik: In ECR, why it will be in ECR.
+
+
+250
+00:34:48.691 --> 00:34:51.140
+Krish NAik: Those commands are not in ECR, Abhishek.
+
+
+251
+00:34:52.361 --> 00:34:55.531
+Krish NAik: Instance failed, to download.
+
+
+252
+00:34:56.091 --> 00:35:11.120
+Krish NAik: then some policy issues are there, Balaj. I will look into that just a week. Because this is yesterday's, I think most of you have resolved that, but if you are getting that EB create and EB init issues, then yesterday's issues, majorly with respect to policies, that I can say.
+
+
+253
+00:35:11.531 --> 00:35:14.891
+Krish NAik: Even I'm not sure exactly, but need to debug that stuff.
+
+
+254
+00:35:15.661 --> 00:35:23.271
+Krish NAik: Just wait. So, in my case, some service error is coming, as I can see here.
+
+
+255
+00:35:25.391 --> 00:35:31.120
+Krish NAik: Alright, okay. Now, can anybody tell me why I'm getting this particular error?
+
+
+256
+00:35:35.431 --> 00:35:38.560
+Krish NAik: why I'm, getting this particular error.
+
+
+257
+00:35:41.371 --> 00:35:47.510
+Krish NAik: Quickly tell me. Because when you get the errors, you have to really understand, like, why we are getting there.
+
+
+258
+00:35:48.081 --> 00:36:03.350
+Krish NAik: Image issue? No, no, no, no, see, I deleted ECR image in front of you. How many of you remember that? In front of you, because there is no Docker only, then what it will pull. So, it's telling that the instant deployment failed. Alright, fine.
+
+
+259
+00:36:03.421 --> 00:36:15.031
+Krish NAik: But right now, the core environment is ready. I know this part, okay? So, create environment operation is complete, but with errors, alright, later on, we will update that.
+
+
+260
+00:36:15.111 --> 00:36:18.601
+Krish NAik: Okay, so let's try to trigger our deployment.
+
+
+261
+00:36:19.281 --> 00:36:25.690
+Krish NAik: For our deployment trigger, let me just, update any stuff from here.
+
+
+262
+00:36:28.141 --> 00:36:29.711
+Krish NAik: Right down the fountain.
+
+
+263
+00:36:58.621 --> 00:37:07.371
+Krish NAik: Okay, now why I've initiated the push? Because it will create the ECR image and those things. If I get any error, let's see what happens.
+
+
+264
+00:37:12.171 --> 00:37:15.071
+Krish NAik: What action…
+
+
+265
+00:37:15.841 --> 00:37:22.421
+Krish NAik: Okay, let's go to Actions here. Okay, so this is the doc updated one. I have initialized the…
+
+
+266
+00:37:22.791 --> 00:37:29.050
+Krish NAik: One, okay, so… the idea is, if you have the ECR image, it will work. Without the ECR image, how it will work?
+
+
+267
+00:37:43.961 --> 00:38:01.890
+Krish NAik: So, really, you have to understand always the errors, exactly what is coming. Now, once this is pushed, do you think that I will be getting the same error? Because, again, I can update it. Because, if you remember from our GitHub secrets, it will pick up the secrets, it will update the application, and then, again, like, eB deploy command is there.
+
+
+268
+00:38:01.891 --> 00:38:08.701
+Krish NAik: So, the entire thing will be updated. So, let's wait, and see that, how much time it takes. It takes more…
+
+
+269
+00:38:09.041 --> 00:38:11.260
+Krish NAik: Well, sometimes 5 to 6 minutes.
+
+
+270
+00:38:14.541 --> 00:38:20.430
+Krish NAik: Maybe repo issue? No, no, no, San, it's not repo issue, it's the Docker one we use.
+
+
+271
+00:38:20.661 --> 00:38:32.111
+Krish NAik: Because in front of you, I deleted the docker, and if you are doing the deployment, the first thing is it will try to push, because in your EBNIT, you told the container type, which is Docker.
+
+
+272
+00:38:45.971 --> 00:38:50.611
+Krish NAik: So here, I will be updating it once the image is available.
+
+
+273
+00:39:00.931 --> 00:39:05.351
+Krish NAik: Everybody, like, you guys can also start the push. There is no issue.
+
+
+274
+00:39:06.131 --> 00:39:21.540
+Krish NAik: In your case, if the ECR image is there, it's fine. If it is not there, then also. Just like me. In my case, do I got an error? Then also I started. Why? Because, yes, I cannot create that without the ECR. And the expectation is that you won't be having the ECR in first shot.
+
+
+275
+00:39:21.711 --> 00:39:24.321
+Krish NAik: Okay, so the application will be updated.
+
+
+276
+00:39:26.881 --> 00:39:34.211
+Krish NAik: Can you show, me what script's variable name for cannot be loaded, error is coming?
+
+
+277
+00:39:34.711 --> 00:39:40.581
+Krish NAik: Rashid is asking, can you show me a script's variable name?
+
+
+278
+00:39:40.741 --> 00:39:45.690
+Krish NAik: Scripts variable name. You can check the scripts variable name. I've already shared the document.
+
+
+279
+00:39:45.891 --> 00:39:47.291
+Krish NAik: Please check that.
+
+
+280
+00:39:47.601 --> 00:39:50.090
+Krish NAik: I think here, you will be having somewhat.
+
+
+281
+00:39:52.271 --> 00:39:54.521
+Krish NAik: some… this way.
+
+
+282
+00:39:57.481 --> 00:39:59.861
+Krish NAik: These are the major ones.
+
+
+283
+00:40:00.781 --> 00:40:10.050
+Krish NAik: Okay, so please do check from AWS underscore deployment dot MD5. You have all the secrets now, you can directly copy-paste those things.
+
+
+284
+00:40:11.611 --> 00:40:14.691
+Krish NAik: And please don't use double quotes, not required.
+
+
+285
+00:40:17.411 --> 00:40:23.451
+Krish NAik: Alright, so you can see here, image is getting pushed to 1.5 GB.
+
+
+286
+00:40:23.641 --> 00:40:34.700
+Krish NAik: layer exists. So, I think that, okay, the push is done. Now, this point, if I get an error, really, like, I need to resolve that. So, if I try to reload…
+
+
+287
+00:40:34.811 --> 00:40:36.760
+Krish NAik: This is the ECR part.
+
+
+288
+00:40:36.931 --> 00:40:41.170
+Krish NAik: Refresh… Okay, so I have the image with me.
+
+
+289
+00:40:41.331 --> 00:40:46.580
+Krish NAik: This is the first step. Once the image is available, let's see whether the deployment works or not.
+
+
+290
+00:40:49.791 --> 00:40:53.190
+Krish NAik: Where is the step plugin?
+
+
+291
+00:41:03.661 --> 00:41:07.761
+Krish NAik: Windows image is more than, 4GB.
+
+
+292
+00:41:08.701 --> 00:41:16.940
+Krish NAik: Because, see, local and after the push, in my local also, it will be high, but after the push, it gets compressed in AWS.
+
+
+293
+00:41:21.751 --> 00:41:26.151
+Krish NAik: Yes, that is in through command line, like GH secret set, correct.
+
+
+294
+00:41:26.431 --> 00:41:42.321
+Krish NAik: And you can actually create a bash script, use a for loop, to read, like, first of all, if you have… if you are picking it from .env, unam, that is the idea, like, you can read the file one by one, and through a for loop, you can apply that set, set, set.
+
+
+295
+00:41:42.451 --> 00:41:43.580
+Krish NAik: To get food.
+
+
+296
+00:41:43.771 --> 00:41:46.591
+Krish NAik: That and the bask script, generally, that we do it.
+
+
+297
+00:41:47.651 --> 00:41:52.560
+Krish NAik: Okay, and this application takes time, so easily, let's wait for 4 to 5 minutes.
+
+
+298
+00:41:54.851 --> 00:42:02.050
+Krish NAik: I'm not able to find the deploy.yml file. Vishik is telling I'm not able to find the deploy.yml file.
+
+
+299
+00:42:02.671 --> 00:42:07.631
+Krish NAik: I think I have pushed the file, otherwise I cannot start my deployment.
+
+
+300
+00:42:07.831 --> 00:42:16.500
+Krish NAik: See, Abhishek. Okay, so here, you have the .github slash workflows. Inside that, you have the deploy.vy environment.
+
+
+301
+00:42:17.441 --> 00:42:18.631
+Krish NAik: Please check.
+
+
+302
+00:42:23.191 --> 00:42:28.130
+Krish NAik: Satish, for that, you need to do the install of that, GH.
+
+
+303
+00:42:28.271 --> 00:42:36.090
+Krish NAik: Generally, like, in Mac, we do preview install, GitHub, okay, so that is a package. Similarly for Windows, you need to find
+
+
+304
+00:42:37.041 --> 00:42:38.910
+Krish NAik: What is the package?
+
+
+305
+00:42:39.021 --> 00:42:51.440
+Krish NAik: Because I've done it only in Windows also, I've not done it, but others can let me know, like, what is the package? In Chocolaty Package Manager, like, Chocolaty Install GitHub, something like that is there.
+
+
+306
+00:42:51.751 --> 00:42:53.561
+Krish NAik: Chocolate install GitHub.
+
+
+307
+00:42:55.901 --> 00:42:58.191
+Krish NAik: Okay, so something like this.
+
+
+308
+00:42:59.161 --> 00:43:03.050
+Krish NAik: Good to… Not get a bash.
+
+
+309
+00:43:04.681 --> 00:43:08.310
+Krish NAik: Was the Breuven Scholar, GH is there, I know.
+
+
+310
+00:43:08.571 --> 00:43:11.931
+Krish NAik: This is the command if you have GitHub CLI.
+
+
+311
+00:43:14.421 --> 00:43:15.801
+Krish NAik: Hmm, yes.
+
+
+312
+00:43:17.371 --> 00:43:22.670
+Krish NAik: breve installed GH, this is the command for Mac. I think, other,
+
+
+313
+00:43:22.931 --> 00:43:31.940
+Krish NAik: View installation instructions. I think my system, it detected Mac. For your system, please do check out this website, CLI.
+
+
+314
+00:43:32.761 --> 00:43:36.101
+Krish NAik: Whoever wants to do the installation from your…
+
+
+315
+00:43:39.061 --> 00:43:48.300
+Krish NAik: Okay, it's actually redirected. So, Mac OS, Windows, you can see WinGate. It has the WinGate one, and even there is the release page for Windows.
+
+
+316
+00:43:48.531 --> 00:43:58.630
+Krish NAik: So, yes, then cool, everything is there. Yeah, I think Windows AMD64 installer is there, so you can do double-click, double-click stuff.
+
+
+317
+00:43:59.991 --> 00:44:04.240
+Krish NAik: Okay, so please do have a check, because from here you can actually get everything.
+
+
+318
+00:44:13.801 --> 00:44:17.381
+Krish NAik: Okay, so here I can see the deployment is done.
+
+
+319
+00:44:17.601 --> 00:44:23.901
+Krish NAik: Okay, if the deployment is done, I need the URL. The URL will be this one.
+
+
+320
+00:44:24.211 --> 00:44:26.501
+Krish NAik: Okay, so here, CNAME.
+
+
+321
+00:44:27.871 --> 00:44:29.601
+Krish NAik: The name…
+
+
+322
+00:44:30.421 --> 00:44:36.051
+Krish NAik: Okay, it will take some time because this is the first hit, okay? And right here I can see.
+
+
+323
+00:44:36.891 --> 00:44:41.830
+Krish NAik: Okay, so please do have a check from your side also whether the deployment is working or not.
+
+
+324
+00:44:42.751 --> 00:44:47.961
+Krish NAik: Okay, I will wait a few minutes, 4 to 5 minutes, and then I will start the discussion.
+
+
+325
+00:44:49.411 --> 00:44:52.970
+Krish NAik: for our main, CICD, exactly what I have done.
+
+
+326
+00:44:55.121 --> 00:45:06.051
+Krish NAik: Because ECR part, everybody is familiar, only a few things that I have changed. It is with respect to that NGINX configuration.
+
+
+327
+00:45:09.411 --> 00:45:13.161
+Krish NAik: How many of you know about NGINX, and actually used in production?
+
+
+328
+00:45:13.751 --> 00:45:14.641
+Krish NAik: Yes?
+
+
+329
+00:45:15.821 --> 00:45:18.181
+Krish NAik: Yes, how many of you know about NGINX?
+
+
+330
+00:45:20.251 --> 00:45:25.770
+Krish NAik: like, there are much… anybody has used NGINX as a reverse proxy
+
+
+331
+00:45:29.681 --> 00:45:32.721
+Krish NAik: Okay, you people, I have heard, but not user, right?
+
+
+332
+00:45:33.331 --> 00:45:34.011
+Krish NAik: Okay.
+
+
+333
+00:45:34.681 --> 00:45:39.230
+Krish NAik: Actually, like, through NGINX, easily, like, your application can handle, I can say.
+
+
+334
+00:45:39.421 --> 00:45:50.581
+Krish NAik: I've tested maximum with 90,000 requests per second. Like, Nginx is a very good one, like, production gets. But if you have something much more, then only I prefer working with Kubernetes, EK.
+
+
+335
+00:45:50.891 --> 00:45:53.261
+Krish NAik: Otherwise, NGINX can easily handle that.
+
+
+336
+00:45:56.381 --> 00:45:59.410
+Krish NAik: Don't do much, but you'll do fine. Because,
+
+
+337
+00:46:00.091 --> 00:46:15.231
+Krish NAik: Those are basics, actually. For example, if I want to deploy a FastAPI application, so directly nobody exposes a FastAPI server. Okay, so first, all the requests will come to NGINX, then NGINX will do the routing to FastAPI. In that way, it happens in production.
+
+
+338
+00:46:16.741 --> 00:46:17.621
+Krish NAik: Hmm.
+
+
+339
+00:46:17.991 --> 00:46:27.560
+Krish NAik: Yes, for authentication in local, we have this as a reverse proxy, yes, that's the idea. Fine, later on, I think, next part, I'll be taking these type of stuff a little bit.
+
+
+340
+00:46:28.191 --> 00:46:30.680
+Krish NAik: Little bit DevOps things are there.
+
+
+341
+00:46:31.181 --> 00:46:36.671
+Krish NAik: Alright, so please let me know how many of you have Triggered your deployment.
+
+
+342
+00:46:37.061 --> 00:46:39.351
+Krish NAik: How many of you have done that triggering?
+
+
+343
+00:46:40.311 --> 00:47:00.061
+Krish NAik: How you resolve the previous error that you get in CLI during the invitation? I didn't resolve it, Sam. See, I know this error came. Why? Because there is no Docker image, so I triggered the deployment. I know once I trigger the deployment, the Docker image will be built, and it will be pushed to ECR. If the image is available, then automatically everything will work.
+
+
+344
+00:47:01.111 --> 00:47:05.241
+Krish NAik: Okay, I didn't solve anything. Till now, you can see… you can see the error in my terminal.
+
+
+345
+00:47:05.991 --> 00:47:11.610
+Krish NAik: I hope you get… Because if the image is not there, how?
+
+
+346
+00:47:13.471 --> 00:47:15.171
+Krish NAik: Okay, so…
+
+
+347
+00:47:15.581 --> 00:47:28.970
+Krish NAik: You can also try that, but here's status class, if you have done it, it should work. If you have the ECR, then the creation of the environment should be successful. But if you have some problems with respect to
+
+
+348
+00:47:29.061 --> 00:47:38.060
+Krish NAik: your policies, where it cannot access the ECR, and because of that, if it could not download the image.
+
+
+349
+00:47:38.561 --> 00:47:40.281
+Krish NAik: Then it becomes a problem.
+
+
+350
+00:47:44.421 --> 00:47:49.060
+Krish NAik: Abhishek, not ideally, not, what you said, not,
+
+
+351
+00:47:50.371 --> 00:47:58.950
+Krish NAik: And… okay, but ideally, image should also be created with deployment steps. Yes, image, I am creating the image also, no, Abhishek? In the deployment.
+
+
+352
+00:47:59.231 --> 00:48:03.621
+Krish NAik: If you look into the phases of the deployment, so here, build and push the Docker image.
+
+
+353
+00:48:06.791 --> 00:48:15.510
+Krish NAik: I'm doing it, I am just creating two things. One is the TB init, and because your URL will be changing, that's why.
+
+
+354
+00:48:15.721 --> 00:48:28.051
+Krish NAik: Whenever you are doing the deployment, your URL should be fixed. It's like, if I create a new Lambda function in Project 2 also, every time if you create a new Lambda function, the function URL will be different.
+
+
+355
+00:48:28.361 --> 00:48:35.971
+Krish NAik: So it's a one-time thing that we did manually. And after that, I have not added in deploy.ymel the same thing here.
+
+
+356
+00:48:36.901 --> 00:48:45.630
+Krish NAik: I hope everybody gets the reason why I've executed those two commands from local, and then initial… initialized the,
+
+
+357
+00:48:46.231 --> 00:48:55.261
+Krish NAik: Docker bid in your main CICD, because your URL will be getting changed, the URL that you get here, this one, CNAME.
+
+
+358
+00:48:57.651 --> 00:49:04.191
+Krish NAik: Okay, because… do you think that it's a good practice to change the URL linear every deployment?
+
+
+359
+00:49:06.751 --> 00:49:19.390
+Krish NAik: Yes, how many of you think that in every deployment, your URL will change? That's a worst practice in the market. Okay. Nobody does it also, that is not even a practice, it's just… learners might do it.
+
+
+360
+00:49:21.271 --> 00:49:29.391
+Krish NAik: So that's why I have done those two things. At least I know that will be fixed, and later on, again, if I update anything, automatically the deployment will be triggered.
+
+
+361
+00:49:30.501 --> 00:49:37.921
+Krish NAik: Okay, so please, have a check how many have initialized, and at least you can see the first step of building and pushing the Docker image.
+
+
+362
+00:49:38.101 --> 00:49:39.570
+Krish NAik: Just let me know that.
+
+
+363
+00:49:42.061 --> 00:49:46.801
+Krish NAik: Because these things, it will be very, very fast. After that, the next step.
+
+
+364
+00:49:49.311 --> 00:50:03.570
+Krish NAik: I am confused, Milint, alright? Nobody has done the trigger till now. Why? It's taking so much time for you guys to take the trigger. Anyone can let me know, like, what is the issue that you are facing? I can ask anybody to unmute.
+
+
+365
+00:50:03.961 --> 00:50:07.800
+Krish NAik: Should I run eb create ESC? Those two commands, what I have done.
+
+
+366
+00:50:08.201 --> 00:50:18.650
+Krish NAik: I showed you right now in Notion. First of all, I deleted everything. I… like, I don't have any other services, so that's why. Like, first of all, I deleted everything.
+
+
+367
+00:50:18.791 --> 00:50:22.931
+Krish NAik: Then, in the next step, I created the application, and then finally the environment.
+
+
+368
+00:50:23.931 --> 00:50:30.291
+Krish NAik: If you already have this particular information, you don't need to delete directly, you can do the update also. That is also fine.
+
+
+369
+00:50:32.511 --> 00:50:47.701
+Krish NAik: If you have an existing staff, use it. Otherwise, I will just take, one participant simply, like anybody in Mac, just simply. Murta, mine is in progress, alright, fine, Abhishek, it is at the build and push docker image step, alright, Abhishek. Action not triggered.
+
+
+370
+00:50:47.871 --> 00:51:02.611
+Krish NAik: The trigger will be automatic, I've not added a manual dispatch operation, so whenever you push the code VIPIN, it should be automatically triggered. You can, Ray, I can take one guy, okay, Rajat. Alright, Rajat, you let me know, like, where you were stuck.
+
+
+371
+00:51:06.221 --> 00:51:10.771
+Rajat Khanna: Hypo, Screen share is not there, I'm only into…
+
+
+372
+00:51:10.771 --> 00:51:14.671
+Krish NAik: I have not added you in panelists. Tell me, like, first of all, the issue part.
+
+
+373
+00:51:14.741 --> 00:51:26.221
+Rajat Khanna: No, so I have done, the deployment again in the Git repo, because previously that app name was not there, because local init I have not done.
+
+
+374
+00:51:26.221 --> 00:51:35.551
+Rajat Khanna: So, now the deployment is getting ready. So, my question is, once the deployment is done, then only I need to, run the command EV createCRAG program.
+
+
+375
+00:51:35.551 --> 00:51:41.220
+Krish NAik: No, no, no, no. First, execute the two commands, init and create, then trigger the deployment.
+
+
+376
+00:51:42.081 --> 00:51:43.781
+Rajat Khanna: Oh, okay, okay.
+
+
+377
+00:51:43.931 --> 00:51:53.811
+Rajat Khanna: Okay, so I… means I have, done the init, then I push, into, Git repo deployment, and then I thought, the EB created.
+
+
+378
+00:51:53.811 --> 00:52:02.450
+Krish NAik: First, just execute these two commands. If you don't have init and create once you have done, then simply start your push.
+
+
+379
+00:52:02.681 --> 00:52:04.730
+Krish NAik: Automatically, it will be triggered.
+
+
+380
+00:52:04.991 --> 00:52:06.261
+Rajat Khanna: Okay, okay, okay.
+
+
+381
+00:52:06.491 --> 00:52:07.110
+Rajat Khanna: Okay, there…
+
+
+382
+00:52:07.120 --> 00:52:10.580
+Krish NAik: Okay, Amar and I think Balaji, whoever was getting that error.
+
+
+383
+00:52:11.200 --> 00:52:13.360
+Krish NAik: Please do Bala GS.
+
+
+384
+00:52:15.350 --> 00:52:19.950
+Krish NAik: Because if I start looking into errors, really, like, debugging and other stuff will take a lot of time.
+
+
+385
+00:52:20.500 --> 00:52:21.880
+Krish NAik: Yes, Bala, so, tell me.
+
+
+386
+00:52:21.881 --> 00:52:24.631
+Balaji Rengan: You create is failing for me, so can you share this bill?
+
+
+387
+00:52:24.861 --> 00:52:26.040
+Krish NAik: Just wait.
+
+
+388
+00:52:26.931 --> 00:52:30.291
+Krish NAik: We create yesterday, it was working. Today, failing.
+
+
+389
+00:52:33.131 --> 00:52:39.321
+Balaji Rengan: Yesterday, I had the issue of that, size is too much, right? It was, like, 4.1 GB. Now I've reduced it.
+
+
+390
+00:52:39.441 --> 00:52:42.410
+Balaji Rengan: But right now, EVCreate is failing for me.
+
+
+391
+00:52:43.981 --> 00:52:46.701
+Krish NAik: Now, Melinda is asking, should I wait till ins…
+
+
+392
+00:52:47.061 --> 00:53:04.590
+Krish NAik: state created before trigger deployment. Yes, you have to do those two commands. Otherwise, in your deployment, how it will understand. Because in your deploy.yml, you have hard-coded the application name and the environment name. If you don't have those things, only how it will do the deployment. I hope.
+
+
+393
+00:53:05.160 --> 00:53:08.771
+Krish NAik: I make sense when I say that it's hard-coded.
+
+
+394
+00:53:11.561 --> 00:53:25.201
+Krish NAik: Instance, alright. Now, Melinda, should I wait till instance, created before? No, no, no, no, instance creation, like, see, instance will be created when Melinda, when you execute that create command, E be created.
+
+
+395
+00:53:25.921 --> 00:53:31.131
+Krish NAik: Okay, so just, if there are errors, it's fine. Probably you might not have the ECR image because of that.
+
+
+396
+00:53:31.370 --> 00:53:34.471
+Krish NAik: But later on, once you trigger the deployment, it will be picked up.
+
+
+397
+00:53:34.741 --> 00:53:38.901
+Krish NAik: Alright, it's simply telling that, okay, instance deployment field.
+
+
+398
+00:53:39.051 --> 00:53:42.780
+Balaji Rengan: Alright, instance deployment will now show me your ECR month.
+
+
+399
+00:53:47.901 --> 00:53:49.551
+Krish NAik: There is no image on…
+
+
+400
+00:53:49.551 --> 00:53:51.891
+Balaji Rengan: No, I right now deleted it, so let me…
+
+
+401
+00:53:51.891 --> 00:53:54.751
+Krish NAik: Okay, okay, just wait then, let's wait for the deployment then.
+
+
+402
+00:53:55.131 --> 00:54:07.050
+Krish NAik: In the deployment phase, that will only happen. First, like, it will build the image, and it will push to your ECR, so just wait. Let's see what happens. So, right now, this is happening. Just wait.
+
+
+403
+00:54:07.981 --> 00:54:09.770
+Balaji Rengan: It says push, right, but .
+
+
+404
+00:54:09.921 --> 00:54:14.001
+Krish NAik: No, no, no, wait, wait, till now, not completed. It's in layers. Docker works in layers.
+
+
+405
+00:54:14.251 --> 00:54:14.811
+Balaji Rengan: Okay.
+
+
+406
+00:54:22.121 --> 00:54:25.710
+Krish NAik: Now done. When you see the last statement, let us digest.
+
+
+407
+00:54:25.841 --> 00:54:28.071
+Krish NAik: It means that. Okay, now go back.
+
+
+408
+00:54:28.311 --> 00:54:32.800
+Krish NAik: to your ECR, try to reload that page, and let's see, like, if you're getting any errors or not.
+
+
+409
+00:54:33.351 --> 00:54:37.291
+Krish NAik: Alright, image I can see. Your image size is 744, alright?
+
+
+410
+00:54:37.881 --> 00:54:43.130
+Krish NAik: Now, let's, go back to your trigger deployment. What field? Let's see.
+
+
+411
+00:54:45.181 --> 00:54:53.701
+Krish NAik: Okay, so yes, go back, see how I can see my number there, 680. Go above. Go above.
+
+
+412
+00:54:54.441 --> 00:55:04.191
+Krish NAik: Okay, now, this is not my number, your number really, it looks like. Invalid parameter, new application named CRAG app A triple P.
+
+
+413
+00:55:04.421 --> 00:55:07.050
+Krish NAik: Now, have you initiated those two commands?
+
+
+414
+00:55:07.901 --> 00:55:13.341
+Balaji Rengan: Yeah, eBinit I have done, and also EVCreate, so that's why it failed, actually.
+
+
+415
+00:55:13.781 --> 00:55:15.910
+Krish NAik: Okay, just open that, tab.
+
+
+416
+00:55:16.591 --> 00:55:24.311
+Krish NAik: Because you have to, you can do the verification from the UI, or you can use that command, like, EB,
+
+
+417
+00:55:24.671 --> 00:55:27.770
+Krish NAik: describe that one, I forgot that command.
+
+
+418
+00:55:28.041 --> 00:55:32.040
+Krish NAik: Christine, like… You know, it was a beanstalk describing.
+
+
+419
+00:55:34.601 --> 00:55:35.650
+Balaji Rengan: Not for the April.
+
+
+420
+00:55:36.031 --> 00:55:39.520
+Krish NAik: Mmm, just wait. I'm actually checking one command.
+
+
+421
+00:55:45.541 --> 00:55:56.920
+Krish NAik: Alright, can you use one command? If you have AWS CLI installed, you have to just… I'm pasting that command for verification that whether that application is there or not. See, I pasted in the chat?
+
+
+422
+00:55:59.171 --> 00:56:02.900
+Krish NAik: I will paste it in Notion also, others also, like, if you want.
+
+
+423
+00:56:03.101 --> 00:56:04.931
+Krish NAik: Please do our verification.
+
+
+424
+00:56:05.151 --> 00:56:05.861
+Balaji Rengan: this.
+
+
+425
+00:56:06.331 --> 00:56:08.110
+Balaji Rengan: That's what we install.
+
+
+426
+00:56:09.931 --> 00:56:11.751
+Krish NAik: Describe hyphen environments.
+
+
+427
+00:56:12.341 --> 00:56:12.971
+Balaji Rengan: Expectedly.
+
+
+428
+00:56:12.971 --> 00:56:17.051
+Krish NAik: This actually gives you that benefit of… to check whether it's a win bill or not.
+
+
+429
+00:56:17.161 --> 00:56:19.640
+Balaji Rengan: It's only AWS, no AV is there.
+
+
+430
+00:56:19.641 --> 00:56:21.811
+Krish NAik: Okay. You see W-S-C-L-I command.
+
+
+431
+00:56:27.531 --> 00:56:28.191
+Balaji Rengan: Absolutely.
+
+
+432
+00:56:29.451 --> 00:56:30.531
+Krish NAik: Remove me.
+
+
+433
+00:56:31.901 --> 00:56:33.540
+Krish NAik: Million dollar entities.
+
+
+434
+00:56:35.041 --> 00:56:38.360
+Krish NAik: Although, for anybody at work, please let me know in the chat.
+
+
+435
+00:56:39.631 --> 00:56:43.841
+Krish NAik: Alright, so here, see, you have your application MS, CRAG app.
+
+
+436
+00:56:45.001 --> 00:56:45.541
+Balaji Rengan: Right.
+
+
+437
+00:56:47.201 --> 00:56:51.120
+Krish NAik: Okay, so if you have your application name now, show me your deploy.yml.
+
+
+438
+00:56:52.821 --> 00:56:55.220
+Krish NAik: I told you, please maintain that.
+
+
+439
+00:56:55.371 --> 00:56:57.771
+Krish NAik: So, what is your EV name app here?
+
+
+440
+00:56:59.871 --> 00:57:02.700
+Balaji Rengan: See that, Greg app? It's my… okay, app name.
+
+
+441
+00:57:03.381 --> 00:57:04.021
+Krish NAik: Mmm.
+
+
+442
+00:57:04.021 --> 00:57:06.231
+Balaji Rengan: That's funny mistake here. Okay, got it.
+
+
+443
+00:57:06.791 --> 00:57:12.000
+Krish NAik: Got it? So, always see, that's why check these variables, because these are hard-coded stuff.
+
+
+444
+00:57:12.261 --> 00:57:14.091
+Balaji Rengan: Right, right, okay, okay, pal, thank you.
+
+
+445
+00:57:14.401 --> 00:57:19.530
+Krish NAik: Alright. Musant, for me, yesterday, it's giving me 500 when hitting the URL.
+
+
+446
+00:57:19.741 --> 00:57:26.571
+Krish NAik: Deployment is successful, but it's giving 500 when hitting the URL. Which URL? Santosh, please let me know exactly.
+
+
+447
+00:57:29.951 --> 00:57:44.920
+Krish NAik: which URL is important. Melind, I think I have asked you, like, anybody. For most of you, it should work, just be sure that you are using the correct environment variables. Like, if you don't use in mydeploy.yml, there is something hard-coded.
+
+
+448
+00:57:45.721 --> 00:57:46.711
+Krish NAik: Milind?
+
+
+449
+00:57:48.611 --> 00:57:51.320
+Krish NAik: I think there is no audio from your side, Malik.
+
+
+450
+00:57:53.021 --> 00:57:59.300
+Krish NAik: How do I… we have to add secrets. Yes, we have to add secrets, correct?
+
+
+451
+00:57:59.921 --> 00:58:02.750
+Krish NAik: In GitHub Secrets, I have added, no, that part.
+
+
+452
+00:58:03.711 --> 00:58:04.740
+milind kulkarni: Can you hear me in the front now?
+
+
+453
+00:58:04.741 --> 00:58:06.310
+Krish NAik: Yes, yes, now I can hear it.
+
+
+454
+00:58:09.801 --> 00:58:15.460
+milind kulkarni: Can I share my screen? I'm getting error, it says Docker image not found.
+
+
+455
+00:58:16.331 --> 00:58:22.890
+Krish NAik: That is fine, no. If the Docker image is not there when you start the push, automatically it will take care of that, no?
+
+
+456
+00:58:23.121 --> 00:58:27.811
+Krish NAik: You can't share your screen, the same thing, like… Great, Michelle.
+
+
+457
+00:58:27.811 --> 00:58:28.621
+milind kulkarni: Very nice.
+
+
+458
+00:58:28.621 --> 00:58:40.180
+Krish NAik: You have to add secrets, Anthos. Already I showed that part. Like, you can check, AWS underscore deployment.md file is there. There is a section of GitHub Secrets, and you have all the secrets.
+
+
+459
+00:58:41.361 --> 00:58:42.850
+Krish NAik: If you're… I think you…
+
+
+460
+00:58:43.421 --> 00:58:50.200
+Krish NAik: We were from the starting of the session, Olene, in I have added a locate. If you have added, then the application should be up and working.
+
+
+461
+00:58:51.251 --> 00:59:00.661
+Krish NAik: Just wait, I will come to you. Otherwise, raise hand, Santosh, after this, I will take it. For everybody, please do the trigger. I think from 10.30, then we can do the discussion. 2 or 3
+
+
+462
+00:59:01.151 --> 00:59:01.891
+Krish NAik: we take.
+
+
+463
+00:59:02.251 --> 00:59:08.920
+milind kulkarni: Yeah, so I'm… I'm trying to create the first EB Create only. In EB Create, I get this error.
+
+
+464
+00:59:10.501 --> 00:59:27.321
+Krish NAik: Okay, this is fine, okay, but you already have the image, so… I already have the image there. Command field, aggregation engine has encountered, okay, alright. With respect to the permissions, yesterday is, like, whatever the permission that I told everything.
+
+
+465
+00:59:27.321 --> 00:59:33.681
+milind kulkarni: Yeah, it was… everything was good. I didn't… I only deleted only EB2 inst… EB instructions.
+
+
+466
+00:59:33.681 --> 00:59:43.310
+Krish NAik: Alright, fine. The command that I have added, please check your, those, two things. First of all, init, you have done it, please.
+
+
+467
+00:59:43.311 --> 00:59:44.241
+milind kulkarni: Yes, I did not.
+
+
+468
+00:59:44.241 --> 00:59:51.190
+Krish NAik: are okay and tell me. It is, eB init CRAG app, okay? Go back to your…
+
+
+469
+00:59:51.531 --> 00:59:57.171
+Krish NAik: codebase. Open that deploy.yml and update the variable there.
+
+
+470
+00:59:58.551 --> 01:00:02.340
+Krish NAik: Here, yes, app name, there is triple P, remove 1P.
+
+
+471
+01:00:03.191 --> 01:00:04.091
+Krish NAik: Yes.
+
+
+472
+01:00:04.221 --> 01:00:11.521
+Krish NAik: Okay, and then, what is the environment name in your case that you have passed when you use the command that eb create?
+
+
+473
+01:00:15.331 --> 01:00:17.971
+Krish NAik: 502, just wait.
+
+
+474
+01:00:18.181 --> 01:00:20.900
+Krish NAik: Even I've not checked,
+
+
+475
+01:00:21.601 --> 01:00:24.571
+Krish NAik: Was 502 yesterday, Peter was not coming? Okay, you have.
+
+
+476
+01:00:24.571 --> 01:00:25.631
+milind kulkarni: I use the.
+
+
+477
+01:00:25.631 --> 01:00:31.511
+Krish NAik: Same one, no? Alright. Do a Ctrl-S, initiate the, deployment, let's see.
+
+
+478
+01:00:32.551 --> 01:00:34.471
+milind kulkarni: So, skip, same thing, right?
+
+
+479
+01:00:34.621 --> 01:00:36.351
+Krish NAik: Yes, yes, yes, yes, for now.
+
+
+480
+01:00:37.221 --> 01:00:39.431
+milind kulkarni: Okay, should I terminate the instance again?
+
+
+481
+01:00:39.991 --> 01:00:44.501
+Krish NAik: No, no, no, nothing. That's why I told you not to set the variables.
+
+
+482
+01:00:45.201 --> 01:00:49.690
+Krish NAik: Just initiate the trigger, automatically the deployment will start, let's see what happens.
+
+
+483
+01:00:50.051 --> 01:00:53.381
+milind kulkarni: Okay, no, I didn't commit the… I didn't commit the repo yet.
+
+
+484
+01:00:55.941 --> 01:00:56.531
+Krish NAik: Okay, then…
+
+
+485
+01:00:56.531 --> 01:00:57.301
+milind kulkarni: I will…
+
+
+486
+01:00:57.441 --> 01:00:59.531
+Krish NAik: I wouldn't be…
+
+
+487
+01:01:00.091 --> 01:01:02.431
+milind kulkarni: No, no, I was in this particular step, right?
+
+
+488
+01:01:02.431 --> 01:01:05.750
+Krish NAik: Alright, fine, leave this part, now start your deployment. Oh, okay.
+
+
+489
+01:01:05.841 --> 01:01:12.440
+milind kulkarni: Okay, I'll then… I'll stop share, I'll push it, and then I'll come back if there is issues. We can attend somebody else.
+
+
+490
+01:01:13.551 --> 01:01:21.991
+Krish NAik: Now, you were telling me for the deployment is successful, just wait. Because my settings and your settings are exactly the same, so it should not happen.
+
+
+491
+01:01:22.571 --> 01:01:27.341
+Krish NAik: Let me see, because, you know, I have not tested the application I just got.
+
+
+492
+01:01:27.801 --> 01:01:29.490
+Krish NAik: That one, I think.
+
+
+493
+01:01:29.801 --> 01:01:32.291
+Krish NAik: Alright, I think, just wait.
+
+
+494
+01:01:35.041 --> 01:01:36.090
+Balaji Rengan: It's only the needle.
+
+
+495
+01:01:38.061 --> 01:01:41.121
+Krish NAik: Hmm… doc updated, just wait.
+
+
+496
+01:01:42.921 --> 01:01:46.601
+Krish NAik: Yes, I think it is a dog.
+
+
+497
+01:01:50.831 --> 01:01:51.941
+Krish NAik: Hold on.
+
+
+498
+01:01:56.591 --> 01:02:07.831
+Krish NAik: Okay, because I don't think there will be any issues with respect to Nginx. Yesterday, we solved that Nginx issue, where I removed that, port 18.
+
+
+499
+01:02:09.061 --> 01:02:22.430
+Krish NAik: So, please do have it checked. Yesterday, the application was launching. If it is for launching, the settings are exactly the same. I have not done any changes in the NGINX. Only one change in NGINX that I have done, where I've added the timeout.
+
+
+500
+01:02:22.931 --> 01:02:32.881
+Krish NAik: Okay, because technically, that is the only one change, and which is in platform.platform, timeout.config. This is the only engine exchange that I have done.
+
+
+501
+01:02:33.201 --> 01:02:35.651
+Krish NAik: Other than that, I've changed nothing.
+
+
+502
+01:02:48.451 --> 01:02:59.510
+Krish NAik: Okay, just have a check on that one. Abhishek, when you terminate config.yml, when we terminate config.yml, also gets deleted and instance profile becomes null again.
+
+
+503
+01:02:59.671 --> 01:03:04.461
+Krish NAik: Yes, actually, because in my code, Abhishek, instance profile is not there.
+
+
+504
+01:03:05.091 --> 01:03:08.690
+Balaji Rengan: Because for me, I have not added that part. If you check mine.
+
+
+505
+01:03:08.691 --> 01:03:14.531
+Krish NAik: One, okay, if I show you, in my part, it's not there. You have to use it in your script.
+
+
+506
+01:03:14.961 --> 01:03:19.181
+Krish NAik: And you see, my instance profile is not the deployment that I'm doing, Abhishev.
+
+
+507
+01:03:20.231 --> 01:03:27.700
+Krish NAik: Okay, so you… because for most of you, like, for a few it was not working, that was the resolution that I gave.
+
+
+508
+01:03:27.931 --> 01:03:31.240
+Krish NAik: Where you can pass, actually, the…
+
+
+509
+01:03:31.521 --> 01:03:34.461
+Krish NAik: A rule, easy rule. EC2 rule type.
+
+
+510
+01:03:34.991 --> 01:03:36.621
+Krish NAik: But I have not used it.
+
+
+511
+01:03:36.911 --> 01:03:40.491
+Krish NAik: If you want to use it, please update yourconfig.y.
+
+
+512
+01:03:46.981 --> 01:03:47.641
+Balaji Rengan: Awesome.
+
+
+513
+01:03:57.081 --> 01:04:02.731
+Krish NAik: Anybody else? Because I think the deployment should be triggered, and it should be up.
+
+
+514
+01:04:02.871 --> 01:04:11.410
+Krish NAik: Because the same settings I have done in front of you. If you want me, I can repeat the same steps after terminating, but I hope that it will work.
+
+
+515
+01:04:13.031 --> 01:04:23.611
+Krish NAik: Gateway issue? Engineering's gateway issue, please do have a check from the logs exactly. Okay, like, the main purpose, whenever you get an error, please do check the logs.
+
+
+516
+01:04:23.751 --> 01:04:26.461
+Krish NAik: Gateway issue for me also, alright?
+
+
+517
+01:04:26.651 --> 01:04:31.510
+Krish NAik: Let me know in gateway issue exactly, like, what is the problem.
+
+
+518
+01:04:32.801 --> 01:04:34.661
+Krish NAik: You can let me know in the chat.
+
+
+519
+01:04:38.461 --> 01:04:57.841
+Krish NAik: Because if yesterday it was working, today also it should be working. The main configuration, if you remember, see, if… just technically, I'm telling, where is your… that configuration? It's inside your Docker, AWS run JSON file. So here, you have mentioned this one, 8000 port.
+
+
+520
+01:04:57.991 --> 01:05:04.141
+Krish NAik: Automatically, it gets redirected 8280, engine export, default one.
+
+
+521
+01:05:07.011 --> 01:05:07.871
+Krish NAik: Mmm…
+
+
+522
+01:05:09.241 --> 01:05:15.210
+Krish NAik: So please do have a check with respect to 502. People who are… how many of you are getting the bad gateway?
+
+
+523
+01:05:16.611 --> 01:05:21.420
+Krish NAik: Then, please let me know the logs, from your logs exactly.
+
+
+524
+01:05:22.041 --> 01:05:30.610
+Rajat Khanna: Paul, can I share my screen? I'm stuck into, into this, deployed to Elastic Bean, it's been more than 3 minutes.
+
+
+525
+01:05:31.611 --> 01:05:37.551
+Krish NAik: Yes, it takes more than 3 minutes. Sometimes it takes 8 minutes also, that's why I've added 20 minutes timer there.
+
+
+526
+01:05:38.081 --> 01:05:38.761
+Rajat Khanna: Okay.
+
+
+527
+01:05:42.851 --> 01:05:52.231
+Krish NAik: Amar is telling Amar, see, in your deploy.yml file, check that application name. Santoshumar is telling successful, it worked.
+
+
+528
+01:05:52.421 --> 01:05:57.230
+Krish NAik: So previously, why bad gateway we were getting? Like, really, like, it becomes confusing for me.
+
+
+529
+01:05:59.471 --> 01:06:02.520
+Krish NAik: Santosh allowed to talk, Amar also allowed to talk.
+
+
+530
+01:06:02.521 --> 01:06:11.031
+Rajat Khanna: For me, Paul, it's also, 502 bad gateway, although now the, that deploy process is completed.
+
+
+531
+01:06:14.171 --> 01:06:15.101
+Krish NAik: Yes, Antush.
+
+
+532
+01:06:15.101 --> 01:06:15.501
+Santosh Umargi: B,
+
+
+533
+01:06:15.501 --> 01:06:17.201
+Krish NAik: So, wait a couple.
+
+
+534
+01:06:17.201 --> 01:06:24.920
+Santosh Umargi: was… It was Quadrant URL, actually, in local, no? We said that local, no, so I debugged it.
+
+
+535
+01:06:25.091 --> 01:06:32.941
+Santosh Umargi: So, it means I checked it through log, no? So, it was showing that, the local host URL, so I changed that in the EV…
+
+
+536
+01:06:32.941 --> 01:06:42.850
+Krish NAik: Okay, alright, alright, alright. Because I thought everybody will use the cloud URL yesterday already, I informed everybody, please use cloud URL of quadrant.
+
+
+537
+01:06:42.991 --> 01:06:46.241
+Krish NAik: Don't use the local host, then for sure you'll be getting that error.
+
+
+538
+01:06:47.271 --> 01:06:50.630
+Santosh Umargi: Yeah, so it is now resolved. Pipeline is also running, yeah. Thank you.
+
+
+539
+01:06:50.951 --> 01:06:52.020
+Krish NAik: Alright, fine.
+
+
+540
+01:06:52.481 --> 01:06:53.581
+Krish NAik: Now, Amar.
+
+
+541
+01:06:54.011 --> 01:06:56.360
+Amarsrinivas: Yeah, can I share my screen, Paul?
+
+
+542
+01:06:56.561 --> 01:06:57.240
+Krish NAik: On the top.
+
+
+543
+01:06:57.871 --> 01:07:01.640
+Krish NAik: Just wait from 10.30, I think after 10 minutes, we'll start the document.
+
+
+544
+01:07:01.751 --> 01:07:03.581
+Krish NAik: Discussion exactly the flow.
+
+
+545
+01:07:04.051 --> 01:07:07.150
+Krish NAik: 21005, I think you raised your hand, yes.
+
+
+546
+01:07:07.151 --> 01:07:09.890
+Amarsrinivas: Are you able to view my screen?
+
+
+547
+01:07:10.151 --> 01:07:18.561
+Krish NAik: Yes, the repo, see, repo, the tree, it's selling that does not exist. It means that template selling does not exist.
+
+
+548
+01:07:18.561 --> 01:07:23.691
+Amarsrinivas: the, repo name… Actually, no, no, no, I deleted this one completely.
+
+
+549
+01:07:23.811 --> 01:07:28.580
+Krish NAik: You need this. I'm not creating the here repo there in the script.
+
+
+550
+01:07:28.581 --> 01:07:32.740
+Amarsrinivas: So, what I have to do is, I have to.
+
+
+551
+01:07:32.741 --> 01:07:44.051
+Krish NAik: Create an ECR repo. That's the only thing you need to do. Yesterday, I think that command I have shared, that AWS create, you can look into deploy.md, yes, from there, you can get the command.
+
+
+552
+01:07:44.821 --> 01:07:53.490
+Krish NAik: For all below. Below, below, below, below, below, there are, below, below, below, below, below, below, yes, AWS ECR Create Repository.com.
+
+
+553
+01:07:53.491 --> 01:07:55.180
+Amarsrinivas: This one I have to…
+
+
+554
+01:07:55.181 --> 01:07:58.170
+Krish NAik: Hmm, you deleted that because of that duplicate.
+
+
+555
+01:07:58.351 --> 01:08:01.871
+Rajat Khanna: Paul, for me, it is coming health issue, degraded.
+
+
+556
+01:08:02.511 --> 01:08:05.470
+Krish NAik: Health issue degraded means application issue is there.
+
+
+557
+01:08:05.681 --> 01:08:07.731
+Krish NAik: Let me just, share your screen.
+
+
+558
+01:08:18.611 --> 01:08:19.361
+Rajat Khanna: I'm cheating.
+
+
+559
+01:08:19.361 --> 01:08:24.920
+Krish NAik: Everybody, please let me know at least, because yesterday, I think around 10 people told me that it worked.
+
+
+560
+01:08:25.111 --> 01:08:33.861
+Krish NAik: 3 people, Docker size issue, but they have resolved. And, alright, I think yesterday, Somebody I asked that.
+
+
+561
+01:08:35.391 --> 01:08:42.511
+Krish NAik: This is NGINX Bad Gateway. Just tell me that, in your quadrant URL, I hope you are using the current one.
+
+
+562
+01:08:44.721 --> 01:08:48.081
+Rajat Khanna: Previously, it was degraded, now it showed okay.
+
+
+563
+01:08:48.511 --> 01:08:55.631
+Rajat Khanna: So, quadrant URL… I have done the same… wait, one minute… environment, find…
+
+
+564
+01:08:56.241 --> 01:08:59.651
+Rajat Khanna: 3SC, so this is the quadrant to…
+
+
+565
+01:08:59.651 --> 01:09:03.301
+Krish NAik: This is fine. It should be up and working. Check once.
+
+
+566
+01:09:03.461 --> 01:09:07.781
+Krish NAik: Generally, from degrade to health, it doesn't take a lot of time trying to reload.
+
+
+567
+01:09:12.011 --> 01:09:17.651
+Rajat Khanna: For here, it just went okay. Okay, see? Again, it got degraded.
+
+
+568
+01:09:23.371 --> 01:09:26.260
+Krish NAik: Don't show me those variables, show me applocks.
+
+
+569
+01:09:26.471 --> 01:09:31.730
+Krish NAik: If you show me degraded, I will have zero idea exactly what is happening.
+
+
+570
+01:09:36.251 --> 01:09:40.610
+Krish NAik: And always try to open it, see from here, what is the exception that you are getting?
+
+
+571
+01:09:42.431 --> 01:09:44.631
+Krish NAik: Because this is the mean part.
+
+
+572
+01:09:45.131 --> 01:09:47.251
+Krish NAik: With respect to…
+
+
+573
+01:09:48.801 --> 01:09:54.291
+Rajat Khanna: Yesterday also I got 502, without this, 2-day spot.
+
+
+574
+01:09:54.291 --> 01:09:58.540
+Krish NAik: Because here I can see some, connection issue that you are getting.
+
+
+575
+01:09:58.691 --> 01:10:04.700
+Krish NAik: This is quadrant client issue. Please solve quadrant client. Simply, I can see the error, quadrant client exception.
+
+
+576
+01:10:04.851 --> 01:10:07.190
+Krish NAik: You need to resolve that quadrant client issue.
+
+
+577
+01:10:07.421 --> 01:10:14.411
+Krish NAik: Okay, now, Poonam is asking, image letter February… raise your hand, Poonam. Without that, I cannot, understand.
+
+
+578
+01:10:15.511 --> 01:10:17.910
+Krish NAik: No, just wait, I will add you to panelist.
+
+
+579
+01:10:19.801 --> 01:10:26.140
+Krish NAik: Well, this deployment is the easiest one, actually. Like, AppRunner and Bingstock, very, very easy.
+
+
+580
+01:10:26.551 --> 01:10:32.170
+Krish NAik: Lambda is at least tougher. ECS with Farget, little bit tougher. EK is…
+
+
+581
+01:10:32.381 --> 01:10:37.551
+Krish NAik: It's overkill. We don't need it, but we will discuss just for the sake.
+
+
+582
+01:10:37.861 --> 01:10:39.490
+Krish NAik: Written in debt.
+
+
+583
+01:10:41.211 --> 01:10:45.481
+Krish NAik: Yes, I think, Punamai added you two panelists who can start sharing.
+
+
+584
+01:10:52.471 --> 01:10:55.031
+Poonam Nanda: Yupol, am I audible?
+
+
+585
+01:10:55.031 --> 01:11:03.790
+Krish NAik: Yes, yes. Show me that. You are getting upload… generally, I've kept at 50MB for now, in my main, config.
+
+
+586
+01:11:04.501 --> 01:11:08.370
+Poonam Nanda: So this is the image size. Is my screen visible?
+
+
+587
+01:11:08.371 --> 01:11:11.551
+Krish NAik: No, not visible. We have not started sharing it.
+
+
+588
+01:11:11.821 --> 01:11:16.431
+Poonam Nanda: Which is it? Okay, I'm sorry.
+
+
+589
+01:11:20.021 --> 01:11:22.191
+Poonam Nanda: Let me know if it's visible.
+
+
+590
+01:11:23.291 --> 01:11:26.421
+Krish NAik: Yes, it's visible. This is fine, the image site is.
+
+
+591
+01:11:26.421 --> 01:11:31.601
+Poonam Nanda: This is… yes, correct. So, then…
+
+
+592
+01:11:31.981 --> 01:11:35.571
+Poonam Nanda: Yes. So, I'm getting this one.
+
+
+593
+01:11:35.701 --> 01:11:37.891
+Poonam Nanda: The maximum allowed size.
+
+
+594
+01:11:43.211 --> 01:11:43.941
+Poonam Nanda: Oops.
+
+
+595
+01:11:43.941 --> 01:11:54.061
+Krish NAik: But, how much size, yeah, 524, okay… Alright.
+
+
+596
+01:11:54.501 --> 01:12:04.100
+Krish NAik: Do you have that file yesterday, that I have added in EVStop? Please do have a check. Where I added 30GB of space.
+
+
+597
+01:12:04.371 --> 01:12:15.400
+Krish NAik: I think it was inside at, which folder it was? Actually, yesterday I was facing other issues, so maybe I did not notice. Oh, no, it's in GitHub, so I think it should be.
+
+
+598
+01:12:15.401 --> 01:12:21.850
+Poonam Nanda: I pulled… okay, let me say. Which file you're talking about. Which, which file can you let me know?
+
+
+599
+01:12:22.111 --> 01:12:25.661
+Krish NAik: It is a .ev extensions folder.
+
+
+600
+01:12:26.131 --> 01:12:29.631
+Krish NAik: dot EV extensions, the first green color one.
+
+
+601
+01:12:29.631 --> 01:12:30.531
+Poonam Nanda: Okay, that's fine.
+
+
+602
+01:12:30.531 --> 01:12:32.021
+Rajat Khanna: One question.
+
+
+603
+01:12:32.331 --> 01:12:36.650
+Krish NAik: Storage config is 30, yes, I think, then this is fine.
+
+
+604
+01:12:36.891 --> 01:12:37.241
+Amarsrinivas: Well.
+
+
+605
+01:12:37.241 --> 01:12:38.360
+Krish NAik: Trying it out.
+
+
+606
+01:12:38.361 --> 01:12:42.651
+Amarsrinivas: the ENV file form, same values maintained in the ENV file.
+
+
+607
+01:12:44.061 --> 01:12:45.531
+Krish NAik: And we filed.
+
+
+608
+01:12:45.531 --> 01:12:50.020
+Amarsrinivas: Yeah, in environment, even I have the same value max file size.
+
+
+609
+01:12:50.191 --> 01:12:52.890
+Amarsrinivas: the same value, it is taking…
+
+
+610
+01:12:53.191 --> 01:12:59.550
+Amarsrinivas: we maintain the same in the GitHub secrets also. Maybe it is taking while deploying the last.
+
+
+611
+01:12:59.551 --> 01:13:04.920
+Krish NAik: No, no, no, no, no, nothing, because in GitHub Secrets, I pass it, it doesn't pick sub from anywhere.
+
+
+612
+01:13:05.121 --> 01:13:06.310
+Amarsrinivas: Fuck yeah, yeah.
+
+
+613
+01:13:06.311 --> 01:13:10.320
+Krish NAik: But I think, as this is the default config value that I have.
+
+
+614
+01:13:10.661 --> 01:13:14.740
+Krish NAik: That is where… because I can actually increase this size, but…
+
+
+615
+01:13:14.741 --> 01:13:17.331
+Poonam Nanda: This is the max file size here.
+
+
+616
+01:13:17.331 --> 01:13:21.710
+Krish NAik: Like, because this size is really huge, huh?
+
+
+617
+01:13:21.891 --> 01:13:27.321
+Krish NAik: It's not a small one that I've added. That's why, like, if you are uploading…
+
+
+618
+01:13:27.571 --> 01:13:29.300
+Poonam Nanda: This is the error it is giving.
+
+
+619
+01:13:31.171 --> 01:13:33.890
+Rajat Khanna: Paul, one, one question, so…
+
+
+620
+01:13:33.891 --> 01:13:38.431
+Krish NAik: Wait, wait, wait, wait. Don't ask me, but, you know, first of all, let me resolve this issue.
+
+
+621
+01:13:38.551 --> 01:13:43.901
+Krish NAik: 524480 down, if I want to remove this part.
+
+
+622
+01:13:46.861 --> 01:13:57.520
+Krish NAik: I can actually… because, actually, where I'm using… because today, the last configuration, if you look into this file.
+
+
+623
+01:13:58.631 --> 01:14:04.421
+Krish NAik: Okay, so if you really look into, I have added one folder.platform, check.
+
+
+624
+01:14:05.201 --> 01:14:07.211
+Poonam Nanda: dot platform.
+
+
+625
+01:14:09.031 --> 01:14:12.500
+Krish NAik: Here, here, here.platform, below.github, left-hand side.
+
+
+626
+01:14:12.501 --> 01:14:15.301
+Poonam Nanda: Okay, so…
+
+
+627
+01:14:15.301 --> 01:14:16.900
+Krish NAik: Dot platform, dot platform.
+
+
+628
+01:14:18.531 --> 01:14:20.081
+Krish NAik: What platform, blah blah blah blah.
+
+
+629
+01:14:20.081 --> 01:14:22.091
+Poonam Nanda: A cha-cha, sorry, yes, yes, yes.
+
+
+630
+01:14:22.091 --> 01:14:26.700
+Krish NAik: Now, here you have time… see, here I have written client max body size 15.
+
+
+631
+01:14:27.351 --> 01:14:33.450
+Krish NAik: Because that's why I have today, like, large file upload, so I'm thinking about why that is coming.
+
+
+632
+01:14:33.691 --> 01:14:43.310
+Krish NAik: from… because that, variable, is it till local. Now, let me just check my config.yml walls, whether it's coming from the local application or not.
+
+
+633
+01:14:43.821 --> 01:14:46.591
+Krish NAik: config.y…
+
+
+634
+01:14:50.461 --> 01:14:55.600
+Krish NAik: Because there, the max file size is 15 to 1024 into 1024.
+
+
+635
+01:14:56.161 --> 01:14:57.021
+milind kulkarni: You made me barter.
+
+
+636
+01:14:57.021 --> 01:14:57.421
+Krish NAik: Right, so…
+
+
+637
+01:14:57.421 --> 01:14:58.431
+Poonam Nanda: What's time to you?
+
+
+638
+01:14:58.431 --> 01:15:05.950
+milind kulkarni: Check under app version if you have any old stuff under app version. No elastic pin stock app version.
+
+
+639
+01:15:06.831 --> 01:15:10.171
+Poonam Nanda: Nastic version.
+
+
+640
+01:15:11.101 --> 01:15:12.540
+milind kulkarni: And delete that zip file.
+
+
+641
+01:15:14.431 --> 01:15:18.670
+Poonam Nanda: Shall I see when it was created? Because, today.
+
+
+642
+01:15:18.671 --> 01:15:21.420
+milind kulkarni: You must have created that… oh.
+
+
+643
+01:15:22.281 --> 01:15:25.220
+Poonam Nanda: Yesterday, it was not working for me, so I created…
+
+
+644
+01:15:25.221 --> 01:15:31.500
+milind kulkarni: It creates that file when you do the deploy, right? EB create, so I think in…
+
+
+645
+01:15:31.501 --> 01:15:36.670
+Poonam Nanda: I create, I ran today only. Okay, shall I delete? But this I created today only. I did not write…
+
+
+646
+01:15:36.671 --> 01:15:38.340
+Krish NAik: Delete it, delete it, not an issue.
+
+
+647
+01:15:38.341 --> 01:15:38.841
+milind kulkarni: Very good.
+
+
+648
+01:15:38.841 --> 01:15:40.731
+Krish NAik: You can again execute the same command.
+
+
+649
+01:15:40.731 --> 01:15:42.400
+Poonam Nanda: That took 15-20.
+
+
+650
+01:15:44.481 --> 01:15:47.120
+Poonam Nanda: Okay, I deleted. Shall I rerun?
+
+
+651
+01:15:47.581 --> 01:15:49.041
+Krish NAik: Baby Create Command.
+
+
+652
+01:15:49.531 --> 01:15:54.590
+Krish NAik: AB init, okay, already the application is available, you can recreate it, yes.
+
+
+653
+01:15:55.091 --> 01:15:57.351
+Poonam Nanda: Do you want me to do MB init first? That doesn'.
+
+
+654
+01:15:57.351 --> 01:16:03.011
+Krish NAik: No, no, no, no, no, no, no, no, no, no. Create is already done, no? Yes, let me see directly with Create.
+
+
+655
+01:16:07.421 --> 01:16:19.401
+Krish NAik: And use that, command just to have a verification always that, I pasted it in Notion. AWS, because you can see, creating application version, archive, app. Again, that folder will be available there.
+
+
+656
+01:16:19.771 --> 01:16:23.091
+Krish NAik: Whenever you do that, the folder gets created.
+
+
+657
+01:16:23.801 --> 01:16:25.910
+Poonam Nanda: So, what command do you want me to try?
+
+
+658
+01:16:26.111 --> 01:16:29.441
+Krish NAik: No, no, wait for this one only. Nothing to do now.
+
+
+659
+01:16:30.401 --> 01:16:31.781
+Krish NAik: Let's see.
+
+
+660
+01:16:32.031 --> 01:16:36.380
+Krish NAik: Source bundle is empty, and accepts this one.
+
+
+661
+01:16:36.891 --> 01:16:39.560
+Krish NAik: Invalid currently, just wait.
+
+
+662
+01:17:05.611 --> 01:17:06.561
+Krish NAik: Alright.
+
+
+663
+01:17:06.801 --> 01:17:07.981
+Krish NAik: Because…
+
+
+664
+01:17:07.981 --> 01:17:09.291
+Poonam Nanda: Someone is… yeah.
+
+
+665
+01:17:09.291 --> 01:17:12.451
+Krish NAik: Yes, Rajat, what was the issue that you were telling? Tell me.
+
+
+666
+01:17:13.651 --> 01:17:31.640
+Rajat Khanna: Note issue, Paul, I have question. The question is, if I make a build again, so the quadrant issue that you see, so I have updated the URL, it was… variable name was not correct. Now, if I do push again, so do I need to delete the previous image?
+
+
+667
+01:17:31.641 --> 01:17:36.170
+Krish NAik: Nothing, nothing, just redeploy it. Automatically, it will be picked up from secrets.
+
+
+668
+01:17:36.431 --> 01:17:49.830
+Rajat Khanna: Okay, so, one more question, follow-up is, if I am pushing it again, and it is being deployed to Elastic Bean, again, so it will be just like, image, a new image will be deployed to Elastic Bean.
+
+
+669
+01:17:50.051 --> 01:17:58.091
+Rajat Khanna: That ECR image is all being deployed to Elastic Bean. So, previous one will automatically delete, and new one will be deployed.
+
+
+670
+01:17:58.091 --> 01:18:00.311
+Krish NAik: It doesn't delete, it will stay there only.
+
+
+671
+01:18:01.291 --> 01:18:11.381
+Rajat Khanna: Okay, so if we are doing multiple deployments, does the, some, memory hit, comes into play, like, now you do not have much more space, like, something arable?
+
+
+672
+01:18:11.381 --> 01:18:13.801
+Krish NAik: Memory hit, regarding what memory hit?
+
+
+673
+01:18:13.801 --> 01:18:31.700
+Rajat Khanna: So I'm saying, like, we are, doing multiple builds on top of it, we are making changes and doing our deployment again and again. Now, is there… if you are saying the old image is not getting deleted, so there will be a limited size of apps that we can deploy, so might be two.
+
+
+674
+01:18:31.701 --> 01:18:36.411
+Krish NAik: No, no, there is no limit in that. Automatically, it gets comes into the charges.
+
+
+675
+01:18:36.941 --> 01:18:48.270
+Krish NAik: You can create a script that automatically deploys older builds, but right now, the recent gets pushed with the tag latest in that way. The older one remains. You can look into the digest ID.
+
+
+676
+01:18:48.491 --> 01:18:55.160
+Rajat Khanna: Okay, so if we do not terminate our elastic bean, so it will be, like, huge space that it will be occupying?
+
+
+677
+01:18:55.161 --> 01:18:59.761
+Krish NAik: It is nothing related to Elastic, Beam is a separate service, ECR is a separate service.
+
+
+678
+01:18:59.761 --> 01:19:00.431
+Rajat Khanna: Okay.
+
+
+679
+01:19:03.821 --> 01:19:08.310
+Rajat Khanna: So, on which behalf we are being charged more on, like, on elastic.
+
+
+680
+01:19:08.311 --> 01:19:12.821
+Krish NAik: Only based on Beanstalk, not for ECR. ECR charges are very, very low.
+
+
+681
+01:19:12.821 --> 01:19:14.840
+Rajat Khanna: Okay, okay, so all the images are…
+
+
+682
+01:19:14.841 --> 01:19:16.231
+Krish NAik: Completely detail.
+
+
+683
+01:19:16.231 --> 01:19:16.831
+Rajat Khanna: Okay.
+
+
+684
+01:19:18.111 --> 01:19:19.141
+Rajat Khanna: Thank you.
+
+
+685
+01:19:20.361 --> 01:19:21.121
+Krish NAik: Alright.
+
+
+686
+01:19:22.421 --> 01:19:33.380
+Krish NAik: Alright, okay, because in my.ebignore, Vishal is telling, to resolve this, at, .ebignore, this will resolve our issue. This is because she is using T3 Medium instance with single.
+
+
+687
+01:19:33.671 --> 01:19:40.311
+Krish NAik: Because in my .ebignore file, also, I have a single Dockerfile entry. Other than that.
+
+
+688
+01:19:40.591 --> 01:19:43.620
+Krish NAik: I don't have any other entries here.
+
+
+689
+01:19:44.591 --> 01:19:49.531
+Krish NAik: Vishal, okay? Just wait, Vishal, then I will ask you to raise your hand, okay? Just wait.
+
+
+690
+01:19:50.201 --> 01:19:57.181
+Krish NAik: It's 10.33, after 2 minutes, I will start.
+
+
+691
+01:19:57.381 --> 01:20:02.151
+Krish NAik: Discussing the core Markdown document ones. Just wait there, what you think.
+
+
+692
+01:20:04.851 --> 01:20:11.981
+Krish NAik: For how many of you can… you guys can see the UI, at least please let me know, because so many people have added it. But,
+
+
+693
+01:20:13.791 --> 01:20:14.930
+Krish NAik: However you want to…
+
+
+694
+01:20:14.931 --> 01:20:17.861
+Amarsrinivas: Complete deployment is done there.
+
+
+695
+01:20:18.681 --> 01:20:23.131
+Krish NAik: Alright, then I will move back to… Utility.
+
+
+696
+01:20:23.311 --> 01:20:25.020
+Krish NAik: Million deal status.
+
+
+697
+01:20:27.481 --> 01:20:29.111
+Krish NAik: Everybody, please, because I'm…
+
+
+698
+01:20:29.111 --> 01:20:29.931
+milind kulkarni: go to…
+
+
+699
+01:20:30.121 --> 01:20:30.621
+Krish NAik: The idiot.
+
+
+700
+01:20:30.621 --> 01:20:31.271
+milind kulkarni: word, I…
+
+
+701
+01:20:31.271 --> 01:20:31.891
+Krish NAik: 100.
+
+
+702
+01:20:32.201 --> 01:20:39.571
+milind kulkarni: I'm good. I can see the UI. I tried uploading dark, and so it looks like it shows uploaded, so…
+
+
+703
+01:20:40.591 --> 01:20:44.241
+Krish NAik: You can check, because the return type, it tells me always the number of chunks.
+
+
+704
+01:20:44.241 --> 01:20:47.251
+milind kulkarni: Yeah, it says Creator Chunks 209, so…
+
+
+705
+01:20:47.251 --> 01:20:50.650
+Krish NAik: Then that climate document only was uploaded, yes.
+
+
+706
+01:20:50.651 --> 01:20:51.331
+milind kulkarni: Yep.
+
+
+707
+01:20:52.111 --> 01:20:53.241
+Krish NAik: Then it's fine.
+
+
+708
+01:20:55.501 --> 01:21:02.081
+Krish NAik: Okay, so normally I'm keeping it in the panelists, rest I've removed everyone. Yeah, Deva Jyoti, quickly tell me.
+
+
+709
+01:21:06.821 --> 01:21:09.011
+Krish NAik: No audio from your side.
+
+
+710
+01:21:09.011 --> 01:21:18.090
+DEBAJYOTI MUKHOPADHYAY: Hi, Paul, just one quick question. That, we are manually triggering all these EB commands, right? EB terminate or EV.
+
+
+711
+01:21:18.091 --> 01:21:19.381
+Krish NAik: two commands, yes.
+
+
+712
+01:21:19.381 --> 01:21:25.631
+DEBAJYOTI MUKHOPADHYAY: EB create, right? So we can also embed these commands into our deploy.yml.
+
+
+713
+01:21:25.631 --> 01:21:35.331
+Krish NAik: No, no, no, no, no. See, every time if you create an application, that's the same thing I repeated. Why you want different URLs at your different deployments?
+
+
+714
+01:21:36.681 --> 01:21:42.831
+DEBAJYOTI MUKHOPADHYAY: Okay. You can do that, but why? Because if already the name exists, if you try to recreate, do you think that it will work?
+
+
+715
+01:21:42.831 --> 01:21:44.211
+Krish NAik: Simply, it will fail.
+
+
+716
+01:21:45.711 --> 01:21:46.571
+DEBAJYOTI MUKHOPADHYAY: Okay.
+
+
+717
+01:21:46.701 --> 01:21:59.751
+Krish NAik: It's just like in Lambda, in AWS Lambda, if you, again, create a new Lambda function, automatically the function URL will be different. If that becomes different, again, the same thing URL, the application URL changes, nobody does that, no?
+
+
+718
+01:22:00.101 --> 01:22:01.951
+DEBAJYOTI MUKHOPADHYAY: Yeah, okay, go to the top.
+
+
+719
+01:22:02.281 --> 01:22:16.071
+Krish NAik: Okay. Now, you can keep a check, something like that, okay? If this is available, then skip, directly do that. Now, in those type of checks, you can keep it in your deploy.yml to a certain extent, if you want to do that.
+
+
+720
+01:22:16.071 --> 01:22:19.590
+DEBAJYOTI MUKHOPADHYAY: Okay, maybe some AWS commands I have to hit for…
+
+
+721
+01:22:19.591 --> 01:22:28.901
+Krish NAik: So, like, through AWS, like, you have to do a simple parsing, the output of this command, from that, try to parse out this variable, if this variable exists, simply, like, in that way.
+
+
+722
+01:22:29.241 --> 01:22:32.571
+DEBAJYOTI MUKHOPADHYAY: Okay, yeah, that makes sense.
+
+
+723
+01:22:32.571 --> 01:22:33.810
+Krish NAik: Thank you, Rick.
+
+
+724
+01:22:35.151 --> 01:22:38.740
+Krish NAik: Perfect. Now, let's start with the first one.
+
+
+725
+01:22:39.071 --> 01:22:39.951
+Krish NAik: Okay.
+
+
+726
+01:22:41.841 --> 01:22:59.960
+Krish NAik: So here, this is the Beanstalk deployment guide. Okay, and right now, I'm working with the deploy slash AWS EP branch. So, main branch is totally separated. The core code, with respect to your deployment and cloud stuff, I've kept it completely in a separate branch.
+
+
+727
+01:23:00.341 --> 01:23:08.311
+Krish NAik: No, I think everybody is comfortable with AWS credentials, I don't need to discuss anything here. Logging into your ECR,
+
+
+728
+01:23:08.481 --> 01:23:14.520
+Krish NAik: this command. Yesterday, you have executed it manually, project 2, project 1, build push.
+
+
+729
+01:23:14.761 --> 01:23:24.891
+Krish NAik: You guys have done it, nothing to discuss this part. Now, this is the package GB portal. So, generally, what happens… so, now, this we are doing from our own site.
+
+
+730
+01:23:25.091 --> 01:23:30.691
+Krish NAik: Now, this step you have to understand, we actually saved this information in an S3 bucket.
+
+
+731
+01:23:31.651 --> 01:23:43.451
+Krish NAik: Okay, now, first of all, we are creating a zip, deploy.zip, and we are sending the files. Why? Your Beamstock will know from where it will download the image.
+
+
+732
+01:23:43.701 --> 01:23:48.810
+Krish NAik: So, which file I'm referring, so right now, just look into this file.
+
+
+733
+01:23:49.551 --> 01:23:52.720
+Krish NAik: docker run EWS.json. Now, this is the part.
+
+
+734
+01:23:53.571 --> 01:24:00.511
+Krish NAik: An update is equal to true means, automatically, if the new image comes, Beanstalk will pull again.
+
+
+735
+01:24:02.401 --> 01:24:08.520
+Krish NAik: Okay, because the service needs to be updated, that's why update is equal to true that I have kept it.
+
+
+736
+01:24:11.791 --> 01:24:15.441
+Krish NAik: Then you have your dot platform. In dot platform, what I have?
+
+
+737
+01:24:15.561 --> 01:24:18.001
+Krish NAik: my engineering settings.
+
+
+738
+01:24:18.331 --> 01:24:30.041
+Krish NAik: Okay, so .platform, dot platform, dot platform, where is the .platform? Yes. Here you can see timeout.config, so without this particular setting, I was getting a 60 seconds timeout issue.
+
+
+739
+01:24:30.431 --> 01:24:40.380
+Krish NAik: as I pass a bigger PDF for testing, then you know what happens in timeout. Automatically, the API responds. Now, just to handle that, I have added 300 seconds.
+
+
+740
+01:24:41.361 --> 01:24:48.661
+Krish NAik: Now, 300 seconds might not be work, you can increase it to 500 seconds also, if you are passing a bigger and bigger dock.
+
+
+741
+01:24:49.221 --> 01:24:59.340
+Krish NAik: Again, here I have manually added, so these are settings from my side. These are not application-level settings, this is your main gateway settings for NGINX.
+
+
+742
+01:25:02.291 --> 01:25:13.590
+Krish NAik: Now, client max 40 all right. Then, I think the next configuration you will be having, it will be with respect to settings, so just wait. Yes.
+
+
+743
+01:25:13.661 --> 01:25:22.641
+Krish NAik: The next configuration, you have your .ev extension. So, in EB extension, you told that I need a storage of 30 GB.
+
+
+744
+01:25:23.211 --> 01:25:28.161
+Krish NAik: If you remember. So these settings, how your EBS will know. So I'm actually…
+
+
+745
+01:25:28.401 --> 01:25:34.461
+Krish NAik: doing a zip of this entire thing, and I'm uploading it into S3.
+
+
+746
+01:25:34.771 --> 01:25:47.141
+Krish NAik: So that's why, first of all, a zip operation that comes, and then that particular bundle, because 3 different type of files that we have, so we are calling it a bundle. That bundle, we are uploading it to S3.
+
+
+747
+01:25:48.101 --> 01:25:51.191
+Krish NAik: Okay? And this is how the naming convention, it works.
+
+
+748
+01:25:51.581 --> 01:26:02.370
+Krish NAik: Now, once you have that, then the EV application version, based on your app, when you do that EV create command, you will always have an app with a version name.
+
+
+749
+01:26:02.371 --> 01:26:11.721
+Krish NAik: So, based on that particular version, then it will update the environment. So, this Create EB application, it's already there. You just do the updating part.
+
+
+750
+01:26:11.721 --> 01:26:13.080
+Krish NAik: During the deployment.
+
+
+751
+01:26:14.051 --> 01:26:24.871
+Krish NAik: So here you can see your environmentsettings.json, deploys the new version and sets all the environment variable, and from where it will pull all the environment variables from your GitHub secrets.
+
+
+752
+01:26:25.551 --> 01:26:37.960
+Krish NAik: Alright, now, this is a poll for readiness, so I have kept, like, a maximum 20 minutes barrier. Like, I've… initially, I kept it for 3 seconds, but the application took close to 420 seconds.
+
+
+753
+01:26:38.071 --> 01:26:42.140
+Krish NAik: So, I thought about, let's increase it, to 20 minutes.
+
+
+754
+01:26:43.481 --> 01:27:02.451
+Krish NAik: Okay, now these are the GitHub secret settings with respect to IAM permissions that are required. Okay, now, in one shot, you can use this scripts also. I've kept it if you feel it's beneficial, your main docker. Then comes your health check. This is a simple curl command, using which you can hit your health route.
+
+
+755
+01:27:03.091 --> 01:27:12.921
+Krish NAik: Then, the deploying version, naming convention, app with the first 8 characters of SHA with year-date, so this is how it works in AWS, okay?
+
+
+756
+01:27:13.171 --> 01:27:26.731
+Krish NAik: Now, this is, the core things, and I think everybody is comfortable, because you guys have manually done the deployment. But let's talk about our main, deploy.bymail. So, what are the different services that gets triggered?
+
+
+757
+01:27:27.061 --> 01:27:30.651
+Krish NAik: So that file, I think you have here, in this one.
+
+
+758
+01:27:33.411 --> 01:27:40.211
+Krish NAik: Alright, so… No, no, not this one, it's the deployment one.
+
+
+759
+01:27:44.981 --> 01:27:55.531
+Krish NAik: All right. Now, whenever any developer, like, you are pushing your code to your deploy slash AWS hyphen EV branch for now.
+
+
+760
+01:27:55.641 --> 01:28:09.840
+Krish NAik: Okay, so GitHub actions will be triggered. Once the trigger comes into the picture, the first thing, it will, look into your code, okay, now, the first thing, it actually fetches out all the secrets and other things from the GitHub environment variable.
+
+
+761
+01:28:10.121 --> 01:28:20.541
+Krish NAik: Then, the AWS credentials from your GitHub Secrets that will be, pulled. Once you have the AWS credentials, you can log in into your ECR service.
+
+
+762
+01:28:20.731 --> 01:28:37.210
+Krish NAik: Once you have logged in into your ECR service, then what you can do, you can build the image, okay, and once the image is built, add the tag latest, and push it to ECR. That's the same thing, step by step, which has been written here. Once the image is available, what is the next step?
+
+
+763
+01:28:37.721 --> 01:28:52.141
+Krish NAik: those bundle packages that you have uploaded in S3, so from there, the AB application version, it will try to basically launch. Now, all these three upload bundle to S3 slash AWS Beanstalk.
+
+
+764
+01:28:52.221 --> 01:28:58.810
+Krish NAik: Okay, now… and this is my main account ID. So, this is a naming convention which is used for that S3.
+
+
+765
+01:28:58.911 --> 01:29:04.811
+Krish NAik: Where your, bundle will be saved or uploaded.
+
+
+766
+01:29:04.951 --> 01:29:19.041
+Krish NAik: Once you have this particular bundle, then the next step is basically your EB application version. Right now, you have to think about it's written create, but actually, you have created it, we are just updating it. So, create actually just checks whether the application is there or not.
+
+
+767
+01:29:20.081 --> 01:29:33.631
+Krish NAik: Then comes your update EV, so environment variables, injecting all the environment variables from GitHub settings, and then comes pooling settings, so, like, the wait every 30 seconds that we have added, the maximum is 20 minute max.
+
+
+768
+01:29:34.961 --> 01:29:40.770
+Krish NAik: Now, here, if you look into… So, the first of all, the beanstalk that comes.
+
+
+769
+01:29:40.871 --> 01:29:55.441
+Krish NAik: Here, and so what is this? This is your main S3. Okay, so whenever you upload this bundle, so directly I'm telling that we need to save this information into S3. Once you have this particular information, then this particular step comes.
+
+
+770
+01:29:56.271 --> 01:30:04.780
+Krish NAik: Now, in the next step here, once your pooling is done… okay, so before that, what is this particular command, T3 medium?
+
+
+771
+01:30:05.121 --> 01:30:16.661
+Krish NAik: And this is creating your environment. So this is the place where, actually, like, this is before that happens. In the next step, we'll be just updating the environment with these settings.
+
+
+772
+01:30:18.611 --> 01:30:35.941
+Krish NAik: And then, this is the… now, inside your EC2 image, the Docker will be pulled, and the container will be running in 8000. Then, NGINX reverse proxy comes into the picture, from where that routing will happen. 80 to 8000.
+
+
+773
+01:30:36.591 --> 01:30:49.661
+Krish NAik: Okay, because that internal routing is done by NGINX, and the maximum timeout that I have taken is, like, 300 seconds for now. The default one was 60 seconds. So this I have updated in conf.d.
+
+
+774
+01:30:52.591 --> 01:31:06.690
+Krish NAik: Okay, now, these… this is the GitHub Secrets flow, and I think by this time, everybody should be comfortable with this flow. A simple access keel, once you have that, you have the AWS credentials, you can do the… your IAM authentication.
+
+
+775
+01:31:06.921 --> 01:31:15.621
+Krish NAik: Then comes your OpenAI API key tabular. These are application-level settings. So once, like, before the deployment, you need to update your
+
+
+776
+01:31:16.071 --> 01:31:25.131
+Krish NAik: environment within the DeanStock application. First, the application, then the environment. Always remember that. In two-step, it happens.
+
+
+777
+01:31:25.191 --> 01:31:38.680
+Krish NAik: So, once you have this, so EV step, with JSON builder, JSON builder means that Docker run AWS JSON file that you have. So, there you have that builder step. In that builder, you say, I need it from the ECR.
+
+
+778
+01:31:39.221 --> 01:31:51.931
+Krish NAik: Then, in the next step, you have your EV environment. So, this is the main environment that got created, and then from your EC2, all those settings are applied through the Docker client.
+
+
+779
+01:31:53.431 --> 01:32:04.240
+Krish NAik: Okay, now this is the EB bundle structure.howdeploy.zep. Manually, also, you can create it, but directly I've kept it in the code only. It becomes easier in that way.
+
+
+780
+01:32:04.871 --> 01:32:13.350
+Krish NAik: Once you can keep it in the code, or the other way, you can keep it in GitHub also. From GitHub, also, you can make it recognized. That is the other way around.
+
+
+781
+01:32:14.111 --> 01:32:17.431
+Krish NAik: Okay, now this is the deployment sequence file that I have kept.
+
+
+782
+01:32:17.531 --> 01:32:21.961
+Krish NAik: Majorly, I think this is the high-level deployment architecture.
+
+
+783
+01:32:22.821 --> 01:32:33.751
+Krish NAik: Now, you guys can let me know, with respect to applications, any errors or any other things that you are getting, because the core discussion is done, now I will just look into the main problems that you people are facing.
+
+
+784
+01:32:35.071 --> 01:32:49.680
+Krish NAik: Needs a .ignore file, okay. How… just check that .ignore file, otherwise, what I will do, see, I will just push my.ignore file if many of you are requesting that file, just wait. So, desktop tool…
+
+
+785
+01:32:50.731 --> 01:33:00.281
+Krish NAik: I think it is there in my, .Note, so just wait, I will… dot gitignore.
+
+
+786
+01:33:01.141 --> 01:33:03.621
+Krish NAik: Think.eviv.
+
+
+787
+01:33:18.571 --> 01:33:23.051
+Krish NAik: dot Ebignore file, I can see it there.eb ignore.
+
+
+788
+01:33:23.261 --> 01:33:30.730
+Krish NAik: But I have pushed it, because from the color I can see. Please do have a check, as you are telling that it is…
+
+
+789
+01:33:30.901 --> 01:33:35.311
+Krish NAik: Not available, what I think, because here, only the Docker file entry that I have kept it.
+
+
+790
+01:33:36.041 --> 01:33:38.900
+Krish NAik: So.evignore, yes, this file is there.
+
+
+791
+01:33:39.061 --> 01:33:46.201
+Krish NAik: I see the file, I'm getting error all right. The person needs the file size error, needs a dot, right?
+
+
+792
+01:33:47.151 --> 01:33:52.491
+Krish NAik: Alright, Jatinar, because I've already shared it in the repo, so I think everybody will have that.
+
+
+793
+01:33:56.551 --> 01:34:02.771
+Krish NAik: I have kept it, Jatinar is telling, I have kept it, in, this is the content.
+
+
+794
+01:34:06.281 --> 01:34:08.511
+Krish NAik: dot git.github.
+
+
+795
+01:34:09.741 --> 01:34:11.921
+Krish NAik: dot git.github.
+
+
+796
+01:34:12.331 --> 01:34:17.991
+Krish NAik: But where is that EB part, Jotinda, that you were telling Josvit? You were telling my,
+
+
+797
+01:34:19.501 --> 01:34:22.911
+Krish NAik: the branches, deploy ABS, EV only, no?
+
+
+798
+01:34:26.461 --> 01:34:29.771
+Krish NAik: Because here you are telling my gitignore file, just wait.
+
+
+799
+01:34:33.631 --> 01:34:41.061
+Krish NAik: Alright, yesterday, again, like, two things, config.yml, archived workflows.
+
+
+800
+01:34:42.051 --> 01:34:45.311
+Krish NAik: EB, EB, EB settings?
+
+
+801
+01:34:46.701 --> 01:34:51.391
+Krish NAik: Open… this is a con… open.eb ignore, okay, alright.
+
+
+802
+01:34:51.521 --> 01:34:55.571
+Krish NAik: You were asking me to pass that particular setting in immediately.tignore?
+
+
+803
+01:34:56.371 --> 01:34:57.461
+Krish NAik: Just wait.
+
+
+804
+01:34:58.171 --> 01:35:05.771
+Krish NAik: EV.ignore, I have a single entry, which is the Docker file. Okay, now you're asking me to add all this already.
+
+
+805
+01:35:06.841 --> 01:35:09.231
+Krish NAik: Fine, I can do that, just good.
+
+
+806
+01:35:19.701 --> 01:35:27.010
+Krish NAik: git.github.vnb, pycatcher.sip.tar nodes modules, pattern, storage.
+
+
+807
+01:35:27.651 --> 01:35:32.291
+Krish NAik: Again, patent storage, I don't have these folders only, so… fine, I can keep it.
+
+
+808
+01:35:36.021 --> 01:35:38.860
+Krish NAik: Uploads and query, both is working fine, also.
+
+
+809
+01:35:39.851 --> 01:35:47.801
+Krish NAik: Now tell me, Jatindar, like, just raise your hand and tell me, like, why I did it, like, according, because I should know the reason also.
+
+
+810
+01:35:48.911 --> 01:35:50.610
+Krish NAik: Just wait, yes.
+
+
+811
+01:35:50.761 --> 01:35:54.440
+Krish NAik: So, tell me, like, why that part you told me to.
+
+
+812
+01:35:54.571 --> 01:35:57.361
+Jatinder Bali: Yeah, yeah. So, can you hear me?
+
+
+813
+01:35:57.651 --> 01:35:58.561
+Krish NAik: Yes, thank you.
+
+
+814
+01:35:59.071 --> 01:36:05.331
+Jatinder Bali: Okay, so… if you don't have this, right, if you don't have EB ignore, then when you're doing EB create.
+
+
+815
+01:36:05.491 --> 01:36:07.181
+Jatinder Bali: It's going to copy all these files.
+
+
+816
+01:36:07.181 --> 01:36:08.371
+Krish NAik: All the files.
+
+
+817
+01:36:08.661 --> 01:36:15.871
+Jatinder Bali: to the big, big app guy, right? And that's where your error will come, because all of us are doing the VNV stuff, correct?
+
+
+818
+01:36:16.501 --> 01:36:19.481
+Krish NAik: Alright. Okay. You can remove current and node.
+
+
+819
+01:36:19.481 --> 01:36:22.910
+Jatinder Bali: modules if you don't need it, but I think other projects need it, so…
+
+
+820
+01:36:23.291 --> 01:36:25.380
+Krish NAik: Okay, always, got your point, valid point, valid point.
+
+
+821
+01:36:25.381 --> 01:36:26.300
+Jatinder Bali: Thank you, yeah.
+
+
+822
+01:36:29.811 --> 01:36:33.581
+Jatinder Bali: You can ask that girl who's asking this question how she does it, right? It does a…
+
+
+823
+01:36:33.581 --> 01:36:36.801
+Krish NAik: Yes, I think one more third.
+
+
+824
+01:36:37.151 --> 01:36:42.830
+Krish NAik: Alright, so now I'm just doing this particular push, try to have done. Actually,
+
+
+825
+01:36:43.041 --> 01:36:54.961
+Krish NAik: See, the thing, Jatin, that I feel, okay, I'm creating the Docker image, okay? See, in that Docker image, everything is mentioned. That's why I have this Docker ignore file.
+
+
+826
+01:36:55.401 --> 01:36:59.601
+Krish NAik: And right now, this docker ignore file that's actually getting.
+
+
+827
+01:36:59.601 --> 01:37:04.781
+Jatinder Bali: But I'm sorry, I don't think… I don't think she was doing a, she was doing it locally.
+
+
+828
+01:37:05.961 --> 01:37:07.210
+Krish NAik: All right, trying to use that.
+
+
+829
+01:37:07.211 --> 01:37:08.211
+Jatinder Bali: Yesterday, I think, yeah.
+
+
+830
+01:37:08.211 --> 01:37:12.880
+Krish NAik: Yes. All right, fine, I will just, push this one, not an inch.
+
+
+831
+01:37:12.881 --> 01:37:16.801
+Poonam Nanda: Let me create the .ebignore is also there, you just ping the.
+
+
+832
+01:37:16.801 --> 01:37:17.311
+Krish NAik: Yes, yes.
+
+
+833
+01:37:17.311 --> 01:37:18.101
+Poonam Nanda: And it did, right?
+
+
+834
+01:37:18.101 --> 01:37:20.391
+Krish NAik: I'm just updating, update.
+
+
+835
+01:37:22.121 --> 01:37:25.641
+Krish NAik: Not… Just…
+
+
+836
+01:37:26.291 --> 01:37:32.530
+Poonam Nanda: Yeah, because the size of the zip file itself is… now it is 340MB, and it's still doing.
+
+
+837
+01:37:33.911 --> 01:37:39.121
+Krish NAik: Yeah, I've added this one in the mean. Again, the deployment will start, but it's fine.
+
+
+838
+01:37:40.551 --> 01:37:41.701
+Poonam Nanda: Okay.
+
+
+839
+01:37:41.701 --> 01:37:45.441
+Krish NAik: Great. Now, people with errors, please do let me know.
+
+
+840
+01:37:46.141 --> 01:37:58.041
+Krish NAik: Now, here, Amar, you were telling me there is some issue with respect to routes, please let me know that. Now, Rajat also raised this hand. Yes, Amar, first, you go ahead.
+
+
+841
+01:37:58.271 --> 01:38:05.540
+Amarsrinivas: Yeah, can I share my screen, Paul? Actually, I'm… I deployed it. While uploading the PDF, I'm getting internal server error as well.
+
+
+842
+01:38:06.201 --> 01:38:12.511
+Amarsrinivas: Check from the logs. First of all, check the log, and log what is the error. It's giving Python errors, but .
+
+
+843
+01:38:12.761 --> 01:38:16.011
+Krish NAik: Python error means, that is application-level error.
+
+
+844
+01:38:16.561 --> 01:38:19.150
+Krish NAik: So, what is exactly that? Show me, because…
+
+
+845
+01:38:19.151 --> 01:38:20.131
+Amarsrinivas: Yeah, yeah, yeah.
+
+
+846
+01:38:20.401 --> 01:38:27.541
+Amarsrinivas: So, actually, in this, I checked the… I pulled the requested locks for, last hundred lines, at least.
+
+
+847
+01:38:27.821 --> 01:38:29.560
+Krish NAik: The last 100 lines.
+
+
+848
+01:38:30.231 --> 01:38:33.930
+Amarsrinivas: Yeah, actually, in the environment app itself, after that.
+
+
+849
+01:38:33.931 --> 01:38:36.530
+Krish NAik: Show me, show me. You are in the panelist, I think.
+
+
+850
+01:38:36.531 --> 01:38:39.090
+Amarsrinivas: Yeah, yeah, I'm sharing my screen, are you going to view my screen?
+
+
+851
+01:38:39.091 --> 01:38:44.920
+Krish NAik: Just wait, which screen I'm seeing, like, even I get… okay, my screen was actually getting shut. Yes, now you start.
+
+
+852
+01:38:45.131 --> 01:38:54.410
+Amarsrinivas: Oh, okay. So, actually, here, while I'm testing, I'm getting this log, this error. Then, what I have done is.
+
+
+853
+01:38:54.411 --> 01:39:03.410
+Krish NAik: Okay, just wait. Yes, now I can see. Okay, now, just show me internal server error, alright? This is for a particular PDF that you have uploaded.
+
+
+854
+01:39:03.661 --> 01:39:06.510
+Amarsrinivas: And then I tried to… went into the environment tab.
+
+
+855
+01:39:07.371 --> 01:39:07.871
+Amarsrinivas: Sure.
+
+
+856
+01:39:07.871 --> 01:39:08.491
+Krish NAik: in the log.
+
+
+857
+01:39:08.491 --> 01:39:14.071
+Amarsrinivas: It's giving me… it's giving me the, some error in the pythons, actually, async.
+
+
+858
+01:39:14.281 --> 01:39:15.041
+Amarsrinivas: within the…
+
+
+859
+01:39:15.601 --> 01:39:21.340
+Krish NAik: VAR log, this is NGINX error, middle route routing, okay? Scroll down, scroll down.
+
+
+860
+01:39:21.341 --> 01:39:22.591
+Amarsrinivas: Excellent. And I mean…
+
+
+861
+01:39:23.221 --> 01:39:27.791
+Krish NAik: Exception in ASGI, okay, fine, go all down. This is a fast API error.
+
+
+862
+01:39:28.661 --> 01:39:31.760
+Krish NAik: Permission denied, uploads.
+
+
+863
+01:39:33.781 --> 01:39:38.980
+Krish NAik: Alright, permission denied with respect to uploads, alright. Now, this is the only thing, fine.
+
+
+864
+01:39:39.301 --> 01:39:44.570
+Krish NAik: Permission denied because, this particular, environment file
+
+
+865
+01:39:44.801 --> 01:39:47.790
+Krish NAik: I'm actually, like, updating it.
+
+
+866
+01:39:47.981 --> 01:39:51.851
+Krish NAik: Through slash var slash, upload.
+
+
+867
+01:39:52.691 --> 01:40:00.181
+Krish NAik: If it is not correct, then I think you will be getting the error. Just wait, let me do the verification once from…
+
+
+868
+01:40:00.411 --> 01:40:02.331
+Krish NAik: mine, local.
+
+
+869
+01:40:02.951 --> 01:40:09.780
+Krish NAik: I think, when I go to my.env, the upload directory.
+
+
+870
+01:40:09.951 --> 01:40:14.820
+Krish NAik: Have you uploaded that? Slash? Where slash? From GitHub secretly it will be picked up.
+
+
+871
+01:40:14.821 --> 01:40:20.601
+Amarsrinivas: I kept… I kept this one, uploaded. Not slash where, I kept… Use this one.
+
+
+872
+01:40:20.741 --> 01:40:22.431
+Amarsrinivas: So, should I… Update…
+
+
+873
+01:40:22.431 --> 01:40:25.021
+Krish NAik: Don't use this one.
+
+
+874
+01:40:25.021 --> 01:40:25.431
+Amarsrinivas: Oh.
+
+
+875
+01:40:27.161 --> 01:40:27.691
+Amarsrinivas: Then my.
+
+
+876
+01:40:27.691 --> 01:40:44.711
+Krish NAik: won't use that one, yes, that's why. Update your GitHub secret and just change slash var. That's why I kept it in that, deployment file also, no? Okay, when I was telling, thanks, Jatinar, it got progressed, okay, alright, great. Yes, the upload directory needs to be var slash app.
+
+
+877
+01:40:45.101 --> 01:40:53.491
+Krish NAik: Others for whom everything is working, you guys can drop. Only I'll be looking into the issues. If it's working, it's great, because next week, GraphRag will start.
+
+
+878
+01:40:53.611 --> 01:40:57.361
+Krish NAik: Rajat, next I will come to you. Yes.
+
+
+879
+01:40:58.071 --> 01:41:00.710
+Amarsrinivas: So, upload directory should be slash where…
+
+
+880
+01:41:01.021 --> 01:41:05.431
+Krish NAik: That one. I have added that, no, in architecture file also.
+
+
+881
+01:41:05.431 --> 01:41:06.081
+Amarsrinivas: Oh, okay.
+
+
+882
+01:41:06.081 --> 01:41:09.441
+Krish NAik: Slash where slash app slash uploads.
+
+
+883
+01:41:10.521 --> 01:41:10.971
+Amarsrinivas: Okay.
+
+
+884
+01:41:10.971 --> 01:41:15.951
+Krish NAik: Branch, change the branch. Branch drop-down slash var slash app slash uploads.
+
+
+885
+01:41:16.681 --> 01:41:17.341
+Amarsrinivas: Okay.
+
+
+886
+01:41:19.041 --> 01:41:22.320
+Krish NAik: Yes, this is the one. Trigger the deployment taken.
+
+
+887
+01:41:22.881 --> 01:41:23.960
+Amarsrinivas: Yeah, sure, sure.
+
+
+888
+01:41:24.271 --> 01:41:26.641
+Amarsrinivas: I… meanwhile, you can.
+
+
+889
+01:41:27.301 --> 01:41:29.241
+Krish NAik: Alright, let me know. Yes, Rajat?
+
+
+890
+01:41:29.601 --> 01:41:32.451
+Krish NAik: Rajat, Rajat, what is the issue you are facing?
+
+
+891
+01:41:32.581 --> 01:41:34.110
+Krish NAik: Looks like it.
+
+
+892
+01:41:35.091 --> 01:41:48.170
+Rajat Khanna: Yeah, I am facing, like, Voyager API key, but I have uploaded the correct key in the secrets. I'm not sure why, it is, showing that Voyager key, like, re-ranking error.
+
+
+893
+01:41:49.001 --> 01:41:50.530
+Rajat Khanna: I'm not into panelists.
+
+
+894
+01:41:51.791 --> 01:41:56.941
+Krish NAik: re-ranking error, you are getting. Alright, I am adding you to panelist.
+
+
+895
+01:41:57.351 --> 01:42:02.791
+Krish NAik: In the re-ranking, that re-ranker backend, what is the environment variable that you have passed?
+
+
+896
+01:42:03.881 --> 01:42:04.961
+Rajat Khanna: I'm shading.
+
+
+897
+01:42:15.711 --> 01:42:16.691
+Krish NAik: Yes.
+
+
+898
+01:42:18.071 --> 01:42:19.371
+Krish NAik: He is telling me.
+
+
+899
+01:42:20.451 --> 01:42:28.610
+Rajat Khanna: re-ranking, Voyager backend self-setting, so I have uploaded the Voyager key, the correct key.
+
+
+900
+01:42:28.791 --> 01:42:36.041
+Rajat Khanna: taken it from here, which previously I, in the local, it was there. So, same key, I have to…
+
+
+901
+01:42:36.041 --> 01:42:37.671
+Krish NAik: You added it manually.
+
+
+902
+01:42:37.671 --> 01:42:38.031
+Rajat Khanna: Yes.
+
+
+903
+01:42:38.031 --> 01:42:40.890
+Krish NAik: Yes. So what about the deployment script?
+
+
+904
+01:42:43.551 --> 01:42:46.080
+Krish NAik: What about the deployment script? Tell me.
+
+
+905
+01:42:46.201 --> 01:42:51.471
+Krish NAik: If you add anything manually, do you think that it will get recognized in the deployment script?
+
+
+906
+01:42:52.401 --> 01:42:54.530
+Rajat Khanna: Then, you have to add that.
+
+
+907
+01:42:58.311 --> 01:43:04.651
+Krish NAik: do those changes. Because just think always. It's not about directly adding. You have to do that particular change.
+
+
+908
+01:43:05.461 --> 01:43:11.201
+Krish NAik: Because in my secrets, I am not adding them. So in your… if you're doing that, you have to do that,
+
+
+909
+01:43:11.641 --> 01:43:21.121
+Krish NAik: eB space ENV that yesterday.update that we have done. Please do check the command, and then pass your Voyage API key there.
+
+
+910
+01:43:21.241 --> 01:43:22.840
+Krish NAik: That is the other way around.
+
+
+911
+01:43:23.361 --> 01:43:29.370
+Rajat Khanna: No, can you help me? I think I skipped one part of it. What I need to do?
+
+
+912
+01:43:30.381 --> 01:43:50.191
+Krish NAik: yesterday, manually, how you're updating the environment. There, the same way I am doing it in the deploy.yml. So, you have to do the update in deploy.yml, so that it will recognize the Voyage API key, and it will update your environment of EV stock.
+
+
+913
+01:43:51.881 --> 01:43:54.271
+Rajat Khanna: So here, I need to give the boy JPM.
+
+
+914
+01:43:56.251 --> 01:43:57.081
+Rajat Khanna: Okay.
+
+
+915
+01:43:57.401 --> 01:44:08.921
+Rajat Khanna: But, okay, so I'll add it here, but my question is, like, yesterday it was also 502 for me. Is there any other part that I skipped? I'm not getting?
+
+
+916
+01:44:08.921 --> 01:44:09.321
+Krish NAik: No, no.
+
+
+917
+01:44:09.321 --> 01:44:10.410
+Rajat Khanna: Have you seen anything I escaping.
+
+
+918
+01:44:10.411 --> 01:44:12.460
+Krish NAik: The initial 502 was…
+
+
+919
+01:44:12.701 --> 01:44:24.721
+Krish NAik: Because of the host port directly, we have written it 80, but later on, I changed it to container port, which is 8000. So, the reverse proxy of NGINX is actually doing the routing from 80 to 8000.
+
+
+920
+01:44:24.721 --> 01:44:36.890
+Rajat Khanna: No, I did that change in our file as well. So, in that file, the Docker file, so this one, I have changed yesterday to 80 as well, from here, 80 as well, but same, it will… it was giving 502.
+
+
+921
+01:44:38.271 --> 01:44:40.361
+Krish NAik: I've never changed it here at D.
+
+
+922
+01:44:40.631 --> 01:44:47.390
+Rajat Khanna: No, no, I changed it yesterday. Yesterday, I changed it, and made a, build again, and then.
+
+
+923
+01:44:47.391 --> 01:44:54.880
+Krish NAik: But again, in your build, if you use those settings, go back to your docker AWS JSON file, docker run.
+
+
+924
+01:44:55.441 --> 01:45:01.400
+Krish NAik: Manually, don't, yes, go to docker run AWS JSON, below that, below that, the JSON file.
+
+
+925
+01:45:01.701 --> 01:45:02.221
+Rajat Khanna: Hmm.
+
+
+926
+01:45:02.541 --> 01:45:05.211
+Krish NAik: So here, again, the container code is itself.
+
+
+927
+01:45:05.211 --> 01:45:07.180
+Rajat Khanna: Correct, correct, yeah, it was 8000.
+
+
+928
+01:45:07.711 --> 01:45:13.691
+Krish NAik: Okay, then why again? So always be sure both the ports are exactly the same. Don't change that.
+
+
+929
+01:45:13.951 --> 01:45:14.331
+Rajat Khanna: Okay.
+
+
+930
+01:45:14.331 --> 01:45:16.941
+Krish NAik: Well, NGINX will take care of that rerouting.
+
+
+931
+01:45:18.371 --> 01:45:19.521
+Rajat Khanna: Okay…
+
+
+932
+01:45:22.561 --> 01:45:30.090
+Rajat Khanna: So, okay, so if… now you are saying I need to edit the key here, but you have not added it, so do you edit…
+
+
+933
+01:45:30.091 --> 01:45:34.700
+Krish NAik: added it, because my backend data, I've kept it, it is as local, that's why I've not added it.
+
+
+934
+01:45:36.061 --> 01:45:37.530
+Rajat Khanna: Okay, okay, no.
+
+
+935
+01:45:37.531 --> 01:45:40.501
+Krish NAik: Then my re-anchor backwind will also change, you know?
+
+
+936
+01:45:40.821 --> 01:45:47.761
+Krish NAik: It's not about updating the key, it's updating. Like, for if you want to change the re-ranker backend, both the variables need to be updated.
+
+
+937
+01:45:48.181 --> 01:45:52.411
+Rajat Khanna: Okay, so, with the API key, do I need to add model as well?
+
+
+938
+01:45:52.851 --> 01:46:03.431
+Krish NAik: model, I don't think model, because check your config.yml, what is the default model configuration? If the default one is there, according to that, you can actually pass it.
+
+
+939
+01:46:03.431 --> 01:46:04.841
+Rajat Khanna: configure YML.
+
+
+940
+01:46:07.711 --> 01:46:12.630
+Krish NAik: Alright, anybody else with respect to application-level issues, please let me know.
+
+
+941
+01:46:14.081 --> 01:46:17.221
+Krish NAik: Because right now, many people have told us it's working.
+
+
+942
+01:46:17.551 --> 01:46:19.941
+Krish NAik: Yes, why you have opened this file?
+
+
+943
+01:46:26.321 --> 01:46:28.111
+Rajat Khanna: Think…
+
+
+944
+01:46:35.231 --> 01:46:40.620
+Rajat Khanna: Quadrant key, quadrant key… Voyager model. Voyager model.
+
+
+945
+01:46:40.621 --> 01:46:53.161
+Krish NAik: Aura was telling, kindly allow the settings in here, though I'm not able to copy the text, Aura. See, it's not from my end. Generally, copying the text, if you will use the Zoom version of at least one year old, you can do everything.
+
+
+946
+01:46:53.301 --> 01:46:59.950
+Krish NAik: The new versions of Zoom which got launched, like, that one, those are much better security settings.
+
+
+947
+01:47:00.061 --> 01:47:02.011
+Krish NAik: It's not from my end.
+
+
+948
+01:47:02.471 --> 01:47:03.491
+Krish NAik: I'm located.
+
+
+949
+01:47:03.771 --> 01:47:06.240
+Krish NAik: In different versions of Zoom, it happens.
+
+
+950
+01:47:06.561 --> 01:47:10.290
+Krish NAik: If you need anything, please let me know, I can paste it in Notion. Okay, so…
+
+
+951
+01:47:15.501 --> 01:47:16.521
+Krish NAik: Alright.
+
+
+952
+01:47:17.771 --> 01:47:20.440
+Krish NAik: Anybody else? Please let me know.
+
+
+953
+01:47:20.981 --> 01:47:22.641
+Krish NAik: Eros, eros…
+
+
+954
+01:47:23.411 --> 01:47:42.961
+Krish NAik: Because, please do the testing, 3 types are done. Now, finally, two deployments will be left. One is the ECS with Farget, and finally, Kubernetes. Two things, going forward. Because, for… okay, let's see, let's take a little bit, three to four different surveys in the next deployment.
+
+
+955
+01:47:43.711 --> 01:47:48.960
+Krish NAik: Much more microservices architecture, just for the sake in that you should be.
+
+
+956
+01:47:49.591 --> 01:47:52.071
+Krish NAik: Viraj is selling AB Create,
+
+
+957
+01:47:52.581 --> 01:47:58.530
+Krish NAik: Does this take too much? Not too much time. Maximum, it should take 5 minutes, Viraj.
+
+
+958
+01:48:00.471 --> 01:48:04.240
+Krish NAik: It should not take a lot of time. Maximum 5 minutes that I feel.
+
+
+959
+01:48:09.991 --> 01:48:13.020
+Krish NAik: So, others can drop if you don't have any questions.
+
+
+960
+01:48:14.651 --> 01:48:21.740
+Krish NAik: So, Vijid, I dropped off your study a little early, so if you think I have not tried, so I will try, can I drop a mail in case? Okay, alright, you can drop me a mail.
+
+
+961
+01:48:24.571 --> 01:48:34.071
+Krish NAik: So, just be sure, because the steps are easy, directly look into the… rather than looking into the class, directly look into the markdown files for everybody.
+
+
+962
+01:48:34.201 --> 01:48:41.910
+Krish NAik: looking into 3 hours of video is not required. Directly look into the markdown file that I have shared, it becomes much easier to debug from there.
+
+
+963
+01:48:43.871 --> 01:48:45.081
+Krish NAik: Hmm…
+
+
+964
+01:48:48.781 --> 01:48:52.570
+Krish NAik: Alright, any other issues? I cannot see anything in the chat.
+
+
+965
+01:48:53.101 --> 01:48:59.510
+Krish NAik: I'll be… Because T3 Medium, it's working for everybody. I have tested that part, so… cool.
+
+
+966
+01:49:02.391 --> 01:49:14.441
+Krish NAik: Alright, so I think, no more questions. If no more questions are there, like, just give me a thumbs up how many people have done it, because I feel 10 to 15 students have done it, and they have already dropped.
+
+
+967
+01:49:14.811 --> 01:49:24.540
+Krish NAik: Anybody else, like, just give me the final thumbs up. Santosh, okay, alright. Don't do it there, write it in the chat with a thumbs up, it becomes easier. Done, done, done.
+
+
+968
+01:49:24.881 --> 01:49:39.701
+Krish NAik: Okay, so at least by this time, now, see, next week, I'll be taking… okay, because in high level, I'm telling next week, I will actually try to do that pooling part. So, this is desktop to just wait.
+
+
+969
+01:49:40.511 --> 01:49:44.561
+Krish NAik: Okay, so, like, I think I might… Number 12.
+
+
+970
+01:49:45.251 --> 01:49:46.331
+Krish NAik: Interests.
+
+
+971
+01:49:51.101 --> 01:49:56.921
+Krish NAik: Okay, now, next week, so this particular task that we have.
+
+
+972
+01:49:57.181 --> 01:50:14.461
+Krish NAik: Yesterday, I think, Rahul was also working on that. So, we'll be creating, groups. Okay, now, yesterday, like, next week, because this is a task which is completely AWS native, right? It means nothing you need to go outside AWS.
+
+
+973
+01:50:14.741 --> 01:50:20.840
+Krish NAik: Similarly, like, next week, again, I'll be taking a poll, how many of you are good in GCP?
+
+
+974
+01:50:20.941 --> 01:50:36.910
+Krish NAik: Because AWS and GCP, like, even I can contribute, but not in Azure. Azure part, anyone from your team, like, you guys can let me know, like, 5 people, yes, we know Azure, everything. Okay, because then I need those native stacks, cloud-native.
+
+
+975
+01:50:36.911 --> 01:50:41.941
+Krish NAik: Because right now, a lot of solutions that I have taught, those are cloud agnostic.
+
+
+976
+01:50:42.091 --> 01:50:53.761
+Krish NAik: Now, let's little bit cloud-native. For any student, I think it will be, better from interview prospect if you try to keep everything in one part.
+
+
+977
+01:50:53.771 --> 01:51:06.411
+Krish NAik: Okay, so don't worry, next week I will be taking that name. For AWS, again, like, 2-2 teams kill three teams, because I think at least 2 or 3 teams, somewhere they get stuck, it will be good.
+
+
+978
+01:51:06.851 --> 01:51:13.030
+Krish NAik: Okay? So, next week, I'll be creating those teams, but that's a next week.
+
+
+979
+01:51:13.511 --> 01:51:19.901
+Krish NAik: Now, kindly include me, alright, next, alright, because AWS, Azure, and these…
+
+
+980
+01:51:20.191 --> 01:51:25.150
+Krish NAik: three things. Because either I have a GCP account with me, I don't have an Azure account.
+
+
+981
+01:51:26.111 --> 01:51:34.770
+Krish NAik: Okay, so anything with respect to AWS, at least, like, you can create your own account, because just a POC, later on,
+
+
+982
+01:51:34.811 --> 01:51:49.321
+Krish NAik: A few automation stuff that we can do later on through cloud formation, entire stuff, we can bring it in one shot. So, those things that we can discuss, but the core cloud-native RAG application.
+
+
+983
+01:51:50.621 --> 01:52:02.190
+Krish NAik: Okay, alright, Abhijayth is telling, Cole, could you please have to update the notion with a quick note in project 123, if it's okay, just… alright, I can do that.
+
+
+984
+01:52:02.191 --> 01:52:12.040
+Krish NAik: Abhijit, I think I've got to answer notion with a quick update. Just wait, let me copy-paste your chat. Later on, Abhijit, we'll work on this one.
+
+
+985
+01:52:14.391 --> 01:52:16.100
+Krish NAik: Just click it for me.
+
+
+986
+01:52:17.091 --> 01:52:24.071
+Krish NAik: I think… Huh, okay… These are glass, dark ride.
+
+
+987
+01:52:24.881 --> 01:52:27.241
+Krish NAik: Okay, kind of…
+
+
+988
+01:52:32.611 --> 01:52:35.431
+Krish NAik: Yeah, so next week we'll be talking about this one.
+
+
+989
+01:52:38.021 --> 01:52:43.720
+Krish NAik: Okay, so now I will stop sharing, so I think we… you guys can drop. Yes, that is the same AWS instance.
+
+
+990
+01:52:43.721 --> 01:52:52.770
+DEBAJYOTI MUKHOPADHYAY: Well, Paul, just a question, David said. So you talked about forming the groups, right? From next week onwards, or…
+
+
+991
+01:52:53.451 --> 01:53:09.390
+Krish NAik: Next week, next week. Project 3 is done. I told you, no, after Project 3, you can start working on your own. Because by this time, more than 60-70% fundamentals with respect to RAG, you guys know. So, now you just need to focus on cloud stuff, nothing with respect to RAG stuff.
+
+
+992
+01:53:10.471 --> 01:53:18.961
+DEBAJYOTI MUKHOPADHYAY: Okay, so in that case, I mean, I don't know, maybe the… what is the idea? The entire group of people that we are in this,
+
+
+993
+01:53:18.961 --> 01:53:25.051
+Krish NAik: Five people, five to six, not more than that. There are so many students. I won't be taking everyone, no?
+
+
+994
+01:53:26.051 --> 01:53:26.761
+DEBAJYOTI MUKHOPADHYAY: Okay.
+
+
+995
+01:53:26.981 --> 01:53:40.661
+Krish NAik: Everyone means chaos. Chaos means no work, okay? Yeah. Say, simple, like, 5 people I know who are good, I will do that particular, everything from my side. It's not taking everybody, at least…
+
+
+996
+01:53:41.171 --> 01:54:00.211
+Krish NAik: Otherwise, I don't want that… if I even select a senior, then again, he has to spend the time. Simple, like, if you know in GCP, just simply raise hands, and later on, I will ask that form. In that form, just paste few details. Then I will ask one of my interns to look at that, and based on that, he will…
+
+
+997
+01:54:00.211 --> 01:54:01.831
+Rajat Khanna: So those projects will be shared.
+
+
+998
+01:54:01.831 --> 01:54:07.141
+Krish NAik: There is no WhatsApp, Naga, don't share your numbers. It's not WhatsApp. I am not…
+
+
+999
+01:54:07.391 --> 01:54:10.341
+Krish NAik: Right now, picking up any students.
+
+
+1000
+01:54:10.341 --> 01:54:14.090
+DEBAJYOTI MUKHOPADHYAY: So, I'm in GCP since last 6-7 years, so might be…
+
+
+1001
+01:54:14.091 --> 01:54:14.481
+Krish NAik: fame.
+
+
+1002
+01:54:14.481 --> 01:54:15.011
+DEBAJYOTI MUKHOPADHYAY: Nope.
+
+
+1003
+01:54:15.011 --> 01:54:27.120
+Krish NAik: See, that's why it's simple clarity. If somebody has worked more than 4 years in a specific cloud, I mean, I will be picking up those. It's not like, I have started learning AWS, and please take me, that's not the priority here.
+
+
+1004
+01:54:27.231 --> 01:54:33.161
+Krish NAik: Because, see, when the solution is built, that will be discussed in the class. It's not like I'm hiding stuff.
+
+
+1005
+01:54:33.431 --> 01:54:37.880
+Krish NAik: Let them just build a solution so that things are quickly built. That is my priority.
+
+
+1006
+01:54:37.881 --> 01:54:38.241
+DEBAJYOTI MUKHOPADHYAY: Boom.
+
+
+1007
+01:54:38.241 --> 01:54:44.551
+Krish NAik: taking someone, and then you guys explain it tomorrow. So, simple, just like a cross kitty happens.
+
+
+1008
+01:54:44.551 --> 01:54:45.881
+DEBAJYOTI MUKHOPADHYAY: Yeah, understood, understood.
+
+
+1009
+01:54:46.251 --> 01:54:47.360
+DEBAJYOTI MUKHOPADHYAY: Yeah, thank you.
+
+
+1010
+01:54:47.881 --> 01:55:00.581
+Krish NAik: Alright, Abhishek, because the ClotQuot session, I'm planning, because the skills part is right now a little bit hot in the market, but, let me plan, because even for me, because I am not fully using skills a lot.
+
+
+1011
+01:55:00.781 --> 01:55:05.450
+Krish NAik: my flow is much more based on plugins in CC.
+
+
+1012
+01:55:05.591 --> 01:55:14.370
+Krish NAik: Okay, but just wait. Give me some time. After 10th of March, only I can do it, not before that. Okay, once I'm back in Bangalore, then I will take that.
+
+
+1013
+01:55:14.531 --> 01:55:16.091
+Krish NAik: The next class session.
+
+
+1014
+01:55:16.621 --> 01:55:20.880
+Krish NAik: Okay, people in GCP, SAN, and others. Okay, please let me know in the next class.
+
+
+1015
+01:55:21.701 --> 01:55:41.460
+Krish NAik: All right, guys, so let's conclude the session for today, okay? And let's meet next week, we will start GrafRive. Okay, everybody, GrafRive already I've told you, so I'll be working on the content. Falco DB, so new things, Grav, new 4G, I will just show the initial things, but later on for better speeds and Surreal DV also that I am planning.
+
+
+1016
+01:55:41.611 --> 01:55:44.911
+Krish NAik: It got recently funding, it's a really, good one.
+
+
+1017
+01:55:47.341 --> 01:55:53.390
+Krish NAik: No, no, co-work is different, Jatin. Like, co-work is a bit different, and this is a bit different.
+
+
+1018
+01:55:54.581 --> 01:56:01.931
+Rajat Khanna: Can I send you mail for that one-to-one interaction that we had previously? I had few questions.
+
+
+1019
+01:56:02.701 --> 01:56:17.940
+Krish NAik: Drop me a meal. See, right now, like, I have lesser time here to spend, like, after 10th, because I'm not sure, because I think from the next March 1 to March 10, entirely, I'll be traveling. Okay, so that's why. Drop me a mail, let me see whether I can connect or not.
+
+
+1020
+01:56:17.941 --> 01:56:18.581
+Rajat Khanna: Okay.
+
+
+1021
+01:56:19.181 --> 01:56:20.581
+Krish NAik: Okay, good.
+
+
+1022
+01:56:23.801 --> 01:56:26.260
+Krish NAik: We have seen AWS, you have Neptune, correct?
+
+
+1023
+01:56:32.201 --> 01:56:37.460
+Krish NAik: Alright, Les, so everyone can drop now. Bye-bye, everyone, thanks for joining. Let's meet next week.
+
+
+
