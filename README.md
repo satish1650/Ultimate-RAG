@@ -1751,6 +1751,41 @@ End-to-end tutorial comparing RAG without metadata vs with GLiNER2-enriched meta
 	✅ multi-modal-rag/src/doc_parser/ingestion/vector_store.py
 	✅ multi-modal-rag/src/doc_parser/retrieval/reranker.py
 
+## 26 Apr Day - 47 👉 Ultimate RAG 👉 Multimodal RAG 👉 Project-4 👉 Code Base Discussion Part-2 & LangGraph 👉 Introduction to LangGraph
+## Project-4 : Code Base Discussion
+- 20-Multi-Modal-RAG-Deployment/multi-modal-rag-deployment
+- 21-Multi-Modal-RAG-Qwen-Model/multi-modal-rag-qwen
+### 🎯 Learning Objectives
+#### Explained below Code:-
+#### `multi-modal-rag-qwen-branch`
+    ✅ multi-modal-rag/src/doc_parser/ingestion/image_captioner.py <br>
+    ✅ multi-modal-rag/src/doc_parser/ingestion/vector_store.py <br>
+    ✅ multi-modal-rag/src/doc_parser/ingestion/embedder.py <br>
+    ✅ multi-modal-rag/src/doc_parser/api/app.py <br>
+	✅ multi-modal-rag/scripts/search.py <br>
+
+#### `multi-modal-rag-deployment-branch`
+    ✅ multi-modal-rag/Dockerfile <br>
+	✅ multi-modal-rag/Dockerfile.gpu <br>
+	✅ multi-modal-rag/Dockerfile.visualizer <br>
+	✅ multi-modal-rag/docker-compose.yml <br>
+	✅ multi-modal-rag/docker-compose.gpu.yml <br>
+	✅ multi-modal-rag/tests/integration/test_ingest_e2e.py <br>
+	✅ multi-modal-rag/tests/integration/test_pipeline_e2e.py <br>
+	✅ multi-modal-rag/tests/unit/test_api_schemas.py <br>
+	✅ multi-modal-rag/tests/unit/test_chunker.py <br>
+	✅ multi-modal-rag/tests/unit/test_embedder.py <br>
+	✅ multi-modal-rag/tests/unit/test_generate.py <br>
+	✅ multi-modal-rag/tests/unit/test_image_captioner.py <br>
+	✅ multi-modal-rag/tests/unit/test_post_processor.py <br>
+	✅ multi-modal-rag/tests/unit/test_reranker.py <br>
+	✅ multi-modal-rag/tests/unit/test_vector_store.py <br>
+	✅ multi-modal-rag/.github/workflows/ci.yml <br>
+	✅ multi-modal-rag/.github/workflows/cd.yml <br>
+	✅ multi-modal-rag/docker-compose.ymlscripts/warmup.py <br>
+
+#### `langraph-tutorials`
+    ✅ 0langraph-tutorials/1_introduction_to_langgraph.ipynb
 ---
 
 ## Create the virtual environment in anaconda3 folder
