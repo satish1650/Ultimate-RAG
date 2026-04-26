@@ -1501,7 +1501,7 @@ AdministratorAccess
 *************************************************************************************************
 Class Notes 👉 https://krishnaikacademy.notion.site/Commands-346eba9593d0800db812fb45e956d54f
 
-GitHub 👉 https://github.com/sourangshupal/multi-modal-rag/
+GitHub 👉 deployment branch 👉 https://github.com/sourangshupal/multi-modal-rag/
     ✅ multi-modal-rag/ollama/visualize.py
     ✅ multi-modal-rag/ollama/test_parse.py
     ✅ multi-modal-rag/scripts/warmup.py
@@ -1531,10 +1531,58 @@ GLM Coding Plan 👉 https://z.ai/subscribe?code=code-171b9fcb1373&state=a0bf439
 Hermes Agent 👉 https://github.com/nousresearch/hermes-agent
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-26 Apr Day - 47 👉 Ultimate RAG 👉 Multimodal RAG 👉 Project-4 👉 Code Base Discussion Part-2 & LangGraph 👉 Basics
-**********************************************************************************************************************
+26 Apr Day - 47 👉 Ultimate RAG 👉 Multimodal RAG 👉 Project-4 👉 Code Base Discussion Part-2 & LangGraph 👉 Introduction to LangGraph
+*****************************************************************************************************************************************
 Class Notes 👉 https://krishnaikacademy.notion.site/Commands-346eba9593d0800db812fb45e956d54f
 
-GitHub 👉 https://github.com/sourangshupal/multi-modal-rag/
+GitHub 👉 qwen branch 👉 https://github.com/sourangshupal/multi-modal-rag/
+		✅ multi-modal-rag/src/doc_parser/ingestion/image_captioner.py
+		✅ multi-modal-rag/src/doc_parser/ingestion/vector_store.py
+		✅ multi-modal-rag/src/doc_parser/ingestion/embedder.py
+
+		Two entry Point to trigger the API
+		✅ multi-modal-rag/src/doc_parser/api/app.py
+		✅ multi-modal-rag/scripts/search.py
+		
+GitHub 👉 deployment branch 👉 https://github.com/sourangshupal/multi-modal-rag/
+		Docker
+		✅ multi-modal-rag/Dockerfile
+		✅ multi-modal-rag/Dockerfile.gpu
+		✅ multi-modal-rag/Dockerfile.visualizer
+		✅ multi-modal-rag/docker-compose.yml
+		✅ multi-modal-rag/docker-compose.gpu.yml
+		✅ multi-modal-rag/tests/integration/test_ingest_e2e.py
+		✅ multi-modal-rag/tests/integration/test_pipeline_e2e.py
+		✅ multi-modal-rag/tests/unit/test_api_schemas.py
+		✅ multi-modal-rag/tests/unit/test_chunker.py
+		✅ multi-modal-rag/tests/unit/test_embedder.py
+		✅ multi-modal-rag/tests/unit/test_generate.py
+		✅ multi-modal-rag/tests/unit/test_image_captioner.py
+		✅ multi-modal-rag/tests/unit/test_post_processor.py
+		✅ multi-modal-rag/tests/unit/test_reranker.py
+		✅ multi-modal-rag/tests/unit/test_vector_store.py
+		✅ multi-modal-rag/.github/workflows/ci.yml
+		✅ multi-modal-rag/.github/workflows/cd.yml
+		Loading the model
+		✅ multi-modal-rag/docker-compose.ymlscripts/warmup.py
+
+LangGraph Tutorial Series
+	LangGraph Docs 👉 https://docs.langchain.com/oss/python/langgraph/overview
+
+	PydanticAI 👉 https://pydantic.dev/
+	PydanticAI Docs 👉 https://pydantic.dev/docs/ai/overview/ 
+	Pydantic Logfire 👉 AI Observability Platform for LLMs, Apps & AI Agents 👉 https://pydantic.dev/logfire
+	
+	LangFuse 👉 Open Source LLM Engineering Platform 👉 https://langfuse.com/
+
+	Bifrost AI Gateway 👉 The fastest way to build AI applications that never go down 👉 GitHub 👉 https://github.com/maximhq/bifrost
+	Bifrost AI Gateway Docs 👉 https://docs.getbifrost.ai/overview
+	
+	LangGraph 👉 GitHub 👉 https://github.com/sourangshupal/langraph-tutorials
+			✅ langraph-tutorials/01_introduction_to_langgraph.ipynb
+
+Mesh API 👉 https://docs.google.com/document/d/1JQ0O1CAhhWjZNAEq0uDk2gwyeD3mch0bYC2Za6iOjRs/edit?tab=t.0
+
+Advanced Route of Learning AI — Detailed Syllabus 👉 https://drive.google.com/file/d/1xlzXaKRPP0Ug1QtZ-iGFWFQJmTyZGj2c/view
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
