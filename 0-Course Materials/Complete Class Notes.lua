@@ -1752,4 +1752,54 @@ Build something incredible! 🚀
 
 ALL THE BEST !!!
 
+
+MESHAPI Hackathon — Solution Submission Form 👉 https://forms.gle/bJrthbf4U6FvonJ66
+
+This is the official submission form for the MESHAPI Hackathon.
+Fill this out carefully — this is what the judges will evaluate your solution on.
+
+
+📌 One submission per team (Team Leader submits on behalf of the team) 
+
+📌 Make sure your GitHub repo is public before submitting 
+
+📌 Demo video must be 3–5 minutes only — no exceptions 
+
+📌 Submission Deadline: 4th MAY'26 - 9:00 AM IST sharp. 
+
+📌 Late submissions will not be considered
+
+
+Good luck! Build something incredible. 🚀
+
+💡 Github README.md Checklist 
+
+✅ Project Title & One-liner Description
+✅ Problem Statement
+✅ Architecture Diagram (RAG pipeline flow)
+✅ Tech Stack
+✅ Setup & Installation Instructions
+✅ How to Run Locally
+✅ Demo Video Link
+✅ SOLO/Team Members
+✅ Limitations & Future Scope
+
+I have submitted my Solution and got below response
+
+	MESHAPI Hackathon — Solution Submission Form
+	Submission received! 🎉
+	Your solution has been successfully submitted for MESHAPI Hackathon. The judges will review all submissions and results will be announced shortly after the 36-hour window closes.
+	Keep email handy — we'll reach out if we need anything!
+	Thank you for building. 💻🔥
+
+	You've already responded
+	Submission received! 🎉
+	Your solution has been successfully submitted for MESHAPI Hackathon. The judges will review all submissions and results will be announced shortly after the 36-hour window closes.
+	Keep email handy — we'll reach out if we need anything!
+	Thank you for building. 💻🔥
+
+	You can only fill in this form once.
+
+	Try contacting the owner of the form if you think this is a mistake.
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
