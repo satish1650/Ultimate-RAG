@@ -1720,6 +1720,24 @@ MESHAPI Hackathon Registration 👉 https://forms.gle/36LfhuzGacqdAnsHA
 MeshAPI Docs 👉 Quickstart 👉 https://developers.meshapi.ai/docs/guides/quickstart
 GitHub 👉 https://github.com/satish1650/Ultimate-RAG.git
 		   ✅ Ultimate-RAG/0-Course Materials/meshapi_model_test.py
+------------------------------------------
+meshapi_model_test.py
+from openai import OpenAI
+
+client = OpenAI(
+    base_url="https://api.meshapi.ai/v1",
+    api_key="Your_MeshAPI_Key_Here"
+)
+
+response = client.chat.completions.create(
+    model="ai21/jamba-1-5-large-v1",
+    messages=[
+        {"role": "user", "content": "Who won IPL match on 02 May 2026? and who was the highest run scorer in the same match?"}
+    ]
+)
+
+print(response.choices[0].message.content)
+------------------------------------------
 
 One endpoint for GPT, Claude, Gemini, and 300+ LLMs. Switch providers in real-time. Pay in any currency. 👉 https://meshapi.ai/
 	Your MESHAPI Hackathon API Credits Are Here!
@@ -1729,7 +1747,7 @@ One endpoint for GPT, Claude, Gemini, and 300+ LLMs. Switch providers in real-ti
 	 - Redeem your credits before the hackathon begins
 	 - Credits are for individual use only — do not share
 	 - Reach out immediately if you face any issues during redemption
-	 
+
 Build something incredible! 🚀
 
 ALL THE BEST !!!
