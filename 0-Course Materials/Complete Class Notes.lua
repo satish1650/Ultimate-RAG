@@ -1586,3 +1586,152 @@ Mesh API 👉 https://docs.google.com/document/d/1JQ0O1CAhhWjZNAEq0uDk2gwyeD3mch
 Advanced Route of Learning AI — Detailed Syllabus 👉 https://drive.google.com/file/d/1xlzXaKRPP0Ug1QtZ-iGFWFQJmTyZGj2c/view
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+02 May 2026 👉 MESHAPI Hackathon Registration 👉 RAG-Based AI Applications
+***************************************************************************
+MESHAPI Hackathon Registration 👉 https://forms.gle/36LfhuzGacqdAnsHA
+MESHAPI Hackathon Registration
+A 24-hour RAG-powered hackathon where participants build intelligent, retrieval-augmented applications that solve real-world problems across domains like healthcare, legal, finance, education, and more.
+
+Whether you're a solo builder or a team of four — if you can think in vectors and reason with context, this is your arena.
+
+📅 Duration: 24 Hours 
+
+👥 Team Size: 1-4 members 
+
+🧠 Theme: RAG-Based AI Applications 
+
+TIMING :- 9AM IST 3rd MAY - 9AM IST 4th May
+
+Fill out this form per participant (each team member registers individually). Make sure your Team Name matches across all members.
+
+After the registration, you will be receiving the API credits from Mesh API before the start of the hackathon. 
+
+
+Registration closes 24 hours before the event. Slots are limited.
+
+	MESHAPI Hackathon Registration
+	You're in! 🎉
+	Thank you for registering for the MESHAPI Hackathon.
+
+	
+	https://docs.google.com/forms/d/e/1FAIpQLSfA0xaZHeeY0bYR5xPF4RJFuPOtbujcGh_6qnin6vQwVhifyw/viewform
+	You've already responded
+	You're in! 🎉
+	Thank you for registering for the MESHAPI Hackathon.
+
+	You can only fill in this form once.
+
+	Try contacting the owner of the form if you think this is a mistake.
+
+@Hackathan Group : Please join https://chat.whatsapp.com/DewK4aDriiuCMe6GCdmJJU
+
+GitHub 👉 langgraph-tutorials 👉 https://github.com/sourangshupal/langraph-tutorials
+Devin, the AI software engineer 👉 https://devin.ai/
+Spider 2.0 👉 Evaluating Language Models on Real-World Enterprise Text-to-SQL Workflows 👉 https://spider2-sql.github.io/  
+Easily run & train models locally 👉 https://unsloth.ai/
+Semantic Caching for LLMs 👉 https://redis.io/docs/latest/develop/ai/redisvl/0.7.0/user_guide/llmcache/
+
+MeshAPI Docs 👉 Quickstart 👉 https://developers.meshapi.ai/docs/guides/quickstart
+
+PRODUCTION LLM ENGINEERING
+	RAG, Agents & Fine-Tuning 👉 https://drive.google.com/file/d/1V4VPWhm_Qoh9yOhtyCKt8neAHQW8lvIc/view?usp=sharing
+
+	Comprehensive Syllabus
+	From Neural Networks & Transformers through KV Cache, Scaling Laws, Reinforcement Learning, LLM Fine-Tuning,
+	MoE, Reasoning Models, Knowledge Distillation, Multimodal Foundations, Embedding Models, RAG Systems, Agents
+	in Production, and LLMOps
+
+	Table of Contents
+
+		Module 1 Foundations
+			■ Neural Network Refresher
+			■ Hardware
+			■ Transformers 101
+			■ Tokenization Deep Dive
+		Module 2 Prompt & Context Engineering
+			■ Prompt Engineering
+			■ Context Engineering
+		Module 3 Kv Cache & Advanced Attentions
+			■ KV Cache & Attention Variants & Positional Encodings
+			■ Scaling Laws
+		Module 4 Embedding Models
+			■ Embedding Models
+		Module 5 Reinforcement Learning
+			■ Reinforcement Learning
+		Module 6 Finetuning Language Models
+			■ Coding & Finetuning Transformer Architectures
+			■ Modern LLMs Finetuning Development Lifecycle
+			■ Pre-Training Deep Dive
+			■ Data Preparation for Fine-Tuning
+			■ Parameter-Efficient Fine-Tuning (PEFT)
+			■ Supervised Fine-Tuning (SFT)
+			■ Preference Alignment
+			■ Evaluation
+			■ Quantization & Deployment Prep
+			■ Tooling & Frameworks
+			■ Synthetic Dataset Generation
+		Module 7 Mixture Of Experts & Reasoning Models
+			■ Mixture of Experts
+			■ Reasoning Models
+		Module 8 Knowledge Distillation & Small Language Models
+			■ Small Language Models
+			■ Knowledge Distillation
+		Module 9 Multimodal Foundations
+			■ Vision Foundations
+			■ Visual Language Models
+			■ Speech AI & Fine-Tuning
+		Module 10 Langchain & Frameworks
+			■ LangChain
+		
+		Module 11 Rag Systems
+			■ Foundations of RAG
+			■ Advanced RAG Systems
+			■ Vector Quantizations Scaling
+			■ Multi-modal RAG
+			■ Graph RAG
+			■ Securing RAG
+		Module 12 Agents In Production
+			■ Pydantic — Data Validation & Structured Outputs
+			■ Langgraph
+			■ Agent Observability Tools
+			■ MCP
+			■ A2A
+			■ Function Calling
+			■ Amazon Bedrock AgentCore
+		Module 13 Harness Engineering & Llmops
+			■ Harness Engineering
+		Module 14 Capstone Project
+			■ Project Brief & Architecture Design
+			■ Building the Core System
+			■ Evaluation & Optimization
+			■ Deployment & Presentation
+		Milestone Projects 5 End-to-End Production Projects
+			■ Project 1 — MedScript AI (LLM Fine-Tuning)
+			■ Project 2 — EdgeReason (Knowledge Distillation)
+			■ Project 3 — LexisGraph (Advanced RAG)
+			■ Project 4 — AutoOps (Multi-Agent System)
+			■ Project 5 — ShipLLM (LLMOps + CI/CD)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+02 May 2026 👉 MESHAPI Hackathon Registration 👉 RAG-Based AI Applications
+***************************************************************************
+MESHAPI Hackathon Registration 👉 https://forms.gle/36LfhuzGacqdAnsHA
+
+MeshAPI Docs 👉 Quickstart 👉 https://developers.meshapi.ai/docs/guides/quickstart
+GitHub 👉 https://github.com/satish1650/Ultimate-RAG.git
+		   ✅ Ultimate-RAG/0-Course Materials/meshapi_model_test.py
+
+One endpoint for GPT, Claude, Gemini, and 300+ LLMs. Switch providers in real-time. Pay in any currency. 👉 https://meshapi.ai/
+	Your MESHAPI Hackathon API Credits Are Here!
+	Great news! The MESHAPI team has provided API credits for all registered participants of the hackathon.
+	Please find the attached document for the complete step-by-step redemption process.
+	A few things to keep in mind:
+	 - Redeem your credits before the hackathon begins
+	 - Credits are for individual use only — do not share
+	 - Reach out immediately if you face any issues during redemption
+	 
+Build something incredible! 🚀
+
+ALL THE BEST !!!
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
