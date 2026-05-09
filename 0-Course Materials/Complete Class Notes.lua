@@ -1803,3 +1803,25 @@ I have submitted my Solution and got below response
 	Try contacting the owner of the form if you think this is a mistake.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+09 May 2026 👉 Ultimate RAG 👉 LangGraph 👉 Langraph Tutorials
+****************************************************************
+GitHub 👉 langgraph-tutorials 👉 https://github.com/sourangshupal/langraph-tutorials
+		✅ langraph-tutorials/01_introduction_to_langgraph.ipynb
+		✅ langraph-tutorials/02_conditional_routing.ipynb
+		✅ langraph-tutorials/03_tool_integration_openai.ipynb
+
+LangChain 👉 Prebuilt middleware 👉 https://docs.langchain.com/oss/python/langchain/middleware/built-in
+
+Next Course:		
+PRODUCTION LLM ENGINEERING
+	RAG, Agents & Fine-Tuning 👉 https://drive.google.com/file/d/1V4VPWhm_Qoh9yOhtyCKt8neAHQW8lvIc/view?usp=sharing
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+10 May 2026 👉 Ultimate RAG 👉 LangGraph 👉 Langraph Tutorials
+****************************************************************
+GitHub 👉 langgraph-tutorials 👉 https://github.com/sourangshupal/langraph-tutorials
+		✅ langraph-tutorials/04_state_persistence_and_memory.ipynb
+		✅ langraph-tutorials/05_human_in_the_loop_streaming.ipynb
+		✅ langraph-tutorials/06_parallel_execution_subgraphs.ipynb
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
