@@ -1786,6 +1786,157 @@ End-to-end tutorial comparing RAG without metadata vs with GLiNER2-enriched meta
 
 #### `langraph-tutorials`
     ✅ 0langraph-tutorials/1_introduction_to_langgraph.ipynb
+
+## 02 May 2026 👉 MESHAPI Hackathon Registration 👉 RAG-Based AI Applications
+- Mesh_API 👉 300+ AI LLMs 👉 One line of code 👉 [click here](https://meshapi.ai/)
+- Mesh_API Hackathon Registration 👉 [click here](https://forms.gle/36LfhuzGacqdAnsHA)
+- Mesh_API Documentations 👉 Quickstart 👉 [clck here](https://developers.meshapi.ai/docs/guides/quickstart)
+- Mesh_API Test Model 👉 [click here](https://github.com/satish1650/Ultimate-RAG/blob/master/0-Course%20Materials/meshapi_model_test.py)
+
+One endpoint for GPT, Claude, Gemini, and 300+ LLMs. Switch providers in real-time. Pay in any currency. 👉 https://meshapi.ai/ <br>
+Your MESHAPI Hackathon API Credits Are Here! <br>
+Great news! The MESHAPI team has provided API credits for all registered participants of the hackathon. <br>
+Please find the attached document for the complete step-by-step redemption process. <br>
+A few things to keep in mind: <br>
+    - Redeem your credits before the hackathon begins <br>
+    - Credits are for individual use only — do not share <br>
+    - Reach out immediately if you face any issues during redemption <br>
+
+Build something incredible! 🚀 <br>
+
+ALL THE BEST !!! <br>
+
+## 02 May 2026 👉 MESHAPI Hackathon 👉 Project 👉 25-Mesh_API-Hackathon-Project-RAG-Based AI Applications 👉 rag-project
+### Project : RAG-Based AI Applications 👉 rag-project
+#### 🧾 Project Title
+📚 Agentic RAG Pipeline with FastAPI (PDF + OCR + Re-ranking)
+
+#### 🚀 One-liner Description
+A production-ready Retrieval-Augmented Generation (RAG) system that ingests PDFs (including scanned images), performs intelligent retrieval with re-ranking, and answers user queries using OpenAI models via FastAPI.
+
+#### ❗ Problem Statement
+Organizations often deal with large volumes of unstructured PDF documents containing both text and images (scanned documents). Extracting meaningful insights manually is time-consuming and inefficient. <br>
+This project solves: <br>
+- Querying large PDFs using natural language <br>
+- Extracting information from scanned documents (OCR) <br>
+- Improving retrieval accuracy using re-ranking <br>
+- Providing fast API-based access for integration <br>
+
+#### 🧠 Architecture Diagram (RAG Flow)
+                ┌──────────────┐
+                │   PDF Input  │
+                └──────┬───────┘
+                       │
+        ┌──────────────▼──────────────┐
+        │ PDF Processing (Text + OCR) │
+        └──────────────┬──────────────┘
+                       │
+               ┌───────▼────────┐
+               │   Chunking     │
+               └───────┬────────┘
+                       │
+               ┌───────▼────────┐
+               │ Embeddings API │
+               └───────┬────────┘
+                       │
+               ┌───────▼────────┐
+               │ Vector Store   │ (FAISS)
+               └───────┬────────┘
+                       │
+        ┌──────────────▼──────────────┐
+        │ Retriever (Top-K Results)   │
+        └──────────────┬──────────────┘
+                       │
+               ┌───────▼────────┐
+               │ Re-Ranker      │
+               └───────┬────────┘
+                       │
+               ┌───────▼────────┐
+               │ Agent Layer    │
+               └───────┬────────┘
+                       │
+               ┌───────▼────────┐
+               │ OpenAI LLM     │
+               └───────┬────────┘
+                       │
+               ┌───────▼────────┐
+               │ Final Answer   │
+               └────────────────┘
+
+#### 📁 Project Structure
+rag-project/
+│
+├── app/
+│   ├── main.py
+│   ├── rag_pipeline.py
+│   ├── agent.py
+│   ├── retriever.py
+│   ├── reranker.py
+│   ├── pdf_processor.py
+│   ├── embeddings.py
+│   └── config.py
+|   └── generator.py
+|   └── chunking.py
+│
+├── data/
+│   └── sample.pdf
+│
+├── vectorstore/
+│
+├── requirements.txt
+├── Dockerfile
+└── README.md
+
+#### 🧰 Tech Stack
+- Backend
+    - FastAPI
+    - Python
+- AI / ML
+    - OpenAI (Embeddings + LLM)
+    - FAISS (Vector DB)
+    - Scikit-learn (Re-ranking)
+- Document Processing
+    - PyPDF (text extraction)
+    - pdf2image (PDF → images)
+    - pytesseract (OCR)
+- Infra / Tools
+    - Docker (optional)
+    - Uvicorn (ASGI server)
+
+#### ⚙️ Setup & Installation Instructions
+1. Clone Repository
+1. Create Virtual Environment
+1. Activate
+1. Install Dependencies
+1. Setup Environment Variables
+1. Install System Dependencies (IMPORTANT)
+    - Poppler (for PDF images)
+    - Tesseract OCR
+    - Add Language Data
+    - Optional (Recommended in Code)
+
+#### ▶️ How to Run Locally
+- Start FastAPI Server
+- 🏠 Home
+- 📤 Upload PDF
+- ❓ Query PDF
+- ✅ Output
+    - Extracts text from PDF
+    - Extracts text from images (OCR)
+    - Retrieves relevant chunks
+    - Re-ranks results
+    - Generates accurate answer using LLM
+
+#### 🚀 Future Enhancements
+- Multi-document support
+- Hybrid search (BM25 + Vector)
+- Streaming responses
+- UI (React / Streamlit)
+- Replace OCR with Vision models
+
+#### 🎯 Conclusion
+This project provides a complete end-to-end implementation of an **Agentic RAG pipeline** capable of handling real-world PDFs with both text and images, making it suitable for enterprise document intelligence use cases.
+
 ---
 
 ## Create the virtual environment in anaconda3 folder
