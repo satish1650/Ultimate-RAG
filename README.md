@@ -1864,6 +1864,7 @@ This project solves: <br>
                └────────────────┘
 
 #### 📁 Project Structure
+```
 rag-project/
 │
 ├── app/
@@ -1886,6 +1887,7 @@ rag-project/
 ├── requirements.txt
 ├── Dockerfile
 └── README.md
+```
 
 #### 🧰 Tech Stack
 - Backend
