@@ -1753,3 +1753,181 @@ Build something incredible! 🚀
 ALL THE BEST !!!
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+03 May 2026 👉 MESHAPI Hackathon 👉 Project  👉 RAG-Based AI Applications 👉 rag-project
+******************************************************************************************
+🧾 Project Title
+	📚 Agentic RAG Pipeline with FastAPI (PDF + OCR + Re-ranking)
+
+🚀 One-liner Description
+	A production-ready Retrieval-Augmented Generation (RAG) system that ingests PDFs (including scanned images), performs intelligent retrieval with re-ranking, and answers user queries using OpenAI models via FastAPI.
+
+❗ Problem Statement
+	Organizations often deal with large volumes of unstructured PDF documents containing both text and images (scanned documents). Extracting meaningful insights manually is time-consuming and inefficient.
+	This project solves:
+		- Querying large PDFs using natural language
+		- Extracting information from scanned documents (OCR)
+		- Improving retrieval accuracy using re-ranking
+		- Providing fast API-based access for integration
+🧠 Architecture Diagram (RAG Flow)
+                ┌──────────────┐
+                │   PDF Input  │
+                └──────┬───────┘
+                       │
+        ┌──────────────▼──────────────┐
+        │ PDF Processing (Text + OCR) │
+        └──────────────┬──────────────┘
+                       │
+               ┌───────▼────────┐
+               │   Chunking     │
+               └───────┬────────┘
+                       │
+               ┌───────▼────────┐
+               │ Embeddings API │
+               └───────┬────────┘
+                       │
+               ┌───────▼────────┐
+               │ Vector Store   │ (FAISS)
+               └───────┬────────┘
+                       │
+        ┌──────────────▼──────────────┐
+        │ Retriever (Top-K Results)   │
+        └──────────────┬──────────────┘
+                       │
+               ┌───────▼────────┐
+               │ Re-Ranker      │
+               └───────┬────────┘
+                       │
+               ┌───────▼────────┐
+               │ Agent Layer    │
+               └───────┬────────┘
+                       │
+               ┌───────▼────────┐
+               │ OpenAI LLM     │
+               └───────┬────────┘
+                       │
+               ┌───────▼────────┐
+               │ Final Answer   │
+               └────────────────┘
+
+📁 Project Structure
+rag-project/
+│
+├── app/
+│   ├── main.py
+│   ├── rag_pipeline.py
+│   ├── agent.py
+│   ├── retriever.py
+│   ├── reranker.py
+│   ├── pdf_processor.py
+│   ├── embeddings.py
+│   └── config.py
+|   └── generator.py
+|   └── chunking.py
+│
+├── data/
+│   └── sample.pdf
+│
+├── vectorstore/
+│
+├── requirements.txt
+├── Dockerfile
+└── README.md
+
+🧰 Tech Stack
+⚙️ Setup & Installation Instructions
+▶️ How to Run Locally
+✅ Output
+	- Extracts text from PDF
+	- Extracts text from images (OCR)
+	- Retrieves relevant chunks
+	- Re-ranks results
+	- Generates accurate answer using LLM
+🚀 Future Enhancements
+	- Multi-document support
+	- Hybrid search (BM25 + Vector)
+	- Streaming responses
+	- UI (React / Streamlit)
+	- Replace OCR with Vision models
+🎯 Conclusion
+This project provides a complete end-to-end implementation of an Agentic RAG pipeline capable of handling real-world PDFs with both text and images, making it suitable for enterprise document intelligence use cases.
+
+-------------------------------------------------------
+
+MESHAPI Hackathon — Solution Submission Form 👉 https://forms.gle/bJrthbf4U6FvonJ66
+
+This is the official submission form for the MESHAPI Hackathon.
+Fill this out carefully — this is what the judges will evaluate your solution on.
+
+
+📌 One submission per team (Team Leader submits on behalf of the team) 
+
+📌 Make sure your GitHub repo is public before submitting 
+
+📌 Demo video must be 3–5 minutes only — no exceptions 
+
+📌 Submission Deadline: 4th MAY'26 - 9:00 AM IST sharp. 
+
+📌 Late submissions will not be considered
+
+
+Good luck! Build something incredible. 🚀
+
+💡 Github README.md Checklist 
+
+✅ Project Title & One-liner Description
+✅ Problem Statement
+✅ Architecture Diagram (RAG pipeline flow)
+✅ Tech Stack
+✅ Setup & Installation Instructions
+✅ How to Run Locally
+✅ Demo Video Link
+✅ SOLO/Team Members
+✅ Limitations & Future Scope
+
+I have submitted my Solution and got below response
+
+	MESHAPI Hackathon — Solution Submission Form
+	Submission received! 🎉
+	Your solution has been successfully submitted for MESHAPI Hackathon. The judges will review all submissions and results will be announced shortly after the 36-hour window closes.
+	Keep email handy — we'll reach out if we need anything!
+	Thank you for building. 💻🔥
+
+	You've already responded
+	Submission received! 🎉
+	Your solution has been successfully submitted for MESHAPI Hackathon. The judges will review all submissions and results will be announced shortly after the 36-hour window closes.
+	Keep email handy — we'll reach out if we need anything!
+	Thank you for building. 💻🔥
+
+	You can only fill in this form once.
+
+	Try contacting the owner of the form if you think this is a mistake.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+09 May Day - 48 👉 Ultimate RAG 👉 LangGraph 👉 Langraph Tutorials
+********************************************************************
+GitHub 👉 langgraph-tutorials 👉 https://github.com/sourangshupal/langraph-tutorials
+		✅ langraph-tutorials/01_introduction_to_langgraph.ipynb
+		✅ langraph-tutorials/02_conditional_routing.ipynb
+		✅ langraph-tutorials/03_tool_integration_openai.ipynb
+
+LangChain 👉 Prebuilt middleware 👉 https://docs.langchain.com/oss/python/langchain/middleware/built-in
+
+Next Course:		
+PRODUCTION LLM ENGINEERING
+	RAG, Agents & Fine-Tuning 👉 https://drive.google.com/file/d/1V4VPWhm_Qoh9yOhtyCKt8neAHQW8lvIc/view?usp=sharing
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+10 May Day - 49 👉 Ultimate RAG 👉 LangGraph 👉 Langraph Tutorials
+********************************************************************
+GitHub 👉 langgraph-tutorials 👉 https://github.com/sourangshupal/langraph-tutorials
+		✅ langraph-tutorials/04_state_persistence_and_memory.ipynb
+		✅ langraph-tutorials/05_human_in_the_loop_streaming.ipynb
+		✅ langraph-tutorials/06_parallel_execution_subgraphs.ipynb
+
+04_state_persistence_and_memory.ipynb
+	chatbot_memory.db Main Database File in LangGraph: Exploring State Persistence and Memory Management in RAG Systems.
+	chatbot_memory.db-wal - Write-Ahead Logging in LangGraph: Ensuring Data Integrity and Performance in RAG Systems.
+	chatbot_memory.db-shm - Shared Memory in LangGraph: A Deep Dive into State Persistence and Memory Management.
+
+	Login to Supabase 👉 https://supabase.com/database
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
