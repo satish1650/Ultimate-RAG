@@ -1939,6 +1939,77 @@ rag-project/
 #### 🎯 Conclusion
 This project provides a complete end-to-end implementation of an **Agentic RAG pipeline** capable of handling real-world PDFs with both text and images, making it suitable for enterprise document intelligence use cases.
 
+## 09 May Day - 48 👉 Ultimate RAG 👉 LangGraph 👉 Langraph Tutorials
+## 26-Langraph-Tutorials/langraph-tutorials
+## LangGraph Tutorial Series
+### Explained below Code:-
+    ✅ langraph-tutorials/01_introduction_to_langgraph.ipynb
+    ✅ langraph-tutorials/02_conditional_routing.ipynb
+    ✅ langraph-tutorials/03_tool_integration_openai.ipynb
+### Notebook 01: Introduction to LangGraph - Building Your First Graph
+#### 🎯 Learning Objectives
+By the end of this notebook, you will be able to: <br>
+1. Understand what LangGraph is and when to use it
+1. Create a basic StateGraph with TypedDict
+1. Define node functions that process state
+1. Connect nodes with edges to create workflows
+1. Compile and execute graphs
+1. Debug and understand graph execution flow
+
+### Notebook 02: Dynamic Routing with Conditional Edges
+#### 🎯 Learning Objectives
+By the end of this notebook, you will be able to: <br>
+1. Understand conditional edges and routing logic
+1. Create routing functions that make decisions based on state
+1. Build graphs with multiple execution paths
+1. Handle branching workflows
+1. Debug and visualize complex graph flows
+
+### Notebook 03: Tool Integration and OpenAI Function Calling
+#### 🎯 Learning Objectives
+1. Integrate OpenAI's GPT models with LangGraph
+1. Define and bind tools to LLMs
+1. Implement function/tool calling patterns
+1. Manage message state with the add_messages reducer
+1. Build AI agents that can use multiple tools
+1. Handle tool execution and errors gracefully
+
+## 10 May Day - 49 👉 Ultimate RAG 👉 LangGraph 👉 Langraph Tutorials
+## 26-Langraph-Tutorials/langraph-tutorials
+## LangGraph Tutorial Series
+### Explained below Code:-
+    ✅ langraph-tutorials/04_state_persistence_and_memory.ipynb
+    ✅ langraph-tutorials/05_human_in_the_loop_streaming.ipynb
+    ✅ langraph-tutorials/06_parallel_execution_subgraphs.ipynb
+
+### Notebook 04: State Persistence and Memory with Checkpointers
+#### 🎯 Learning Objectives
+By the end of this notebook, you will be able to: <br>
+1. Understand checkpointing and why it's crucial for agents
+1. Use MemorySaver for in-memory persistence
+1. Use SqliteSaver for file-based persistence
+1. Manage conversations with thread IDs
+1. Retrieve and inspect conversation history
+1. Build a stateful chatbot with memory
+
+### Notebook 05: Human-in-the-Loop Workflows and Advanced Streaming
+#### 🎯 Learning Objectives
+By the end of this notebook, you will be able to: <br>
+1. Implement human-in-the-loop patterns with `interrupt()` + `Command(resume=...)`
+1. Understand static vs dynamic interrupts
+1. Build approval workflows with the modern LangGraph 1.1.9 pattern
+1. Stream graph execution using all 7 streaming modes
+1. Use Type-Safe Streaming v2 with `version="v2"`
+
+### Notebook 06: Parallel Execution, Subgraphs, and Map-Reduce Patterns
+#### 🎯 Learning Objectives
+By the end of this notebook, you will be able to: <br>
+1. Implement parallel execution with the Send API
+1. Create subgraphs for modularity
+1. Build multi-agent architectures
+1. Use map-reduce patterns
+1. Implement deferred nodes (LangGraph 1.1.9 feature)
+
 ---
 
 ## Create the virtual environment in anaconda3 folder
