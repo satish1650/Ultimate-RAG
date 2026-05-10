@@ -1924,4 +1924,10 @@ GitHub 👉 langgraph-tutorials 👉 https://github.com/sourangshupal/langraph-t
 		✅ langraph-tutorials/05_human_in_the_loop_streaming.ipynb
 		✅ langraph-tutorials/06_parallel_execution_subgraphs.ipynb
 
+04_state_persistence_and_memory.ipynb
+	chatbot_memory.db Main Database File in LangGraph: Exploring State Persistence and Memory Management in RAG Systems.
+	chatbot_memory.db-wal - Write-Ahead Logging in LangGraph: Ensuring Data Integrity and Performance in RAG Systems.
+	chatbot_memory.db-shm - Shared Memory in LangGraph: A Deep Dive into State Persistence and Memory Management.
+
+	Login to Supabase 👉 https://supabase.com/database
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
