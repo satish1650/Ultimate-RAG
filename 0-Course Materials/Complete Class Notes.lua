@@ -1931,3 +1931,45 @@ GitHub 👉 langgraph-tutorials 👉 https://github.com/sourangshupal/langraph-t
 
 	Login to Supabase 👉 https://supabase.com/database
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16 May Day - 49 👉 Ultimate RAG 👉 LangGraph 👉 Langraph Tutorials
+********************************************************************
+GitHub 👉 langgraph-tutorials 👉 https://github.com/sourangshupal/langraph-tutorials
+		✅ langraph-tutorials/06_parallel_execution_subgraphs.ipynb
+		✅ langraph-tutorials/07_production_patterns_advanced_features.ipynb
+		✅ langraph-tutorials/08_command_functional_api_longterm_memory.ipynb
+		✅ langraph-tutorials/09_multi_agent_systems.ipynb
+
+Superintelligent Retrieval Agent: The NextFrontier of InformationRetrieval
+	Research Paper 👉 https://arxiv.org/pdf/2605.06647
+
+NVIDIA NeMo Guardrails Library 👉 https://github.com/NVIDIA-NeMo/Guardrails
+
+Introducing OpenAI Privacy Filter 👉 https://openai.com/index/introducing-openai-privacy-filter/
+Hugging Face 👉 openai/privacy-filter 👉 https://huggingface.co/openai/privacy-filter
+
+Langchain 👉 Agent Server 👉 https://docs.langchain.com/langsmith/agent-server
+
+		Agent Server :-
+		LangSmith Deployment’s Agent Server offers an API for creating and managing agent-based applications. It is built on the concept of 
+		assistants, which are agents configured for specific tasks, and includes built-in persistence and a task queue. This versatile API 
+		supports a wide range of agentic application use cases, from background processing to real-time interactions.
+
+Welcome to Learn Harness Engineering 👉 https://walkinglabs.github.io/learn-harness-engineering/en/
+
+Flexible models, now with GLM-5.1 and Dola-Seed-2.0-pro, and unlimited tools to power your coding
+	ModelArk Coding Plan 👉 https://www.byteplus.com/en/activity/codingplan
+	ModelArk Coding Plan 👉 Quick start guide 👉 https://docs.byteplus.com/en/docs/ModelArk/1928261
+
+Context Rot: How Increasing Input Tokens Impacts LLM Performance https://www.trychroma.com/research/context-rot
+
+Langchain Docs 👉 Get started with Studio 👉 https://docs.langchain.com/langsmith/quick-start-studio 
+
+New Course 👉 Agentic AI & GenAI-AgentOps with Cloud 3.0 👉 https://agenticai3.lovable.app/ 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16 May Day - 50 👉 Ultimate RAG 👉 LangGraph 👉 Langraph Tutorials
+********************************************************************
+GitHub 👉 langgraph-tutorials 👉 https://github.com/sourangshupal/langraph-tutorials
+		✅ langraph-tutorials/10_testing_observability_platform.ipynb
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
