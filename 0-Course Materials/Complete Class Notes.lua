@@ -1931,7 +1931,7 @@ GitHub 👉 langgraph-tutorials 👉 https://github.com/sourangshupal/langraph-t
 
 	Login to Supabase 👉 https://supabase.com/database
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-16 May Day - 49 👉 Ultimate RAG 👉 LangGraph 👉 Langraph Tutorials
+16 May Day - 50 👉 Ultimate RAG 👉 LangGraph 👉 Langraph Tutorials
 ********************************************************************
 GitHub 👉 langgraph-tutorials 👉 https://github.com/sourangshupal/langraph-tutorials
 		✅ langraph-tutorials/06_parallel_execution_subgraphs.ipynb
@@ -1967,7 +1967,7 @@ Langchain Docs 👉 Get started with Studio 👉 https://docs.langchain.com/lang
 New Course 👉 Agentic AI & GenAI-AgentOps with Cloud 3.0 👉 https://agenticai3.lovable.app/ 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-16 May Day - 50 👉 Ultimate RAG 👉 LangGraph 👉 Langraph Tutorials
+16 May Day - 51 👉 Ultimate RAG 👉 LangGraph 👉 Langraph Tutorials
 ********************************************************************
 GitHub 👉 langgraph-tutorials 👉 https://github.com/sourangshupal/langraph-tutorials
 		✅ langraph-tutorials/10_testing_observability_platform.ipynb
