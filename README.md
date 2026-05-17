@@ -2010,6 +2010,65 @@ By the end of this notebook, you will be able to: <br>
 1. Use map-reduce patterns
 1. Implement deferred nodes (LangGraph 1.1.9 feature)
 
+## 16 May Day - 50 👉 Ultimate RAG 👉 LangGraph 👉 Langraph Tutorials
+## 26-Langraph-Tutorials/langraph-tutorials
+## LangGraph Tutorial Series 
+### Explained below Code:-
+    ✅ langraph-tutorials/07_production_patterns_advanced_features.ipynb
+    ✅ langraph-tutorials/08_command_functional_api_longterm_memory.ipynb
+    ✅ langraph-tutorials/09_multi_agent_systems.ipynb
+ 	✅ langraph-tutorials/09_multi_agent_systems.ipynb
+
+### 
+
+## 17 May Day - 51 👉 Ultimate RAG 👉 LangGraph 👉 Langraph Tutorials 👉 LangSmith and Studio & Project-5: Agentic-RAG-Project
+## 26-Langraph-Tutorials/langraph-tutorials
+## LangGraph Tutorial Series & Project-5: Agentic-RAG-Project
+### Explained below Code:-
+	✅ langraph-tutorials/10_testing_observability_platform.ipynb
+
+### Notebook 10: Observability & LangGraph Platform
+#### Shipping LangGraph to Production
+#### 🎯 Learning Objectives
+By the end of this notebook, you will be able to: <br>
+1. LangSmith — Tracing, evaluation, and monitoring
+1. LangGraph Platform — Deployment, REST APIs, remote graphs
+1. LangGraph Studio v2 — Local debugging and time-travel
+1. Setup: Demo Graph
+1. **Part-1:** LangSmith — Observability & Evaluation <br>
+    **Setup** <br>
+        ```
+        LANGSMITH_API_KEY=ls-your-key-here
+        LANGCHAIN_TRACING_V2=true
+        LANGCHAIN_PROJECT=my-project-name
+        ```
+1. **Part-2:** LangGraph Platform <br>
+    **Deployment Steps (Cloud SaaS)**<br>
+    1. Create `langgraph.json` in your project root
+    1. Connect your GitHub repository in LangSmith
+    1. Deploy with 1 click
+    1. Access via REST API or Remote Graph SDK
+
+1. **Part-3:** LangGraph Studio v2 — Local Debugging <br>
+    **What's New in Studio v2** <br>
+    LangGraph Studio v2 is fully web-based — no desktop app required: <br>
+    - **Run locally:** `langgraph serve --reload` launches a local server <br>
+    - **Browser UI:** Open the Studio in any browser <br>
+    - **Time-travel debugging:** Rewind to any checkpoint, edit state, fork execution <br>
+    - **Production trace replay:** Pull real production traces and replay locally <br>
+    - **Hot reloading:** Code changes reflect immediately <br>
+    - **Subgraph inspection:** See inside nested subgraphs with `subgraphs=True` <br>
+
+### Project-5: Agentic-RAG-Project
+#### Step-by-Step Local Development Guide
+- PostgreSQL (Neon serverless)
+    - Get connection string from [click here](https://console.neon.tech)
+- Redis (Upstash serverless)
+	- Sing up at [click here](https://console.upstash.com/redis) — create a database — copy connection details
+- Langfuse Cloud (observability)
+	- Sign up at [click here](https://cloud.langfuse.com) — copy keys from project settings
+- Jina AI Embeddings (Required for hybrid search)
+	- Sign up at [click here](https://jina.ai/embeddings) — copy API key
 ---
 
 ## Create the virtual environment in anaconda3 folder
