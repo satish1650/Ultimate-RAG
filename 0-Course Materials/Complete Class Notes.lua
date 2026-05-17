@@ -1967,9 +1967,29 @@ Langchain Docs 👉 Get started with Studio 👉 https://docs.langchain.com/lang
 New Course 👉 Agentic AI & GenAI-AgentOps with Cloud 3.0 👉 https://agenticai3.lovable.app/ 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-16 May Day - 51 👉 Ultimate RAG 👉 LangGraph 👉 Langraph Tutorials
-********************************************************************
+16 May Day - 51 👉 Ultimate RAG 👉 LangGraph 👉 Langraph Tutorials 👉 LangSmith and Studio 👉 Project-5 👉 Agentic-RAG-project
+*********************************************************************************************************************************
 GitHub 👉 langgraph-tutorials 👉 https://github.com/sourangshupal/langraph-tutorials
 		✅ langraph-tutorials/10_testing_observability_platform.ipynb
+		✅ langraph-tutorials/06_parallel_execution_subgraphs.ipynb
+		✅ langraph-tutorials/langgraph.json
+
+GitHub 👉 Project-5 👉 https://github.com/sourangshupal/Agentic-RAG-project/tree/develop
+		✅ Agentic-RAG-project/step-by-step.md
+		✅ Agentic-RAG-project/scripts/test_connections.py
+
+	Project Setup :-
+	✅ PostgreSQL (Neon serverless)
+		Get connection string from https://console.neon.tech
+	✅ Redis (Upstash serverless)
+		Sing up at https://console.upstash.com/redis — create a database — copy connection details
+	✅ Langfuse Cloud (observability)
+		Sign up at https://cloud.langfuse.com — copy keys from project settings
+	✅ Jina AI Embeddings (Required for hybrid search)
+		Sign up at https://jina.ai/embeddings — copy API key
+
+https://github.com/d-hackmt/enterprise_rag-with-GCP
+
+https://www.krishnaik.in/project/production-grade-cyclic-rag-with-langgraph-gcp-and-groq
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
