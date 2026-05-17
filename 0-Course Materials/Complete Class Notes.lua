@@ -1967,7 +1967,7 @@ Langchain Docs 👉 Get started with Studio 👉 https://docs.langchain.com/lang
 New Course 👉 Agentic AI & GenAI-AgentOps with Cloud 3.0 👉 https://agenticai3.lovable.app/ 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-16 May Day - 51 👉 Ultimate RAG 👉 LangGraph 👉 Langraph Tutorials 👉 LangSmith and Studio 👉 Project-5 👉 Agentic-RAG-project
+17 May Day - 51 👉 Ultimate RAG 👉 LangGraph 👉 Langraph Tutorials 👉 LangSmith and Studio 👉 Project-5 👉 Agentic-RAG-project
 *********************************************************************************************************************************
 GitHub 👉 langgraph-tutorials 👉 https://github.com/sourangshupal/langraph-tutorials
 		✅ langraph-tutorials/10_testing_observability_platform.ipynb
