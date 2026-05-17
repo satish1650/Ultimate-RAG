@@ -2072,20 +2072,20 @@ This notebook covers **production multi-agent architectures** in LangGraph 1.1.9
 1. Custom Coordinator Pattern (`No Extra Packages`)
     - How It Works
 1. Supervisor Pattern (`langgraph-supervisor`)
-    - How the Supervisor Differs from a Custom Coordinator <br>
-    - Supervisor Internals <br>
+    - How the Supervisor Differs from a Custom Coordinator
+    - Supervisor Internals
 1. Swarm Pattern (`langgraph-swarm`)
-    - Swarm vs. Supervisor — The Key Difference <br>
-    - Handoff Mechanism <br>
-    - Trade-offs <br>
+    - Swarm vs. Supervisor — The Key Difference
+    - Handoff Mechanism
+    - Trade-offs
 1. Inter-Agent Communication Patterns
-    - **Method 1:** Shared Typed State <br>
-    - **Method 2:** Message Passing <br>
-1. Error Propagation in Multi-Agent Systems <br>
-    - **Always catch exceptions in agent nodes** — never let an unhandled exception kill the graph <br>
-    - **Use Command to route to a retry node** — combine with `step_count` guards to avoid infinite loops <br>
-    - **Store errors in state** — makes debugging and auditing easier <br>
-    - **Degrade gracefully** — if retries are exhausted, route to END with a user-friendly error message <br>
+    - **Method 1:** Shared Typed State
+    - **Method 2:** Message Passing
+1. Error Propagation in Multi-Agent Systems
+    - **Always catch exceptions in agent nodes** — never let an unhandled exception kill the graph
+    - **Use Command to route to a retry node** — combine with `step_count` guards to avoid infinite loops
+    - **Store errors in state** — makes debugging and auditing easier
+    - **Degrade gracefully** — if retries are exhausted, route to END with a user-friendly error message
 
 ## 17 May Day - 51 👉 Ultimate RAG 👉 LangGraph 👉 Langraph Tutorials 👉 LangSmith and Studio & Project-5: Agentic-RAG-Project
 ## 26-Langraph-Tutorials/langraph-tutorials
@@ -2105,9 +2105,9 @@ By the end of this notebook, you will be able to: <br>
 1. **Part-1:** LangSmith — Observability & Evaluation <br>
     **Setup** <br>
         ```
-        LANGSMITH_API_KEY=ls-your-key-here
-        LANGCHAIN_TRACING_V2=true
-        LANGCHAIN_PROJECT=my-project-name
+        LANGSMITH_API_KEY=ls-your-key-here <br>
+        LANGCHAIN_TRACING_V2=true <br>
+        LANGCHAIN_PROJECT=my-project-name <br>
         ```
 1. **Part-2:** LangGraph Platform <br>
     **Deployment Steps (Cloud SaaS)**<br>
