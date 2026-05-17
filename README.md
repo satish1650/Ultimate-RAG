@@ -2062,13 +2062,13 @@ By the end of this notebook, you will be able to: <br>
 ### Project-5: Agentic-RAG-Project
 #### Step-by-Step Local Development Guide
 - PostgreSQL (Neon Serverless)
-    - Get connection string from Log in to `Neon Serverless` 👉 [click here](https://console.neon.tech)
+    - Sing up at `Neon Serverless` 👉 [click here](https://console.neon.tech)
 - Redis (Upstash Serverless)
-	- Sing up at Log in to `Upstash Serverless` 👉 [click here](https://console.upstash.com/redis) — create a database — copy connection details
+	- Sing up at `Upstash Serverless` 👉 [click here](https://console.upstash.com/redis) — create a database — copy connection details
 - Langfuse Cloud (observability)
-	- Sign up at Log in to `Langfuse Cloud` 👉 [click here](https://cloud.langfuse.com) — copy keys from project settings
+	- Sign up at `Langfuse Cloud` 👉 [click here](https://cloud.langfuse.com) — copy keys from project settings
 - Jina AI Embeddings (Required for hybrid search)
-	- Sign up at Login to `Jina AI Embeddings` 👉 [click here](https://jina.ai/embeddings) — copy API key
+	- Sign up at `Jina AI Embeddings` 👉 [click here](https://jina.ai/embeddings) — copy API key
 ---
 
 ## Create the virtual environment in anaconda3 folder
