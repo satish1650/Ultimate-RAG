@@ -2104,11 +2104,11 @@ By the end of this notebook, you will be able to: <br>
 1. Setup: Demo Graph
 1. **Part-1:** LangSmith — Observability & Evaluation <br>
     **Setup** <br>
-        ```
-        LANGSMITH_API_KEY=ls-your-key-here <br>
-        LANGCHAIN_TRACING_V2=true <br>
-        LANGCHAIN_PROJECT=my-project-name <br>
-        ```
+```
+    LANGSMITH_API_KEY=ls-your-key-here
+    LANGCHAIN_TRACING_V2=true
+    LANGCHAIN_PROJECT=my-project-name
+```
 1. **Part-2:** LangGraph Platform <br>
     **Deployment Steps (Cloud SaaS)**<br>
     1. Create `langgraph.json` in your project root
