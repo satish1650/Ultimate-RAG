@@ -2010,6 +2010,132 @@ By the end of this notebook, you will be able to: <br>
 1. Use map-reduce patterns
 1. Implement deferred nodes (LangGraph 1.1.9 feature)
 
+## 16 May Day - 50 👉 Ultimate RAG 👉 LangGraph 👉 Langraph Tutorials
+## 26-Langraph-Tutorials/langraph-tutorials
+## LangGraph Tutorial Series 
+### Explained below Code:-
+    ✅ langraph-tutorials/07_production_patterns_advanced_features.ipynb
+    ✅ langraph-tutorials/08_command_functional_api_longterm_memory.ipynb
+    ✅ langraph-tutorials/09_multi_agent_systems.ipynb
+
+### Notebook 07: Production-Ready Patterns and Advanced LangGraph 1.1.9 Features
+#### 🎯 Learning Objectives
+By the end of this notebook, you will be able to: <br>
+1. Implement node-level caching (LangGraph 1.1.9)
+1. Use pre/post model hooks for guardrails
+1. Apply advanced error handling and retry policies
+1. Implement time travel and state forking
+1. Apply production deployment best practices
+
+### Notebook 08: The Command Primitive, Functional API & Long-Term Memory
+#### 🎯 Learning Objectives
+**LangGraph 1.1.9 — Advanced Patterns** <br>
+This notebook covers three major additions to LangGraph post-1.0.5: <br>
+1. **The `Command` Class** — Combine state updates and routing in a single return value
+1. **The Functional API** — `@entrypoint` and `@task` decorators as an alternative to `StateGraph`
+1. **Long-Term Memory with Stores** — Cross-thread, cross-session memory
+1. **Part 1:** The Command Class — Combined State Update + Routing
+    - The Problem Command Solves <br>
+    - Command for HITL (Human in the Loop) Resumption <br>
+1. **Part 2:** The Functional API — @entrypoint and @task
+    - What Is the Functional API? <br>
+    - Interoperability: Functional API and StateGraph <br>
+1. **Part 3:** Long-Term Memory with Stores <br>
+    - Checkpointer vs Store — The Key Distinction <br>
+
+### Notebook 09: Multi-Agent Systems — Supervisor, Swarm & Custom Architectures
+#### 🎯 Learning Objectives
+This notebook covers **production multi-agent architectures** in LangGraph 1.1.9: <br>
+1. **Custom Coordinator** — Full-control patterns you build from scratch (extends Notebook 06)
+1. **Supervisor Pattern** — Hierarchical systems via langgraph-supervisor
+1. **Swarm Pattern** — Decentralized autonomous handoffs via langgraph-swarm
+1. **Shared State & Communication** — How agents share information
+1. **Error Propagation** — Building robust multi-agent pipelines
+1. **Capstone Project** — A production-grade research system
+
+### Complexity Level: Expert (6/6)
+1. Architecture Comparison
+    - When to Use Each Pattern
+        - **Use Supervisor when:**
+            - You need predictable, auditable routing
+            - Compliance or enterprise requirements mandate a clear decision trail
+            - You are building hierarchical org-chart-style workflows
+        - **Use Swarm when:**
+            - Routing speed matters more than auditability
+            - Agents have enough context to self-route reliably
+            - You prefer decentralized, emergent decision-making
+        - **Use Custom when:**
+            - You need non-standard routing logic (rules-based, ML-based, etc.)
+            - Agents share complex typed state beyond a message list
+            - The two packages above do not fit your schema
+1. Setup
+1. Custom Coordinator Pattern (`No Extra Packages`)
+    - How It Works
+1. Supervisor Pattern (`langgraph-supervisor`)
+    - How the Supervisor Differs from a Custom Coordinator
+    - Supervisor Internals
+1. Swarm Pattern (`langgraph-swarm`)
+    - Swarm vs. Supervisor — The Key Difference
+    - Handoff Mechanism
+    - Trade-offs
+1. Inter-Agent Communication Patterns
+    - **Method 1:** Shared Typed State
+    - **Method 2:** Message Passing
+1. Error Propagation in Multi-Agent Systems
+    - **Always catch exceptions in agent nodes** — never let an unhandled exception kill the graph
+    - **Use Command to route to a retry node** — combine with `step_count` guards to avoid infinite loops
+    - **Store errors in state** — makes debugging and auditing easier
+    - **Degrade gracefully** — if retries are exhausted, route to END with a user-friendly error message
+
+## 17 May Day - 51 👉 Ultimate RAG 👉 LangGraph 👉 Langraph Tutorials 👉 LangSmith and Studio & Project-5: Agentic-RAG-Project
+## 26-Langraph-Tutorials/langraph-tutorials
+## LangGraph Tutorial Series & Project-5: Agentic-RAG-Project
+### Explained below Code:-
+	✅ langraph-tutorials/10_testing_observability_platform.ipynb
+    ✅ langraph-tutorials/langgraph.json
+
+### Notebook 10: Observability & LangGraph Platform
+#### Shipping LangGraph to Production
+#### 🎯 Learning Objectives
+By the end of this notebook, you will be able to: <br>
+1. LangSmith — Tracing, evaluation, and monitoring
+1. LangGraph Platform — Deployment, REST APIs, remote graphs
+1. LangGraph Studio v2 — Local debugging and time-travel
+1. Setup: Demo Graph
+1. **Part-1:** LangSmith — Observability & Evaluation <br>
+    **Setup** <br>
+```
+    LANGSMITH_API_KEY=ls-your-key-here
+    LANGCHAIN_TRACING_V2=true
+    LANGCHAIN_PROJECT=my-project-name
+```
+1. **Part-2:** LangGraph Platform <br>
+    **Deployment Steps (Cloud SaaS)**<br>
+    1. Create `langgraph.json` in your project root
+    1. Connect your GitHub repository in LangSmith
+    1. Deploy with 1 click
+    1. Access via REST API or Remote Graph SDK
+
+1. **Part-3:** LangGraph Studio v2 — Local Debugging <br>
+    **What's New in Studio v2** <br>
+    LangGraph Studio v2 is fully web-based — no desktop app required: <br>
+    - **Run locally:** `langgraph serve --reload` launches a local server <br>
+    - **Browser UI:** Open the Studio in any browser <br>
+    - **Time-travel debugging:** Rewind to any checkpoint, edit state, fork execution <br>
+    - **Production trace replay:** Pull real production traces and replay locally <br>
+    - **Hot reloading:** Code changes reflect immediately <br>
+    - **Subgraph inspection:** See inside nested subgraphs with `subgraphs=True` <br>
+
+### Project-5: Agentic-RAG-Project
+#### Step-by-Step Local Development Guide
+- PostgreSQL (Neon Serverless)
+    - Sing up at `Neon Serverless` 👉 [click here](https://console.neon.tech)
+- Redis (Upstash Serverless)
+	- Sing up at `Upstash Serverless` 👉 [click here](https://console.upstash.com/redis) — create a database — copy connection details
+- Langfuse Cloud (observability)
+	- Sign up at `Langfuse Cloud` 👉 [click here](https://cloud.langfuse.com) — copy keys from project settings
+- Jina AI Embeddings (Required for hybrid search)
+	- Sign up at `Jina AI Embeddings` 👉 [click here](https://jina.ai/embeddings) — copy API key
 ---
 
 ## Create the virtual environment in anaconda3 folder
