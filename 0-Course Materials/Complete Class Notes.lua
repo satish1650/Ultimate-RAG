@@ -2003,8 +2003,8 @@ https://github.com/d-hackmt/enterprise_rag-with-GCP
 https://www.krishnaik.in/project/production-grade-cyclic-rag-with-langgraph-gcp-and-groq
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-23 May Day - 52 👉 Ultimate RAG 👉 Project-5 👉 Agentic RAG Project using LangGraph
-*************************************************************************************
+23 May Day - 52 👉 Ultimate RAG 👉 Project-5 👉 Agentic RAG Project using LangGraph 👉 Workflows Explanation
+***************************************************************************************************************
 Class Notes 👉 https://krishnaikacademy.notion.site/Project-5-369eba9593d0802ca0ededc00f9b203d
 
 GitHub https://github.com/sourangshupal/Agentic-RAG-project
@@ -2029,8 +2029,8 @@ Wez's Terminal Emulator 👉 WezTerm 👉 https://wezterm.org/index.html
 The AI-native agentic 👉 Terax 👉 https://terax.app/
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-24 May Day - 53 👉 Ultimate RAG 👉 Project-5 👉 Agentic RAG Project using LangGraph
-*************************************************************************************
+24 May Day - 53 👉 Ultimate RAG 👉 Project-5 👉 Agentic RAG Project using LangGraph 👉 LangFuse Observability & Core Code Explanation
+****************************************************************************************************************************************
 Class Notes 👉 https://krishnaikacademy.notion.site/Project-5-369eba9593d0802ca0ededc00f9b203d
 
 GitHub 👉 https://github.com/sourangshupal/Agentic-RAG-project
