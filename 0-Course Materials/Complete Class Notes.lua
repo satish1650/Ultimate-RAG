@@ -1351,13 +1351,13 @@ Class Notes 👉 https://krishnaikacademy.notion.site/Multimodal-Project-RAG-337
 
 A complete pipeline for Multi-modal RAG with GLM OCR with Ollama support.
 	Local Setup 👉 multi-modal-rag master branch 👉 GitHub 👉 https://github.com/sourangshupal/multi-modal-rag
-					✅ multi-modal-rag/workflows/01-system-overview.md
-					✅ multi-modal-rag/workflows/02-full-rag-pipeline.md
-					✅ multi-modal-rag/workflows/03-ingestion-pipeline.md
-					✅ multi-modal-rag/workflows/04-retrieval-pipeline.md
-					✅ multi-modal-rag/workflows/05-data-structures.md
-					✅ multi-modal-rag/workflows/06-parsing-pipeline.md
-					✅ multi-modal-rag/workflows/11-reranking-backends.md
+		✅ multi-modal-rag/workflows/01-system-overview.md
+		✅ multi-modal-rag/workflows/02-full-rag-pipeline.md
+		✅ multi-modal-rag/workflows/03-ingestion-pipeline.md
+		✅ multi-modal-rag/workflows/04-retrieval-pipeline.md
+		✅ multi-modal-rag/workflows/05-data-structures.md
+		✅ multi-modal-rag/workflows/06-parsing-pipeline.md
+		✅ multi-modal-rag/workflows/11-reranking-backends.md
 
 	GPU Setup 👉 multi-modal-rag deployment branch 👉 GitHub 👉 https://github.com/sourangshupal/multi-modal-rag/tree/deployment
 		✅ multi-modal-rag/LIGHTNING_AI_DEPLOY.md
@@ -1404,8 +1404,8 @@ Whatsapp Channel 👉 https://whatsapp.com/channel/0029Vb7ASFR1XquZTyr6yh16
 Class Notes 👉 https://krishnaikacademy.notion.site/Multimodal-Project-RAG-337eba9593d080eab198f12eaff1d977
 
 multi-modal-rag Qwen brach 👉 GitHub 👉 https://github.com/sourangshupal/multi-modal-rag/tree/qwen
-		✅ multi-modal-rag/docker-compose.yml
-		✅ multi-modal-rag/Docker_Compose_Testing.md
+	✅ multi-modal-rag/docker-compose.yml
+	✅ multi-modal-rag/Docker_Compose_Testing.md
 
 Qwen3-VL-Embedding 👉 https://qwen.ai/blog?id=qwen3-vl-embedding
 
@@ -1452,8 +1452,8 @@ Qdrant 👉 What is Vector Quantization? 👉 https://qdrant.tech/articles/what-
 Class Notes 👉 https://krishnaikacademy.notion.site/Commands-346eba9593d0800db812fb45e956d54f
 
 GitHub 👉 https://github.com/sourangshupal/multi-modal-rag/tree/deployment
-		✅ multi-modal-rag/docs/docs/AWS_ARCHITECTURE_EXPLAINER.md
-		✅ multi-modal-rag/docs/docs/docs/STEP_BY_STEP_DEPLOY.md
+	✅ multi-modal-rag/docs/docs/AWS_ARCHITECTURE_EXPLAINER.md
+	✅ multi-modal-rag/docs/docs/docs/STEP_BY_STEP_DEPLOY.md
 
 --------------------------------------------------------------------
 multi-modal-rag/docs/docs/docs/STEP_BY_STEP_DEPLOY.md
@@ -1478,8 +1478,8 @@ AdministratorAccess
 Class Notes 👉 https://krishnaikacademy.notion.site/Commands-346eba9593d0800db812fb45e956d54f
 
 GitHub 👉 https://github.com/sourangshupal/multi-modal-rag/tree/deployment
-		✅ multi-modal-rag/docs/docs/AWS_ARCHITECTURE_EXPLAINER.md
-		✅ multi-modal-rag/docs/docs/docs/STEP_BY_STEP_DEPLOY.md
+	✅ multi-modal-rag/docs/docs/AWS_ARCHITECTURE_EXPLAINER.md
+	✅ multi-modal-rag/docs/docs/docs/STEP_BY_STEP_DEPLOY.md
 
 multi-modal-rag/docs/docs/docs/STEP_BY_STEP_DEPLOY.md
 Step-by-Step AWS Deployment Guide
@@ -1536,35 +1536,35 @@ Hermes Agent 👉 https://github.com/nousresearch/hermes-agent
 Class Notes 👉 https://krishnaikacademy.notion.site/Commands-346eba9593d0800db812fb45e956d54f
 
 GitHub 👉 qwen branch 👉 https://github.com/sourangshupal/multi-modal-rag/
-		✅ multi-modal-rag/src/doc_parser/ingestion/image_captioner.py
-		✅ multi-modal-rag/src/doc_parser/ingestion/vector_store.py
-		✅ multi-modal-rag/src/doc_parser/ingestion/embedder.py
+	✅ multi-modal-rag/src/doc_parser/ingestion/image_captioner.py
+	✅ multi-modal-rag/src/doc_parser/ingestion/vector_store.py
+	✅ multi-modal-rag/src/doc_parser/ingestion/embedder.py
 
-		Two entry Point to trigger the API
-		✅ multi-modal-rag/src/doc_parser/api/app.py
-		✅ multi-modal-rag/scripts/search.py
+	Two entry Point to trigger the API
+	✅ multi-modal-rag/src/doc_parser/api/app.py
+	✅ multi-modal-rag/scripts/search.py
 		
 GitHub 👉 deployment branch 👉 https://github.com/sourangshupal/multi-modal-rag/
-		Docker
-		✅ multi-modal-rag/Dockerfile
-		✅ multi-modal-rag/Dockerfile.gpu
-		✅ multi-modal-rag/Dockerfile.visualizer
-		✅ multi-modal-rag/docker-compose.yml
-		✅ multi-modal-rag/docker-compose.gpu.yml
-		✅ multi-modal-rag/tests/integration/test_ingest_e2e.py
-		✅ multi-modal-rag/tests/integration/test_pipeline_e2e.py
-		✅ multi-modal-rag/tests/unit/test_api_schemas.py
-		✅ multi-modal-rag/tests/unit/test_chunker.py
-		✅ multi-modal-rag/tests/unit/test_embedder.py
-		✅ multi-modal-rag/tests/unit/test_generate.py
-		✅ multi-modal-rag/tests/unit/test_image_captioner.py
-		✅ multi-modal-rag/tests/unit/test_post_processor.py
-		✅ multi-modal-rag/tests/unit/test_reranker.py
-		✅ multi-modal-rag/tests/unit/test_vector_store.py
-		✅ multi-modal-rag/.github/workflows/ci.yml
-		✅ multi-modal-rag/.github/workflows/cd.yml
-		Loading the model
-		✅ multi-modal-rag/docker-compose.ymlscripts/warmup.py
+	Docker
+	✅ multi-modal-rag/Dockerfile
+	✅ multi-modal-rag/Dockerfile.gpu
+	✅ multi-modal-rag/Dockerfile.visualizer
+	✅ multi-modal-rag/docker-compose.yml
+	✅ multi-modal-rag/docker-compose.gpu.yml
+	✅ multi-modal-rag/tests/integration/test_ingest_e2e.py
+	✅ multi-modal-rag/tests/integration/test_pipeline_e2e.py
+	✅ multi-modal-rag/tests/unit/test_api_schemas.py
+	✅ multi-modal-rag/tests/unit/test_chunker.py
+	✅ multi-modal-rag/tests/unit/test_embedder.py
+	✅ multi-modal-rag/tests/unit/test_generate.py
+	✅ multi-modal-rag/tests/unit/test_image_captioner.py
+	✅ multi-modal-rag/tests/unit/test_post_processor.py
+	✅ multi-modal-rag/tests/unit/test_reranker.py
+	✅ multi-modal-rag/tests/unit/test_vector_store.py
+	✅ multi-modal-rag/.github/workflows/ci.yml
+	✅ multi-modal-rag/.github/workflows/cd.yml
+	Loading the model
+	✅ multi-modal-rag/docker-compose.ymlscripts/warmup.py
 
 LangGraph Tutorial Series
 	LangGraph Docs 👉 https://docs.langchain.com/oss/python/langgraph/overview
@@ -1718,8 +1718,10 @@ PRODUCTION LLM ENGINEERING
 MESHAPI Hackathon Registration 👉 https://forms.gle/36LfhuzGacqdAnsHA
 
 MeshAPI Docs 👉 Quickstart 👉 https://developers.meshapi.ai/docs/guides/quickstart
+
 GitHub 👉 https://github.com/satish1650/Ultimate-RAG.git
-		   ✅ Ultimate-RAG/0-Course Materials/meshapi_model_test.py
+	✅ Ultimate-RAG/0-Course Materials/meshapi_model_test.py
+
 ------------------------------------------
 meshapi_model_test.py
 from openai import OpenAI
@@ -1874,15 +1876,15 @@ Good luck! Build something incredible. 🚀
 
 💡 Github README.md Checklist 
 
-✅ Project Title & One-liner Description
-✅ Problem Statement
-✅ Architecture Diagram (RAG pipeline flow)
-✅ Tech Stack
-✅ Setup & Installation Instructions
-✅ How to Run Locally
-✅ Demo Video Link
-✅ SOLO/Team Members
-✅ Limitations & Future Scope
+	✅ Project Title & One-liner Description
+	✅ Problem Statement
+	✅ Architecture Diagram (RAG pipeline flow)
+	✅ Tech Stack
+	✅ Setup & Installation Instructions
+	✅ How to Run Locally
+	✅ Demo Video Link
+	✅ SOLO/Team Members
+	✅ Limitations & Future Scope
 
 I have submitted my Solution and got below response
 
@@ -1905,10 +1907,12 @@ I have submitted my Solution and got below response
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 09 May Day - 48 👉 Ultimate RAG 👉 LangGraph 👉 Langraph Tutorials
 ********************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Langraph-36aeba9593d080ce80a4cd7eb0d8d07c
+
 GitHub 👉 langgraph-tutorials 👉 https://github.com/sourangshupal/langraph-tutorials
-		✅ langraph-tutorials/01_introduction_to_langgraph.ipynb
-		✅ langraph-tutorials/02_conditional_routing.ipynb
-		✅ langraph-tutorials/03_tool_integration_openai.ipynb
+	✅ langraph-tutorials/01_introduction_to_langgraph.ipynb
+	✅ langraph-tutorials/02_conditional_routing.ipynb
+	✅ langraph-tutorials/03_tool_integration_openai.ipynb
 
 LangChain 👉 Prebuilt middleware 👉 https://docs.langchain.com/oss/python/langchain/middleware/built-in
 
@@ -1919,10 +1923,12 @@ PRODUCTION LLM ENGINEERING
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 10 May Day - 49 👉 Ultimate RAG 👉 LangGraph 👉 Langraph Tutorials
 ********************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Langraph-36aeba9593d080ce80a4cd7eb0d8d07c
+
 GitHub 👉 langgraph-tutorials 👉 https://github.com/sourangshupal/langraph-tutorials
-		✅ langraph-tutorials/04_state_persistence_and_memory.ipynb
-		✅ langraph-tutorials/05_human_in_the_loop_streaming.ipynb
-		✅ langraph-tutorials/06_parallel_execution_subgraphs.ipynb
+	✅ langraph-tutorials/04_state_persistence_and_memory.ipynb
+	✅ langraph-tutorials/05_human_in_the_loop_streaming.ipynb
+	✅ langraph-tutorials/06_parallel_execution_subgraphs.ipynb
 
 04_state_persistence_and_memory.ipynb
 	chatbot_memory.db Main Database File in LangGraph: Exploring State Persistence and Memory Management in RAG Systems.
@@ -1933,11 +1939,13 @@ GitHub 👉 langgraph-tutorials 👉 https://github.com/sourangshupal/langraph-t
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 16 May Day - 50 👉 Ultimate RAG 👉 LangGraph 👉 Langraph Tutorials
 ********************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Langraph-36aeba9593d080ce80a4cd7eb0d8d07c
+
 GitHub 👉 langgraph-tutorials 👉 https://github.com/sourangshupal/langraph-tutorials
-		✅ langraph-tutorials/06_parallel_execution_subgraphs.ipynb
-		✅ langraph-tutorials/07_production_patterns_advanced_features.ipynb
-		✅ langraph-tutorials/08_command_functional_api_longterm_memory.ipynb
-		✅ langraph-tutorials/09_multi_agent_systems.ipynb
+	✅ langraph-tutorials/06_parallel_execution_subgraphs.ipynb
+	✅ langraph-tutorials/07_production_patterns_advanced_features.ipynb
+	✅ langraph-tutorials/08_command_functional_api_longterm_memory.ipynb
+	✅ langraph-tutorials/09_multi_agent_systems.ipynb
 
 Superintelligent Retrieval Agent: The NextFrontier of InformationRetrieval
 	Research Paper 👉 https://arxiv.org/pdf/2605.06647
@@ -1969,14 +1977,16 @@ New Course 👉 Agentic AI & GenAI-AgentOps with Cloud 3.0 👉 https://agentica
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 17 May Day - 51 👉 Ultimate RAG 👉 LangGraph 👉 Langraph Tutorials 👉 LangSmith and Studio 👉 Project-5 👉 Agentic-RAG-project
 *********************************************************************************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Langraph-36aeba9593d080ce80a4cd7eb0d8d07c
+
 GitHub 👉 langgraph-tutorials 👉 https://github.com/sourangshupal/langraph-tutorials
-		✅ langraph-tutorials/10_testing_observability_platform.ipynb
-		✅ langraph-tutorials/06_parallel_execution_subgraphs.ipynb
-		✅ langraph-tutorials/langgraph.json
+	✅ langraph-tutorials/10_testing_observability_platform.ipynb
+	✅ langraph-tutorials/06_parallel_execution_subgraphs.ipynb
+	✅ langraph-tutorials/langgraph.json
 
 GitHub 👉 Project-5 👉 https://github.com/sourangshupal/Agentic-RAG-project/tree/develop
-		✅ Agentic-RAG-project/step-by-step.md
-		✅ Agentic-RAG-project/scripts/test_connections.py
+	✅ Agentic-RAG-project/step-by-step.md
+	✅ Agentic-RAG-project/scripts/test_connections.py
 
 	Project Setup :-
 	✅ PostgreSQL (Neon serverless)
@@ -1991,5 +2001,76 @@ GitHub 👉 Project-5 👉 https://github.com/sourangshupal/Agentic-RAG-project/
 https://github.com/d-hackmt/enterprise_rag-with-GCP
 
 https://www.krishnaik.in/project/production-grade-cyclic-rag-with-langgraph-gcp-and-groq
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+23 May Day - 52 👉 Ultimate RAG 👉 Project-5 👉 Agentic RAG Project using LangGraph
+************************************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Project-5-369eba9593d0802ca0ededc00f9b203d
+
+GitHub https://github.com/sourangshupal/Agentic-RAG-project
+	✅ Agentic-RAG-project/notebooks/phase1/phase1_setup.ipynb
+	✅ Agentic-RAG-project/notebooks/phase2/phase2_arxiv_integration.ipynb
+	✅ Agentic-RAG-project/notebooks/phase3/phase3_opensearch.ipynb
+	✅ Agentic-RAG-project/notebooks/phase4/phase4_hybrid_search.ipynb
+	✅ Agentic-RAG-project/notebooks/phase5/phase5_complete_rag_system.ipynb
+	✅ Agentic-RAG-project/notebooks/phase6/phase6_cache_testing.ipynb
+	✅ Agentic-RAG-project/notebooks/phase7/phase7_agentic_rag.ipynb
+	
+To download the images in docker 👉 docker compose up --build -d	
+UP all images in the docker 👉 docker compose up -d
+Rebuild the application part 👉 docker compose up -d api
+
+up 👉 Starts all services defined in the compose file.
+--build 👉 Forces Docker to rebuild images before starting containers.
+-d 👉 Runs containers in detached mode (background).Without -d, logs stay attached to the terminal.
+
+Wez's Terminal Emulator 👉 WezTerm 👉 https://wezterm.org/index.html
+
+The AI-native agentic 👉 Terax 👉 https://terax.app/
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+24 May Day - 53 👉 Ultimate RAG 👉 Project-5 👉 Agentic RAG Project using LangGraph
+************************************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Project-5-369eba9593d0802ca0ededc00f9b203d
+
+GitHub 👉 https://github.com/sourangshupal/Agentic-RAG-project
+	✅ Agentic-RAG-project/notebooks/phase7/phase7_agentic_rag.ipynb
+	✅ Agentic-RAG-project/src/schemas/api/ask.py
+	✅ Agentic-RAG-projectsrc/schemas/api/health.py
+	✅ Agentic-RAG-project/src/schemas/api/search.py
+	✅ Agentic-RAG-project/src/routers/agentic_ask.py
+	✅ Agentic-RAG-project/src/routers/ask.py
+	✅ Agentic-RAG-project/src/routers/hybrid_search.py
+	✅ Agentic-RAG-project/src/routers/ping.py
+	✅ Agentic-RAG-project/src/config.py
+	✅ Agentic-RAG-project/src/database.py
+	✅ Agentic-RAG-project/src/dependencies.py
+	✅ Agentic-RAG-project/src/exceptions.py
+	✅ Agentic-RAG-project/src/gradio_app.py
+	✅ Agentic-RAG-project/src/main.py
+	✅ Agentic-RAG-project/src/middlewares.py
+	✅ Agentic-RAG-project/src/services/arxiv/client.py
+	✅ Agentic-RAG-project/src/services/arxiv/factory.py
+	✅ Agentic-RAG-project/src/services/cache/client.py
+	✅ Agentic-RAG-project/src/services/cache/factory.py
+	✅ Agentic-RAG-project/src/services/embeddings/jina_client.py
+	✅ Agentic-RAG-project/src/services/embeddings/factory.py
+	✅ Agentic-RAG-project/src/services/indexing/text_chunker.py
+	✅ Agentic-RAG-project/src/services/indexing/hybrid_indexer.py
+	✅ Agentic-RAG-project/src/services/indexing/factory.py
+	✅ Agentic-RAG-project/src/services/openai_llm/client.py
+	✅ Agentic-RAG-project/src/services/openai_llm/factory.py
+	✅ Agentic-RAG-project/src/services/opensearch/client.py
+	✅ Agentic-RAG-project/src/services/opensearch/index_config_hybrid.py
+	✅ Agentic-RAG-project/src/services/opensearch/query_builder.py
+	✅ Agentic-RAG-project/src/services/opensearch/factory.py
+	✅ Agentic-RAG-project/src/services/pdf_parser/docling.py
+	✅ Agentic-RAG-project/src/services/pdf_parser/parser.py
+	✅ Agentic-RAG-project/src/services/pdf_parser/factory.py
+	
+
+LangFuse Docs 👉 Observability, Prompts, Evaluation and Platform 👉 https://langfuse.com/docs
+Langfuse Cloud (observability) 👉 https://cloud.langfuse.com
+Sign up at 👉 https://cloud.langfuse.com  👉 copy keys from project settings
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
