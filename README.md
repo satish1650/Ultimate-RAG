@@ -2141,13 +2141,13 @@ By the end of this notebook, you will be able to: <br>
 ## 28-Agentic-RAG-Project-5/Agentic-RAG-Project
 ## Project-5: Agentic-RAG-Project
 ### Explained below Code:-
-✅ Agentic-RAG-project/notebooks/phase1/phase1_setup.ipynb
-✅ Agentic-RAG-Project/notebooks/phase2/phase2_arxiv_integration.ipynb
-✅ Agentic-RAG-Project/notebooks/phase3/phase3_opensearch.ipynb
-✅ Agentic-RAG-Project/notebooks/phase4/phase4_hybrid_search.ipynb
-✅ Agentic-RAG-Project/notebooks/phase5/phase5_complete_rag_system.ipynb
-✅ Agentic-RAG-Project/notebooks/phase6/phase6_cache_testing.ipynb
-✅ Agentic-RAG-Project/notebooks/phase7/phase7_agentic_rag.ipynb
+    ✅ Agentic-RAG-project/notebooks/phase1/phase1_setup.ipynb
+    ✅ Agentic-RAG-Project/notebooks/phase2/phase2_arxiv_integration.ipynb
+    ✅ Agentic-RAG-Project/notebooks/phase3/phase3_opensearch.ipynb
+    ✅ Agentic-RAG-Project/notebooks/phase4/phase4_hybrid_search.ipynb
+    ✅ Agentic-RAG-Project/notebooks/phase5/phase5_complete_rag_system.ipynb
+    ✅ Agentic-RAG-Project/notebooks/phase6/phase6_cache_testing.ipynb
+    ✅ Agentic-RAG-Project/notebooks/phase7/phase7_agentic_rag.ipynb
 
 #### 🎯 Learning Objectives
 - **Phase 1:** Infrastructure Setup and Verification
