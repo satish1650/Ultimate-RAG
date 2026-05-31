@@ -2036,7 +2036,7 @@ Class Notes 👉 https://krishnaikacademy.notion.site/Project-5-369eba9593d0802c
 GitHub 👉 https://github.com/sourangshupal/Agentic-RAG-project
 	✅ Agentic-RAG-project/notebooks/phase7/phase7_agentic_rag.ipynb
 	✅ Agentic-RAG-project/src/schemas/api/ask.py
-	✅ Agentic-RAG-projectsrc/schemas/api/health.py
+	✅ Agentic-RAG-project/src/schemas/api/health.py
 	✅ Agentic-RAG-project/src/schemas/api/search.py
 	✅ Agentic-RAG-project/src/routers/agentic_ask.py
 	✅ Agentic-RAG-project/src/routers/ask.py

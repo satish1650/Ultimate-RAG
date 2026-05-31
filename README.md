@@ -2136,6 +2136,98 @@ By the end of this notebook, you will be able to: <br>
 	- Sign up at `Langfuse Cloud` 👉 [click here](https://cloud.langfuse.com) — copy keys from project settings
 - Jina AI Embeddings (Required for hybrid search)
 	- Sign up at `Jina AI Embeddings` 👉 [click here](https://jina.ai/embeddings) — copy API key
+
+## 23 May Day - 52 👉 Ultimate RAG 👉 Project-5 👉 Agentic RAG Project using LangGraph 👉 Workflows Explanation
+## 28-Agentic-RAG-Project-5/Agentic-RAG-Project
+## Project-5: Agentic-RAG-Project
+### Explained below Code:-
+    ✅ Agentic-RAG-project/notebooks/phase1/phase1_setup.ipynb
+    ✅ Agentic-RAG-Project/notebooks/phase2/phase2_arxiv_integration.ipynb
+    ✅ Agentic-RAG-Project/notebooks/phase3/phase3_opensearch.ipynb
+    ✅ Agentic-RAG-Project/notebooks/phase4/phase4_hybrid_search.ipynb
+    ✅ Agentic-RAG-Project/notebooks/phase5/phase5_complete_rag_system.ipynb
+    ✅ Agentic-RAG-Project/notebooks/phase6/phase6_cache_testing.ipynb
+    ✅ Agentic-RAG-Project/notebooks/phase7/phase7_agentic_rag.ipynb
+
+#### 🎯 Learning Objectives
+- **Phase 1:** Infrastructure Setup and Verification
+- **Phase 2:** arXiv API Integration & PDF Processing
+- **Phase 3:** Keyword Search First - The Critical Foundation
+- **Phase 4:** Document Chunking and Hybrid Search
+- **Phase 5:** Complete RAG System with LLM Integration
+- **Phase 6:** Production Monitoring and Caching with Langfuse and Redis
+- **Phase 7:** Agentic RAG with LangGraph + Telegram Bot
+    1. 🤖 **Agentic RAG with LangGraph** - Intelligent, adaptive retrieval with decision-making
+    1. 💬 **Telegram Bot Integration** - Conversational interface for mobile/desktop access
+
+#### 🧠 Part 1: Agentic RAG with LangGraph
+- What is Agentic RAG?
+- Key Features
+    - 🎯 **Intelligent Decision Making** - LLM decides when retrieval is actually needed
+    - 📊 **Document Grading** - Validates that retrieved papers are relevant
+    - 🔄 **Query Refinement** - Rewrites vague queries for better results
+    - 🔍 **Reasoning Transparency** - Shows the agent's decision-making steps
+    - ♻️ **Iterative Improvement** - Can retry with better queries if needed
+
+#### 💬 Part 2: Telegram Bot Integration
+- What We Built?
+    - 🤖 **Full Telegram Bot Integration:** Conversational interface with command support
+    - 💬 **Natural Language Queries:** Ask questions in plain language, get answers with sources
+    - ⚡ **All Phase 6 Features:** Redis caching (150-400x speedup) and Langfuse tracing
+    - 🎯 **Interactive Commands:** `/start`, `/help`, `/ask`, `/search`, `/settings`, `/status`
+    - 👤 **User Session Management:** Per-user preferences and conversation history
+    - 📱 **Mobile-First:** Rich message formatting with clickable arXiv links
+    - 🔐 **Optional Access Control:** Whitelist specific users if needed
+
+- Key Features
+    - Natural language queries: Just send a message
+    - Contextual conversation with history tracking
+    - Automatic query routing (commands vs regular messages)
+
+## 24 May Day - 53 👉 Ultimate RAG 👉 Project-5 👉 Agentic RAG Project using LangGraph 👉 LangFuse Observability & Core Code Explanation
+## 28-Agentic-RAG-Project-5/Agentic-RAG-Project
+## Project-5: Agentic-RAG-Project
+### Explained below Code:-
+    ✅ Agentic-RAG-Project/notebooks/phase7/phase7_agentic_rag.ipynb
+	✅ Agentic-RAG-Project/src/schemas/api/ask.py
+	✅ Agentic-RAG-Project/src/schemas/api/health.py
+	✅ Agentic-RAG-Project/src/schemas/api/search.py
+	✅ Agentic-RAG-Project/src/routers/agentic_ask.py
+	✅ Agentic-RAG-Project/src/routers/ask.py
+	✅ Agentic-RAG-Project/src/routers/hybrid_search.py
+	✅ Agentic-RAG-Project/src/routers/ping.py
+	✅ Agentic-RAG-Project/src/config.py
+	✅ Agentic-RAG-Project/src/database.py
+	✅ Agentic-RAG-Project/src/dependencies.py
+	✅ Agentic-RAG-Project/src/exceptions.py
+	✅ Agentic-RAG-Project/src/gradio_app.py
+	✅ Agentic-RAG-Project/src/main.py
+	✅ Agentic-RAG-Project/src/middlewares.py
+	✅ Agentic-RAG-Project/src/services/arxiv/client.py
+	✅ Agentic-RAG-Project/src/services/arxiv/factory.py
+	✅ Agentic-RAG-Project/src/services/cache/client.py
+	✅ Agentic-RAG-Project/src/services/cache/factory.py
+	✅ Agentic-RAG-Project/src/services/embeddings/jina_client.py
+	✅ Agentic-RAG-Project/src/services/embeddings/factory.py
+	✅ Agentic-RAG-Project/src/services/indexing/text_chunker.py
+	✅ Agentic-RAG-Project/src/services/indexing/hybrid_indexer.py
+	✅ Agentic-RAG-Project/src/services/indexing/factory.py
+	✅ Agentic-RAG-Project/src/services/openai_llm/client.py
+	✅ Agentic-RAG-Project/src/services/openai_llm/factory.py
+	✅ Agentic-RAG-Project/src/services/opensearch/client.py
+	✅ Agentic-RAG-Project/src/services/opensearch/index_config_hybrid.py
+	✅ Agentic-RAG-Project/src/services/opensearch/query_builder.py
+	✅ Agentic-RAG-Project/src/services/opensearch/factory.py
+	✅ Agentic-RAG-Project/src/services/pdf_parser/docling.py
+	✅ Agentic-RAG-Project/src/services/pdf_parser/parser.py
+	✅ Agentic-RAG-Project/src/services/pdf_parser/factory.py
+
+### LangFuse
+ - LangFuse Documentation 👉 [click here](https://langfuse.com/docs)
+ - LangFuse 👉 Observability, Prompts, Evaluation and 
+ Platform
+ - Sign up at 👉 [click here](https://cloud.langfuse.com ) 👉 copy keys from project settings
+
 ---
 
 ## Create the virtual environment in anaconda3 folder
