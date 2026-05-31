@@ -2073,8 +2073,8 @@ Langfuse Cloud (observability) 👉 https://cloud.langfuse.com
 Sign up at 👉 https://cloud.langfuse.com  👉 copy keys from project settings
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-30 May Day - 54 👉 Ultimate RAG 👉 Project-5 👉 Agentic RAG Project using LangGraph 👉 Deployment using AWS 👉 aws branch
-****************************************************************************************************************************
+30 May Day - 54 👉 Ultimate RAG 👉 Project-5 👉 Agentic RAG Project using LangGraph 👉 Local Deployment using AWS 👉 aws branch
+**********************************************************************************************************************************
 Class Notes 👉 https://krishnaikacademy.notion.site/Project-5-369eba9593d0802ca0ededc00f9b203d
 
 GitHub 👉 https://github.com/sourangshupal/Agentic-RAG-project/tree/aws
