@@ -2073,3 +2073,25 @@ Langfuse Cloud (observability) 👉 https://cloud.langfuse.com
 Sign up at 👉 https://cloud.langfuse.com  👉 copy keys from project settings
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+30 May Day - 54 👉 Ultimate RAG 👉 Project-5 👉 Agentic RAG Project using LangGraph 👉 Deployment using AWS 
+*************************************************************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Project-5-369eba9593d0802ca0ededc00f9b203d
+
+GitHub 👉 https://github.com/sourangshupal/Agentic-RAG-project/tree/aws
+
+Advanced Route
+Production AI Engineering
+Research → Production · LLMs, RAG & Agents, GenAIOps
+This is not an introductory AI course. A deep, industry-focused specialization for experienced professionals who want to master the architecture, deployment, and orchestration of real-world enterprise-grade AI systems. ⚡
+
+	https://advancedroute.krishnaik.cloud/
+	
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+31 May Day - 55 👉 Ultimate RAG 👉 Project-5 👉 Agentic RAG Project using LangGraph 👉 Deployment using AWS 
+*************************************************************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Project-5-369eba9593d0802ca0ededc00f9b203d
+
+GitHub 👉 https://github.com/sourangshupal/Agentic-RAG-project/tree/aws
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
