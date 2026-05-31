@@ -2073,26 +2073,123 @@ Langfuse Cloud (observability) 👉 https://cloud.langfuse.com
 Sign up at 👉 https://cloud.langfuse.com  👉 copy keys from project settings
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-30 May Day - 54 👉 Ultimate RAG 👉 Project-5 👉 Agentic RAG Project using LangGraph 👉 Deployment using AWS 
-*************************************************************************************************************
+30 May Day - 54 👉 Ultimate RAG 👉 Project-5 👉 Agentic RAG Project using LangGraph 👉 Deployment using AWS 👉 aws branch
+****************************************************************************************************************************
 Class Notes 👉 https://krishnaikacademy.notion.site/Project-5-369eba9593d0802ca0ededc00f9b203d
 
 GitHub 👉 https://github.com/sourangshupal/Agentic-RAG-project/tree/aws
 
-Advanced Route
-Production AI Engineering
-Research → Production · LLMs, RAG & Agents, GenAIOps
-This is not an introductory AI course. A deep, industry-focused specialization for experienced professionals who want to master the architecture, deployment, and orchestration of real-world enterprise-grade AI systems. ⚡
-
-	https://advancedroute.krishnaik.cloud/
+New Course 👉 Advanced Route Production AI Engineering 👉 Research → Production · LLMs, RAG & Agents, GenAIOps 👉 https://advancedroute.krishnaik.cloud/
+This is not an introductory AI course. A deep, industry-focused specialization for experienced professionals who want to master the architecture, 
+deployment, and orchestration of real-world enterprise-grade AI systems. ⚡
 	
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-31 May Day - 55 👉 Ultimate RAG 👉 Project-5 👉 Agentic RAG Project using LangGraph 👉 Deployment using AWS 
-*************************************************************************************************************
+31 May Day - 55 👉 Ultimate RAG 👉 Project-5 👉 Agentic RAG Project using LangGraph 👉 Deployment using AWS 👉 deployment branch
+***********************************************************************************************************************************
 Class Notes 👉 https://krishnaikacademy.notion.site/Project-5-369eba9593d0802ca0ededc00f9b203d
 
-GitHub 👉 https://github.com/sourangshupal/Agentic-RAG-project/tree/aws
+GitHub 👉 https://github.com/sourangshupal/Agentic-RAG-project/tree/deployment
+			✅ Agentic-RAG-project/docs/updated_kubernetes.md
+			✅ Agentic-RAG-project/deployment/DEPLOYMENT_GUIDE.md	
+			✅ Agentic-RAG-project/deployment/eks/cluster.yaml
+			✅ Agentic-RAG-project/deployment/eks/namespace.yaml
+			✅ Agentic-RAG-project/deployment/k8s/airflow/deployment.yaml
+			✅ Agentic-RAG-project/deployment/k8s/airflow/service.yaml
+			✅ Agentic-RAG-project/deployment/grafana/values.yaml
+			✅ Agentic-RAG-project/scripts/insert_papers_by_id.py
+			✅ Agentic-RAG-project/scripts/tear_down.sh
 
+		Manual EKS Deployment Guide — Step by Step
+			✅ Agentic-RAG-project/docs/updated_kubernetes.md
+		Agentic RAG — EKS Deployment Guide
+			✅ Agentic-RAG-project/deployment/DEPLOYMENT_GUIDE.md			
 
+		Install eksctl (the only missing tool)
+		winget install -e --id Kubernetes.kubectl
+		choco install eksctl
+		scoop install eksctl
+
+		for windows:
+		```bash
+		curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_Windows_amd64.zip" -o eksctl.zip
+		unzip eksctl.zip
+		mkdir -p /c/tools
+		mv eksctl.exe /c/tools/
+		Add /c/tools to your PATH if needed, then verify:
+		eksctl version
+		```
+
+New Course 👉 Advanced Route Production AI Engineering 👉 Research → Production · LLMs, RAG & Agents, GenAIOps 👉 https://advancedroute.krishnaik.cloud/
+This is not an introductory AI course. A deep, industry-focused specialization for experienced professionals who want to master the architecture, deployment, 
+and orchestration of real-world enterprise-grade AI systems. ⚡
+
+16 Modules. The Full Stack. 
+From transformer internals to production Kubernetes deployments — every layer of the modern LLM engineering stack, in one program.
+	✅ 01 AI Foundations
+	✅ 02 Prompts to Programs
+	✅ 03 KV Cache & Advanced Attentions
+	✅ 04 Finetuning Language Models
+	✅ 05 Mixture of Experts & Reasoning Models
+	✅ 06 Knowledge Distillation & Small Language Models
+	✅ 07 Multimodal Vision Systems & Image Understanding
+	✅ 08 Speech AI & Conversational Audio Systems
+	✅ 09 Representation Learning & Embedding Systems
+	✅ 10 RAG Systems — Production Depth
+	✅ 11 Agentic Systems: Core Architectures & Foundations
+	✅ 12 Agents — Orchestration & Production
+	✅ 13 Context Engineering & Harness Engineering
+	✅ 14 LLMOps & Observability
+	✅ 15 Production Infrastructure
+	✅ 16 AI Security, Guardrails & RBAC
+
+New Course 👉 Agentic AI & GenAI-AgentOps with Cloud 3.0 👉 https://agenticai3.lovable.app/
+The modern, direct path to mastering Agentic AI — from foundations to production multi-agent systems on AWS, GCP, Azure, and VPS.
+Everything You'll Master
+	✅ Agent Frameworks
+	✅ Claude & Coding Agents
+	✅ Protocols & Standards
+	✅ Memory & Knowledge
+	✅ AgentOps & Observability
+	✅ Core Concepts
+	✅ Deployment & CI/CD
+	✅ Cloud Platforms
+	✅ LLM Providers
+
+From beginner to production Agentic AI engineer.
+
+Five clear phases. Each one stacks on the last — see what you'll master and the roles you'll be ready for at every step.
+1. Foundations : Build the foundation — Python, GenAI, prompting & structured outputs.
+You'll master :
+	- GenAI vs Agentic AI — agent design patterns
+	- Python + async fast-track for AI
+	- Pydantic for tool schemas & structured outputs
+	- Prompt Engineering: CoT, few-shot, structured prompts
+2. Core Frameworks & Protocols : Become production-ready with the core agent stack used in industry.
+You'll master :
+	- LangChain + LCEL — end-to-end LLM pipelines
+	- LangGraph — stateful, human-in-the-loop agents
+	- Multi-Agent Architecture (Supervisor, Swarm)
+	- MCP & A2A protocols, Agentic RAG, Context Engineering
+
+3. Claude Ecosystem & Coding Agents : Master the Claude ecosystem & next-gen autonomous coding agents.
+You'll master :
+	- Claude Code, OpenClaw, NemoClaw, Hermes
+	- Codex CLI, opencode, Antigravity IDE
+	- mem0 — persistent agent memory
+	- Building self-improving coding agents
+
+4. Extended Frameworks : Go cross-framework — ship agents in any ecosystem your team uses.
+You'll master :
+	- OpenAI Agents SDK, CrewAI, Google ADK
+	- AWS Strands, LlamaIndex workflows
+	- n8n & LangFlow — low-code agent automation
+	- 3 mini-projects across frameworks
+
+5. Production Cloud Projects : Deploy real production systems on AWS, GCP & Azure with full AgentOps.
+You'll master :
+	- AgentOps CI/CD — observability, evals, cost
+	- Production deploy: Bedrock, Vertex AI, AI Foundry
+	- Docker, FastAPI, GitHub Actions, BentoML
+	- 3 in-depth, portfolio-grade cloud projects
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
