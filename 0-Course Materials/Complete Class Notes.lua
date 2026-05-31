@@ -2084,8 +2084,8 @@ This is not an introductory AI course. A deep, industry-focused specialization f
 deployment, and orchestration of real-world enterprise-grade AI systems. ⚡
 	
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-31 May Day - 55 👉 Ultimate RAG 👉 Project-5 👉 Agentic RAG Project using LangGraph 👉 Deployment using AWS 👉 deployment branch
-***********************************************************************************************************************************
+31 May Day - 55 👉 Ultimate RAG 👉 Project-5 👉 Agentic RAG Project using LangGraph 👉 Manual Deployment using AWS 👉 deployment branch
+******************************************************************************************************************************************
 Class Notes 👉 https://krishnaikacademy.notion.site/Project-5-369eba9593d0802ca0ededc00f9b203d
 
 GitHub 👉 https://github.com/sourangshupal/Agentic-RAG-project/tree/deployment
