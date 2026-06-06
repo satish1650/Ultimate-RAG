@@ -2193,15 +2193,14 @@ You'll master :
 	- 3 in-depth, portfolio-grade cloud projects
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-06 Jun Day - 56 👉 Ultimate RAG 👉 Project-5 👉 Agentic RAG Project using LangGraph 👉 Manual Deployment using AWS 👉 CI/CD Pipeline Deployment and Grafana Integration
-**************************************************************************************************************************************************************************
+06 Jun Day - 56 👉 Ultimate RAG 👉 Project-5 👉 Agentic RAG Project using LangGraph 👉 CI/CD Pipeline Deployment and Grafana Integration
+******************************************************************************************************************************************
 Class Notes 👉 https://krishnaikacademy.notion.site/Project-5-369eba9593d0802ca0ededc00f9b203d
 
 GitHub 👉 https://github.com/sourangshupal/Agentic-RAG-project/tree/agentops
 	✅ Agentic-RAG-project/docs/updated_kubernetes.md
 	✅ Agentic-RAG-project/deployment/eks/cluster.yaml
 	✅ Agentic-RAG-project/scripts/load_test.py
-	✅ Agentic-RAG-project/
 	
 	Manual EKS Deployment Guide — Step by Step - agentops branch
 		✅ Agentic-RAG-project/docs/updated_kubernetes.md
@@ -2270,5 +2269,15 @@ Why Use Kubernetes?
 	Load Balancer
 	↙  	↓  ↘
 	Pod1 Pod2 Pod3
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+07 Jun Day - 57 👉 Ultimate RAG 👉 Project-5 👉 Agentic RAG Project using LangGraph 👉 Code Discussion & Batch Closure
+************************************************************************************************************************
+Today is the last class of this batch. We will have a detailed code walkthrough of the entire project, discussing the architecture, design decisions, and implementation details. 
+We will also cover how to extend the project further and best practices for production-grade RAG systems.
+
+Class Notes 👉 https://krishnaikacademy.notion.site/Project-5-369eba9593d0802ca0ededc00f9b203d
+
+GitHub 👉 https://github.com/sourangshupal/Agentic-RAG-project/tree/agentops
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
