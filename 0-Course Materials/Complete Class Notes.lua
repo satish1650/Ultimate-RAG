@@ -2193,3 +2193,82 @@ You'll master :
 	- 3 in-depth, portfolio-grade cloud projects
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+06 Jun Day - 56 👉 Ultimate RAG 👉 Project-5 👉 Agentic RAG Project using LangGraph 👉 Manual Deployment using AWS 👉 CI/CD Pipeline Deployment and Grafana Integration
+**************************************************************************************************************************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Project-5-369eba9593d0802ca0ededc00f9b203d
+
+GitHub 👉 https://github.com/sourangshupal/Agentic-RAG-project/tree/agentops
+	✅ Agentic-RAG-project/docs/updated_kubernetes.md
+	✅ Agentic-RAG-project/deployment/eks/cluster.yaml
+	✅ Agentic-RAG-project/scripts/load_test.py
+	✅ Agentic-RAG-project/
+	
+	Manual EKS Deployment Guide — Step by Step - agentops branch
+		✅ Agentic-RAG-project/docs/updated_kubernetes.md
+	
+Welcome to Grafana Cloud Play 👉 https://play.grafana.org/
+Grafan Cloud is used for Kubernetes monitoring and observability in this project. It provides insights into the performance 
+and health of your Kubernetes cluster, allowing you to track metrics, set up alerts, and visualize data effectively.
+	Grafana Cloud Kubernetes Monitoring Integration
+		✅ Agentic-RAG-project/docs/grafana_integration.md
+	Grafana Cloud Integration need to update configuration in below file:-
+		✅ Agentic-RAG-project/deployment/grafana/values.yaml
+		update url, your username and password ($GRAFANA_CLOUD_TOKEN) in the above file to connect to your Grafana Cloud account.
+
+Grafana Cloud is typically used when you want a fully managed observability platform without having to install, maintain, scale, or secure Grafana and its backend components yourself.
+Use Grafana Cloud when:
+	We need centralized monitoring for applications and infrastructure
+	1. We need centralized monitoring for applications and infrastructure
+		- Kubernetes clusters
+		- Docker containers
+		- Virtual Machines
+		- AWS, Azure, GCP resources
+		- Databases
+		- APIs and microservices
+	2. We want Logs, Metrics, and Traces in one place
+		- Grafana (Dashboards & Visualization)
+		- Prometheus (Metrics)
+		- Loki (Logs)
+		- Tempo (Traces)
+	3. We don't want to manage observability infrastructure, Grafana Cloud manages everything.
+
+What is Kubernetes clusters?
+A Kubernetes cluster is a group of machines (physical servers or virtual machines) that work together to run and manage containerized applications automatically.
+	- Docker packages your application into containers.
+	- Kubernetes (K8s) manages those containers at scale.
+
+You package it into a Docker container. If you run it on a single server:
+	- The server can crash.
+	- Traffic can overwhelm it.
+	- Updates may cause downtime.
+A Kubernetes cluster solves these problems.
+
+Why Use Kubernetes?
+	- Auto-Healing  
+	Container Crash
+      		↓
+	Kubernetes detects failure
+			↓
+	Starts a new container automatically
+
+	- Auto-Scaling
+	If traffic increases:
+	1 Pod
+		↓
+	10,000 users arrive
+		↓
+	Kubernetes creates more Pods
+		↓
+	5 Pods
+		↓
+	10 Pods
+
+	- Load Balancing
+	Traffic is distributed across multiple application instances.
+	User Requests
+      	↓
+	Load Balancer
+	↙  	↓  ↘
+	Pod1 Pod2 Pod3
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
