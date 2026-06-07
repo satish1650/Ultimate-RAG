@@ -2230,6 +2230,22 @@ By the end of this notebook, you will be able to: <br>
 
 ---
 
+## 30 May Day - 54 👉 Ultimate RAG 👉 Project-5 👉 Agentic RAG Project using LangGraph 👉 Local Deployment using AWS
+## 29-Agentic-RAG-Project-5-aws branch
+## Project-5: Agentic-RAG-Project
+
+---
+## 31 May Day - 55 👉 Ultimate RAG 👉 Project-5 👉 Agentic RAG Project using LangGraph 👉 Manual Deployment using AWS
+## 30-Agentic-RAG-Project-5-deployment branch
+## Project-5: Agentic-RAG-Project
+
+---
+## 06 Jun Day - 56 👉 Ultimate RAG 👉 Project-5 👉 Agentic RAG Project using LangGraph 👉 CI/CD Pipeline Deployment and Grafana Integration
+## 31-Agentic-RAG-Project-5-agentops branch
+## Project-5: Agentic-RAG-Project
+
+---
+
 ## Create the virtual environment in anaconda3 folder
 ```
 conda create -n venv_ur_name python==3.12 -y
