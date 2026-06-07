@@ -1972,7 +1972,7 @@ Context Rot: How Increasing Input Tokens Impacts LLM Performance https://www.try
 
 Langchain Docs 👉 Get started with Studio 👉 https://docs.langchain.com/langsmith/quick-start-studio 
 
-New Course 👉 Agentic AI & GenAI-AgentOps with Cloud 3.0 👉 https://agenticai3.lovable.app/ 
+New Batch 👉 Agentic AI & GenAI-AgentOps with Cloud 3.0 👉 https://agenticai3.lovable.app/ 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 17 May Day - 51 👉 Ultimate RAG 👉 LangGraph 👉 Langraph Tutorials 👉 LangSmith and Studio 👉 Project-5 👉 Agentic-RAG-project
@@ -2079,7 +2079,7 @@ Class Notes 👉 https://krishnaikacademy.notion.site/Project-5-369eba9593d0802c
 
 GitHub 👉 https://github.com/sourangshupal/Agentic-RAG-project/tree/aws
 
-New Course 👉 Advanced Route Production AI Engineering 👉 Research → Production · LLMs, RAG & Agents, GenAIOps 👉 https://advancedroute.krishnaik.cloud/
+New Batch 👉 Advanced Route Production AI Engineering 👉 Research → Production · LLMs, RAG & Agents, GenAIOps 👉 https://advancedroute.krishnaik.cloud/
 This is not an introductory AI course. A deep, industry-focused specialization for experienced professionals who want to master the architecture, 
 deployment, and orchestration of real-world enterprise-grade AI systems. ⚡
 	
@@ -2119,7 +2119,7 @@ GitHub 👉 https://github.com/sourangshupal/Agentic-RAG-project/tree/deployment
 		eksctl version
 		```
 
-New Course 👉 Advanced Route Production AI Engineering 👉 Research → Production · LLMs, RAG & Agents, GenAIOps 👉 https://advancedroute.krishnaik.cloud/
+New Batch 👉 Advanced Route Production AI Engineering 👉 Research → Production · LLMs, RAG & Agents, GenAIOps 👉 https://advancedroute.krishnaik.cloud/
 This is not an introductory AI course. A deep, industry-focused specialization for experienced professionals who want to master the architecture, deployment, 
 and orchestration of real-world enterprise-grade AI systems. ⚡
 
@@ -2142,7 +2142,7 @@ From transformer internals to production Kubernetes deployments — every layer 
 	✅ 15 Production Infrastructure
 	✅ 16 AI Security, Guardrails & RBAC
 
-New Course 👉 Agentic AI & GenAI-AgentOps with Cloud 3.0 👉 https://agenticai3.lovable.app/
+New Batch 👉 Agentic AI & GenAI-AgentOps with Cloud 3.0 👉 https://agenticai3.lovable.app/
 The modern, direct path to mastering Agentic AI — from foundations to production multi-agent systems on AWS, GCP, Azure, and VPS.
 Everything You'll Master
 	✅ Agent Frameworks
@@ -2279,5 +2279,34 @@ We will also cover how to extend the project further and best practices for prod
 Class Notes 👉 https://krishnaikacademy.notion.site/Project-5-369eba9593d0802ca0ededc00f9b203d
 
 GitHub 👉 https://github.com/sourangshupal/Agentic-RAG-project/tree/agentops
+
+GitHub 👉 Axolotl 👉 https://github.com/axolotl-ai-cloud/axolotl
+
+GitHub 👉 Liger Kernel: Efficient Triton Kernels for LLM Training 👉 https://github.com/linkedin/Liger-Kernel
+
+GitHub 👉 DeepSpeed 👉 https://github.com/deepspeedai/DeepSpeed
+
+Pioneer 👉 The inference API that improves with your traffic https://pioneer.ai/
+Pioneer Docs 👉 https://docs.pioneer.ai/introduction
+
+Thundercompute 👉 One-click GPU servers for 80% less 👉 https://www.thundercompute.com/
+	Spin up a dedicated cloud GPU in seconds. Develop in VS Code, keep data safe, swap hardware anytime.
+
+KIMI 👉 https://www.kimi.com/en
+
+Lightning AI 👉 LitServe 👉 Build custom inference servers in pure Python 👉 https://github.com/Lightning-AI/litserve/
+	Define exactly how inference works for models, agents, RAG, or pipelines.
+    Control batching, routing, streaming, and orchestration without MLOps glue or config files.
+
+GitHub 👉 Herder 👉 https://github.com/ogulcancelik/herdr
+One terminal. The whole herd. 👉 https://herdr.dev/
+
+Trending Research 👉 https://paperswithcode.co/
+
+KNDataScience-2.0 👉 https://app.notion.com/p/KNDataScience-2-0-2f1856e0e30d80e9a0f9c79ee348a213
+
+New Batch 👉 Advanced Production AI Engineering 👉 https://advancedroute.krishnaik.cloud/
+Research → Production · LLMs, RAG & Agents, GenAIOps
+This is not an introductory AI course. A deep, industry-focused specialization for experienced professionals who want to master the architecture, deployment, and orchestration of real-world enterprise-grade AI systems. ⚡
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
