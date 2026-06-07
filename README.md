@@ -2228,21 +2228,22 @@ By the end of this notebook, you will be able to: <br>
  Platform
  - Sign up at 👉 [click here](https://cloud.langfuse.com ) 👉 copy keys from project settings
 
----
-
 ## 30 May Day - 54 👉 Ultimate RAG 👉 Project-5 👉 Agentic RAG Project using LangGraph 👉 Local Deployment using AWS
 ## 29-Agentic-RAG-Project-5-aws branch
 ## Project-5: Agentic-RAG-Project
 
----
 ## 31 May Day - 55 👉 Ultimate RAG 👉 Project-5 👉 Agentic RAG Project using LangGraph 👉 Manual Deployment using AWS
 ## 30-Agentic-RAG-Project-5-deployment branch
 ## Project-5: Agentic-RAG-Project
 
----
 ## 06 Jun Day - 56 👉 Ultimate RAG 👉 Project-5 👉 Agentic RAG Project using LangGraph 👉 CI/CD Pipeline Deployment and Grafana Integration
 ## 31-Agentic-RAG-Project-5-agentops branch
 ## Project-5: Agentic-RAG-Project
+
+## 07 Jun Day - 57 👉 Discussion on New Batch - Advanced Production AI Engineering 👉 Batch Closure
+> Today is the last class of this batch. We will have a detailed code walkthrough of the entire project, discussing the architecture, design decisions, and implementation details.
+
+
 
 ---
 
