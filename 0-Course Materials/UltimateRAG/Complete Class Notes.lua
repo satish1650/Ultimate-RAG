@@ -1972,7 +1972,7 @@ Context Rot: How Increasing Input Tokens Impacts LLM Performance https://www.try
 
 Langchain Docs 👉 Get started with Studio 👉 https://docs.langchain.com/langsmith/quick-start-studio 
 
-New Course 👉 Agentic AI & GenAI-AgentOps with Cloud 3.0 👉 https://agenticai3.lovable.app/ 
+New Batch 👉 Agentic AI & GenAI-AgentOps with Cloud 3.0 👉 https://agenticai3.lovable.app/ 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 17 May Day - 51 👉 Ultimate RAG 👉 LangGraph 👉 Langraph Tutorials 👉 LangSmith and Studio 👉 Project-5 👉 Agentic-RAG-project
@@ -2079,7 +2079,7 @@ Class Notes 👉 https://krishnaikacademy.notion.site/Project-5-369eba9593d0802c
 
 GitHub 👉 https://github.com/sourangshupal/Agentic-RAG-project/tree/aws
 
-New Course 👉 Advanced Route Production AI Engineering 👉 Research → Production · LLMs, RAG & Agents, GenAIOps 👉 https://advancedroute.krishnaik.cloud/
+New Batch 👉 Advanced Route Production AI Engineering 👉 Research → Production · LLMs, RAG & Agents, GenAIOps 👉 https://advancedroute.krishnaik.cloud/
 This is not an introductory AI course. A deep, industry-focused specialization for experienced professionals who want to master the architecture, 
 deployment, and orchestration of real-world enterprise-grade AI systems. ⚡
 	
@@ -2119,7 +2119,7 @@ GitHub 👉 https://github.com/sourangshupal/Agentic-RAG-project/tree/deployment
 		eksctl version
 		```
 
-New Course 👉 Advanced Route Production AI Engineering 👉 Research → Production · LLMs, RAG & Agents, GenAIOps 👉 https://advancedroute.krishnaik.cloud/
+New Batch 👉 Advanced Route Production AI Engineering 👉 Research → Production · LLMs, RAG & Agents, GenAIOps 👉 https://advancedroute.krishnaik.cloud/
 This is not an introductory AI course. A deep, industry-focused specialization for experienced professionals who want to master the architecture, deployment, 
 and orchestration of real-world enterprise-grade AI systems. ⚡
 
@@ -2142,7 +2142,7 @@ From transformer internals to production Kubernetes deployments — every layer 
 	✅ 15 Production Infrastructure
 	✅ 16 AI Security, Guardrails & RBAC
 
-New Course 👉 Agentic AI & GenAI-AgentOps with Cloud 3.0 👉 https://agenticai3.lovable.app/
+New Batch 👉 Agentic AI & GenAI-AgentOps with Cloud 3.0 👉 https://agenticai3.lovable.app/
 The modern, direct path to mastering Agentic AI — from foundations to production multi-agent systems on AWS, GCP, Azure, and VPS.
 Everything You'll Master
 	✅ Agent Frameworks
@@ -2191,5 +2191,122 @@ You'll master :
 	- Production deploy: Bedrock, Vertex AI, AI Foundry
 	- Docker, FastAPI, GitHub Actions, BentoML
 	- 3 in-depth, portfolio-grade cloud projects
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+06 Jun Day - 56 👉 Ultimate RAG 👉 Project-5 👉 Agentic RAG Project using LangGraph 👉 CI/CD Pipeline Deployment and Grafana Integration
+******************************************************************************************************************************************
+Class Notes 👉 https://krishnaikacademy.notion.site/Project-5-369eba9593d0802ca0ededc00f9b203d
+
+GitHub 👉 https://github.com/sourangshupal/Agentic-RAG-project/tree/agentops
+	✅ Agentic-RAG-project/docs/updated_kubernetes.md
+	✅ Agentic-RAG-project/deployment/eks/cluster.yaml
+	✅ Agentic-RAG-project/scripts/load_test.py
+	
+	Manual EKS Deployment Guide — Step by Step - agentops branch
+		✅ Agentic-RAG-project/docs/updated_kubernetes.md
+	
+Welcome to Grafana Cloud Play 👉 https://play.grafana.org/
+Grafan Cloud is used for Kubernetes monitoring and observability in this project. It provides insights into the performance 
+and health of your Kubernetes cluster, allowing you to track metrics, set up alerts, and visualize data effectively.
+	Grafana Cloud Kubernetes Monitoring Integration
+		✅ Agentic-RAG-project/docs/grafana_integration.md
+	Grafana Cloud Integration need to update configuration in below file:-
+		✅ Agentic-RAG-project/deployment/grafana/values.yaml
+		update url, your username and password ($GRAFANA_CLOUD_TOKEN) in the above file to connect to your Grafana Cloud account.
+
+Grafana Cloud is typically used when you want a fully managed observability platform without having to install, maintain, scale, or secure Grafana and its backend components yourself.
+Use Grafana Cloud when:
+	We need centralized monitoring for applications and infrastructure
+	1. We need centralized monitoring for applications and infrastructure
+		- Kubernetes clusters
+		- Docker containers
+		- Virtual Machines
+		- AWS, Azure, GCP resources
+		- Databases
+		- APIs and microservices
+	2. We want Logs, Metrics, and Traces in one place
+		- Grafana (Dashboards & Visualization)
+		- Prometheus (Metrics)
+		- Loki (Logs)
+		- Tempo (Traces)
+	3. We don't want to manage observability infrastructure, Grafana Cloud manages everything.
+
+What is Kubernetes clusters?
+A Kubernetes cluster is a group of machines (physical servers or virtual machines) that work together to run and manage containerized applications automatically.
+	- Docker packages your application into containers.
+	- Kubernetes (K8s) manages those containers at scale.
+
+You package it into a Docker container. If you run it on a single server:
+	- The server can crash.
+	- Traffic can overwhelm it.
+	- Updates may cause downtime.
+A Kubernetes cluster solves these problems.
+
+Why Use Kubernetes?
+	- Auto-Healing  
+	Container Crash
+      		↓
+	Kubernetes detects failure
+			↓
+	Starts a new container automatically
+
+	- Auto-Scaling
+	If traffic increases:
+	1 Pod
+		↓
+	10,000 users arrive
+		↓
+	Kubernetes creates more Pods
+		↓
+	5 Pods
+		↓
+	10 Pods
+
+	- Load Balancing
+	Traffic is distributed across multiple application instances.
+	User Requests
+      	↓
+	Load Balancer
+	↙  	↓  ↘
+	Pod1 Pod2 Pod3
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+07 Jun Day - 57 👉 Ultimate RAG 👉 Project-5 👉 Agentic RAG Project using LangGraph 👉 Code Discussion & Batch Closure
+************************************************************************************************************************
+Today is the last class of this batch. We will have a detailed code walkthrough of the entire project, discussing the architecture, design decisions, and implementation details. 
+We will also cover how to extend the project further and best practices for production-grade RAG systems.
+
+Class Notes 👉 https://krishnaikacademy.notion.site/Project-5-369eba9593d0802ca0ededc00f9b203d
+
+GitHub 👉 https://github.com/sourangshupal/Agentic-RAG-project/tree/agentops
+
+GitHub 👉 Axolotl 👉 https://github.com/axolotl-ai-cloud/axolotl
+
+GitHub 👉 Liger Kernel: Efficient Triton Kernels for LLM Training 👉 https://github.com/linkedin/Liger-Kernel
+
+GitHub 👉 DeepSpeed 👉 https://github.com/deepspeedai/DeepSpeed
+
+Pioneer 👉 The inference API that improves with your traffic https://pioneer.ai/
+Pioneer Docs 👉 https://docs.pioneer.ai/introduction
+
+Thundercompute 👉 One-click GPU servers for 80% less 👉 https://www.thundercompute.com/
+	Spin up a dedicated cloud GPU in seconds. Develop in VS Code, keep data safe, swap hardware anytime.
+
+KIMI 👉 https://www.kimi.com/en
+
+Lightning AI 👉 LitServe 👉 Build custom inference servers in pure Python 👉 https://github.com/Lightning-AI/litserve/
+	Define exactly how inference works for models, agents, RAG, or pipelines.
+    Control batching, routing, streaming, and orchestration without MLOps glue or config files.
+
+GitHub 👉 Herder 👉 https://github.com/ogulcancelik/herdr
+One terminal. The whole herd. 👉 https://herdr.dev/
+
+Trending Research 👉 https://paperswithcode.co/
+
+KNDataScience-2.0 👉 https://app.notion.com/p/KNDataScience-2-0-2f1856e0e30d80e9a0f9c79ee348a213
+
+New Batch 👉 Advanced Production AI Engineering 👉 https://advancedroute.krishnaik.cloud/
+Research → Production · LLMs, RAG & Agents, GenAIOps
+This is not an introductory AI course. A deep, industry-focused specialization for experienced professionals who want to master the architecture, deployment, and orchestration of real-world enterprise-grade AI systems. ⚡
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
